@@ -1,0 +1,24 @@
+{
+  "product_name": "changelogs",
+  "output_path": "changelogs/CHANGELOG.md",
+  "default_scope_labels": ["Interno"],
+  "section_type_map": {
+    "Features": "Melhoria",
+    "Correcoes": "Bugfix",
+    "Performance": "Melhoria",
+    "Refatoracoes": "Melhoria",
+    "Documentacao": "Documentacao",
+    "Build": "Build",
+    "CI": "CI",
+    "Testes": "Testes",
+    "Tarefas tecnicas": "Interno"
+  },
+  "scope_label_map": {
+    "infra": "Infra",
+    "interno": "Interno",
+    "internal": "Interno",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "mobile": "Mobile"
+  }
+}
