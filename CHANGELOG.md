@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1](https://github.com/KTD-RYAN-SOUSA/kartado-changelog/compare/v0.3.0...v0.3.1) (2026-04-30)
+
+
+### Tarefas tecnicas
+
+* **infra:** atualiza ajuste C [KTD-2003] ([bfb9207](https://github.com/KTD-RYAN-SOUSA/kartado-changelog/commit/bfb92077ddc2558b2afda922a7873d1d7b7b4856))
+* **infra:** atualiza ajuste C [KTD-2003] ([0d9e3d1](https://github.com/KTD-RYAN-SOUSA/kartado-changelog/commit/0d9e3d14fd9e9bbe55706411383905e798079a7b))
+
 ## [0.3.0](https://github.com/KTD-RYAN-SOUSA/kartado-changelog/compare/v0.2.0...v0.3.0) (2026-04-30)
 
 
