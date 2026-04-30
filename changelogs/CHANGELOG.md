@@ -1,5 +1,10 @@
 # changelogs
 
+## 0.4.0
+30/04/2026
+
+[Melhoria][Interno] - **infra:** adiciona ajuste A [] ) [KTD-2001]
+
 ## 0.3.1
 30/04/2026
 
