@@ -1,3 +1,3 @@
 teste commitlint
 #teste
-teste C
+teste A
