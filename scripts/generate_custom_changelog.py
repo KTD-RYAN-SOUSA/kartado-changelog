@@ -1,5 +1,6 @@
 import json
 import re
+import subprocess
 from datetime import datetime
 from pathlib import Path
 
@@ -9,6 +10,8 @@ SECTION_HEADER_RE = re.compile(r"^### (?P<section>.+)$")
 CHANGE_ITEM_RE = re.compile(r"^\* (?P<text>.+)$")
 SCOPE_RE = re.compile(r"^[a-z]+(?:\((?P<scope>[^)]+)\))?!?:\s*(?P<rest>.+)$", re.IGNORECASE)
 TICKET_RE = re.compile(r"\b([A-Z]{2,}-\d+)\b")
+PR_NUMBER_RE = re.compile(r"#(\d+)")
+MERGE_PR_RE = re.compile(r"Merge pull request #(\d+) from ([^\s]+)")
 
 
 def load_template(template_path: Path) -> dict:
@@ -84,8 +87,36 @@ def build_entry(section: str, raw_item: str, config: dict) -> str:
     ticket_match = TICKET_RE.search(description)
     ticket = f" [{ticket_match.group(1)}]" if ticket_match else ""
     description = re.sub(TICKET_RE, "", description).strip(" -")
+    pr_match = PR_NUMBER_RE.search(raw_item)
+    branch = ""
+    if pr_match:
+        branch = config.get("_pr_branch_map", {}).get(pr_match.group(1), "")
+
     prefix = "".join(f"[{label}]" for label in labels)
-    return f"{prefix} - {description}{ticket}"
+    branch_suffix = f" [branch: {branch}]" if branch else ""
+    return f"{prefix} - {description}{ticket}{branch_suffix}"
+
+
+def load_pr_branch_map(repo_root: Path) -> dict[str, str]:
+    result = subprocess.run(
+        ["git", "log", "--merges", "--pretty=%s", "-n", "500"],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        return {}
+
+    pr_branch_map: dict[str, str] = {}
+    for line in result.stdout.splitlines():
+        match = MERGE_PR_RE.search(line)
+        if not match:
+            continue
+        pr_number = match.group(1)
+        full_branch = match.group(2)
+        pr_branch_map[pr_number] = full_branch
+    return pr_branch_map
 
 
 def render_block(version: str, release_date: str, entries: list[str]) -> str:
@@ -120,6 +151,7 @@ def main() -> None:
         raise SystemExit("CHANGELOG.md nao encontrado. Rode release-please primeiro.")
 
     config = load_template(template_path)
+    config["_pr_branch_map"] = load_pr_branch_map(repo_root)
     version, release_date, items = extract_latest_release_blocks(changelog_path)
     if not version:
         raise SystemExit("Nao foi possivel localizar a secao mais recente em CHANGELOG.md.")
