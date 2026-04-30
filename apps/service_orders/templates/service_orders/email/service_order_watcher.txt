@@ -1,0 +1,15 @@
+Olá,
+
+{{ message }}.
+
+Copie esse link para parar de receber notificações sobre este Serviço:
+
+{{url_watcher}}
+
+Copie esse link no seu navegador para acessar o Serviço:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

@@ -1,0 +1,169 @@
+{
+  "use_direction": true,
+  "job_name_format": "{prefixo}-PROG-{anoCompleto}.{serialAno}",
+  "RP_name_format": {
+    "1": {
+      "type": "LV",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "2": {
+      "type": "IT",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "5": {
+      "type": "DO",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "6": {
+      "type": "PAVR",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "10": {
+      "type": "EST",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "11": {
+      "type": "PeP",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "12": {
+      "type": "SIN-DIN",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "13": {
+      "type": "PAV",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "14": {
+      "type": "ILU",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "15": {
+      "type": "AMB",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "701": {
+      "type": "FDO-Veg",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "702": {
+      "type": "FDO-Lim",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "703": {
+      "type": "FDO-Ero",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "704": {
+      "type": "FDO-Mon",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "705": {
+      "type": "FDO-Pic",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "706": {
+      "type": "FDO-CL",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "707": {
+      "type": "FDO-Fau",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "801": {
+      "type": "DRE-SP",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "802": {
+      "type": "DRE-SFP",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "803": {
+      "type": "DRE-BGD",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "804": {
+      "type": "DRE-CC",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "805": {
+      "type": "DRE-Tun",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "806": {
+      "type": "DRE-CRV",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "901": {
+      "type": "CON-Def",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "902": {
+      "type": "CON-Bar",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "903": {
+      "type": "CON-Ant",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "904": {
+      "type": "CON-Cer",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "905": {
+      "type": "CON-GC",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "906": {
+      "type": "CON-Ate",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "907": {
+      "type": "CON-Mur",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "2001": {
+      "type": "SIN-Hor",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "2002": {
+      "type": "SIN-Ver",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "2003": {
+      "type": "SIN-Tac",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "2004": {
+      "type": "SIN-Bal",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "2005": {
+      "type": "SIN-Sem",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "default": {
+      "type": "default",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    }
+  },
+  "company_prefix": "DEMO",
+  "show_project_km": false,
+  "keycode_lane_mapping": {
+    "1": {
+      "24": "1",
+      "25": "1",
+      "79": "1",
+      "85": "1",
+      "87": "1",
+      "88": "1"
+    },
+    "3": {
+      "24": "1",
+      "25": "2",
+      "79": "5"
+    }
+  },
+  "executed_status_order": 8,
+  "approved_approval_steps": ["b7ab4d1e-e2e9-45f2-90ea-89abf0e5ab0d"]
+}

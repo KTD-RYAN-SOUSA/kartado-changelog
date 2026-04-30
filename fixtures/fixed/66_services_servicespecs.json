@@ -1,0 +1,84 @@
+[
+{
+    "model": "services.servicespecs",
+    "pk": "01528e8e-2a07-495c-a6e1-624d3a3df907",
+    "fields": {
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+},
+{
+    "model": "services.servicespecs",
+    "pk": "0208b35f-4c10-495c-8bd3-1c22889d70f5",
+    "fields": {
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "occurrence_type": "05e3967f-27b3-460d-94a5-d419c1588dce",
+        "formula": {
+            "backend": {
+                "var": "formData.ammount"
+            }
+        }
+    }
+},
+{
+    "model": "services.servicespecs",
+    "pk": "033186b1-1de6-4da5-abd8-a75e9e051497",
+    "fields": {
+        "service": "0130feec-abc5-4dce-8ef0-12dfb8ae2fbf",
+        "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+},
+{
+    "model": "services.servicespecs",
+    "pk": "2a19b95c-cc1c-4b35-aee4-3bb1ccfe0b50",
+    "fields": {
+        "service": "0157fe4f-68d1-4639-8193-37d0cdbc2eb0",
+        "occurrence_type": "8c745a3b-ca56-419d-a012-117b5f5f1dd1",
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+}
+]

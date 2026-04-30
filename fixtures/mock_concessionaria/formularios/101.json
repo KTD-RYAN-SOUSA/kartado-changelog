@@ -1,0 +1,2568 @@
+{
+    "id": 1,
+    "name": "job103",
+    "fields": [
+        {
+            "id": 1,
+            "logic": "e.4.5.",
+            "apiName": "contratualCode",
+            "dataType": "jsonLogic",
+            "displayName": "C\u00f3digo de Edital"
+        },
+        {
+            "id": 2,
+            "logic": "5",
+            "apiName": "csp",
+            "dataType": "jsonLogic",
+            "displayName": "CSP"
+        },
+        {
+            "id": 3,
+            "apiName": "demandOrigin",
+            "dataType": "selectMultiple",
+            "displayName": "Origem",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Interna",
+                        "value": "1"
+                    },
+                    {
+                        "name": "KCOR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ARTESP DIN",
+                        "value": "3"
+                    },
+                    {
+                        "name": "ARTESP DOP",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "apiName": "artespCode",
+            "dataType": "string",
+            "display_if": {
+                "or": [
+                    {
+                        "in": [
+                            "3",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "4",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "displayName": "C\u00f3digo ARTESP"
+        },
+        {
+            "id": 5,
+            "apiName": "receivedDate",
+            "dataType": "timestamp",
+            "display_if": {
+                "or": [
+                    {
+                        "in": [
+                            "3",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "4",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "displayName": "Recebido da ARTESP em"
+        },
+        {
+            "id": 6,
+            "apiName": "kcorCode",
+            "dataType": "string",
+            "display_if": {
+                "in": [
+                    "2",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "C\u00f3d KCOR"
+        },
+        {
+            "id": 7,
+            "apiName": "internCode",
+            "dataType": "string",
+            "display_if": {
+                "in": [
+                    "1",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "C\u00f3d interno"
+        },
+        {
+            "id": 8,
+            "apiName": "signType",
+            "dataType": "select",
+            "displayName": "Tipo da Placa",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Placa de regulamenta\u00e7\u00e3o - SVR",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Placa de advert\u00eancia - SVA",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Demais placas - SVD",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Inadequa\u00e7\u00f5es na pintura - SHP",
+                        "value": "4"
+                    },
+                    {
+                        "name": "Inadequa\u00e7\u00f5es nas tachas - SHT",
+                        "value": "5"
+                    },
+                    {
+                        "name": "Dispositivos de prote\u00e7\u00e3o - DPC",
+                        "value": "6"
+                    },
+                    {
+                        "name": "Dispositivos de prote\u00e7\u00e3o - delineadores - DPCD",
+                        "value": "7"
+                    },
+                    {
+                        "name": "Dispositivos de sinaliza\u00e7\u00e3o ou uso tempor\u00e1rio ou sinaliza\u00e7\u00e3o semaf\u00f3rica - DS",
+                        "value": "8"
+                    },
+                    {
+                        "name": "Acessibilidade - ACESS",
+                        "value": "9"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "apiName": "signName",
+            "dataType": "select",
+            "displayName": "Nome da Placa",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "ADVERT\u00caNCIA",
+                        "value": "0"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA/COMPOSTA",
+                        "value": "1"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA/R-14",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA/R-19",
+                        "value": "3"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA/REGULAMENTA\u00c7\u00c3O",
+                        "value": "4"
+                    },
+                    {
+                        "name": "APOIO OPERACIONAL",
+                        "value": "5"
+                    },
+                    {
+                        "name": "ATRATIVO TUR\u00cdSTICO",
+                        "value": "6"
+                    },
+                    {
+                        "name": "DISPOSITIVOS AUXILIARES",
+                        "value": "7"
+                    },
+                    {
+                        "name": "EDUCATIVA",
+                        "value": "8"
+                    },
+                    {
+                        "name": "EDUCATIVA/A-32A/A-30B",
+                        "value": "9"
+                    },
+                    {
+                        "name": "EDUCATIVA/ADVERT\u00caNCIA",
+                        "value": "10"
+                    },
+                    {
+                        "name": "I-33",
+                        "value": "11"
+                    },
+                    {
+                        "name": "IDENTIFICA\u00c7\u00c3O",
+                        "value": "12"
+                    },
+                    {
+                        "name": "IDENTIFICA\u00c7\u00c3O/ORIENTA\u00c7\u00c3O",
+                        "value": "13"
+                    },
+                    {
+                        "name": "IE-1",
+                        "value": "14"
+                    },
+                    {
+                        "name": "IE-13",
+                        "value": "15"
+                    },
+                    {
+                        "name": "IE-14",
+                        "value": "16"
+                    },
+                    {
+                        "name": "IE-2",
+                        "value": "17"
+                    },
+                    {
+                        "name": "IE-21",
+                        "value": "18"
+                    },
+                    {
+                        "name": "IE-3",
+                        "value": "19"
+                    },
+                    {
+                        "name": "IE-5",
+                        "value": "20"
+                    },
+                    {
+                        "name": "IE-8",
+                        "value": "21"
+                    },
+                    {
+                        "name": "II-1",
+                        "value": "22"
+                    },
+                    {
+                        "name": "II-2",
+                        "value": "23"
+                    },
+                    {
+                        "name": "II-2/ORIENTA\u00c7AO",
+                        "value": "24"
+                    },
+                    {
+                        "name": "II-3",
+                        "value": "25"
+                    },
+                    {
+                        "name": "IL-1",
+                        "value": "26"
+                    },
+                    {
+                        "name": "IL-3",
+                        "value": "27"
+                    },
+                    {
+                        "name": "IL-4",
+                        "value": "28"
+                    },
+                    {
+                        "name": "IP-10",
+                        "value": "29"
+                    },
+                    {
+                        "name": "IP-11",
+                        "value": "30"
+                    },
+                    {
+                        "name": "IP-12A",
+                        "value": "31"
+                    },
+                    {
+                        "name": "IP-17",
+                        "value": "32"
+                    },
+                    {
+                        "name": "IP-18",
+                        "value": "33"
+                    },
+                    {
+                        "name": "IP-5",
+                        "value": "34"
+                    },
+                    {
+                        "name": "IP-7",
+                        "value": "35"
+                    },
+                    {
+                        "name": "IP-8",
+                        "value": "36"
+                    },
+                    {
+                        "name": "IP-8 ",
+                        "value": "37"
+                    },
+                    {
+                        "name": "IP-9",
+                        "value": "38"
+                    },
+                    {
+                        "name": "ISA-2 PICTOGRAMAS",
+                        "value": "39"
+                    },
+                    {
+                        "name": "ISA-3",
+                        "value": "40"
+                    },
+                    {
+                        "name": "ISA-3 PICTOGRAMAS",
+                        "value": "41"
+                    },
+                    {
+                        "name": "ISA-4",
+                        "value": "42"
+                    },
+                    {
+                        "name": "M.A.",
+                        "value": "43"
+                    },
+                    {
+                        "name": "MP-1",
+                        "value": "44"
+                    },
+                    {
+                        "name": "MP-2",
+                        "value": "45"
+                    },
+                    {
+                        "name": "MP-3",
+                        "value": "46"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O",
+                        "value": "47"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/EDUCATIVA",
+                        "value": "48"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/IDENTIFICA\u00c7\u00c3O",
+                        "value": "49"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/II-2",
+                        "value": "50"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/S-5",
+                        "value": "51"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/S-5/COMPOSTA/II-1",
+                        "value": "52"
+                    },
+                    {
+                        "name": "S-1/COMPOSTA",
+                        "value": "53"
+                    },
+                    {
+                        "name": "S-11/COMPOSTA/S-6/COMPOSTA",
+                        "value": "54"
+                    },
+                    {
+                        "name": "S-14",
+                        "value": "55"
+                    },
+                    {
+                        "name": "S-14/COMPOSTA",
+                        "value": "56"
+                    },
+                    {
+                        "name": "S-4",
+                        "value": "57"
+                    },
+                    {
+                        "name": "S-5/COMPOSTA",
+                        "value": "58"
+                    },
+                    {
+                        "name": "S-6/COMPOSTA/ORIENTA\u00c7\u00c3O",
+                        "value": "59"
+                    },
+                    {
+                        "name": "A-12",
+                        "value": "60"
+                    },
+                    {
+                        "name": "A-12/COMPOSTA",
+                        "value": "61"
+                    },
+                    {
+                        "name": "A-14",
+                        "value": "62"
+                    },
+                    {
+                        "name": "A-15",
+                        "value": "63"
+                    },
+                    {
+                        "name": "A-15/COMPOSTA",
+                        "value": "64"
+                    },
+                    {
+                        "name": "A-17",
+                        "value": "65"
+                    },
+                    {
+                        "name": "A-18",
+                        "value": "66"
+                    },
+                    {
+                        "name": "A-18/COMPOSTA",
+                        "value": "67"
+                    },
+                    {
+                        "name": "A-19/COMPOSTA",
+                        "value": "68"
+                    },
+                    {
+                        "name": "A-1A",
+                        "value": "69"
+                    },
+                    {
+                        "name": "A-1A/COMPOSTA",
+                        "value": "70"
+                    },
+                    {
+                        "name": "A-1B",
+                        "value": "71"
+                    },
+                    {
+                        "name": "A-1B/COMPOSTA",
+                        "value": "72"
+                    },
+                    {
+                        "name": "A-20A",
+                        "value": "73"
+                    },
+                    {
+                        "name": "A-21B",
+                        "value": "74"
+                    },
+                    {
+                        "name": "A-21B/COMPOSTA",
+                        "value": "75"
+                    },
+                    {
+                        "name": "A-21C",
+                        "value": "76"
+                    },
+                    {
+                        "name": "A-21C/COMPOSTA",
+                        "value": "77"
+                    },
+                    {
+                        "name": "A-21E",
+                        "value": "78"
+                    },
+                    {
+                        "name": "A-22",
+                        "value": "79"
+                    },
+                    {
+                        "name": "A-22/COMPOSTA",
+                        "value": "80"
+                    },
+                    {
+                        "name": "A-242A",
+                        "value": "81"
+                    },
+                    {
+                        "name": "A-24A",
+                        "value": "82"
+                    },
+                    {
+                        "name": "A-25",
+                        "value": "83"
+                    },
+                    {
+                        "name": "A-26B",
+                        "value": "84"
+                    },
+                    {
+                        "name": "A-27",
+                        "value": "85"
+                    },
+                    {
+                        "name": "A-28",
+                        "value": "86"
+                    },
+                    {
+                        "name": "A-2A",
+                        "value": "87"
+                    },
+                    {
+                        "name": "A-2A/COMPOSTA",
+                        "value": "88"
+                    },
+                    {
+                        "name": "A-2B",
+                        "value": "89"
+                    },
+                    {
+                        "name": "A-2B/COMPOSTA",
+                        "value": "90"
+                    },
+                    {
+                        "name": "A-30A",
+                        "value": "91"
+                    },
+                    {
+                        "name": "A-30B",
+                        "value": "92"
+                    },
+                    {
+                        "name": "A-32A",
+                        "value": "93"
+                    },
+                    {
+                        "name": "A-32-A/A-30B",
+                        "value": "94"
+                    },
+                    {
+                        "name": "A-32A/COMPOSTA",
+                        "value": "95"
+                    },
+                    {
+                        "name": "A-32B",
+                        "value": "96"
+                    },
+                    {
+                        "name": "A-32B/COMPOSTA",
+                        "value": "97"
+                    },
+                    {
+                        "name": "A-34A",
+                        "value": "98"
+                    },
+                    {
+                        "name": "A-35/COMPOSTA",
+                        "value": "99"
+                    },
+                    {
+                        "name": "A-36",
+                        "value": "100"
+                    },
+                    {
+                        "name": "A-36/COMPOSTA",
+                        "value": "101"
+                    },
+                    {
+                        "name": "A-36/R-19/COMPOSTA",
+                        "value": "102"
+                    },
+                    {
+                        "name": "A-37",
+                        "value": "103"
+                    },
+                    {
+                        "name": "A-37/COMPOSTA",
+                        "value": "104"
+                    },
+                    {
+                        "name": "A-3A/COMPOSTA",
+                        "value": "105"
+                    },
+                    {
+                        "name": "A-3B/COMPOSTA",
+                        "value": "106"
+                    },
+                    {
+                        "name": "A-42A",
+                        "value": "107"
+                    },
+                    {
+                        "name": "A-42A/COMPOSTA",
+                        "value": "108"
+                    },
+                    {
+                        "name": "A-42B",
+                        "value": "109"
+                    },
+                    {
+                        "name": "A-42B/COMPOSTA",
+                        "value": "110"
+                    },
+                    {
+                        "name": "A-45",
+                        "value": "111"
+                    },
+                    {
+                        "name": "A-4A",
+                        "value": "112"
+                    },
+                    {
+                        "name": "A-4B",
+                        "value": "113"
+                    },
+                    {
+                        "name": "A-4B/COMPOSTA",
+                        "value": "114"
+                    },
+                    {
+                        "name": "A-6",
+                        "value": "115"
+                    },
+                    {
+                        "name": "A-6/COMPOSTA",
+                        "value": "116"
+                    },
+                    {
+                        "name": "A-7B",
+                        "value": "117"
+                    },
+                    {
+                        "name": "A-8",
+                        "value": "118"
+                    },
+                    {
+                        "name": "A-8/COMPOSTA",
+                        "value": "119"
+                    },
+                    {
+                        "name": "R-1",
+                        "value": "120"
+                    },
+                    {
+                        "name": "R-11",
+                        "value": "121"
+                    },
+                    {
+                        "name": "R-12",
+                        "value": "122"
+                    },
+                    {
+                        "name": "R-15",
+                        "value": "123"
+                    },
+                    {
+                        "name": "R-18",
+                        "value": "124"
+                    },
+                    {
+                        "name": "R-19",
+                        "value": "125"
+                    },
+                    {
+                        "name": "R-19/ADVERT\u00caNCIA",
+                        "value": "126"
+                    },
+                    {
+                        "name": "R-19/COMPOSTA",
+                        "value": "127"
+                    },
+                    {
+                        "name": "R-19/IDENTIFICA\u00c7\u00c3O",
+                        "value": "128"
+                    },
+                    {
+                        "name": "R-2",
+                        "value": "129"
+                    },
+                    {
+                        "name": "R-24",
+                        "value": "130"
+                    },
+                    {
+                        "name": "R-24A",
+                        "value": "131"
+                    },
+                    {
+                        "name": "R-24A/R-33",
+                        "value": "132"
+                    },
+                    {
+                        "name": "R-24B",
+                        "value": "133"
+                    },
+                    {
+                        "name": "R-24B/COMPOSTA",
+                        "value": "134"
+                    },
+                    {
+                        "name": "R-25C",
+                        "value": "135"
+                    },
+                    {
+                        "name": "R-25D",
+                        "value": "136"
+                    },
+                    {
+                        "name": "R-27",
+                        "value": "137"
+                    },
+                    {
+                        "name": "R-27/COMPOSTA",
+                        "value": "138"
+                    },
+                    {
+                        "name": "R-28",
+                        "value": "139"
+                    },
+                    {
+                        "name": "R-2A",
+                        "value": "140"
+                    },
+                    {
+                        "name": "R-3",
+                        "value": "141"
+                    },
+                    {
+                        "name": "R-32B",
+                        "value": "142"
+                    },
+                    {
+                        "name": "R-33",
+                        "value": "143"
+                    },
+                    {
+                        "name": "R-34",
+                        "value": "144"
+                    },
+                    {
+                        "name": "R-37",
+                        "value": "145"
+                    },
+                    {
+                        "name": "R-4A",
+                        "value": "146"
+                    },
+                    {
+                        "name": "R-4B",
+                        "value": "147"
+                    },
+                    {
+                        "name": "R-5",
+                        "value": "148"
+                    },
+                    {
+                        "name": "R-5A",
+                        "value": "149"
+                    },
+                    {
+                        "name": "R-6A",
+                        "value": "150"
+                    },
+                    {
+                        "name": "R-6B",
+                        "value": "151"
+                    },
+                    {
+                        "name": "R-6B/COMPOSTA",
+                        "value": "152"
+                    },
+                    {
+                        "name": "R-6C",
+                        "value": "153"
+                    },
+                    {
+                        "name": "R-6C/COMPOSTA",
+                        "value": "154"
+                    },
+                    {
+                        "name": "R-7",
+                        "value": "155"
+                    },
+                    {
+                        "name": "R-9/COMPOSTA",
+                        "value": "156"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "apiName": "amount",
+            "dataType": "float",
+            "displayName": "Unidades (uns)"
+        },
+        {
+            "id": 12,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "displayName": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 2,
+            "members": [
+                11
+            ],
+            "displayName": "Quantitativos"
+        },
+        {
+            "order": 3,
+            "members": [
+                12
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "Remo\u00e7\u00e3o (Balizadores e delineadores)",
+    "measurementColumns": [
+        {
+            "key": "contratualCode",
+            "logic": "e.4.5.",
+            "width": 12,
+            "header": "C\u00f3digo de Edital"
+        },
+        {
+            "key": "csp",
+            "logic": "5",
+            "width": 8,
+            "header": "CSP"
+        },
+        {
+            "key": "demandOrigin",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Demanda Interna ",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Demanda Kcor ",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Demanda ARTESP DIN ",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Demanda ARTESP DOP ",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 8,
+            "header": "Origem"
+        },
+        {
+            "key": "artespCode",
+            "logic": {
+                "var": "formData.artespCode"
+            },
+            "width": 8,
+            "header": "C\u00f3digo ARTESP"
+        },
+        {
+            "key": "receivedDate",
+            "logic": {
+                "var": "formData.receivedDate"
+            },
+            "width": 12,
+            "header": "Data de Recebimento da ARTESP"
+        },
+        {
+            "key": "kcorCode",
+            "logic": {
+                "var": "formData.kcorCode"
+            },
+            "width": 12,
+            "header": "C\u00f3digo kcor"
+        },
+        {
+            "key": "internCode",
+            "logic": {
+                "var": "formData.internCode"
+            },
+            "width": 12,
+            "header": "C\u00f3digo interno"
+        },
+        {
+            "key": "signType",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            1
+                        ]
+                    },
+                    "Placa de regulamenta\u00e7\u00e3o - SVR",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            2
+                        ]
+                    },
+                    "Placa de advert\u00eancia - SVA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            3
+                        ]
+                    },
+                    "Demais placas - SVD",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            4
+                        ]
+                    },
+                    "Inadequa\u00e7\u00f5es na pintura - SHP",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            5
+                        ]
+                    },
+                    "Inadequa\u00e7\u00f5es nas tachas - SHT",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            6
+                        ]
+                    },
+                    "Dispositivos de prote\u00e7\u00e3o - DPC",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            7
+                        ]
+                    },
+                    "Dispositivos de prote\u00e7\u00e3o - delineadores - DPCD",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            8
+                        ]
+                    },
+                    "Dispositivos de sinaliza\u00e7\u00e3o ou uso tempor\u00e1rio ou sinaliza\u00e7\u00e3o semaf\u00f3rica - DS",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signType"
+                            },
+                            9
+                        ]
+                    },
+                    "Acessibilidade - ACESS"
+                ]
+            },
+            "width": 18,
+            "header": "Tipo de Placa"
+        },
+        {
+            "key": "signName",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            0
+                        ]
+                    },
+                    "ADVERT\u00caNCIA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            1
+                        ]
+                    },
+                    "ADVERT\u00caNCIA/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            2
+                        ]
+                    },
+                    "ADVERT\u00caNCIA/R-14",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            3
+                        ]
+                    },
+                    "ADVERT\u00caNCIA/R-19",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            4
+                        ]
+                    },
+                    "ADVERT\u00caNCIA/REGULAMENTA\u00c7\u00c3O",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            5
+                        ]
+                    },
+                    "APOIO OPERACIONAL",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            6
+                        ]
+                    },
+                    "ATRATIVO TUR\u00cdSTICO",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            7
+                        ]
+                    },
+                    "DISPOSITIVOS AUXILIARES",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            8
+                        ]
+                    },
+                    "EDUCATIVA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            9
+                        ]
+                    },
+                    "EDUCATIVA/A-32A/A-30B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            10
+                        ]
+                    },
+                    "EDUCATIVA/ADVERT\u00caNCIA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            11
+                        ]
+                    },
+                    "I-33",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            12
+                        ]
+                    },
+                    "IDENTIFICA\u00c7\u00c3O",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            13
+                        ]
+                    },
+                    "IDENTIFICA\u00c7\u00c3O/ORIENTA\u00c7\u00c3O",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            14
+                        ]
+                    },
+                    "IE-1",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            15
+                        ]
+                    },
+                    "IE-13",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            16
+                        ]
+                    },
+                    "IE-14",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            17
+                        ]
+                    },
+                    "IE-2",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            18
+                        ]
+                    },
+                    "IE-21",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            19
+                        ]
+                    },
+                    "IE-3",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            20
+                        ]
+                    },
+                    "IE-5",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            21
+                        ]
+                    },
+                    "IE-8",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            22
+                        ]
+                    },
+                    "II-1",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            23
+                        ]
+                    },
+                    "II-2",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            24
+                        ]
+                    },
+                    "II-2/ORIENTA\u00c7AO",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            25
+                        ]
+                    },
+                    "II-3",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            26
+                        ]
+                    },
+                    "IL-1",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            27
+                        ]
+                    },
+                    "IL-3",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            28
+                        ]
+                    },
+                    "IL-4",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            29
+                        ]
+                    },
+                    "IP-10",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            30
+                        ]
+                    },
+                    "IP-11",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            31
+                        ]
+                    },
+                    "IP-12A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            32
+                        ]
+                    },
+                    "IP-17",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            33
+                        ]
+                    },
+                    "IP-18",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            34
+                        ]
+                    },
+                    "IP-5",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            35
+                        ]
+                    },
+                    "IP-7",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            36
+                        ]
+                    },
+                    "IP-8",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            37
+                        ]
+                    },
+                    "IP-8 ",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            38
+                        ]
+                    },
+                    "IP-9",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            39
+                        ]
+                    },
+                    "ISA-2 PICTOGRAMAS",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            40
+                        ]
+                    },
+                    "ISA-3",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            41
+                        ]
+                    },
+                    "ISA-3 PICTOGRAMAS",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            42
+                        ]
+                    },
+                    "ISA-4",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            43
+                        ]
+                    },
+                    "M.A.",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            44
+                        ]
+                    },
+                    "MP-1",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            45
+                        ]
+                    },
+                    "MP-2",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            46
+                        ]
+                    },
+                    "MP-3",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            47
+                        ]
+                    },
+                    "ORIENTA\u00c7\u00c3O",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            48
+                        ]
+                    },
+                    "ORIENTA\u00c7\u00c3O/EDUCATIVA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            49
+                        ]
+                    },
+                    "ORIENTA\u00c7\u00c3O/IDENTIFICA\u00c7\u00c3O",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            50
+                        ]
+                    },
+                    "ORIENTA\u00c7\u00c3O/II-2",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            51
+                        ]
+                    },
+                    "ORIENTA\u00c7\u00c3O/S-5",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            52
+                        ]
+                    },
+                    "ORIENTA\u00c7\u00c3O/S-5/COMPOSTA/II-1",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            53
+                        ]
+                    },
+                    "S-1/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            54
+                        ]
+                    },
+                    "S-11/COMPOSTA/S-6/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            55
+                        ]
+                    },
+                    "S-14",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            56
+                        ]
+                    },
+                    "S-14/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            57
+                        ]
+                    },
+                    "S-4",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            58
+                        ]
+                    },
+                    "S-5/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            59
+                        ]
+                    },
+                    "S-6/COMPOSTA/ORIENTA\u00c7\u00c3O",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            60
+                        ]
+                    },
+                    "A-12",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            61
+                        ]
+                    },
+                    "A-12/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            62
+                        ]
+                    },
+                    "A-14",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            63
+                        ]
+                    },
+                    "A-15",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            64
+                        ]
+                    },
+                    "A-15/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            65
+                        ]
+                    },
+                    "A-17",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            66
+                        ]
+                    },
+                    "A-18",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            67
+                        ]
+                    },
+                    "A-18/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            68
+                        ]
+                    },
+                    "A-19/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            69
+                        ]
+                    },
+                    "A-1A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            70
+                        ]
+                    },
+                    "A-1A/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            71
+                        ]
+                    },
+                    "A-1B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            72
+                        ]
+                    },
+                    "A-1B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            73
+                        ]
+                    },
+                    "A-20A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            74
+                        ]
+                    },
+                    "A-21B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            75
+                        ]
+                    },
+                    "A-21B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            76
+                        ]
+                    },
+                    "A-21C",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            77
+                        ]
+                    },
+                    "A-21C/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            78
+                        ]
+                    },
+                    "A-21E",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            79
+                        ]
+                    },
+                    "A-22",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            80
+                        ]
+                    },
+                    "A-22/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            81
+                        ]
+                    },
+                    "A-242A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            82
+                        ]
+                    },
+                    "A-24A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            83
+                        ]
+                    },
+                    "A-25",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            84
+                        ]
+                    },
+                    "A-26B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            85
+                        ]
+                    },
+                    "A-27",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            86
+                        ]
+                    },
+                    "A-28",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            87
+                        ]
+                    },
+                    "A-2A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            88
+                        ]
+                    },
+                    "A-2A/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            89
+                        ]
+                    },
+                    "A-2B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            90
+                        ]
+                    },
+                    "A-2B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            91
+                        ]
+                    },
+                    "A-30A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            92
+                        ]
+                    },
+                    "A-30B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            93
+                        ]
+                    },
+                    "A-32A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            94
+                        ]
+                    },
+                    "A-32-A/A-30B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            95
+                        ]
+                    },
+                    "A-32A/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            96
+                        ]
+                    },
+                    "A-32B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            97
+                        ]
+                    },
+                    "A-32B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            98
+                        ]
+                    },
+                    "A-34A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            99
+                        ]
+                    },
+                    "A-35/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            100
+                        ]
+                    },
+                    "A-36",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            101
+                        ]
+                    },
+                    "A-36/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            102
+                        ]
+                    },
+                    "A-36/R-19/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            103
+                        ]
+                    },
+                    "A-37",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            104
+                        ]
+                    },
+                    "A-37/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            105
+                        ]
+                    },
+                    "A-3A/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            106
+                        ]
+                    },
+                    "A-3B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            107
+                        ]
+                    },
+                    "A-42A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            108
+                        ]
+                    },
+                    "A-42A/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            109
+                        ]
+                    },
+                    "A-42B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            110
+                        ]
+                    },
+                    "A-42B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            111
+                        ]
+                    },
+                    "A-45",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            112
+                        ]
+                    },
+                    "A-4A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            113
+                        ]
+                    },
+                    "A-4B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            114
+                        ]
+                    },
+                    "A-4B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            115
+                        ]
+                    },
+                    "A-6",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            116
+                        ]
+                    },
+                    "A-6/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            117
+                        ]
+                    },
+                    "A-7B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            118
+                        ]
+                    },
+                    "A-8",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            119
+                        ]
+                    },
+                    "A-8/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            120
+                        ]
+                    },
+                    "R-1",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            121
+                        ]
+                    },
+                    "R-11",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            122
+                        ]
+                    },
+                    "R-12",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            123
+                        ]
+                    },
+                    "R-15",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            124
+                        ]
+                    },
+                    "R-18",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            125
+                        ]
+                    },
+                    "R-19",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            126
+                        ]
+                    },
+                    "R-19/ADVERT\u00caNCIA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            127
+                        ]
+                    },
+                    "R-19/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            128
+                        ]
+                    },
+                    "R-19/IDENTIFICA\u00c7\u00c3O",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            129
+                        ]
+                    },
+                    "R-2",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            130
+                        ]
+                    },
+                    "R-24",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            131
+                        ]
+                    },
+                    "R-24A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            132
+                        ]
+                    },
+                    "R-24A/R-33",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            133
+                        ]
+                    },
+                    "R-24B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            134
+                        ]
+                    },
+                    "R-24B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            135
+                        ]
+                    },
+                    "R-25C",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            136
+                        ]
+                    },
+                    "R-25D",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            137
+                        ]
+                    },
+                    "R-27",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            138
+                        ]
+                    },
+                    "R-27/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            139
+                        ]
+                    },
+                    "R-28",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            140
+                        ]
+                    },
+                    "R-2A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            141
+                        ]
+                    },
+                    "R-3",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            142
+                        ]
+                    },
+                    "R-32B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            143
+                        ]
+                    },
+                    "R-33",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            144
+                        ]
+                    },
+                    "R-34",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            145
+                        ]
+                    },
+                    "R-37",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            146
+                        ]
+                    },
+                    "R-4A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            147
+                        ]
+                    },
+                    "R-4B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            148
+                        ]
+                    },
+                    "R-5",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            149
+                        ]
+                    },
+                    "R-5A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            150
+                        ]
+                    },
+                    "R-6A",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            151
+                        ]
+                    },
+                    "R-6B",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            152
+                        ]
+                    },
+                    "R-6B/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            153
+                        ]
+                    },
+                    "R-6C",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            154
+                        ]
+                    },
+                    "R-6C/COMPOSTA",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            155
+                        ]
+                    },
+                    "R-7",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.signName"
+                            },
+                            156
+                        ]
+                    },
+                    "R-9/COMPOSTA"
+                ]
+            },
+            "width": 18,
+            "header": "Nome da Placa"
+        },
+        {
+            "key": "lot",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.lot"
+                            },
+                            1
+                        ]
+                    },
+                    "Lote 1",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.lot"
+                            },
+                            2
+                        ]
+                    },
+                    "Lote 2",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.lot"
+                            },
+                            3
+                        ]
+                    },
+                    "Lote 3",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.lot"
+                            },
+                            4
+                        ]
+                    },
+                    "Lote 4"
+                ]
+            },
+            "width": 18,
+            "header": "Lote"
+        },
+        {
+            "key": "amount",
+            "style": {
+                "numFmt": "0"
+            },
+            "width": 12,
+            "header": "Quantidade (uns)",
+            "addTotal": true
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "2004",
+    "deadline": "{\"__type__\": \"timedelta\", \"days\": 7, \"seconds\": 0, \"microseconds\": 0}"
+}

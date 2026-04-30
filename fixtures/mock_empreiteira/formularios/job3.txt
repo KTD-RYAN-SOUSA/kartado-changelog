@@ -1,0 +1,207 @@
+{
+    "id": 1,
+    "name": "job3",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "length",
+            "dataType": "float",
+            "displayName": "Comprimento (m)"
+        },
+        {
+            "id": 2,
+            "apiName": "width",
+            "dataType": "float",
+            "displayName": "Largura (m)"
+        },
+        {
+            "id": 3,
+            "apiName": "height",
+            "dataType": "float",
+            "displayName": "Altura/Espessura (m)"
+        },
+        {
+            "id": 4,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "apiName": "area",
+            "dataType": "jsonLogic",
+            "displayName": "\u00c1rea (m\u00b2)"
+        },
+        {
+            "id": 5,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width",
+                            "formData.height"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            },
+                            {
+                                "var": "formData.height"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "apiName": "volume",
+            "dataType": "jsonLogic",
+            "displayName": "Volume (m\u00b3)"
+        },
+        {
+            "id": 6,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "displayName": "Quantitativos"
+        },
+        {
+            "order": 2,
+            "members": [
+                6
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "Fresagem e recomposi\u00e7\u00e3o",
+    "measurementColumns": [
+        {
+            "key": "length",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "header": "Comprimento (m)"
+        },
+        {
+            "key": "width",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "header": "Largura (m)"
+        },
+        {
+            "key": "height",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "header": "Altura/Espessura (m)"
+        },
+        {
+            "key": "area",
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "numFmt": "0.000"
+            },
+            "width": 12,
+            "addTotal": true,
+            "header": "\u00c1rea (m\u00b2)"
+        },
+        {
+            "key": "volume",
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width",
+                            "formData.height"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            },
+                            {
+                                "var": "formData.height"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "numFmt": "0.000"
+            },
+            "width": 12,
+            "addTotal": true,
+            "header": "Volume (m\u00b3)"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ]
+}

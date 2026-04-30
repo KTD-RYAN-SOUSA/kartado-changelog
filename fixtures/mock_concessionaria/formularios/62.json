@@ -1,0 +1,857 @@
+{
+    "id": 1,
+    "name": "simpleConcreteManhole",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "length",
+            "dataType": "float",
+            "displayName": "Comprimento (m)"
+        },
+        {
+            "id": 2,
+            "apiName": "width",
+            "dataType": "float",
+            "displayIf": {
+                "!=": [
+                    {
+                        "var": "data.formData.format"
+                    },
+                    "2"
+                ]
+            },
+            "displayName": "Largura (m)"
+        },
+        {
+            "id": 3,
+            "apiName": "height",
+            "dataType": "float",
+            "displayIf": {
+                "!=": [
+                    {
+                        "var": "data.formData.format"
+                    },
+                    "2"
+                ]
+            },
+            "displayName": "Altura/Espessura (m)"
+        },
+        {
+            "id": 4,
+            "apiName": "diameter",
+            "dataType": "float",
+            "displayIf": {
+                "==": [
+                    {
+                        "var": "data.formData.format"
+                    },
+                    "2"
+                ]
+            },
+            "displayName": "Diametro (m)"
+        },
+        {
+            "id": 5,
+            "logic": {
+                "if": [
+                    {
+                        "!=": [
+                            {
+                                "var": "formData.format"
+                            },
+                            "2"
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.height",
+                                    "formData.width"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    {
+                                        "var": "formData.height"
+                                    },
+                                    {
+                                        "var": "formData.width"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "missing": [
+                                                    "formData.type"
+                                                ]
+                                            },
+                                            1,
+                                            {
+                                                "var": "formData.type"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.diameter"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    0.785,
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "missing": [
+                                                    "formData.type"
+                                                ]
+                                            },
+                                            1,
+                                            {
+                                                "var": "formData.type"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "apiName": "area",
+            "dataType": "jsonLogic",
+            "displayName": "Area (m\u00b2)"
+        },
+        {
+            "id": 6,
+            "logic": {
+                "if": [
+                    {
+                        "!=": [
+                            {
+                                "var": "formData.format"
+                            },
+                            "2"
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.length",
+                                    "formData.width",
+                                    "formData.height"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    {
+                                        "var": "formData.length"
+                                    },
+                                    {
+                                        "var": "formData.width"
+                                    },
+                                    {
+                                        "var": "formData.height"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "missing": [
+                                                    "formData.type"
+                                                ]
+                                            },
+                                            1,
+                                            {
+                                                "var": "formData.type"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.diameter"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    0.785,
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "var": "formData.length"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "missing": [
+                                                    "formData.type"
+                                                ]
+                                            },
+                                            1,
+                                            {
+                                                "var": "formData.type"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "apiName": "volume",
+            "dataType": "jsonLogic",
+            "displayName": "Volume (m\u00b3)"
+        },
+        {
+            "id": 7,
+            "apiName": "notes",
+            "dataType": "string",
+            "displayName": "Observa\u00e7\u00f5es"
+        },
+        {
+            "id": 8,
+            "apiName": "format",
+            "dataType": "select",
+            "displayName": "Formato",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Celular",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Tubular",
+                        "value": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "apiName": "type",
+            "dataType": "select",
+            "displayName": "Tipo",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Simples",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Duplo",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Triplo",
+                        "value": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "apiName": "material",
+            "dataType": "select",
+            "displayName": "Material",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Concreto",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Met\u00e1lico",
+                        "value": "2"
+                    },
+                    {
+                        "name": "PVC",
+                        "value": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "apiName": "upstream",
+            "dataType": "select",
+            "displayName": "Tipo montante/jusante",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Montante",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Jusante",
+                        "value": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 12,
+            "apiName": "enter",
+            "dataType": "select",
+            "displayName": "Tipo entrada",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Ala",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Caixa",
+                        "value": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "apiName": "state",
+            "dataType": "select",
+            "displayName": "Estado de conserva\u00e7\u00e3o",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Bom",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Regular",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Danificado",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Inoperante",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+            ],
+            "displayName": "Tipo de Bueiro"
+        },
+        {
+            "order": 2,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "displayName": "Dimens\u00f5es"
+        },
+        {
+            "order": 3,
+            "members": [
+                7,
+                14
+            ],
+            "displayName": "Informa\u00e7\u00f5es Adicionais"
+        }
+    ],
+    "displayName": "Bueiro",
+    "measurementColumns": [
+        {
+            "key": "length",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 18,
+            "header": "Comprimento (m)"
+        },
+        {
+            "key": "width",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "header": "Largura (m)"
+        },
+        {
+            "key": "height",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 14,
+            "header": "Espessura (m)"
+        },
+        {
+            "key": "diameter",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 14,
+            "header": "Di\u00e2metro (m)"
+        },
+        {
+            "key": "area",
+            "logic": {
+                "if": [
+                    {
+                        "!=": [
+                            {
+                                "var": "formData.format"
+                            },
+                            "2"
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.height",
+                                    "formData.width"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    {
+                                        "var": "formData.height"
+                                    },
+                                    {
+                                        "var": "formData.width"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "missing": [
+                                                    "formData.type"
+                                                ]
+                                            },
+                                            1,
+                                            {
+                                                "var": "formData.type"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.diameter"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    0.785,
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "missing": [
+                                                    "formData.type"
+                                                ]
+                                            },
+                                            1,
+                                            {
+                                                "var": "formData.type"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "numFmt": "0.000"
+            },
+            "width": 10,
+            "header": "Area (m\u00b2)",
+            "addTotal": true
+        },
+        {
+            "key": "volume",
+            "logic": {
+                "if": [
+                    {
+                        "!=": [
+                            {
+                                "var": "formData.format"
+                            },
+                            "2"
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.length",
+                                    "formData.width",
+                                    "formData.height"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    {
+                                        "var": "formData.length"
+                                    },
+                                    {
+                                        "var": "formData.width"
+                                    },
+                                    {
+                                        "var": "formData.height"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "missing": [
+                                                    "formData.type"
+                                                ]
+                                            },
+                                            1,
+                                            {
+                                                "var": "formData.type"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.diameter"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    0.785,
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "var": "formData.length"
+                                    },
+                                    {
+                                        "if": [
+                                            {
+                                                "missing": [
+                                                    "formData.type"
+                                                ]
+                                            },
+                                            1,
+                                            {
+                                                "var": "formData.type"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "numFmt": "0.000"
+            },
+            "width": 12,
+            "header": "Volume (m\u00b3)",
+            "addTotal": true
+        },
+        {
+            "key": "type",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.format"
+                            },
+                            1
+                        ]
+                    },
+                    "Celular",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.format"
+                            },
+                            2
+                        ]
+                    },
+                    "Tubular",
+                    "Null"
+                ]
+            },
+            "width": 18,
+            "header": "Formato"
+        },
+        {
+            "key": "type",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.type"
+                            },
+                            1
+                        ]
+                    },
+                    "Simples",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.type"
+                            },
+                            2
+                        ]
+                    },
+                    "Duplo",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.type"
+                            },
+                            3
+                        ]
+                    },
+                    "Triplo",
+                    "Null"
+                ]
+            },
+            "width": 18,
+            "header": "Tipo"
+        },
+        {
+            "key": "material",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.material"
+                            },
+                            1
+                        ]
+                    },
+                    "Concreto",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.material"
+                            },
+                            2
+                        ]
+                    },
+                    "Met\u00e1lico",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.material"
+                            },
+                            3
+                        ]
+                    },
+                    "PVS",
+                    "Null"
+                ]
+            },
+            "width": 18,
+            "header": "Material"
+        },
+        {
+            "key": "upstream",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.upstream"
+                            },
+                            1
+                        ]
+                    },
+                    "Montante",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.upstream"
+                            },
+                            2
+                        ]
+                    },
+                    "Jusante",
+                    "Null"
+                ]
+            },
+            "width": 18,
+            "header": "Montante/jusante"
+        },
+        {
+            "key": "enter",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.enter"
+                            },
+                            1
+                        ]
+                    },
+                    "Ala",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.enter"
+                            },
+                            2
+                        ]
+                    },
+                    "Caixa",
+                    "Null"
+                ]
+            },
+            "width": 18,
+            "header": "Tipo de Entrada"
+        },
+        {
+            "key": "state",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.type"
+                            },
+                            1
+                        ]
+                    },
+                    "Bom",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.type"
+                            },
+                            2
+                        ]
+                    },
+                    "Regular",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.type"
+                            },
+                            3
+                        ]
+                    },
+                    "Danificado",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.type"
+                            },
+                            4
+                        ]
+                    },
+                    "Inoperante",
+                    "Null"
+                ]
+            },
+            "width": 18,
+            "header": "Estado de conserva\u00e7\u00e3o"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "2",
+    "deadline": "null"
+}

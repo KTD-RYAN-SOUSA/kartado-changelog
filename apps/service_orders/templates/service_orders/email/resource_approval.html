@@ -1,0 +1,33 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+<h2>Olá!</h2>
+
+<p>Aqui estão os recursos que necessitam de atenção no Kartado durante a última semana:</p>
+
+{% for contract_id, contract_data in contracts.items %}
+  <table>
+    <thead>
+      <tr>
+        <th colspan="4"><a href="{{contract_data.url}}" target="_blank">{{contract_data.title}}</a></th>
+      </tr>
+      <tr class="alt-header-bg">
+        <th>Item</th>
+        <th>Quantidade</th>
+        <th>Valor Unitário</th>
+        <th>Valor Total</th>
+      </tr>
+    </thead>
+
+    {% for proc_res_id, proc_res_data in contract_data.procedure_resources.items %}
+    <tr>
+      <td>{{proc_res_data.item}}</td>
+      <td>{{proc_res_data.amount}}</td>
+      <td>{{proc_res_data.unit_price}}</td>
+      <td>{{proc_res_data.total_price}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endfor %}
+
+{% endblock %}

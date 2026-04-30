@@ -1,0 +1,118 @@
+{
+    "id": 1,
+    "name": "DefensaemCanaletadeConcreto",
+    "fields": [
+        {
+            "id": 1,
+            "api_name": "length",
+            "data_type": "float",
+            "display_name": "Comprimento (m)"
+        },
+        {
+            "id": 2,
+            "api_name": "width",
+            "data_type": "float",
+            "display_name": "Largura (m)"
+        },
+        {
+            "id": 3,
+            "api_name": "height",
+            "data_type": "float",
+            "display_name": "Altura/Espessura (m)"
+        },
+        {
+            "id": 4,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "api_name": "area",
+            "data_type": "jsonLogic",
+            "display_name": "Area (m\u00b2)"
+        },
+        {
+            "id": 5,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width",
+                            "formData.height"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            },
+                            {
+                                "var": "formData.height"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "api_name": "volume",
+            "data_type": "jsonLogic",
+            "display_name": "Volume (m\u00b3)"
+        },
+        {
+            "id": 6,
+            "api_name": "notes",
+            "data_type": "string",
+            "display_name": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3
+            ],
+            "display_name": "Dimens\u00f5es"
+        },
+        {
+            "order": 2,
+            "members": [
+                4,
+                5
+            ],
+            "display_name": "Quantitativos"
+        },
+        {
+            "order": 5,
+            "members": [
+                6
+            ],
+            "display_name": "Informa\u00e7\u00f5es Adicionais"
+        }
+    ],
+    "display_name": "Defensa em Canaleta de Concreto",
+    "displayName": "Defensa em Canaleta de Concreto",
+    "kind": "1",
+    "deadline": "{\"__type__\": \"timedelta\", \"days\": 30, \"seconds\": 0, \"microseconds\": 0}"
+}

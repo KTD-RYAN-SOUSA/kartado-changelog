@@ -1,0 +1,25 @@
+[{
+        "model": "reportings.recordmenurelation",
+        "pk": "aa0a83ef-e98f-40ca-9884-7416128b858b",
+        "fields": {
+            "record_menu": "3fbc8d53-3eb6-4cbe-b44e-41db30df7ac3",
+            "user": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "hide_menu": false,
+            "order": 1,
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+
+        }
+    },
+    {
+        "model": "reportings.recordmenurelation",
+        "pk": "d0fffdd6-5c71-444c-9dde-9eb5119c8381",
+        "fields": {
+            "record_menu": "e1b79573-473e-4f47-9d35-606f8a54b816",
+            "user": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "hide_menu": false,
+            "order": 0,
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+
+        }
+    }
+]

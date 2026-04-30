@@ -1,0 +1,159 @@
+{% extends 'occurrence_records/pdf/base/base_report.html' %}
+{% load custom_filters %}
+{% block context %}
+
+<div class="body-title">Emitente</div>
+<div class="body-line"></div>
+<div class="body-content-row">
+    <div class="body-item-row">
+        <span><strong>Empresa: </strong>{{ firm.name }}</span>
+    </div>
+    <div class="body-item-row">
+        <span><strong>Nome: </strong>{{ occurrence.created_by.full_name }}</span>
+    </div>
+    <div class="body-item-row">
+        <span><strong>No registro conselho:</strong> {% if board_registration %}{{ board_registration }}{% else %}Não
+            Localizado{% endif %} </span>
+    </div>
+</div>
+
+<div class="body-title">Localização</div>
+<div class="body-line"></div>
+<div class="body-content-row">
+    <div class="body-item-row">
+        <span><strong>UF: </strong> {{ UF }}</span>
+    </div>
+    <div class="body-item-row">
+        <span><strong>Município:</strong> {{ city }}</span>
+    </div>
+    {% if location_name %}
+        <div class="body-item-row">
+            <span><strong>Localidade:</strong> {{ location_name }}</span>
+        </div>
+    {% endif %}
+    <div class="body-item-row">
+        <span>
+            <strong>Local:</strong> {% if occurrence_record_local %}
+            {{ occurrence_record_local }}
+            {% else %}
+            Não informado
+            {% endif %}
+        </span>
+    </div>
+</div>
+
+<!-- ABAIXO - Campos genéricos para TODOS os tipos de Registros -->
+{% for item in generic_fields %}
+<div class="">
+    <div class="body-title">{{ item.name }}</div>
+    <div class="body-line"></div>
+    {% for field in item.fields %}
+        {% if field.data %}
+            <div class="box-numeric">
+                <div class="box-numeric-label">
+                    <span>{{ field.group_index }}</span>
+                </div>
+                <div class="box-numeric-context vertical-line">
+                    {% for item in field.data %}
+                        {% if item.display_value %}
+                            <div>
+                                <span class="title-label">{{ item.display_name }}:</span> {{ item.display_value }} <br>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% else %}
+            {% if field.display_value %}
+                <span class="title-label">{{ field.display_name }}:</span> {{ field.display_value }} <br>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+{% endfor %}
+<!-- ACIMA - Campos genéricos para TODOS os tipos de Registro -->
+
+<div class="">
+    <div class="body-title">Informações referenciais</div>
+    <div class="body-line"></div>
+    {% if is_hidrology_information %}
+        <table class="table-referenceiinformation">
+            <tr>
+                <th>Horário da informação</th>
+                <th>Vazão Afluente</th>
+                <th>Vazão Defluente</th>
+                <th>Vazão Turbinada</th>
+                <th>Vazão Vertida</th>
+                <th>Nível do Reservatório</th>
+                <th>Nível do Canal de Fuga</th>
+                <th>Percentual de Volume Útil</th>
+            </tr>
+            <tr>
+                <td>{{ engie_hidrologia.data_hora|date:' H:i d/m/Y' }}</td>
+                <td>{{ engie_hidrologia.vazao_afluente }}</td>
+                <td>{{ engie_hidrologia.vazao_defluente }}</td>
+                <td>{{ engie_hidrologia.vazao_turbinada }}</td>
+                <td>{{ engie_hidrologia.vazao_vertida }}</td>
+                <td>{{ engie_hidrologia.nivel_reservatorio }}</td>
+                <td>{{ engie_hidrologia.nivel_canal_fuga }}</td>
+                <td>
+                    {% if engie_hidrologia.perc_vol_util %}
+                    {{ engie_hidrologia.perc_vol_util }}%
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+        {% else %}
+        <p>As informações referenciais não foram incluídas.</p>
+    {% endif %}
+</div>
+
+<div class="">
+    <div class="body-title">Serviços</div>
+    <div class="body-line"></div>
+    {% if service_orders %}
+        <section class="">
+            <table class="table-referenceiinformation">
+                <tr>
+                    <th>Nº do Serviço</th>
+                    <th>Descrição</th>
+                    <th>Status</th>
+                </tr>
+                {% for service_order in service_orders %}
+                <tr>
+                    <td>{{ service_order.number }}</td>
+                    <td>{{ service_order.description }}</td>
+                    <td>{{ service_order.status.name }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <p>Não há serviços vinculados à esse registro.</p>
+        </section>
+    {% endif %}
+</div>
+
+{% if images %}
+    <div class="page-break"></div>
+    <div class="body-title">Registro Fotográfico</div>
+    <div class="body-line"></div>
+    {% for image in images %}
+        <div>
+            <span><strong>Descrição:</strong>{{ image.description }}</span><br>
+            <span><strong>Data de Criação:</strong> {{ image.date }}</span><br>
+            <div class="container-image">
+                <img 
+                    class="image"
+                    src="{{ image.img_data }}" 
+                    alt="{{ image.description }}"
+                /><br><br>
+            </div>
+        </div>
+        {% if not image.is_last %}
+            <div class="page-break"></div>
+        {% endif %}
+    {% endfor %}
+    </div>
+{% endif %}
+
+{% endblock %}

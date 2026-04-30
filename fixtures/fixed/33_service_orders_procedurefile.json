@@ -1,0 +1,33 @@
+[
+{
+    "model": "service_orders.procedurefile",
+    "pk": "00a0d38c-c2fd-4e83-90db-3f35cc5da3a0",
+    "fields": {
+        "description": "",
+        "md5": "",
+        "upload": "NR_35_Gilmar.jpg",
+        "uploaded_at": "2020-02-26T12:39:35.347Z",
+        "datetime": "2020-02-26T12:39:35.347Z",
+        "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "procedures": [
+            "001af21f-1384-47f0-ac86-fafb4898a298"
+        ]
+    }
+},
+{
+    "model": "service_orders.procedurefile",
+    "pk": "011e54dc-7100-4bd5-b9ac-24255270d0be",
+    "fields": {
+        "description": "",
+        "md5": "",
+        "upload": "1.Ortofoto_e_curvas_de_nivel-A3.pdf",
+        "uploaded_at": "2020-02-26T11:59:00.575Z",
+        "datetime": "2020-02-26T11:59:00.575Z",
+        "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "procedures": [
+            "00686fb6-8a1b-48b6-9fe9-08e8540e25ab",
+            "ada54826-64aa-4ba7-8091-884a6842c0d9"
+        ]
+    }
+}
+]

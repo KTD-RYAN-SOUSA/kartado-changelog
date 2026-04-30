@@ -1,0 +1,24 @@
+[
+{
+    "model": "services.goal",
+    "pk": "62b32149-7a50-438a-beee-03011b3a2d4d",
+    "fields": {
+        "aggregate": "54a6d0ca-76b5-4e66-99a5-4e010454a113",
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+        "amount": 1000.0,
+        "internal": true
+    }
+},
+{
+    "model": "services.goal",
+    "pk": "b9a0f4de-ef69-47eb-95cf-d595d1f2d95c",
+    "fields": {
+        "aggregate": "5aa7b0e4-658c-4f0d-99da-5f32c2ce023f",
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "occurrence_type": "05e3967f-27b3-460d-94a5-d419c1588dce",
+        "amount": 1000.0,
+        "internal": true
+    }
+}
+]

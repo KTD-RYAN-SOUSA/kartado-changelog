@@ -1,0 +1,46 @@
+[
+    {
+        "model": "resources.resource",
+        "pk": "00be1e23-6e67-4fd1-9d3c-da65cf10dcad",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "Projeto terraplenagem - De 0 m\u00b2 at\u00e9 5.000 m\u00b2",
+            "total_amount": 3.0,
+            "unit": "un",
+            "is_extra": true
+        }
+    },
+    {
+        "model": "resources.resource",
+        "pk": "02297a24-8777-4f38-bd4b-38fede47503b",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "ART",
+            "total_amount": 50.0,
+            "unit": "km",
+            "is_extra": true
+        }
+    },
+    {
+        "model": "resources.resource",
+        "pk": "02490e34-d008-4877-a701-c175a388332b",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "Elabora\u00e7\u00e3o de minuta e envio de den\u00fancia \u00e0 Policia Ambiental - N\u00edvel - II",
+            "total_amount": 38.0,
+            "unit": "m²",
+            "is_extra": true
+        }
+    },
+    {
+        "model": "resources.resource",
+        "pk": "eb93baa8-93d1-4969-8b8f-e71131f83b4f",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "ART",
+            "total_amount": 50.0,
+            "unit": "un",
+            "is_extra": true
+        }
+    }
+]

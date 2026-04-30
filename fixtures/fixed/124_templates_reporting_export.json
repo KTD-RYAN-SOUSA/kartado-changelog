@@ -1,0 +1,44 @@
+[
+	{
+		"model": "templates.reportingexport",
+		"pk": "a6a3db62-ceff-442d-8ba4-0d80d4652675",
+		"fields": {
+			"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+			"created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+			"created_at": "2024-06-17T20:32:44.787Z",
+			"export_type": "SIMPLE",
+			"is_inventory": false,
+			"filters": {},
+			"extra_info": {},
+			"exported_file": null
+		}
+	},
+	{
+		"model": "templates.reportingexport",
+		"pk": "4b518ea1-5e65-4400-9929-eca2b0f87aef",
+		"fields": {
+			"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+			"created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+			"created_at": "2024-06-22T20:32:44.787Z",
+			"export_type": "SIMPLE",
+			"is_inventory": false,
+			"filters": {},
+			"extra_info": {},
+			"exported_file": null
+		}
+	},
+	{
+		"model": "templates.reportingexport",
+		"pk": "161d8498-f34a-4f3b-b962-052310752090",
+		"fields": {
+			"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+			"created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+			"created_at": "2024-07-17T20:32:44.787Z",
+			"export_type": "NORMAL",
+			"is_inventory": true,
+			"filters": {},
+			"extra_info": {},
+			"exported_file": null
+		}
+	}
+]

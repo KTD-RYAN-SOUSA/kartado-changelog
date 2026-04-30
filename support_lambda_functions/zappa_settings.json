@@ -1,0 +1,108 @@
+{
+  "production": {
+    "app_function": "functions.fargate_proxy.wsgi.application",
+    "aws_region": "us-east-1",
+    "project_name": "kartado-fargate-proxy",
+    "runtime": "python3.11",
+    "timeout_seconds": 420,
+    "memory_size": 256,
+    "s3_bucket": "roadlabs-backend-production",
+    "exclude": [".git", "__pycache__", "venv"],
+    "environment_variables": {
+      "ECS_CLUSTER_NAME": "ecs-general-cluster",
+      "ECS_TASK_FAMILY": "ecs-general-family",
+      "ECS_SUBNETS": "subnet-0e870aea7f9e91a25,subnet-0bf427a53c6ef389c,subnet-06211fff7f47af28f",
+      "ECS_SECURITY_GROUPS": "sg-0154e080d4bdfcfbe,sg-01573d1eb4fa1e8cf,sg-0ef8e651a256d32da",
+      "AWS_DEFAULT_REGION_ECS": "us-east-1",
+      "FARGATE_TASK_PORT": "8000"
+    }
+  },
+  "staging": {
+    "extends": "production",
+    "s3_bucket": "kartado-backend-staging",
+    "environment_variables": {
+      "ECS_CLUSTER_NAME": "ecs-staging-cluster",
+      "ECS_TASK_FAMILY": "ecs-staging-family",
+      "ECS_SUBNETS": "subnet-0f3a57ed0d25d3ad4,subnet-0ade5f8fc9c50497e",
+      "ECS_SECURITY_GROUPS": "sg-0464d901478cc5558,sg-03c76b4f7e3636182",
+      "AWS_DEFAULT_REGION_ECS": "us-east-1",
+      "FARGATE_TASK_PORT": "8000"
+    }
+  },
+  "homolog": {
+    "extends": "production",
+    "s3_bucket": "kartado-backend-homolog",
+    "environment_variables": {
+      "ECS_CLUSTER_NAME": "ecs-homolog-cluster",
+      "ECS_TASK_FAMILY": "ecs-homolog-family",
+      "ECS_SUBNETS": "subnet-0f3a57ed0d25d3ad4,subnet-0ade5f8fc9c50497e",
+      "ECS_SECURITY_GROUPS": "sg-0464d901478cc5558,sg-03c76b4f7e3636182",
+      "AWS_DEFAULT_REGION_ECS": "us-east-1",
+      "FARGATE_TASK_PORT": "8000"
+    }
+  },
+  "engie_production": {
+    "extends": "production",
+    "aws_region": "sa-east-1",
+    "s3_bucket": "engie-production",
+    "environment_variables": {
+      "ECS_CLUSTER_NAME": "ecs-engie-cluster",
+      "ECS_TASK_FAMILY": "ecs-engie-family",
+      "ECS_SUBNETS": "subnet-070f85df233bded59,subnet-03020664788e7cd33",
+      "ECS_SECURITY_GROUPS": "sg-00a2e81b298d365d0,sg-07edea72c620c6c7e",
+      "AWS_DEFAULT_REGION_ECS": "sa-east-1",
+      "FARGATE_TASK_PORT": "8000"
+    }
+  },
+  "engie_staging": {
+    "extends": "production",
+    "aws_region": "sa-east-1",
+    "s3_bucket": "engie-kartado-staging",
+    "environment_variables": {
+      "ECS_CLUSTER_NAME": "ecs-engie-homolog-cluster",
+      "ECS_TASK_FAMILY": "ecs-engie-homolog-family",
+      "ECS_SUBNETS": "subnet-070f85df233bded59,subnet-03020664788e7cd33",
+      "ECS_SECURITY_GROUPS": "sg-00a2e81b298d365d0,sg-07edea72c620c6c7e",
+      "AWS_DEFAULT_REGION_ECS": "sa-east-1",
+      "FARGATE_TASK_PORT": "8000"
+    }
+  },
+  "ccr_production": {
+    "extends": "production",
+    "aws_region": "sa-east-1",
+    "s3_bucket": "kartado-ccr-production",
+    "environment_variables": {
+      "ECS_CLUSTER_NAME": "ecs-ccr-cluster",
+      "ECS_TASK_FAMILY": "ecs-ccr-family",
+      "ECS_SUBNETS": "subnet-0855c9a93c5b52c54,subnet-0c433d7afa36bb70a,subnet-0372a8ca124f9e288",
+      "ECS_SECURITY_GROUPS": "sg-089b111da3bea8878,sg-09034cd22c625ed07",
+      "AWS_DEFAULT_REGION_ECS": "sa-east-1",
+      "FARGATE_TASK_PORT": "8000"
+    }
+  },
+  "ccr_homolog": {
+    "extends": "production",
+    "aws_region": "sa-east-1",
+    "s3_bucket": "ccr-homolog",
+    "environment_variables": {
+      "ECS_CLUSTER_NAME": "ecs-ccr-homolog-cluster",
+      "ECS_TASK_FAMILY": "ecs-ccr-homolog-family",
+      "ECS_SUBNETS": "subnet-0855c9a93c5b52c54,subnet-0c433d7afa36bb70a,subnet-0372a8ca124f9e288",
+      "ECS_SECURITY_GROUPS": "sg-089b111da3bea8878,sg-09034cd22c625ed07",
+      "AWS_DEFAULT_REGION_ECS": "sa-east-1",
+      "FARGATE_TASK_PORT": "8000"
+    }
+  },
+  "eco_production": {
+    "extends": "production",
+    "s3_bucket": "kartado-eco-production",
+    "environment_variables": {
+      "ECS_CLUSTER_NAME": "ecs-eco-cluster",
+      "ECS_TASK_FAMILY": "ecs-eco-family",
+      "ECS_SUBNETS": "subnet-0e870aea7f9e91a25,subnet-0bf427a53c6ef389c,subnet-06211fff7f47af28f",
+      "ECS_SECURITY_GROUPS": "sg-01573d1eb4fa1e8cf,sg-0ef8e651a256d32da",
+      "AWS_DEFAULT_REGION_ECS": "us-east-1",
+      "FARGATE_TASK_PORT": "8000"
+    }
+  }
+}

@@ -1,0 +1,149 @@
+[
+    {
+        "model": "service_orders.procedureresource",
+        "pk": "007362a8-d1fd-4d75-b4ef-1f0f8417df16",
+        "fields": {
+            "procedure": "001af21f-1384-47f0-ac86-fafb4898a298",
+            "service_order": "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af",
+            "resource": "02297a24-8777-4f38-bd4b-38fede47503b",
+            "service_order_resource": "002c4697-ad1a-4f85-a1e3-7cd444f694a7",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "amount": 182.4,
+            "unit_price": 1.85,
+            "total_price": 337.44,
+            "creation_date": "2020-02-27T17:30:17.363Z",
+            "approval_status": "APPROVED_APPROVAL",
+            "approval_date": "2020-04-03T13:54:25.940Z",
+            "approved_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "measurement_bulletin": "0b02c96e-2632-42c4-afaa-0461b47c875b",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "reporting": "00000db3-a561-4387-ac47-d48fca2d6c24"
+        }
+    },
+    {
+        "model": "service_orders.procedureresource",
+        "pk": "00f9e3dc-77e4-4dc4-8121-321cc4461994",
+        "fields": {
+            "procedure": "00686fb6-8a1b-48b6-9fe9-08e8540e25ab",
+            "service_order": "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af",
+            "resource": "02490e34-d008-4877-a701-c175a388332b",
+            "service_order_resource": "005784eb-57eb-4ecb-92a9-d1ae5b03b174",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "amount": 7062.0,
+            "unit_price": 2.55,
+            "total_price": 18008.1,
+            "creation_date": "2020-03-22T13:48:30.231Z",
+            "approval_status": "APPROVED_APPROVAL",
+            "approval_date": "2020-03-22T13:53:58.566Z",
+            "approved_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "measurement_bulletin": null,
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "reporting": "00000db3-a561-4387-ac47-d48fca2d6c24"
+        }
+    },
+    {
+        "model": "service_orders.procedureresource",
+        "pk": "75e00d10-0264-4f48-b4a1-1e630aee48fd",
+        "fields": {
+            "procedure": "00686fb6-8a1b-48b6-9fe9-08e8540e25ab",
+            "service_order": "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af",
+            "resource": "02490e34-d008-4877-a701-c175a388332b",
+            "service_order_resource": "5614572a-3eaf-4c28-bd65-f82d176f244a",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "amount": 7062.0,
+            "unit_price": 2.55,
+            "total_price": 18008.1,
+            "creation_date": "2020-03-22T13:48:30.231Z",
+            "approval_status": "APPROVED_APPROVAL",
+            "approval_date": "2020-03-22T13:53:58.566Z",
+            "approved_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "measurement_bulletin": "0b02c96e-2632-42c4-afaa-0461b47c875b",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "reporting": "00016716-4db3-4f90-9762-85fbb02884cf"
+        }
+    },
+    {
+        "model": "service_orders.procedureresource",
+        "pk": "bcde7876-8660-40b8-a9e2-f4b99b8520a9",
+        "fields": {
+            "procedure": "00686fb6-8a1b-48b6-9fe9-08e8540e25ab",
+            "service_order": "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af",
+            "resource": "02490e34-d008-4877-a701-c175a388332b",
+            "service_order_resource": "5614572a-3eaf-4c28-bd65-f82d176f244a",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "amount": 7062.0,
+            "unit_price": 2.55,
+            "total_price": 18008.1,
+            "creation_date": "2020-03-22T13:48:30.231Z",
+            "approval_status": "WAITING_APPROVAL",
+            "approval_date": "2020-03-22T13:53:58.566Z",
+            "approved_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "measurement_bulletin": null,
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "reporting": "00000db3-a561-4387-ac47-d48fca2d6c24"
+        }
+    },
+    {
+        "model": "service_orders.procedureresource",
+        "pk": "e147bef3-35a0-40c1-a0eb-4e91dd77c06c",
+        "fields": {
+            "procedure": "00686fb6-8a1b-48b6-9fe9-08e8540e25ab",
+            "service_order": "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af",
+            "resource": "02490e34-d008-4877-a701-c175a388332b",
+            "service_order_resource": "5614572a-3eaf-4c28-bd65-f82d176f244a",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "amount": 7062.0,
+            "unit_price": 2.55,
+            "total_price": 18008.1,
+            "creation_date": "2020-03-22T13:48:30.231Z",
+            "approval_status": "WAITING_APPROVAL",
+            "approval_date": "2020-03-22T13:53:58.566Z",
+            "approved_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "measurement_bulletin": null,
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "reporting": "b377f326-1d77-4ad7-a891-d7eef4ed3397"
+        }
+    },
+    {
+        "model": "service_orders.procedureresource",
+        "pk": "e80354da-e523-4f49-83db-62c53adee444",
+        "fields": {
+            "procedure": "001af21f-1384-47f0-ac86-fafb4898a298",
+            "service_order": "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af",
+            "resource": "02297a24-8777-4f38-bd4b-38fede47503b",
+            "service_order_resource": "002c4697-ad1a-4f85-a1e3-7cd444f694a7",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "amount": 182.4,
+            "unit_price": 1.85,
+            "total_price": 337.44,
+            "creation_date": "2020-02-27T17:30:17.363Z",
+            "approval_status": "APPROVED_APPROVAL",
+            "approval_date": "2020-04-03T13:54:25.940Z",
+            "approved_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "measurement_bulletin": "0b02c96e-2632-42c4-afaa-0461b47c875b",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "reporting": null
+        }
+    },
+    {
+        "model": "service_orders.procedureresource",
+        "pk": "be7b6919-1766-46f6-8aa9-711f2c786d9a",
+        "fields": {
+            "procedure": "001af21f-1384-47f0-ac86-fafb4898a298",
+            "service_order": "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af",
+            "resource": "02297a24-8777-4f38-bd4b-38fede47503b",
+            "service_order_resource": "002c4697-ad1a-4f85-a1e3-7cd444f694a7",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "amount": 182.4,
+            "unit_price": 1.85,
+            "total_price": 337.44,
+            "creation_date": "2020-02-27T17:30:17.363Z",
+            "approval_status": "APPROVED_APPROVAL",
+            "approval_date": "2020-04-03T13:54:25.940Z",
+            "approved_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "measurement_bulletin": null,
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "reporting": null
+        }
+    }
+]

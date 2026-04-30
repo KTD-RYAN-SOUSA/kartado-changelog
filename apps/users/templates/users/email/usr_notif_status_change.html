@@ -1,0 +1,21 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+
+<h2>Olá!</h2>
+
+<p>O status do registro {{ number }} foi alterado para {{ status }}.</p>
+<p>Você está recebendo esta mensagem por estar listado como um dos responsáveis pela próxima alteração de status. Acesse o registro para executá-la.</p>
+
+<hr>
+
+<div class="button-container">
+  <a href="{{ url }}" target="_blank" class="btn btn-primary">ACESSAR REGISTRO</a>
+</div>
+
+<p>Ou copie esse link no seu navegador para atualizar a senha do usuário:</p>
+<p>
+  <a href="{{ url }}" target="_blank">{{ url }}</a>
+</p>
+
+{% endblock %}

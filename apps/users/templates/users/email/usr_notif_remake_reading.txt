@@ -1,0 +1,13 @@
+Olá!
+
+{{ title }}
+
+{% for reading_item in reading_items %}
+A leitura do instrumento {{ reading_item.instrument.name }} foi sinalizada para ser refeita.
+{% if reading.observation %}Observação: "{{ reading_item.reading.observation }}"{% endif %}
+Link da leitura: {{ reading_item.reading.url }}
+{% endfor %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

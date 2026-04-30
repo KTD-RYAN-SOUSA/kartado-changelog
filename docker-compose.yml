@@ -1,0 +1,51 @@
+version: "3"
+
+volumes:
+    db-data-1:
+
+services:
+    postgis:
+        logging:
+            driver: none
+        image: "postgis/postgis"
+        volumes:
+            - db-data-1:/pgdata
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_PASSWORD: teste
+            POSTGRES_DB: hidros-local
+            POSTGRES_USER: postgres
+            PGDATA: /pgdata
+            AWS_ACCESS_KEY_ID: ""
+            AWS_SECRET_ACCESS_KEY: ""
+
+    app:
+        build:
+            dockerfile: Dockerfile
+            context: .
+        depends_on:
+            - postgis
+        volumes:
+            - ./:/usr/src/app
+        ports:
+            - "8000:8000"
+            - "8888:8888"
+        environment:
+            DB_NAME: hidros-local
+            DB_HOST: postgis
+            DB_PORT: 5432
+            DB_USER: postgres
+            DB_PASSWORD: teste
+            STAGE: LOCAL
+
+        stdin_open: true # Make interactive
+        tty: true
+
+        command:
+            - "poetry"
+            - "run"
+            - "python"
+            - "manage.py"
+            - "runserver"
+            - "0.0.0.0:8000"

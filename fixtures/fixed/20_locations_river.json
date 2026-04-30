@@ -1,0 +1,24 @@
+[
+{
+    "model": "locations.river",
+    "pk": "04650146-0d0f-4d24-9de8-36070bf2bcbc",
+    "fields": {
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "name": "C\u00f3rrego Brej\u00e3o",
+        "locations": [
+            "00b92669-d48f-46ef-8f92-58dac61a74b2"
+        ]
+    }
+},
+{
+    "model": "locations.river",
+    "pk": "0697de87-d7e5-4fe4-91fe-9f607e6d009c",
+    "fields": {
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "name": "Rio Cana Brava",
+        "locations": [
+            "00b92669-d48f-46ef-8f92-58dac61a74b2"
+        ]
+    }
+}
+]

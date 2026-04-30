@@ -1,0 +1,29 @@
+[{
+        "model": "daily_reports.multipledailyreportfile",
+        "pk": "10d599e3-66ff-442c-bb31-bcbf5b32a066",
+        "fields": {
+            "description": "Imagem de campo",
+            "md5": "",
+            "upload": "1d24f308-8caf-4e56-b429-34133d6b3ce7.jpg",
+            "uploaded_at": "2020-05-22T09:37:17.578Z",
+            "datetime": "2020-05-22T09:37:17.578Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "kind": "",
+            "multiple_daily_report": "0a2daca5-416e-4679-bb59-af8fe1801bba"
+        }
+    },
+    {
+        "model": "daily_reports.multipledailyreportfile",
+        "pk": "302dd3fb-d4db-48ff-86b7-2b4e94af3965",
+        "fields": {
+            "description": "Imagem de campo",
+            "md5": "",
+            "upload": "07e1d275-c274-4bde-9e39-a816e2e71d5c.jpg",
+            "uploaded_at": "2020-05-22T09:37:17.578Z",
+            "datetime": "2020-05-22T09:37:17.578Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "kind": "",
+            "multiple_daily_report": "0a2daca5-416e-4679-bb59-af8fe1801bba"
+        }
+    }
+]

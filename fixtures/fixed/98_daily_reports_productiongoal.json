@@ -1,0 +1,13 @@
+[
+{
+    "model": "daily_reports.productiongoal",
+    "pk": "340355a0-8dfc-4317-b2ae-4b3624969798",
+    "fields": {
+        "service": "0157fe4f-68d1-4639-8193-37d0cdbc2eb0",
+        "starts_at": "2022-01-01",
+        "ends_at": "2022-06-01",
+        "days_of_work": 25,
+        "amount": 123.4
+    }
+}
+]

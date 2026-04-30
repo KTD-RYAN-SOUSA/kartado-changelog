@@ -1,0 +1,39 @@
+[
+{
+    "model": "reportings.reportingfile",
+    "pk": "00046058-67b0-4e47-8c50-a43b1e94ed16",
+    "fields": {
+        "reporting": "00000db3-a561-4387-ac47-d48fca2d6c24",
+        "description": "Imagem de campo",
+        "md5": "",
+        "upload": "1479cee6-c3d8-4f61-816e-515ef4f90112.jpg",
+        "uploaded_at": "2020-03-29T03:09:49.082Z",
+        "datetime": "2020-03-29T03:09:49.082Z",
+        "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "include_dnit": true,
+        "include_rdo": false,
+        "km": null,
+        "point": null,
+        "kind": "",
+        "is_shared": true
+    }
+},
+{
+    "model": "reportings.reportingfile",
+    "pk": "00050091-5c1f-428e-9a3c-a037b2213e8c",
+    "fields": {
+        "reporting": "00015140-5cf4-43b9-be76-fa2e21da0b1c",
+        "description": "Imagem de campo",
+        "md5": "",
+        "upload": "a71b2588-6d78-4ec4-9fea-dd6dfdf029d1.jpg",
+        "uploaded_at": "2020-05-22T09:37:17.578Z",
+        "datetime": "2020-05-22T09:37:17.578Z",
+        "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "include_dnit": true,
+        "include_rdo": false,
+        "km": null,
+        "point": null,
+        "kind": ""
+    }
+}
+]

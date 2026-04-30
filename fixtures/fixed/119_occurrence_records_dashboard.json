@@ -1,0 +1,23 @@
+[
+    {
+        "model": "occurrence_records.customdashboard",
+        "pk": "3d4cd7ef-b337-4198-b88d-f5a018f2f92d",
+        "fields": {
+            "name": "Teste de Dashboard",
+            "description": "Descri\u00e7\u00e3o de dash",
+            "operational_positions": {
+                "twice": "don't think about it"
+            },
+            "plot_descriptions": {
+                "twice": "don't think about it"
+            },
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "created_at": "2022-07-01T13:39:12.243Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "instrument_types": [],
+            "instrument_records": [],
+            "can_be_viewed_by": [],
+            "can_be_edited_by": []
+        }
+    }
+]

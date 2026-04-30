@@ -1,0 +1,49 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+<h2>Olá!</h2>
+
+<p>Uma nova tarefa foi criada no sistema e está relacionada à você:</p>
+
+<p>
+  <b>Emitente:</b> {{ created_by }} <br>
+  <b>Entrega:</b> {{ action }} <br>
+  <b>Tarefa:</b> {{ to_do }} <br>
+  <b>Prazo:</b> {{ deadline }} <br>
+  <b>Data da Criação:</b> {{ created_at }} <br>
+  <b>Responsável:</b> {{ responsible }} <br>
+  <b>Número da Ordem de Serviço:</b> {{ os_number }} <br>
+  <b>Descrição da Ordem de Serviço:</b> {{ os_description }} <br>
+
+  {# Forwarding specific fields #}
+  {% if zip_file_url %}
+  <b>Processo:</b> {{process}}, <b>Obra:</b> {{construction}}, <b>Sequencial:</b> {{sequential}}, <b>ID:</b> {{ id }}, <b>Infrator:</b> {{ offender_name }}
+  {% endif %}
+</p>
+
+<hr>
+
+{% if zip_file_url %}
+
+<div class="button-container">
+  <a href="{{ zip_file_url }}" class="btn btn-primary" download>BAIXAR ANEXOS</a>
+</div>
+
+<p>Ou copie esse link no seu navegador para baixar os anexos:</p>
+<p><a href="{{ zip_file_url }}" target="_blank">{{ zip_file_url }}</a></p>
+
+<p>Link para a tarefa:</p>
+<p><a href="{{ url }}" target="_blank">{{ url }}</a></p>
+
+{% else %}
+
+<div class="button-container">
+  <a href="{{ url }}" target="_blank" class="btn btn-primary">ACESSAR TAREFA</a>
+</div>
+
+<p>Ou copie esse link no seu navegador para acessar a tarefa:</p>
+<p><a href="{{ url }}" target="_blank">{{ url }}</a></p>
+
+{% endif %}
+
+{% endblock %}

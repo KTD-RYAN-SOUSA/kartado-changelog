@@ -1,0 +1,43 @@
+{% extends "email/user_notif_mdr.html" %}
+
+{% block scoped_css %}
+<link rel="stylesheet" href="apps/daily_reports/templates/email/mdr_approval_notifications.css">
+{% endblock scoped_css %}
+
+{% block content %}
+<p class="p-title">Olá!</p>
+
+<p class="p-title">{{message}}</p>
+
+<hr />
+
+<h2>RDOs</h2>
+{% for approval_uuid, mdr_data in mdr_approval_data.items %}
+{% if mdr_data %}
+<table>
+    <thead>
+        <tr>
+            <th>Serial</th>
+            <th>Data do RDO</th>
+            <th>Empresa</th>
+            <th>Equipe</th>
+            <th>Aprovação</th>
+        </tr>
+    </thead>
+
+    {% for mdr in mdr_data %}
+    <tr>
+        <td><a href="{{mdr.url}}" target="_blank">{{mdr.number}}</a></td>
+        <td>{{mdr.date}}</td>
+        <td>{{mdr.subcompany}}</td>
+        <td>{{mdr.firm}}</td>
+        <td>{{mdr.approval_step}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+<span style="line-height: 10px;" />
+{% endfor %}
+
+
+{% endblock %}

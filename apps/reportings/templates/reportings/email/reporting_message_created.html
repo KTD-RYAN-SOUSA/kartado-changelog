@@ -1,0 +1,30 @@
+{% extends "legacy_base_email.html" %}
+
+{% block content %}
+
+<tr>
+  <td>
+    <p class="p-text">
+      Você tem uma nova mensagem no
+      apontamento {{number}}.
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" class="td-buttton">
+    <table border="0" cellpadding="0" cellspacing="0" class="table-button">
+      <tbody>
+        <tr>
+          <td align="center">
+            <a href="{{url}}" target="_blank" class="a-button">
+              ACESSAR APONTAMENTO
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+{% endblock %}

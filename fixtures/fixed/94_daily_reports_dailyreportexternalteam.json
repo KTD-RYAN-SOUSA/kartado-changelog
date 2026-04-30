@@ -1,0 +1,13 @@
+[
+{
+    "model": "daily_reports.dailyreportexternalteam",
+    "pk": "8da2f267-22a9-470f-b4a8-de125635e1f1",
+    "fields": {
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "contract_number": "123ABC",
+        "contractor_name": "Johnny",
+        "amount": 33,
+        "contract_description": "A cool job. Right?"
+    }
+}
+]

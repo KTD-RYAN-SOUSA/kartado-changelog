@@ -1,0 +1,26 @@
+Olá,
+
+{{ title }}
+
+Aqui estão as leituras para validação realizadas no Kartado Energia.
+
+{% for reading_item in reading_items %}
+    {% if reading_item.instrument %}
+        A leitura do instrumento {{ reading_item.instrument.name }} está no nível de {{ reading_item.condition }}!
+    {% endif %}
+    {% if reading_item.reading %}
+    Leitura: {{ reading_item.reading.value }}
+    Link da leitura: {{ reading_item.reading.url }}
+    {% endif %}
+    {% if reading_item.dashboards %}
+    Indicadores:
+    {% for dashboard in reading_item.dasboards %}
+    • {{ dashboard.name }}
+    {% endfor %}
+    {% endif %}
+
+{% endfor %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

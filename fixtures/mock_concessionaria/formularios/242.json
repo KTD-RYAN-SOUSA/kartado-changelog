@@ -1,0 +1,3743 @@
+{
+    "id": 1,
+    "name": "24",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "randomIdentification24",
+            "dataType": "number",
+            "displayName": "INTSINALVERTENTID"
+        },
+        {
+            "id": 2,
+            "apiName": "description",
+            "dataType": "string",
+            "displayName": "DESCRI\u00c7\u00c3O"
+        },
+        {
+            "id": 3,
+            "apiName": "artespRegister",
+            "dataType": "number",
+            "displayName": "REGISTROARTESP"
+        },
+        {
+            "id": 4,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "apiName": "roadType",
+            "dataType": "select",
+            "displayName": "TIPO DA VIA",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "EXP",
+                        "value": "1"
+                    },
+                    {
+                        "name": "MAR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "DIS",
+                        "value": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "apiName": "itemId",
+            "dataType": "string",
+            "displayName": "IDENTIFICA\u00c7\u00c3O DISPOSITIVO"
+        },
+        {
+            "id": 7,
+            "apiName": "direction",
+            "dataType": "select",
+            "displayName": "DIRECAO DO DISPO.",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "A",
+                        "value": "1"
+                    },
+                    {
+                        "name": "C",
+                        "value": "2"
+                    },
+                    {
+                        "name": "E",
+                        "value": "3"
+                    },
+                    {
+                        "name": "I",
+                        "value": "4"
+                    },
+                    {
+                        "name": "IE",
+                        "value": "5"
+                    },
+                    {
+                        "name": "S",
+                        "value": "6"
+                    },
+                    {
+                        "name": "LO",
+                        "value": "7"
+                    },
+                    {
+                        "name": "L",
+                        "value": "8"
+                    },
+                    {
+                        "name": "O",
+                        "value": "9"
+                    },
+                    {
+                        "name": "N",
+                        "value": "10"
+                    },
+                    {
+                        "name": "NS",
+                        "value": "11"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "apiName": "operationDate",
+            "dataType": "timestamp",
+            "displayName": "DATAOPERACAO"
+        },
+        {
+            "id": 9,
+            "apiName": "operationSign",
+            "dataType": "string",
+            "displayName": "OPERA\u00c7\u00c3O"
+        },
+        {
+            "id": 10,
+            "apiName": "typeSign",
+            "dataType": "select",
+            "displayName": "TIPO",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": 100.0,
+                        "value": "1"
+                    },
+                    {
+                        "name": 110.0,
+                        "value": "2"
+                    },
+                    {
+                        "name": 120.0,
+                        "value": "3"
+                    },
+                    {
+                        "name": 130.0,
+                        "value": "4"
+                    },
+                    {
+                        "name": 140.0,
+                        "value": "5"
+                    },
+                    {
+                        "name": 150.0,
+                        "value": "6"
+                    },
+                    {
+                        "name": 160.0,
+                        "value": "7"
+                    },
+                    {
+                        "name": 170.0,
+                        "value": "8"
+                    },
+                    {
+                        "name": 180.0,
+                        "value": "9"
+                    },
+                    {
+                        "name": 190.0,
+                        "value": "10"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "apiName": "classSign",
+            "dataType": "select",
+            "displayName": "CLASSIFICA\u00c7\u00c3O",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "A-1a",
+                        "value": "1"
+                    },
+                    {
+                        "name": "A-1b",
+                        "value": "2"
+                    },
+                    {
+                        "name": "A-2a",
+                        "value": "3"
+                    },
+                    {
+                        "name": "A-2b",
+                        "value": "4"
+                    },
+                    {
+                        "name": "A-3a",
+                        "value": "5"
+                    },
+                    {
+                        "name": "A-3b",
+                        "value": "6"
+                    },
+                    {
+                        "name": "A-4a",
+                        "value": "7"
+                    },
+                    {
+                        "name": "A-4b",
+                        "value": "8"
+                    },
+                    {
+                        "name": "A-5a",
+                        "value": "9"
+                    },
+                    {
+                        "name": "A-5b",
+                        "value": "10"
+                    },
+                    {
+                        "name": "A-6",
+                        "value": "11"
+                    },
+                    {
+                        "name": "A-7a",
+                        "value": "12"
+                    },
+                    {
+                        "name": "A-7b",
+                        "value": "13"
+                    },
+                    {
+                        "name": "A-8",
+                        "value": "14"
+                    },
+                    {
+                        "name": "A-9",
+                        "value": "15"
+                    },
+                    {
+                        "name": "A-10a",
+                        "value": "16"
+                    },
+                    {
+                        "name": "A-10b",
+                        "value": "17"
+                    },
+                    {
+                        "name": "A-11a",
+                        "value": "18"
+                    },
+                    {
+                        "name": "A-11b",
+                        "value": "19"
+                    },
+                    {
+                        "name": "A-12",
+                        "value": "20"
+                    },
+                    {
+                        "name": "A-13a",
+                        "value": "21"
+                    },
+                    {
+                        "name": "A-13b",
+                        "value": "22"
+                    },
+                    {
+                        "name": "A-14",
+                        "value": "23"
+                    },
+                    {
+                        "name": "A-15",
+                        "value": "24"
+                    },
+                    {
+                        "name": "A-16",
+                        "value": "25"
+                    },
+                    {
+                        "name": "A-17",
+                        "value": "26"
+                    },
+                    {
+                        "name": "A-18",
+                        "value": "27"
+                    },
+                    {
+                        "name": "A-19",
+                        "value": "28"
+                    },
+                    {
+                        "name": "A-20a",
+                        "value": "29"
+                    },
+                    {
+                        "name": "A-20b",
+                        "value": "30"
+                    },
+                    {
+                        "name": "A-21a",
+                        "value": "31"
+                    },
+                    {
+                        "name": "A-21b",
+                        "value": "32"
+                    },
+                    {
+                        "name": "A-21c",
+                        "value": "33"
+                    },
+                    {
+                        "name": "A-21d",
+                        "value": "34"
+                    },
+                    {
+                        "name": "A-21e",
+                        "value": "35"
+                    },
+                    {
+                        "name": "A-22",
+                        "value": "36"
+                    },
+                    {
+                        "name": "A-23",
+                        "value": "37"
+                    },
+                    {
+                        "name": "A-24",
+                        "value": "38"
+                    },
+                    {
+                        "name": "A-25",
+                        "value": "39"
+                    },
+                    {
+                        "name": "A-26a",
+                        "value": "40"
+                    },
+                    {
+                        "name": "A-26b",
+                        "value": "41"
+                    },
+                    {
+                        "name": "A-27",
+                        "value": "42"
+                    },
+                    {
+                        "name": "A-28",
+                        "value": "43"
+                    },
+                    {
+                        "name": "A-29",
+                        "value": "44"
+                    },
+                    {
+                        "name": "A-30a",
+                        "value": "45"
+                    },
+                    {
+                        "name": "A-30b",
+                        "value": "46"
+                    },
+                    {
+                        "name": "A-30c",
+                        "value": "47"
+                    },
+                    {
+                        "name": "A-31",
+                        "value": "48"
+                    },
+                    {
+                        "name": "A-32a",
+                        "value": "49"
+                    },
+                    {
+                        "name": "A-32b",
+                        "value": "50"
+                    },
+                    {
+                        "name": "A-33a",
+                        "value": "51"
+                    },
+                    {
+                        "name": "A-33b",
+                        "value": "52"
+                    },
+                    {
+                        "name": "A-34",
+                        "value": "53"
+                    },
+                    {
+                        "name": "A-35",
+                        "value": "54"
+                    },
+                    {
+                        "name": "A-36",
+                        "value": "55"
+                    },
+                    {
+                        "name": "A-37",
+                        "value": "56"
+                    },
+                    {
+                        "name": "A-38",
+                        "value": "57"
+                    },
+                    {
+                        "name": "A-39",
+                        "value": "58"
+                    },
+                    {
+                        "name": "A-40",
+                        "value": "59"
+                    },
+                    {
+                        "name": "A-41",
+                        "value": "60"
+                    },
+                    {
+                        "name": "A-42a",
+                        "value": "61"
+                    },
+                    {
+                        "name": "A-42b",
+                        "value": "62"
+                    },
+                    {
+                        "name": "A-42c",
+                        "value": "63"
+                    },
+                    {
+                        "name": "A-43",
+                        "value": "64"
+                    },
+                    {
+                        "name": "A-44",
+                        "value": "65"
+                    },
+                    {
+                        "name": "A-45",
+                        "value": "66"
+                    },
+                    {
+                        "name": "A-46",
+                        "value": "67"
+                    },
+                    {
+                        "name": "A-47",
+                        "value": "68"
+                    },
+                    {
+                        "name": "A-48",
+                        "value": "69"
+                    },
+                    {
+                        "name": "R-1",
+                        "value": "70"
+                    },
+                    {
+                        "name": "R-2",
+                        "value": "71"
+                    },
+                    {
+                        "name": "R-3",
+                        "value": "72"
+                    },
+                    {
+                        "name": "R-4a",
+                        "value": "73"
+                    },
+                    {
+                        "name": "R-4b",
+                        "value": "74"
+                    },
+                    {
+                        "name": "R-5a",
+                        "value": "75"
+                    },
+                    {
+                        "name": "R-5b",
+                        "value": "76"
+                    },
+                    {
+                        "name": "R-6a",
+                        "value": "77"
+                    },
+                    {
+                        "name": "R-6b",
+                        "value": "78"
+                    },
+                    {
+                        "name": "R-6c",
+                        "value": "79"
+                    },
+                    {
+                        "name": "R-7",
+                        "value": "80"
+                    },
+                    {
+                        "name": "R-8a",
+                        "value": "81"
+                    },
+                    {
+                        "name": "R-8b",
+                        "value": "82"
+                    },
+                    {
+                        "name": "R-9",
+                        "value": "83"
+                    },
+                    {
+                        "name": "R-10",
+                        "value": "84"
+                    },
+                    {
+                        "name": "R-11",
+                        "value": "85"
+                    },
+                    {
+                        "name": "R-12",
+                        "value": "86"
+                    },
+                    {
+                        "name": "R-13",
+                        "value": "87"
+                    },
+                    {
+                        "name": "R-14",
+                        "value": "88"
+                    },
+                    {
+                        "name": "R-15",
+                        "value": "89"
+                    },
+                    {
+                        "name": "R-16",
+                        "value": "90"
+                    },
+                    {
+                        "name": "R-17",
+                        "value": "91"
+                    },
+                    {
+                        "name": "R-18",
+                        "value": "92"
+                    },
+                    {
+                        "name": "R-19",
+                        "value": "93"
+                    },
+                    {
+                        "name": "R-20",
+                        "value": "94"
+                    },
+                    {
+                        "name": "R-21",
+                        "value": "95"
+                    },
+                    {
+                        "name": "R-22",
+                        "value": "96"
+                    },
+                    {
+                        "name": "R-23",
+                        "value": "97"
+                    },
+                    {
+                        "name": "R-24a",
+                        "value": "98"
+                    },
+                    {
+                        "name": "R-24b",
+                        "value": "99"
+                    },
+                    {
+                        "name": "R-25a",
+                        "value": "100"
+                    },
+                    {
+                        "name": "R-25b",
+                        "value": "101"
+                    },
+                    {
+                        "name": "R-25c",
+                        "value": "102"
+                    },
+                    {
+                        "name": "R-25d",
+                        "value": "103"
+                    },
+                    {
+                        "name": "R-26",
+                        "value": "104"
+                    },
+                    {
+                        "name": "R-27",
+                        "value": "105"
+                    },
+                    {
+                        "name": "R-28",
+                        "value": "106"
+                    },
+                    {
+                        "name": "R-29",
+                        "value": "107"
+                    },
+                    {
+                        "name": "R-30",
+                        "value": "108"
+                    },
+                    {
+                        "name": "R-31",
+                        "value": "109"
+                    },
+                    {
+                        "name": "R-32",
+                        "value": "110"
+                    },
+                    {
+                        "name": "R-33",
+                        "value": "111"
+                    },
+                    {
+                        "name": "R-34",
+                        "value": "112"
+                    },
+                    {
+                        "name": "R-35a",
+                        "value": "113"
+                    },
+                    {
+                        "name": "R-35b",
+                        "value": "114"
+                    },
+                    {
+                        "name": "R-36a",
+                        "value": "115"
+                    },
+                    {
+                        "name": "R-36b",
+                        "value": "116"
+                    },
+                    {
+                        "name": "R-37",
+                        "value": "117"
+                    },
+                    {
+                        "name": "R-38",
+                        "value": "118"
+                    },
+                    {
+                        "name": "R-39",
+                        "value": "119"
+                    },
+                    {
+                        "name": "R-40",
+                        "value": "120"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 12,
+            "apiName": "posicaoSign",
+            "dataType": "select",
+            "displayName": "POSICAO EM RELACAO A PISTA",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "ALD",
+                        "value": "1"
+                    },
+                    {
+                        "name": "ALE",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ERA",
+                        "value": "3"
+                    },
+                    {
+                        "name": "SLD",
+                        "value": "4"
+                    },
+                    {
+                        "name": "SLE",
+                        "value": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "apiName": "height",
+            "dataType": "float",
+            "displayName": "ALTURA"
+        },
+        {
+            "id": 14,
+            "apiName": "width",
+            "dataType": "float",
+            "displayName": "LARGURA"
+        },
+        {
+            "id": 15,
+            "apiName": "diamiter",
+            "dataType": "string",
+            "displayName": "DIMENSAO DIAMETRO"
+        },
+        {
+            "id": 16,
+            "apiName": "area",
+            "dataType": "string",
+            "displayName": "AREA"
+        },
+        {
+            "id": 17,
+            "apiName": "fabricacaoDate",
+            "dataType": "timestamp",
+            "displayName": "DATA DE FABRICACAO"
+        },
+        {
+            "id": 18,
+            "apiName": "implantacaoDate",
+            "dataType": "timestamp",
+            "displayName": "DATA IMPLANTA\u00c7\u00c3O"
+        },
+        {
+            "id": 19,
+            "apiName": "tipoPelicula",
+            "dataType": "select",
+            "displayName": "TIPO DE PELICULA - FUNDO",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "I",
+                        "value": "1"
+                    },
+                    {
+                        "name": "II",
+                        "value": "2"
+                    },
+                    {
+                        "name": "III",
+                        "value": "3"
+                    },
+                    {
+                        "name": "IV",
+                        "value": "4"
+                    },
+                    {
+                        "name": "V",
+                        "value": "5"
+                    },
+                    {
+                        "name": "VI",
+                        "value": "6"
+                    },
+                    {
+                        "name": "VII",
+                        "value": "7"
+                    },
+                    {
+                        "name": "VIII",
+                        "value": "8"
+                    },
+                    {
+                        "name": "IX",
+                        "value": "9"
+                    },
+                    {
+                        "name": "X",
+                        "value": "10"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 20,
+            "apiName": "tipoPelicula",
+            "dataType": "select",
+            "displayName": "TIPO DE PELICULA - FUNDO",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "I",
+                        "value": "1"
+                    },
+                    {
+                        "name": "II",
+                        "value": "2"
+                    },
+                    {
+                        "name": "III",
+                        "value": "3"
+                    },
+                    {
+                        "name": "IV",
+                        "value": "4"
+                    },
+                    {
+                        "name": "V",
+                        "value": "5"
+                    },
+                    {
+                        "name": "VI",
+                        "value": "6"
+                    },
+                    {
+                        "name": "VII",
+                        "value": "7"
+                    },
+                    {
+                        "name": "VIII",
+                        "value": "8"
+                    },
+                    {
+                        "name": "IX",
+                        "value": "9"
+                    },
+                    {
+                        "name": "X",
+                        "value": "10"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 21,
+            "apiName": "chapa",
+            "dataType": "select",
+            "displayName": "TIPO DE CHAPA",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "FVR",
+                        "value": "1"
+                    },
+                    {
+                        "name": "AGO",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ALM",
+                        "value": "3"
+                    },
+                    {
+                        "name": "DFO",
+                        "value": "4"
+                    },
+                    {
+                        "name": "ACM",
+                        "value": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 22,
+            "apiName": "suporte",
+            "dataType": "select",
+            "displayName": "TIPO DE SUPORTE",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "SPO",
+                        "value": "1"
+                    },
+                    {
+                        "name": "POR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "PMT",
+                        "value": "3"
+                    },
+                    {
+                        "name": "MAD",
+                        "value": "4"
+                    },
+                    {
+                        "name": "PPO",
+                        "value": "5"
+                    },
+                    {
+                        "name": "POL",
+                        "value": "6"
+                    },
+                    {
+                        "name": "BAR",
+                        "value": "7"
+                    },
+                    {
+                        "name": "EST",
+                        "value": "8"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 23,
+            "apiName": "folhaDoDesenho",
+            "dataType": "string",
+            "displayName": "NUMERO DA FOLHA DO DESENHO"
+        },
+        {
+            "id": 24,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+            ],
+            "displayName": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 2,
+            "members": [
+                24
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "SINALIZA\u00c7\u00c3O VERTICAL",
+    "measurementColumns": [
+        {
+            "key": "randomIdentification24",
+            "width": 19.0,
+            "header": "INTSINALVERTENTID"
+        },
+        {
+            "key": "description",
+            "width": 12.0,
+            "header": "DESCRI\u00c7\u00c3O"
+        },
+        {
+            "key": "artespRegister",
+            "width": 100.0,
+            "header": "REGISTROARTESP"
+        },
+        {
+            "key": "lot",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 1",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 2",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 3",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 4",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "header": "Lote"
+        },
+        {
+            "key": "roadType",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "EXP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "MAR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "DIS",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 9.0,
+            "header": "TIPO DA VIA"
+        },
+        {
+            "key": "itemId",
+            "width": 3.0,
+            "header": "IDENTIFICA\u00c7\u00c3O DISPOSITIVO"
+        },
+        {
+            "key": "direction",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "A",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "C",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "E",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "I",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "IE",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "S",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "LO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "L",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "O",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "N",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "11",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "NS",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 2.0,
+            "header": "DIRECAO DO DISPO."
+        },
+        {
+            "key": "operationDate",
+            "width": 19.0,
+            "header": "DATAOPERACAO"
+        },
+        {
+            "key": "operationSign",
+            "width": 1.0,
+            "header": "OPERA\u00c7\u00c3O"
+        },
+        {
+            "key": "typeSign",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            100.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            110.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            120.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            130.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            140.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            150.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            160.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            170.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            180.0,
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.typeSign"
+                                    }
+                                ]
+                            },
+                            190.0,
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 4.0,
+            "header": "TIPO"
+        },
+        {
+            "key": "classSign",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-1a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-1b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-2a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-2b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-3a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-3b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-4a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-4b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-5a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-5b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "11",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-6",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "12",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-7a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "13",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-7b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "14",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-8",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "15",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-9",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "16",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-10a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "17",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-10b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "18",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-11a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "19",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-11b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "20",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-12",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "21",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-13a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "22",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-13b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "23",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-14",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "24",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-15",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "25",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-16",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "26",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-17",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "27",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-18",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "28",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-19",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "29",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-20a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "30",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-20b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "31",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-21a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "32",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-21b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "33",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-21c",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "34",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-21d",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "35",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-21e",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "36",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-22",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "37",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-23",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "38",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-24",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "39",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-25",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "40",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-26a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "41",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-26b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "42",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-27",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "43",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-28",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "44",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-29",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "45",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-30a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "46",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-30b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "47",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-30c",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "48",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-31",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "49",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-32a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "50",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-32b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "51",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-33a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "52",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-33b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "53",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-34",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "54",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-35",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "55",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-36",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "56",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-37",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "57",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-38",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "58",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-39",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "59",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-40",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "60",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-41",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "61",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-42a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "62",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-42b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "63",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-42c",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "64",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-43",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "65",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-44",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "66",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-45",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "67",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-46",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "68",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-47",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "69",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "A-48",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "70",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-1",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "71",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-2",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "72",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-3",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "73",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-4a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "74",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-4b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "75",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-5a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "76",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-5b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "77",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-6a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "78",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-6b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "79",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-6c",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "80",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-7",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "81",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-8a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "82",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-8b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "83",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-9",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "84",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-10",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "85",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-11",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "86",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-12",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "87",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-13",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "88",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-14",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "89",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-15",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "90",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-16",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "91",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-17",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "92",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-18",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "93",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-19",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "94",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-20",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "95",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-21",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "96",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-22",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "97",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-23",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "98",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-24a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "99",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-24b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "100",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-25a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "101",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-25b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "102",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-25c",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "103",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-25d",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "104",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-26",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "105",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-27",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "106",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-28",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "107",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-29",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "108",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-30",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "109",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-31",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "110",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-32",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "111",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-33",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "112",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-34",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "113",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-35a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "114",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-35b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "115",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-36a",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "116",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-36b",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "117",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-37",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "118",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-38",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "119",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-39",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "120",
+                                    {
+                                        "var": "formData.classSign"
+                                    }
+                                ]
+                            },
+                            "R-40",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 5.0,
+            "header": "CLASSIFICA\u00c7\u00c3O"
+        },
+        {
+            "key": "posicaoSign",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.posicaoSign"
+                                    }
+                                ]
+                            },
+                            "ALD",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.posicaoSign"
+                                    }
+                                ]
+                            },
+                            "ALE",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.posicaoSign"
+                                    }
+                                ]
+                            },
+                            "ERA",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.posicaoSign"
+                                    }
+                                ]
+                            },
+                            "SLD",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.posicaoSign"
+                                    }
+                                ]
+                            },
+                            "SLE",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 3.0,
+            "header": "POSICAO EM RELACAO A PISTA"
+        },
+        {
+            "key": "height",
+            "width": 10.0,
+            "header": "ALTURA"
+        },
+        {
+            "key": "width",
+            "width": 10.0,
+            "header": "LARGURA"
+        },
+        {
+            "key": "diamiter",
+            "width": 5.0,
+            "header": "DIMENSAO DIAMETRO"
+        },
+        {
+            "key": "area",
+            "width": 10.0,
+            "header": "AREA"
+        },
+        {
+            "key": "fabricacaoDate",
+            "width": 19.0,
+            "header": "DATA DE FABRICACAO"
+        },
+        {
+            "key": "implantacaoDate",
+            "width": 19.0,
+            "header": "DATA IMPLANTA\u00c7\u00c3O"
+        },
+        {
+            "key": "tipoPelicula",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "I",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "II",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "III",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "IV",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "V",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "VI",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "VII",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "VIII",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "IX",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "X",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 4.0,
+            "header": "TIPO DE PELICULA - FUNDO"
+        },
+        {
+            "key": "tipoPelicula",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "I",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "II",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "III",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "IV",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "V",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "VI",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "VII",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "VIII",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "IX",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.tipoPelicula"
+                                    }
+                                ]
+                            },
+                            "X",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 4.0,
+            "header": "TIPO DE PELICULA - FUNDO"
+        },
+        {
+            "key": "chapa",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.chapa"
+                                    }
+                                ]
+                            },
+                            "FVR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.chapa"
+                                    }
+                                ]
+                            },
+                            "AGO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.chapa"
+                                    }
+                                ]
+                            },
+                            "ALM",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.chapa"
+                                    }
+                                ]
+                            },
+                            "DFO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.chapa"
+                                    }
+                                ]
+                            },
+                            "ACM",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 3.0,
+            "header": "TIPO DE CHAPA"
+        },
+        {
+            "key": "suporte",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.suporte"
+                                    }
+                                ]
+                            },
+                            "SPO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.suporte"
+                                    }
+                                ]
+                            },
+                            "POR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.suporte"
+                                    }
+                                ]
+                            },
+                            "PMT",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.suporte"
+                                    }
+                                ]
+                            },
+                            "MAD",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.suporte"
+                                    }
+                                ]
+                            },
+                            "PPO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.suporte"
+                                    }
+                                ]
+                            },
+                            "POL",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.suporte"
+                                    }
+                                ]
+                            },
+                            "BAR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.suporte"
+                                    }
+                                ]
+                            },
+                            "EST",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 3.0,
+            "header": "TIPO DE SUPORTE"
+        },
+        {
+            "key": "folhaDoDesenho",
+            "width": 30.0,
+            "header": "NUMERO DA FOLHA DO DESENHO"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "2",
+    "deadline": "null"
+}

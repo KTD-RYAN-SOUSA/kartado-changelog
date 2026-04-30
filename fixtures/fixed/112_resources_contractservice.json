@@ -1,0 +1,152 @@
+[
+    {
+        "model": "resources.contractservice",
+        "pk": "b0db7a37-50af-4010-a893-20fb9a85ff72",
+        "fields": {
+            "description": "ContractService Example",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "price": 20000,
+            "weight": 0.3,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ],
+            "contract_item_unit_prices": [
+                "aabda400-2527-44a0-b56f-c881ba7f4d10"
+            ],
+            "contract_item_performance": [
+                "0b88c09b-6097-4ab4-95a9-481bd4edd693",
+                "e4ed1a3e-40f8-43c9-96f7-de973d44f39c",
+                "9973945d-62ed-4b06-af95-942c92a8930a"
+            ],
+            "contract_item_administration": []
+        }
+    },
+    {
+        "model": "resources.contractservice",
+        "pk": "0e2f3da9-a75f-4d89-b14d-88b314d89b26",
+        "fields": {
+            "description": "Abra Cadabra",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "price": 10000,
+            "weight": 0.2,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ],
+            "contract_item_unit_prices": [
+                "aabda400-2527-44a0-b56f-c881ba7f4d10",
+                "7e067c5e-729a-4f0e-91f5-97db2117a068"
+            ],
+            "contract_item_performance": [
+                "a31a222e-4852-437a-be7a-724d0bcfed27"
+            ]
+        }
+    },
+    {
+        "model": "resources.contractservice",
+        "pk": "de3950a1-cdb0-4167-a850-d78ea58bbec2",
+        "fields": {
+            "description": "ContractService Example",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "price": 15000,
+            "weight": 0.20,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ],
+            "contract_item_unit_prices": [
+                "aabda400-2527-44a0-b56f-c881ba7f4d10",
+                "7e067c5e-729a-4f0e-91f5-97db2117a068"
+            ],
+            "contract_item_performance": [
+                "e077ae19-b6ff-4ae1-85c8-c539e3a18b3b",
+                "4642a99d-1da2-4f49-8fc3-a5f7de04f3c9",
+                "21ccdd75-dc34-479a-b170-cb012abd74c3"
+            ]
+        }
+    },
+    {
+        "model": "resources.contractservice",
+        "pk": "50bd74b2-a8d4-4752-8423-28cfcfbacc8d",
+        "fields": {
+            "description": "ContractService Example",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "price": 15000,
+            "weight": 0.20,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ],
+            "contract_item_unit_prices": [
+                "aabda400-2527-44a0-b56f-c881ba7f4d10"
+            ],
+            "contract_item_performance": [
+                "26888cd2-971f-42e0-8243-49ff250d63fa",
+                "7593668a-bb46-488d-9b5e-e96cc31c1b44",
+                "2a1eb724-96cd-4a13-82ad-311f21dbf160",
+                "01537733-f038-40e6-89ec-2f157fca01c2"
+            ]
+        }
+    },
+    {
+        "model": "resources.contractservice",
+        "pk": "d9cbdaad-88d9-4427-aee7-952195166a00",
+        "fields": {
+            "description": "ContractService Adm",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "price": 15000,
+            "weight": 0.1,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ],
+            "contract_item_administration": [
+                "fdbc54e8-ab5a-4520-97ce-d299fd00ec0f"
+            ]
+        }
+    },
+    {
+        "model": "resources.contractservice",
+        "pk": "0e2f3da9-a75f-4d89-b14d-88b314d89b26",
+        "fields": {
+            "description": "ContractService Example",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "price": 10000,
+            "weight": 0.2,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ],
+            "contract_item_performance": [
+                "a31a222e-4852-437a-be7a-724d0bcfed27"
+            ]
+        }
+    },
+    {
+        "model": "resources.contractservice",
+        "pk": "de3950a1-cdb0-4167-a850-d78ea58bbec2",
+        "fields": {
+            "description": "ContractService Example",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "price": 15000,
+            "weight": 0.25,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ],
+            "contract_item_administration": [
+                "fdbc54e8-ab5a-4520-97ce-d299fd00ec0f"
+            ]
+        }
+    },
+    {
+        "model": "resources.contractservice",
+        "pk": "c80407ae-b267-4c3f-972e-7c56d8018f26",
+        "fields": {
+            "description": "ContractService Example",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "price": 15000,
+            "weight": 0.25,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ],
+            "contract_item_unit_prices": [],
+            "contract_item_performance": [],
+            "contract_item_administration": []
+        }
+    }
+]

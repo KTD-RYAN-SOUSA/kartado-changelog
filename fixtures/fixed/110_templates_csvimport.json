@@ -1,0 +1,18 @@
+[
+    {
+        "model": "templates.csvimport",
+        "pk": "b2cb3776-fc5e-4120-b0cf-2177cc9fecb1",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "created_at": "2021-08-09T12:45:45.109Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "occurrence_type": "05e3967f-27b3-460d-94a5-d419c1588dce",
+            "name": "CSVImport testing",
+            "csv_file": "",
+            "preview_file": "",
+            "done": false,
+            "error": false,
+            "form_data": {}
+        }
+    }
+]

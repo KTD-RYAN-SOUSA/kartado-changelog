@@ -1,0 +1,19 @@
+Olá!
+
+{{message}}
+
+Apontamentos
+
+{% for approval_step, reporting_data in reporting_approval_data.items %}
+    {% if reporting_data %}
+        {% for reporting in reporting_data %}
+            Serial: {{reporting.number}}
+            {% if show_subcompany %}
+            Empresa: {{reporting.subcompany}}
+            {% endif %}
+            Equipe: {{reporting.firm}}
+            Classe: {{reporting.occurrence_type}}
+            Aprovação: {{reporting.approval_step}}
+        {% endfor %}
+    {% endif %}
+{% endfor %}

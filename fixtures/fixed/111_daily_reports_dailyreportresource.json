@@ -1,0 +1,11 @@
+[
+    {
+        "model": "daily_reports.dailyreportresource",
+        "pk": "89390a4a-a215-483e-a1bb-b01cecffb43a",
+        "fields": {
+            "kind": "internal",
+            "amount": 23,
+            "resource": "02490e34-d008-4877-a701-c175a388332b"
+        }
+    }
+]

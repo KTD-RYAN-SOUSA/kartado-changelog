@@ -1,0 +1,19 @@
+Olá!
+
+{{ title }}
+
+As seguintes leituras ultrapassaram seus prazos de validação e estão atrasadas:
+
+{% for reading_item in reading_items %}
+Unidade: {{ reading_item.company_name }}
+Posição Operacional: {{ reading_item.operational_position }}
+Tipo de Instrumento: {{ reading_item.instrument_type }}
+Código do Instrumento: {{ reading_item.instrument_code }}
+Link da Leitura: {{ reading_item.reading_url }}
+Prazo Original: {{ reading_item.validation_deadline }}
+
+{% endfor %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

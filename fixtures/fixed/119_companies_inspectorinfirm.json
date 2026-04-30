@@ -1,0 +1,10 @@
+[
+    {
+        "model": "companies.inspectorinfirm",
+        "pk": "6dbe3215-4d8b-4401-93bd-834f6486e53a",
+        "fields": {
+            "user": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+        }
+    }
+]

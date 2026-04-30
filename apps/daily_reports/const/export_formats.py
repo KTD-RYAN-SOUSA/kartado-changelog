@@ -1,0 +1,8 @@
+PDF = "PDF"
+EXCEL = "EXCEL"
+
+
+EXPORT_FORMAT_CHOICES = [
+    (PDF, PDF),
+    (EXCEL, EXCEL),
+]

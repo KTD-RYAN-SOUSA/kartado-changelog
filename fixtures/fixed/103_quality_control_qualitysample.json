@@ -1,0 +1,25 @@
+[
+{
+    "model": "quality_control.qualitysample",
+    "pk": "de1ed341-1c1f-4357-94b3-b3b895dc4d56",
+    "fields": {
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "collected_at": "2021-06-10T17:31:56.121Z",
+        "created_at": "2021-06-10T17:31:56.146Z",
+        "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "quality_project": null,
+        "construction_firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+        "construction_plant": "9c242cf1-6ae7-4c5e-b1be-faa0b436bf5e",
+        "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+        "reportings": ["00000db3-a561-4387-ac47-d48fca2d6c24"],
+        "form_data": {
+            "new_stuff": "coolbeanz",
+            "cool_stuff": "hell yeaz"
+        },
+        "number": "DEMO-default-2021.00003",
+        "received_at": "2021-06-10T17:24:23.372Z",
+        "is_proof": true
+    }
+}
+]

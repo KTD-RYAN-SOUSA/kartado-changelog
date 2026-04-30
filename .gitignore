@@ -1,0 +1,44 @@
+# Environment configs
+venv/
+venv_locust/
+.venv/
+.env
+.envrc
+docker-compose.override.yml
+
+# Python stuff
+*__pycache__*
+
+*.prof
+.magicindex.json
+.python-version
+
+# Testing
+.pytest_cache
+.coverage
+htmlcov/*
+profiling/*
+report-test.json
+
+# Mac weird files
+.DS_Store
+
+# VSCode
+.vscode/
+*.todo
+
+.ipynb_checkpoints/*
+
+fixtures/temp
+
+.idea/
+
+.tool-versions
+
+.devcontainer/
+
+# Claude Code
+.claude/
+CLAUDE.md
+coverage.xml
+

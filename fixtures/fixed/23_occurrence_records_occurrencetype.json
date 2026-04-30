@@ -1,0 +1,3752 @@
+[
+    {
+        "model": "occurrence_records.occurrencetype",
+        "pk": "006f411d-1388-49c5-989c-7e7447482ae9",
+        "fields": {
+            "name": "NEW JERSEY",
+            "occurrence_kind": "2",
+            "form_fields": {
+                "id": 3,
+                "name": "incendios",
+                "fields": [
+                    {
+                        "id": 1,
+                        "apiName": "length",
+                        "dataType": "float",
+                        "displayName": "Comprimento (m)"
+                    },
+                    {
+                        "id": 2,
+                        "apiName": "width",
+                        "dataType": "float",
+                        "displayName": "Largura (m)"
+                    },
+                    {
+                        "id": 3,
+                        "apiName": "wind",
+                        "dataType": "float",
+                        "displayName": "Vento"
+                    },
+                    {
+                        "id": 4,
+                        "apiName": "area",
+                        "dataType": "float",
+                        "displayName": "\u00c1rea (ha)"
+                    },
+                    {
+                        "id": 5,
+                        "apiName": "volume",
+                        "dataType": "float",
+                        "displayName": "Volume"
+                    },
+                    {
+                        "id": 6,
+                        "apiName": "areaType",
+                        "dataType": "selectMultiple",
+                        "displayName": "Natureza",
+                        "selectOptions": {
+                            "options": [
+                                {
+                                    "name": "Mata",
+                                    "value": "1"
+                                },
+                                {
+                                    "name": "Capoeira",
+                                    "value": "2"
+                                },
+                                {
+                                    "name": "Capoeirinha",
+                                    "value": "3"
+                                },
+                                {
+                                    "name": "Outro",
+                                    "open": true,
+                                    "value": "4"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 7,
+                        "apiName": "damages",
+                        "dataType": "textArea",
+                        "displayName": "Danos"
+                    },
+                    {
+                        "id": 8,
+                        "apiName": "comments",
+                        "dataType": "textArea",
+                        "displayName": "Observa\u00e7\u00f5es"
+                    },
+                    {
+                        "id": 9,
+                        "apiName": "consequences",
+                        "dataType": "textArea",
+                        "displayName": "Consequ\u00eancias"
+                    }
+                ],
+                "groups": [
+                    {
+                        "order": 3,
+                        "members": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "displayName": "Dimens\u00e3o"
+                    },
+                    {
+                        "order": 4,
+                        "members": [
+                            6
+                        ],
+                        "displayName": "\u00c1rea"
+                    },
+                    {
+                        "order": 5,
+                        "members": [
+                            7,
+                            9
+                        ],
+                        "displayName": "Danos e Consequ\u00eancias"
+                    },
+                    {
+                        "order": 6,
+                        "members": [
+                            8
+                        ],
+                        "displayName": "Coment\u00e1rios"
+                    }
+                ],
+                "displayName": "Inc\u00eandios Florestais"
+            },
+            "goal_formula": [],
+            "monitoring_plan": null,
+            "created_at": "2020-09-03T15:32:58.732Z",
+            "updated_at": "2020-09-03T15:32:59.315Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "deadline": null,
+            "active": true,
+            "previous_version": null,
+            "is_oae": false,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+                "ac093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ]
+        }
+    },
+    {
+        "model": "occurrence_records.occurrencetype",
+        "pk": "05e3967f-27b3-460d-94a5-d419c1588dce",
+        "fields": {
+            "name": "Enrocamento Pedra Jogada",
+            "occurrence_kind": "1",
+            "form_fields": {
+                "id": 3,
+                "name": "incendios",
+                "fields": [
+                    {
+                        "id": 1,
+                        "apiName": "length",
+                        "dataType": "float",
+                        "displayName": "Comprimento (m)"
+                    },
+                    {
+                        "id": 2,
+                        "apiName": "width",
+                        "dataType": "float",
+                        "displayName": "Largura (m)"
+                    },
+                    {
+                        "id": 3,
+                        "apiName": "wind",
+                        "dataType": "float",
+                        "displayName": "Vento"
+                    },
+                    {
+                        "id": 4,
+                        "apiName": "area",
+                        "dataType": "float",
+                        "displayName": "\u00c1rea (ha)"
+                    },
+                    {
+                        "id": 5,
+                        "apiName": "volume",
+                        "dataType": "float",
+                        "displayName": "Volume"
+                    },
+                    {
+                        "id": 6,
+                        "apiName": "areaType",
+                        "dataType": "selectMultiple",
+                        "displayName": "Natureza",
+                        "selectOptions": {
+                            "options": [
+                                {
+                                    "name": "Mata",
+                                    "value": "1"
+                                },
+                                {
+                                    "name": "Capoeira",
+                                    "value": "2"
+                                },
+                                {
+                                    "name": "Capoeirinha",
+                                    "value": "3"
+                                },
+                                {
+                                    "name": "Outro",
+                                    "open": true,
+                                    "value": "4"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 7,
+                        "apiName": "damages",
+                        "dataType": "textArea",
+                        "displayName": "Danos"
+                    },
+                    {
+                        "id": 8,
+                        "apiName": "comments",
+                        "dataType": "textArea",
+                        "displayName": "Observa\u00e7\u00f5es"
+                    },
+                    {
+                        "id": 9,
+                        "apiName": "consequences",
+                        "dataType": "textArea",
+                        "displayName": "Consequ\u00eancias"
+                    },
+                    {
+                        "id": 10,
+                        "apiName": "sheetClassification",
+                        "dataType": "textArea",
+                        "displayName": "Sheet Classification"
+                    },
+                    {
+                        "id": 11,
+                        "apiName": "csp",
+                        "dataType": "jsonLogic",
+                        "displayName": "CSP",
+                        "logic": 8.1
+                    }
+                ],
+                "groups": [
+                    {
+                        "order": 3,
+                        "members": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "displayName": "Dimens\u00e3o"
+                    },
+                    {
+                        "order": 4,
+                        "members": [
+                            6
+                        ],
+                        "displayName": "\u00c1rea"
+                    },
+                    {
+                        "order": 5,
+                        "members": [
+                            7,
+                            9,
+                            10,
+                            11
+                        ],
+                        "displayName": "Danos e Consequ\u00eancias"
+                    },
+                    {
+                        "order": 6,
+                        "members": [
+                            8
+                        ],
+                        "displayName": "Coment\u00e1rios"
+                    }
+                ],
+                "displayName": "Inc\u00eandios Florestais"
+            },
+            "goal_formula": [],
+            "monitoring_plan": null,
+            "created_at": "2020-09-03T15:32:58.732Z",
+            "updated_at": "2020-09-03T15:32:59.315Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "deadline": null,
+            "active": true,
+            "previous_version": null,
+            "is_oae": false,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ]
+        }
+    },
+    {
+        "model": "occurrence_records.occurrencetype",
+        "pk": "1bb4364c-26b9-4b31-a7c1-e8d7876594fc",
+        "fields": {
+            "name": "Reparo ou substitui\u00e7\u00e3o das demais placas de sinaliza\u00e7\u00e3o vertical (aus\u00eancia, retro inadequada, avaria, depreda\u00e7\u00e3o ou vandalismo)",
+            "occurrence_kind": "1",
+            "form_fields": {
+                "id": 1,
+                "name": "38",
+                "fields": [
+                    {
+                        "id": 1,
+                        "apiName": "contratualCode",
+                        "autofill": "e.2.4",
+                        "dataType": "string",
+                        "disableIf": true,
+                        "displayName": "C\u00f3digo de Edital"
+                    },
+                    {
+                        "id": 2,
+                        "apiName": "csp",
+                        "autofill": "8.1",
+                        "dataType": "string",
+                        "disableIf": true,
+                        "displayName": "CSP"
+                    },
+                    {
+                        "id": 3,
+                        "apiName": "signName",
+                        "dataType": "select",
+                        "displayName": "Nome da Placa",
+                        "selectOptions": {
+                            "options": [
+                                {
+                                    "name": "A-12",
+                                    "value": "1"
+                                },
+                                {
+                                    "name": "A-12/COMPOSTA",
+                                    "value": "2"
+                                },
+                                {
+                                    "name": "A-14",
+                                    "value": "3"
+                                },
+                                {
+                                    "name": "A-15",
+                                    "value": "4"
+                                },
+                                {
+                                    "name": "A-15/COMPOSTA",
+                                    "value": "5"
+                                },
+                                {
+                                    "name": "A-17",
+                                    "value": "6"
+                                },
+                                {
+                                    "name": "A-18",
+                                    "value": "7"
+                                },
+                                {
+                                    "name": "A-18/COMPOSTA",
+                                    "value": "8"
+                                },
+                                {
+                                    "name": "A-19/COMPOSTA",
+                                    "value": "9"
+                                },
+                                {
+                                    "name": "A-1A",
+                                    "value": "10"
+                                },
+                                {
+                                    "name": "A-1A/COMPOSTA",
+                                    "value": "11"
+                                },
+                                {
+                                    "name": "A-1B",
+                                    "value": "12"
+                                },
+                                {
+                                    "name": "A-1B/COMPOSTA",
+                                    "value": "13"
+                                },
+                                {
+                                    "name": "A-20A",
+                                    "value": "14"
+                                },
+                                {
+                                    "name": "A-21B",
+                                    "value": "15"
+                                },
+                                {
+                                    "name": "A-21B/COMPOSTA",
+                                    "value": "16"
+                                },
+                                {
+                                    "name": "A-21C",
+                                    "value": "17"
+                                },
+                                {
+                                    "name": "A-21C/COMPOSTA",
+                                    "value": "18"
+                                },
+                                {
+                                    "name": "A-21E",
+                                    "value": "19"
+                                },
+                                {
+                                    "name": "A-22",
+                                    "value": "20"
+                                },
+                                {
+                                    "name": "A-22/COMPOSTA",
+                                    "value": "21"
+                                },
+                                {
+                                    "name": "A-242A",
+                                    "value": "22"
+                                },
+                                {
+                                    "name": "A-24A",
+                                    "value": "23"
+                                },
+                                {
+                                    "name": "A-25",
+                                    "value": "24"
+                                },
+                                {
+                                    "name": "A-26B",
+                                    "value": "25"
+                                },
+                                {
+                                    "name": "A-27",
+                                    "value": "26"
+                                },
+                                {
+                                    "name": "A-28",
+                                    "value": "27"
+                                },
+                                {
+                                    "name": "A-2A",
+                                    "value": "28"
+                                },
+                                {
+                                    "name": "A-2A/COMPOSTA",
+                                    "value": "29"
+                                },
+                                {
+                                    "name": "A-2B",
+                                    "value": "30"
+                                },
+                                {
+                                    "name": "A-2B/COMPOSTA",
+                                    "value": "31"
+                                },
+                                {
+                                    "name": "A-30A",
+                                    "value": "32"
+                                },
+                                {
+                                    "name": "A-30B",
+                                    "value": "33"
+                                },
+                                {
+                                    "name": "A-32A",
+                                    "value": "34"
+                                },
+                                {
+                                    "name": "A-32-A/A-30B",
+                                    "value": "35"
+                                },
+                                {
+                                    "name": "A-32A/COMPOSTA",
+                                    "value": "36"
+                                },
+                                {
+                                    "name": "A-32B",
+                                    "value": "37"
+                                },
+                                {
+                                    "name": "A-32B/COMPOSTA",
+                                    "value": "38"
+                                },
+                                {
+                                    "name": "A-34A",
+                                    "value": "39"
+                                },
+                                {
+                                    "name": "A-35/COMPOSTA",
+                                    "value": "40"
+                                },
+                                {
+                                    "name": "A-36",
+                                    "value": "41"
+                                },
+                                {
+                                    "name": "A-36/COMPOSTA",
+                                    "value": "42"
+                                },
+                                {
+                                    "name": "A-36/R-19/COMPOSTA",
+                                    "value": "43"
+                                },
+                                {
+                                    "name": "A-37",
+                                    "value": "44"
+                                },
+                                {
+                                    "name": "A-37/COMPOSTA",
+                                    "value": "45"
+                                },
+                                {
+                                    "name": "A-3A/COMPOSTA",
+                                    "value": "46"
+                                },
+                                {
+                                    "name": "A-3B/COMPOSTA",
+                                    "value": "47"
+                                },
+                                {
+                                    "name": "A-42A",
+                                    "value": "48"
+                                },
+                                {
+                                    "name": "A-42A/COMPOSTA",
+                                    "value": "49"
+                                },
+                                {
+                                    "name": "A-42B",
+                                    "value": "50"
+                                },
+                                {
+                                    "name": "A-42B/COMPOSTA",
+                                    "value": "51"
+                                },
+                                {
+                                    "name": "A-45",
+                                    "value": "52"
+                                },
+                                {
+                                    "name": "A-4A",
+                                    "value": "53"
+                                },
+                                {
+                                    "name": "A-4B",
+                                    "value": "54"
+                                },
+                                {
+                                    "name": "A-4B/COMPOSTA",
+                                    "value": "55"
+                                },
+                                {
+                                    "name": "A-6",
+                                    "value": "56"
+                                },
+                                {
+                                    "name": "A-6/COMPOSTA",
+                                    "value": "57"
+                                },
+                                {
+                                    "name": "A-7B",
+                                    "value": "58"
+                                },
+                                {
+                                    "name": "A-8",
+                                    "value": "59"
+                                },
+                                {
+                                    "name": "A-8/COMPOSTA",
+                                    "value": "60"
+                                },
+                                {
+                                    "name": "ADVERT\u00caNCIA",
+                                    "value": "61"
+                                },
+                                {
+                                    "name": "ADVERT\u00caNCIA/COMPOSTA",
+                                    "value": "62"
+                                },
+                                {
+                                    "name": "ADVERT\u00caNCIA/R-14",
+                                    "value": "63"
+                                },
+                                {
+                                    "name": "ADVERT\u00caNCIA/R-19",
+                                    "value": "64"
+                                },
+                                {
+                                    "name": "ADVERT\u00caNCIA/REGULAMENTA\u00c7\u00c3O",
+                                    "value": "65"
+                                },
+                                {
+                                    "name": "APOIO OPERACIONAL",
+                                    "value": "66"
+                                },
+                                {
+                                    "name": "ATRATIVO TUR\u00cdSTICO",
+                                    "value": "67"
+                                },
+                                {
+                                    "name": "DISPOSITIVOS AUXILIARES",
+                                    "value": "68"
+                                },
+                                {
+                                    "name": "EDUCATIVA",
+                                    "value": "69"
+                                },
+                                {
+                                    "name": "EDUCATIVA/A-32A/A-30B",
+                                    "value": "70"
+                                },
+                                {
+                                    "name": "EDUCATIVA/ADVERT\u00caNCIA",
+                                    "value": "71"
+                                },
+                                {
+                                    "name": "I-33",
+                                    "value": "72"
+                                },
+                                {
+                                    "name": "IDENTIFICA\u00c7\u00c3O",
+                                    "value": "73"
+                                },
+                                {
+                                    "name": "IDENTIFICA\u00c7\u00c3O/ORIENTA\u00c7\u00c3O",
+                                    "value": "74"
+                                },
+                                {
+                                    "name": "IE-1",
+                                    "value": "75"
+                                },
+                                {
+                                    "name": "IE-13",
+                                    "value": "76"
+                                },
+                                {
+                                    "name": "IE-14",
+                                    "value": "77"
+                                },
+                                {
+                                    "name": "IE-2",
+                                    "value": "78"
+                                },
+                                {
+                                    "name": "IE-21",
+                                    "value": "79"
+                                },
+                                {
+                                    "name": "IE-3",
+                                    "value": "80"
+                                },
+                                {
+                                    "name": "IE-5",
+                                    "value": "81"
+                                },
+                                {
+                                    "name": "IE-8",
+                                    "value": "82"
+                                },
+                                {
+                                    "name": "II-1",
+                                    "value": "83"
+                                },
+                                {
+                                    "name": "II-2",
+                                    "value": "84"
+                                },
+                                {
+                                    "name": "II-2/ORIENTA\u00c7AO",
+                                    "value": "85"
+                                },
+                                {
+                                    "name": "II-3",
+                                    "value": "86"
+                                },
+                                {
+                                    "name": "IL-1",
+                                    "value": "87"
+                                },
+                                {
+                                    "name": "IL-3",
+                                    "value": "88"
+                                },
+                                {
+                                    "name": "IL-4",
+                                    "value": "89"
+                                },
+                                {
+                                    "name": "IP-10",
+                                    "value": "90"
+                                },
+                                {
+                                    "name": "IP-11",
+                                    "value": "91"
+                                },
+                                {
+                                    "name": "IP-12A",
+                                    "value": "92"
+                                },
+                                {
+                                    "name": "IP-17",
+                                    "value": "93"
+                                },
+                                {
+                                    "name": "IP-18",
+                                    "value": "94"
+                                },
+                                {
+                                    "name": "IP-5",
+                                    "value": "95"
+                                },
+                                {
+                                    "name": "IP-7",
+                                    "value": "96"
+                                },
+                                {
+                                    "name": "IP-8",
+                                    "value": "97"
+                                },
+                                {
+                                    "name": "IP-8 ",
+                                    "value": "98"
+                                },
+                                {
+                                    "name": "IP-9",
+                                    "value": "99"
+                                },
+                                {
+                                    "name": "ISA-2 PICTOGRAMAS",
+                                    "value": "100"
+                                },
+                                {
+                                    "name": "ISA-3",
+                                    "value": "101"
+                                },
+                                {
+                                    "name": "ISA-3 PICTOGRAMAS",
+                                    "value": "102"
+                                },
+                                {
+                                    "name": "ISA-4",
+                                    "value": "103"
+                                },
+                                {
+                                    "name": "M.A.",
+                                    "value": "104"
+                                },
+                                {
+                                    "name": "MP-1",
+                                    "value": "105"
+                                },
+                                {
+                                    "name": "MP-2",
+                                    "value": "106"
+                                },
+                                {
+                                    "name": "MP-3",
+                                    "value": "107"
+                                },
+                                {
+                                    "name": "ORIENTA\u00c7\u00c3O",
+                                    "value": "108"
+                                },
+                                {
+                                    "name": "ORIENTA\u00c7\u00c3O/EDUCATIVA",
+                                    "value": "109"
+                                },
+                                {
+                                    "name": "ORIENTA\u00c7\u00c3O/IDENTIFICA\u00c7\u00c3O",
+                                    "value": "110"
+                                },
+                                {
+                                    "name": "ORIENTA\u00c7\u00c3O/II-2",
+                                    "value": "111"
+                                },
+                                {
+                                    "name": "ORIENTA\u00c7\u00c3O/S-5",
+                                    "value": "112"
+                                },
+                                {
+                                    "name": "ORIENTA\u00c7\u00c3O/S-5/COMPOSTA/II-1",
+                                    "value": "113"
+                                },
+                                {
+                                    "name": "R-1",
+                                    "value": "114"
+                                },
+                                {
+                                    "name": "R-11",
+                                    "value": "115"
+                                },
+                                {
+                                    "name": "R-12",
+                                    "value": "116"
+                                },
+                                {
+                                    "name": "R-15",
+                                    "value": "117"
+                                },
+                                {
+                                    "name": "R-18",
+                                    "value": "118"
+                                },
+                                {
+                                    "name": "R-19",
+                                    "value": "119"
+                                },
+                                {
+                                    "name": "R-19/ADVERT\u00caNCIA",
+                                    "value": "120"
+                                },
+                                {
+                                    "name": "R-19/COMPOSTA",
+                                    "value": "121"
+                                },
+                                {
+                                    "name": "R-19/IDENTIFICA\u00c7\u00c3O",
+                                    "value": "122"
+                                },
+                                {
+                                    "name": "R-2",
+                                    "value": "123"
+                                },
+                                {
+                                    "name": "R-24",
+                                    "value": "124"
+                                },
+                                {
+                                    "name": "R-24A",
+                                    "value": "125"
+                                },
+                                {
+                                    "name": "R-24A/R-33",
+                                    "value": "126"
+                                },
+                                {
+                                    "name": "R-24B",
+                                    "value": "127"
+                                },
+                                {
+                                    "name": "R-24B/COMPOSTA",
+                                    "value": "128"
+                                },
+                                {
+                                    "name": "R-25C",
+                                    "value": "129"
+                                },
+                                {
+                                    "name": "R-25D",
+                                    "value": "130"
+                                },
+                                {
+                                    "name": "R-27",
+                                    "value": "131"
+                                },
+                                {
+                                    "name": "R-27/COMPOSTA",
+                                    "value": "132"
+                                },
+                                {
+                                    "name": "R-28",
+                                    "value": "133"
+                                },
+                                {
+                                    "name": "R-2A",
+                                    "value": "134"
+                                },
+                                {
+                                    "name": "R-3",
+                                    "value": "135"
+                                },
+                                {
+                                    "name": "R-32B",
+                                    "value": "136"
+                                },
+                                {
+                                    "name": "R-33",
+                                    "value": "137"
+                                },
+                                {
+                                    "name": "R-34",
+                                    "value": "138"
+                                },
+                                {
+                                    "name": "R-37",
+                                    "value": "139"
+                                },
+                                {
+                                    "name": "R-4A",
+                                    "value": "140"
+                                },
+                                {
+                                    "name": "R-4B",
+                                    "value": "141"
+                                },
+                                {
+                                    "name": "R-5",
+                                    "value": "142"
+                                },
+                                {
+                                    "name": "R-5A",
+                                    "value": "143"
+                                },
+                                {
+                                    "name": "R-6A",
+                                    "value": "144"
+                                },
+                                {
+                                    "name": "R-6B",
+                                    "value": "145"
+                                },
+                                {
+                                    "name": "R-6B/COMPOSTA",
+                                    "value": "146"
+                                },
+                                {
+                                    "name": "R-6C",
+                                    "value": "147"
+                                },
+                                {
+                                    "name": "R-6C/COMPOSTA",
+                                    "value": "148"
+                                },
+                                {
+                                    "name": "R-7",
+                                    "value": "149"
+                                },
+                                {
+                                    "name": "R-9/COMPOSTA",
+                                    "value": "150"
+                                },
+                                {
+                                    "name": "S-1/COMPOSTA",
+                                    "value": "151"
+                                },
+                                {
+                                    "name": "S-11/COMPOSTA/S-6/COMPOSTA",
+                                    "value": "152"
+                                },
+                                {
+                                    "name": "S-14",
+                                    "value": "153"
+                                },
+                                {
+                                    "name": "S-14/COMPOSTA",
+                                    "value": "154"
+                                },
+                                {
+                                    "name": "S-4",
+                                    "value": "155"
+                                },
+                                {
+                                    "name": "S-5/COMPOSTA",
+                                    "value": "156"
+                                },
+                                {
+                                    "name": "S-6/COMPOSTA/ORIENTA\u00c7\u00c3O",
+                                    "value": "157"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "apiName": "demandOrigin",
+                        "dataType": "selectMultiple",
+                        "displayName": "Origem",
+                        "selectOptions": {
+                            "options": [
+                                {
+                                    "name": "Interna",
+                                    "value": "1"
+                                },
+                                {
+                                    "name": "TOR",
+                                    "value": "2"
+                                },
+                                {
+                                    "name": "ARTESP DIN",
+                                    "value": "3"
+                                },
+                                {
+                                    "name": "ARTESP DOP",
+                                    "value": "4"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "apiName": "internCode",
+                        "dataType": "string",
+                        "displayIf": {
+                            "in": [
+                                "1",
+                                {
+                                    "var": "data.formData.demandOrigin"
+                                }
+                            ]
+                        },
+                        "displayName": "C\u00f3digo Interno"
+                    },
+                    {
+                        "id": 6,
+                        "apiName": "torCode",
+                        "dataType": "string",
+                        "displayIf": {
+                            "in": [
+                                "2",
+                                {
+                                    "var": "data.formData.demandOrigin"
+                                }
+                            ]
+                        },
+                        "displayName": "C\u00f3digo Tor"
+                    },
+                    {
+                        "id": 7,
+                        "apiName": "artespCode",
+                        "dataType": "string",
+                        "displayIf": {
+                            "or": [
+                                {
+                                    "in": [
+                                        "3",
+                                        {
+                                            "var": "data.formData.demandOrigin"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "in": [
+                                        "4",
+                                        {
+                                            "var": "data.formData.demandOrigin"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "displayName": "C\u00f3digo ARTESP"
+                    },
+                    {
+                        "id": 8,
+                        "apiName": "receivedDate",
+                        "dataType": "timestamp",
+                        "displayIf": {
+                            "or": [
+                                {
+                                    "in": [
+                                        "3",
+                                        {
+                                            "var": "data.formData.demandOrigin"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "in": [
+                                        "4",
+                                        {
+                                            "var": "data.formData.demandOrigin"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "displayName": "Recebido da ARTESP em"
+                    },
+                    {
+                        "id": 9,
+                        "apiName": "length",
+                        "dataType": "float",
+                        "displayName": "Comprimento (m)"
+                    },
+                    {
+                        "id": 10,
+                        "apiName": "width",
+                        "dataType": "float",
+                        "displayName": "Largura (m)"
+                    },
+                    {
+                        "id": 11,
+                        "unit": "m\u00b2",
+                        "logic": {
+                            "if": [
+                                {
+                                    "missing": [
+                                        "formData.length",
+                                        "formData.width"
+                                    ]
+                                },
+                                0,
+                                {
+                                    "*": [
+                                        {
+                                            "var": "formData.length"
+                                        },
+                                        {
+                                            "var": "formData.width"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "apiName": "area",
+                        "dataType": "jsonLogic",
+                        "mainReport": true,
+                        "displayName": "\u00c1rea (m\u00b2)"
+                    },
+                    {
+                        "id": 12,
+                        "apiName": "notes",
+                        "dataType": "textArea",
+                        "displayName": "Observa\u00e7\u00f5es"
+                    },
+                    {
+                        "id": 13,
+                        "apiName": "signType",
+                        "dataType": "select",
+                        "displayName": "Tipo de Placa",
+                        "selectOptions": {
+                            "options": [
+                                {
+                                    "name": "A\u00e9rea",
+                                    "value": "1"
+                                },
+                                {
+                                    "name": "Solo",
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "groups": [
+                    {
+                        "order": 1,
+                        "members": [
+                            1,
+                            2
+                        ],
+                        "displayName": "Informa\u00e7\u00f5es de Edital"
+                    },
+                    {
+                        "order": 2,
+                        "members": [
+                            3,
+                            13
+                        ],
+                        "displayName": "Campos especiais"
+                    },
+                    {
+                        "order": 3,
+                        "members": [
+                            4,
+                            5,
+                            6,
+                            7,
+                            8
+                        ],
+                        "displayName": "Identifica\u00e7\u00e3o"
+                    },
+                    {
+                        "order": 4,
+                        "members": [
+                            9,
+                            10,
+                            11
+                        ],
+                        "displayName": "Quantitativos"
+                    },
+                    {
+                        "order": 5,
+                        "members": [
+                            12
+                        ],
+                        "displayName": "Informa\u00e7\u00f5es adicionais"
+                    }
+                ],
+                "displayName": "Reparo ou substitui\u00e7\u00e3o das demais placas de sinaliza\u00e7\u00e3o vertical (aus\u00eancia, retro inadequada, avaria, depreda\u00e7\u00e3o ou vandalismo)",
+                "measurementColumns": [
+                    {
+                        "key": "contratualcode",
+                        "logic": "e.2.4",
+                        "style": {
+                            "numFmt": "0.00"
+                        },
+                        "width": 12,
+                        "header": "C\u00f3digo de Edital",
+                        "addTotal": true
+                    },
+                    {
+                        "key": "csp",
+                        "logic": "8.1",
+                        "style": {
+                            "numFmt": "0.00"
+                        },
+                        "width": 12,
+                        "header": "CSP",
+                        "addTotal": true
+                    },
+                    {
+                        "key": "signName",
+                        "logic": {
+                            "cat": [
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "1",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-12",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "2",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-12/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "3",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-14",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "4",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-15",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "5",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-15/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "6",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-17",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "7",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-18",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "8",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-18/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "9",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-19/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "10",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-1A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "11",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-1A/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "12",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-1B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "13",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-1B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "14",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-20A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "15",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-21B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "16",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-21B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "17",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-21C",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "18",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-21C/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "19",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-21E",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "20",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-22",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "21",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-22/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "22",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-242A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "23",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-24A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "24",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-25",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "25",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-26B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "26",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-27",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "27",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-28",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "28",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-2A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "29",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-2A/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "30",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-2B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "31",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-2B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "32",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-30A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "33",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-30B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "34",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-32A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "35",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-32-A/A-30B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "36",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-32A/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "37",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-32B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "38",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-32B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "39",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-34A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "40",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-35/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "41",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-36",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "42",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-36/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "43",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-36/R-19/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "44",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-37",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "45",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-37/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "46",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-3A/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "47",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-3B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "48",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-42A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "49",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-42A/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "50",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-42B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "51",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-42B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "52",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-45",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "53",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-4A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "54",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-4B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "55",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-4B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "56",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-6",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "57",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-6/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "58",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-7B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "59",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-8",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "60",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "A-8/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "61",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ADVERT\u00caNCIA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "62",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ADVERT\u00caNCIA/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "63",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ADVERT\u00caNCIA/R-14",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "64",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ADVERT\u00caNCIA/R-19",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "65",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ADVERT\u00caNCIA/REGULAMENTA\u00c7\u00c3O",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "66",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "APOIO OPERACIONAL",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "67",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ATRATIVO TUR\u00cdSTICO",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "68",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "DISPOSITIVOS AUXILIARES",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "69",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "EDUCATIVA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "70",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "EDUCATIVA/A-32A/A-30B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "71",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "EDUCATIVA/ADVERT\u00caNCIA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "72",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "I-33",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "73",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IDENTIFICA\u00c7\u00c3O",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "74",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IDENTIFICA\u00c7\u00c3O/ORIENTA\u00c7\u00c3O",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "75",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IE-1",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "76",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IE-13",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "77",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IE-14",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "78",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IE-2",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "79",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IE-21",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "80",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IE-3",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "81",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IE-5",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "82",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IE-8",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "83",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "II-1",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "84",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "II-2",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "85",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "II-2/ORIENTA\u00c7AO",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "86",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "II-3",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "87",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IL-1",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "88",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IL-3",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "89",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IL-4",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "90",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-10",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "91",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-11",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "92",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-12A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "93",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-17",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "94",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-18",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "95",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-5",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "96",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-7",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "97",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-8",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "98",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-8 ",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "99",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "IP-9",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "100",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ISA-2 PICTOGRAMAS",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "101",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ISA-3",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "102",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ISA-3 PICTOGRAMAS",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "103",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ISA-4",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "104",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "M.A.",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "105",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "MP-1",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "106",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "MP-2",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "107",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "MP-3",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "108",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ORIENTA\u00c7\u00c3O",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "109",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ORIENTA\u00c7\u00c3O/EDUCATIVA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "110",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ORIENTA\u00c7\u00c3O/IDENTIFICA\u00c7\u00c3O",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "111",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ORIENTA\u00c7\u00c3O/II-2",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "112",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ORIENTA\u00c7\u00c3O/S-5",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "113",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "ORIENTA\u00c7\u00c3O/S-5/COMPOSTA/II-1",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "114",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-1",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "115",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-11",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "116",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-12",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "117",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-15",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "118",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-18",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "119",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-19",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "120",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-19/ADVERT\u00caNCIA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "121",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-19/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "122",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-19/IDENTIFICA\u00c7\u00c3O",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "123",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-2",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "124",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-24",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "125",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-24A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "126",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-24A/R-33",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "127",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-24B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "128",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-24B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "129",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-25C",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "130",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-25D",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "131",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-27",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "132",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-27/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "133",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-28",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "134",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-2A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "135",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-3",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "136",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-32B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "137",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-33",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "138",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-34",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "139",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-37",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "140",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-4A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "141",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-4B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "142",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-5",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "143",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-5A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "144",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-6A",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "145",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-6B",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "146",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-6B/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "147",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-6C",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "148",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-6C/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "149",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-7",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "150",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "R-9/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "151",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "S-1/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "152",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "S-11/COMPOSTA/S-6/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "153",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "S-14",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "154",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "S-14/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "155",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "S-4",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "156",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "S-5/COMPOSTA",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "157",
+                                                {
+                                                    "var": "formData.signName"
+                                                }
+                                            ]
+                                        },
+                                        "S-6/COMPOSTA/ORIENTA\u00c7\u00c3O",
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        "header": "Nome da Placa"
+                    },
+                    {
+                        "key": "demandOrigin",
+                        "logic": {
+                            "cat": [
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "1",
+                                                {
+                                                    "var": "formData.demandOrigin"
+                                                }
+                                            ]
+                                        },
+                                        "Interna",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "2",
+                                                {
+                                                    "var": "formData.demandOrigin"
+                                                }
+                                            ]
+                                        },
+                                        "TOR",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "3",
+                                                {
+                                                    "var": "formData.demandOrigin"
+                                                }
+                                            ]
+                                        },
+                                        "ARTESP DIN",
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "if": [
+                                        {
+                                            "==": [
+                                                "4",
+                                                {
+                                                    "var": "formData.demandOrigin"
+                                                }
+                                            ]
+                                        },
+                                        "ARTESP DOP",
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        "header": "Origem"
+                    },
+                    {
+                        "key": "internCode",
+                        "header": "C\u00f3digo Interno"
+                    },
+                    {
+                        "key": "torCode",
+                        "header": "C\u00f3digo Tor"
+                    },
+                    {
+                        "key": "artespCode",
+                        "header": "C\u00f3digo ARTESP"
+                    },
+                    {
+                        "key": "receivedDate",
+                        "header": "Recebido da ARTESP em"
+                    },
+                    {
+                        "key": "length",
+                        "style": {
+                            "numFmt": "0.00"
+                        },
+                        "width": 12,
+                        "header": "Comprimento (m)"
+                    },
+                    {
+                        "key": "width",
+                        "style": {
+                            "numFmt": "0.00"
+                        },
+                        "width": 12,
+                        "header": "Largura (m)"
+                    },
+                    {
+                        "key": "area",
+                        "logic": {
+                            "if": [
+                                {
+                                    "missing": [
+                                        "formData.length",
+                                        "formData.width"
+                                    ]
+                                },
+                                0,
+                                {
+                                    "*": [
+                                        {
+                                            "var": "formData.length"
+                                        },
+                                        {
+                                            "var": "formData.width"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "style": {
+                            "numFmt": "0.000"
+                        },
+                        "width": 12,
+                        "header": "\u00c1rea (m\u00b2)",
+                        "addTotal": true
+                    },
+                    {
+                        "key": "notes",
+                        "logic": {
+                            "var": "formData.notes"
+                        },
+                        "width": 20,
+                        "header": "Observa\u00e7\u00f5es"
+                    }
+                ]
+            },
+            "goal_formula": [],
+            "monitoring_plan": null,
+            "created_at": "2021-02-22T02:58:55.570Z",
+            "updated_at": "2021-02-22T02:58:55.570Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "deadline": "7 00:00:00",
+            "active": true,
+            "previous_version": null,
+            "is_oae": false,
+            "firms": [
+                "4ee50e2c-be0b-4d32-9341-efb4c0d89818"
+            ]
+        }
+    },
+    {
+        "model": "occurrence_records.occurrencetype",
+        "pk": "8c745a3b-ca56-419d-a012-117b5f5f1dd1",
+        "fields": {
+            "name": "Teste - inspecao",
+            "occurrence_kind": "501",
+            "form_fields": {
+                "id": 1,
+                "name": "Teste - inspecao",
+                "fields": [
+                    {
+                        "id": 1,
+                        "apiName": "therapy",
+                        "dataType": "arrayOfObjects",
+                        "displayName": "Elemento",
+                        "innerFields": [
+                            {
+                                "order": 1,
+                                "apiName": "description",
+                                "dataType": "textArea",
+                                "displayName": "Descricao"
+                            },
+                            {
+                                "order": 2,
+                                "api_name": "occurrenceType",
+                                "dataType": "select",
+                                "display_name": "Classe",
+                                "selectOptions": {
+                                    "reference": {
+                                        "filter": "{\"exclude_occurrence_kind\": \"2\"}",
+                                        "resource": "OccurrenceType",
+                                        "optionText": "name",
+                                        "optionValue": "uuid"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "groups": [
+                    {
+                        "order": 1,
+                        "members": [
+                            1
+                        ],
+                        "displayName": "Teste"
+                    }
+                ],
+                "displayName": "Teste - inspecao"
+            },
+            "goal_formula": [],
+            "monitoring_plan": null,
+            "created_at": "2020-09-03T15:32:58.732Z",
+            "updated_at": "2020-09-03T15:32:59.315Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "deadline": null,
+            "active": true,
+            "previous_version": null,
+            "is_oae": false,
+            "firms": [
+                "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+            ]
+        }
+    },
+    {
+        "model": "occurrence_records.occurrencetype",
+        "pk": "90924c99-c3b8-47b7-b13c-c87b23024273",
+        "fields": {
+            "name": "NEW JERSEY-teste",
+            "occurrence_kind": "2",
+            "form_fields": {
+                "id": 3,
+                "name": "incendios",
+                "fields": [
+                    {
+                        "id": 1,
+                        "apiName": "length",
+                        "dataType": "float",
+                        "displayName": "Comprimento (m)"
+                    },
+                    {
+                        "id": 2,
+                        "apiName": "width",
+                        "dataType": "float",
+                        "displayName": "Largura (m)"
+                    },
+                    {
+                        "id": 3,
+                        "apiName": "wind",
+                        "dataType": "float",
+                        "displayName": "Vento"
+                    },
+                    {
+                        "id": 4,
+                        "apiName": "area",
+                        "dataType": "float",
+                        "displayName": "\u00c1rea (ha)"
+                    },
+                    {
+                        "id": 5,
+                        "apiName": "volume",
+                        "dataType": "float",
+                        "displayName": "Volume"
+                    },
+                    {
+                        "id": 6,
+                        "apiName": "areaType",
+                        "dataType": "selectMultiple",
+                        "displayName": "Natureza",
+                        "selectOptions": {
+                            "options": [
+                                {
+                                    "name": "Mata",
+                                    "value": "1"
+                                },
+                                {
+                                    "name": "Capoeira",
+                                    "value": "2"
+                                },
+                                {
+                                    "name": "Capoeirinha",
+                                    "value": "3"
+                                },
+                                {
+                                    "name": "Outro",
+                                    "open": true,
+                                    "value": "4"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 7,
+                        "apiName": "damages",
+                        "dataType": "textArea",
+                        "displayName": "Danos"
+                    },
+                    {
+                        "id": 8,
+                        "apiName": "comments",
+                        "dataType": "textArea",
+                        "displayName": "Observa\u00e7\u00f5es"
+                    },
+                    {
+                        "id": 9,
+                        "apiName": "consequences",
+                        "dataType": "textArea",
+                        "displayName": "Consequ\u00eancias"
+                    }
+                ],
+                "groups": [
+                    {
+                        "order": 3,
+                        "members": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "displayName": "Dimens\u00e3o"
+                    },
+                    {
+                        "order": 4,
+                        "members": [
+                            6
+                        ],
+                        "displayName": "\u00c1rea"
+                    },
+                    {
+                        "order": 5,
+                        "members": [
+                            7,
+                            9
+                        ],
+                        "displayName": "Danos e Consequ\u00eancias"
+                    },
+                    {
+                        "order": 6,
+                        "members": [
+                            8
+                        ],
+                        "displayName": "Coment\u00e1rios"
+                    }
+                ],
+                "displayName": "Inc\u00eandios Florestais"
+            },
+            "goal_formula": [],
+            "monitoring_plan": null,
+            "created_at": "2020-09-03T15:32:58.732Z",
+            "updated_at": "2020-09-03T15:32:59.315Z",
+            "created_by": "eca34fc1-6e07-44db-bfc0-d1a30bfcb24d",
+            "deadline": null,
+            "active": true,
+            "previous_version": null,
+            "is_oae": false,
+            "firms": [
+                "4ee50e2c-be0b-4d32-9341-efb4c0d89818"
+            ]
+        }
+    }
+]

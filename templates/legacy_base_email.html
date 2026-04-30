@@ -1,0 +1,699 @@
+{% load premailer %}
+
+{% premailer %}
+<!doctype html>
+<html>
+  <head>
+    <!--[if gte mso 9
+      ]><xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+      </xml><!
+    [endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- [if !mso]><!-->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <!-- <![endif] -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:600,400,300"
+        rel="stylesheet"
+        type="text/css"
+    />
+    <title>{{title}}</title>
+    <style type="text/css">
+      html,
+      body {
+        background-color: #fafbfc;
+      }
+      img {
+        display: block;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+      .whiteLinks a:link,
+      .whiteLinks a:visited {
+        color: #ffffff !important;
+      }
+      .appleLinksGrey a {
+        color: #b7bdc1 !important;
+        text-decoration: none !important;
+      }
+      table {
+        border-collapse: separate !important;
+      }
+      td {
+        word-wrap: break-word;
+      }
+      .preheader {
+        font-size: 1px;
+        line-height: 1px;
+        display: none !important;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        font-family: 'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .table-class {
+        width: 100%;
+      }
+      .table-div {
+        margin: 10px;
+        max-width: 1020px;
+        font-size: 0;
+      }
+      .body-td {
+        background-color: #fafbfc;
+      }
+      .td-logo {
+        padding: 20px 0 10px 0;
+      }
+      .table-logo {
+        font-family: 'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 18px;
+        color: #012f71;
+        text-align: center;
+        width: 152px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      .custom-logo {
+        border: 0;
+        text-decoration: none;
+        display: block;
+      }
+      .table-border {
+        padding: 20px;
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid #D3D3D3;
+        border-radius: 5px;
+      }
+      .center-td {
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+      }
+      .table-div-center {
+        display: inline-block;
+        width: 100%;
+        max-width: 1020px;
+      }
+      .table-text-center {
+        font-family: 'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        color: #525C65;
+        text-align: left;
+        width: 100%;
+      }
+      .p-container {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: #102231;
+        margin: 0;
+        font-size: 18px;
+        line-height: 24px; 
+        font-weight: bold;
+      }
+      .disclaimer-td {
+        padding: 20px 0 20px 0px;
+        margin-top: 10px;
+      }
+      .disclaimer-table {
+        border-top: 1px solid #f0f0f0;
+        font-family: 'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #525C65;
+        text-align: left;
+        width: 100%;
+      }
+      .disclaimer-td-inner {
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        color: #363636;
+        padding: 20px 0 0 0;
+      }
+      .social-td {
+        padding: 0 10px;
+      }
+      .app-title {
+        padding: 10px;
+      }
+      .social-table-icon {
+        background-color: #012f71;
+        border-radius: 100px;
+        width: 35px;
+      }
+      .social-td-icon {
+        font-size: 0;
+        height: 35px;
+        vertical-align: middle;
+        width: 35px;
+      }
+      .social-img {
+        display: block;
+      }
+      .social {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .app-div {
+        max-width: 520px;
+        margin: 0 auto;
+      }
+      .app-td {
+        text-align: center;
+        padding: 0;
+      }
+      .app-td-inner {
+        padding: 30px 0;
+        width: 100%;
+      }
+      .app-width {
+        width: 265px;
+      }
+      .app-img {
+        display: block;
+        width: 120px !important;
+      }
+      .p-text {
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .td-button {
+        margin: 10px auto;
+      }
+      .table-button {
+        padding: 20px 0 20px 0;
+        border-collapse: separate !important;
+        border-radius: 15px;
+        max-width: 1020px;
+      }
+      .a-button {
+        background-color: #012f71;
+        border-collapse: separate !important;
+        border-top: 10px solid #012f71;
+        border-bottom: 10px solid #012f71;
+        border-right: 45px solid #012f71;
+        border-left: 45px solid #012f71;
+        border-radius: 4px;
+        color: #ffffff;
+        display: inline-block;
+        font-family: 'Open+Sans','Open Sans',Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 2px;
+      }
+      .p-info {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .td-big-table {
+        padding-top: 10px;
+        background-color: #012f71;
+        width: 100%;
+        color: #ffffff;
+      }
+      .td-big-table-rows {
+        background-color: #ffffff;
+        width: 100%;
+        color: #525C65;
+      }
+      .title-big-table {
+        width: 100%;
+        font-size: 0;
+        border-collapse: collapse !important;
+      }
+      .table-section-title {
+        padding: 8px 0 8px 10px;
+        font-family: 'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+        text-align: left;
+        letter-spacing: 1px;
+      }
+      .table-header {
+        font-family: 'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+        text-align: center;
+        background-color: #cccccc;
+        border: 1px solid #012f71;
+      }
+      .table-header-td {
+        padding: 5px;
+        color: #000000;
+        background-color: #cccccc;
+        border: 1px solid #012f71;
+      }
+      .table-row {
+        font-family: 'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #525C65;
+        text-align: center;
+        background-color: #ffffff;
+        border: 1px solid #012f71;
+      }
+      .table-row-td {
+        padding: 5px;
+        color: #525C65;
+        background-color: #ffffff;
+        border: 1px solid #012f71;
+      }
+      .blank-space {
+        padding: 10px 0 10px 0;
+      }
+      .unsubscribe-link {
+        font-family: 'Open+Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+        color: #012f71;
+        text-decoration: underline;
+        font-size: 13px;
+      }
+      .usr-notif-th {
+        background-color:#EEF7FF;
+        border-radius: 4px;
+        height:56px;
+      }
+      .usr-notif-alert-th {
+        border-radius: 4px;
+        height:56px;
+      }
+      .usr-notif-table {
+        width:100%;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+      }
+      .usr-notif-title {
+        padding: 8px 8px 8px 10px;
+        font-family: 'Roboto', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        width:187px;
+        color: #000;
+        text-align: right;
+        letter-spacing: 1px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+      }
+      .usr-notif-title:first-child {
+        padding: 8px 8px 8px 10px;
+        font-family: 'Roboto', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        width:147px;
+        color: #000;
+        text-align: left;
+        letter-spacing: 1px;
+      }
+      .usr-notif-cell {
+        padding: 8px 8px 8px 10px;
+        width:187px;
+        font-family: 'Roboto', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        color: #000;
+        text-align: right;
+        letter-spacing: 1px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+      }
+      .usr-notif-cell:first-child {
+        padding: 8px 8px 8px 10px;
+        font-family: 'Roboto', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        color: #000;
+        text-align: left;
+        letter-spacing: 1px;
+        width:147px;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="#fafbfc" yahoo="fix">
+    <table border="0" cellpadding="0" cellspacing="0" class="table-class">
+      <tbody>
+        <tr>
+          <td class="body-td" align="center">
+            <table id="maincontent" border="0" cellpadding="0" cellspacing="0" class="table-div">
+              <tbody>
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0" class="table-class">
+                      <tbody>
+
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" class="table-class">
+                              <tbody>
+                                <tr>
+                                  <td align="center">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="table-logo">
+                                      <tbody>
+                                        <tr>
+                                          <td class="td-logo">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="inner-table-logo">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center">
+                                                      <img width="300" height="69" src="https://kartado-public-assets.s3.amazonaws.com/kartado-logo-small.png" class="custom-logo" alt="kartado" border="0">
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <table cellpadding="0" cellspacing="0" class="table-border">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" class="table-class">
+                                      <tbody>
+                                        <tr>
+                                          <td class="center-td">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="table-div-center">
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="table-text-center">
+                                                      <tbody>
+
+                                                        <tr>
+                                                          <td>
+                                                            <p class="p-container">
+                                                              <b>Olá!</b>
+                                                            </p>
+                                                          </td>
+                                                        </tr>
+
+                                                        {% block headcontent %}
+                                                        {% endblock headcontent %}
+
+                                                        {% block content %}
+                                                        {% endblock content %}
+
+                                                        {% if disclaimer_approval_title %}
+                                                        <tr>
+                                                          <td align="center" class="disclaimer-td">
+                                                            <table border="0" cellpadding="0" cellspacing="0" class="disclaimer-table">
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td class="disclaimer-td-inner">
+                                                                      <p><b>{{ disclaimer_approval_title }}</b></p>
+                                                                    </td>
+                                                                  </tr>
+                                                                  {% if disclaimer_approval %}
+                                                                  <tr>
+                                                                    <td class="disclaimer-td-inner">
+                                                                      <p>{{ disclaimer_approval }}</p>
+                                                                    </td>
+                                                                  </tr>
+                                                                  {% endif %}
+                                                                </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                        {% endif %}
+
+                                                        {% if disclaimer %}
+                                                        <tr>
+                                                          <td align="center" class="disclaimer-td">
+                                                            <table border="0" cellpadding="0" cellspacing="0" class="disclaimer-table">
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td class="disclaimer-td-inner">
+                                                                      <p>{{ disclaimer }}</p>
+                                                                    </td>
+                                                                  </tr>
+                                                                </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                        {% endif %}
+
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+                        {% if mobile_app and mobile_app != "undefined" %}
+                        <tr>
+                          <td class="app-td">
+                            <table border="0" cellpadding="0" cellspacing="0" class="app-div">
+                              <tbody>
+                                <tr>
+                                  <td align="center" class="app-td-inner">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="table-class">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center">
+                                                    <p class="p-text">
+                                                      Baixe nosso app:
+                                                    </p>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="app-width">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center">
+                                                    <p>
+                                                      <a
+                                                        href="https://play.google.com/store/apps/details?id=com.spotway2"
+                                                        target="_blank"
+                                                      >
+                                                        <img
+                                                          alt="Android"
+                                                          border="0"
+                                                          height="44"
+                                                          src="https://kartado-public-assets.s3.amazonaws.com/android-btn.gif"
+                                                          class="app-img"
+                                                          width="120"
+                                                        />
+                                                      </a>
+                                                    </p>
+                                                  </td>
+                                                  <td align="center">
+                                                    <p>
+                                                      <a
+                                                        href="https://apps.apple.com/br/app/kartado/id1537918449"
+                                                        target="_blank"
+                                                      >
+                                                        <img
+                                                          alt="IOS"
+                                                          border="0"
+                                                          height="44"
+                                                          src="https://kartado-public-assets.s3.amazonaws.com/ios-btn.gif"
+                                                          class="app-img"
+                                                          width="120"
+                                                        />
+                                                      </a>
+                                                    </p>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        {% endif %}
+
+                        <tr>
+                          <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="social">
+                              <tbody>
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-class">
+                                      <tbody>
+                                        <tr>
+                                          <td class="social-td">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="social-table-icon">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="social-td-icon">
+                                                    <a href="https://www.instagram.com/kartado.co/" target="_blank">
+                                                      <img
+                                                        alt="instagram"
+                                                        height="35"
+                                                        width="35"
+                                                        class="social-img"
+                                                        src="https://kartado-public-assets.s3.amazonaws.com/instagram.png"
+                                                      >
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-class">
+                                      <tbody>
+                                        <tr>
+                                          <td class="social-td">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="social-table-icon">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="social-td-icon">
+                                                    <a href="https://www.youtube.com/channel/UC8Pg9MnPzTDRaBcXyTwyFiQ/featured" target="_blank">
+                                                      <img
+                                                        alt="youtube"
+                                                        height="35"
+                                                        width="35"
+                                                        class="social-img"
+                                                        src="https://kartado-public-assets.s3.amazonaws.com/youtube.png"
+                                                      >
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-class">
+                                      <tbody>
+                                        <tr>
+                                          <td class="social-td">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="social-table-icon">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="social-td-icon">
+                                                    <a href="https://www.linkedin.com/company/kartado/" target="_blank">
+                                                      <img
+                                                        alt="linkedin"
+                                                        height="35"
+                                                        width="35"
+                                                        class="social-img"
+                                                        src="https://kartado-public-assets.s3.amazonaws.com/linkedin.png"
+                                                      >
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+                        {% if unsubscribe_url %}
+                        <tr>
+                          <td class="app-td">
+                            <table border="0" cellpadding="0" cellspacing="0" class="app-div">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" class="table-class">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" class="app-td-inner">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="app-width">
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center">
+                                                    <p>
+                                                      <a
+                                                        href="{{ unsubscribe_url }}"
+                                                        target="_blank"
+                                                        class="unsubscribe-link"
+                                                      >
+                                                        Parar de receber notificações da Kartado
+                                                      </a>
+                                                    </p>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        {% endif %}
+
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+{% endpremailer %}

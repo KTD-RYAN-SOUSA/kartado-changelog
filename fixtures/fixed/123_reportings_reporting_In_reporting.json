@@ -1,0 +1,37 @@
+[{
+	"model": "reportings.reportinginreporting",
+	"pk": "53540f81-3fff-433f-8187-e6a67f274f57",
+	"fields": {
+		"parent": "00016716-4db3-4f90-9762-85fbb02884cf",
+		"child": "00015140-5cf4-43b9-be76-fa2e21da0b1c",
+		"reporting_relation": "a6a3db62-ceff-442d-8ba4-0d80d4652675"
+	}
+},
+{
+	"model": "reportings.reportinginreporting",
+	"pk": "4b518ea1-5e65-4400-9929-eca2b0f87aef",
+	"fields": {
+		"parent": "00015140-5cf4-43b9-be76-fa2e21da0b1c",
+		"child": "00016716-4db3-4f90-9762-85fbb02884cf",
+		"reporting_relation": "4b518ea1-5e65-4400-9929-eca2b0f87aef"
+	}
+},
+{
+	"model": "reportings.reportinginreporting",
+	"pk": "161d8498-f34a-4f3b-b962-052310752090",
+	"fields": {
+		"parent": "00016716-4db3-4f90-9762-85fbb02884cf",
+		"child": "b377f326-1d77-4ad7-a891-d7eef4ed3397",
+		"reporting_relation": "161d8498-f34a-4f3b-b962-052310752090"
+	}
+},
+{
+	"model": "reportings.reportinginreporting",
+	"pk": "ab8076db-7590-4e6c-83fa-a724e2d7133d",
+	"fields": {
+		"parent": "b377f326-1d77-4ad7-a891-d7eef4ed3397",
+		"child": "beb96881-8387-431e-9620-581684975780",
+		"reporting_relation": "ab8076db-7590-4e6c-83fa-a724e2d7133d"
+	}
+}
+]

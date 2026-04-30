@@ -1,0 +1,86 @@
+[{
+        "model": "constructions.constructionprogress",
+        "pk": "eaee57cc-5a8f-4ed3-b36d-69f39eee59eb",
+        "fields": {
+            "name": "New construction progress",
+            "created_at": "2021-07-07T20:05:03.235Z",
+            "executed_at": "2021-07-07T20:05:03.235Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "construction": "16622b36-f42c-45d6-9e14-123faecedc63",
+            "progress_details": [{
+                "detailsTest": "This is a details test"
+            }],
+            "reportings": ["00000db3-a561-4387-ac47-d48fca2d6c24"]
+        }
+    },
+    {
+        "model": "constructions.constructionprogress",
+        "pk": "1976c75f-b264-40ad-b947-53deb6099e8c",
+        "fields": {
+            "name": "New construction progress",
+            "created_at": "2022-07-07T20:05:03.235Z",
+            "executed_at": "2022-07-07T20:05:03.235Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "construction": "16622b36-f42c-45d6-9e14-123faecedc63",
+            "progress_details": [{
+                "detailsTest": "This is a details test"
+            }],
+            "reportings": ["00000db3-a561-4387-ac47-d48fca2d6c24"]
+        }
+    },
+    {
+        "model": "constructions.constructionprogress",
+        "pk": "84050013-2908-4527-b8f9-ca6ea438875d",
+        "fields": {
+            "name": "New construction progress",
+            "created_at": "2023-07-07T20:05:03.235Z",
+            "executed_at": "2022-07-07T20:05:03.235Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "construction": "f602eb60-d5c1-4702-a050-89adf3bc6315",
+            "progress_details": [{
+                    "phase": 0,
+                    "subphase": 0,
+                    "stretches": [{
+                        "km": 12,
+                        "end_km": 13,
+                        "status": "in_progress"
+                    }],
+                    "executed_amount": 12
+                },
+                {
+                    "phase": 1,
+                    "subphase": 0,
+                    "stretches": [{
+                        "km": 12,
+                        "end_km": 13,
+                        "status": "finished"
+                    }],
+                    "executed_amount": 8
+                }
+            ],
+            "reportings": ["00000db3-a561-4387-ac47-d48fca2d6c24"]
+        }
+    },
+    {
+        "model": "constructions.constructionprogress",
+        "pk": "0c3a48c4-14f6-4cfe-ad28-70df971b291c",
+        "fields": {
+            "name": "Test validate progress data",
+            "created_at": "2024-07-07T20:05:03.235Z",
+            "executed_at": "2022-07-07T20:05:03.235Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "construction": "04bc90c6-da48-47ce-a355-84278b8f29b1",
+            "progress_details": [{
+                "phase": 0,
+                "subphase": 0,
+                "stretches": [{
+                    "km": 4,
+                    "end_km": 4.5,
+                    "status": "finished"
+                }],
+                "executed_amount": 50
+            }],
+            "reportings": ["00000db3-a561-4387-ac47-d48fca2d6c24"]
+        }
+    }
+]

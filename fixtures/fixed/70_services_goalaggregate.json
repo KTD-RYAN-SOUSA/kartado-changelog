@@ -1,0 +1,33 @@
+[
+{
+    "model": "services.goalaggregate",
+    "pk": "54a6d0ca-76b5-4e66-99a5-4e010454a113",
+    "fields": {
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "start_date": "2020-05-01T03:00:00Z",
+        "end_date": "2020-06-01T02:59:59.999Z",
+        "number": "1",
+        "group_goals": {
+            "draining": 0,
+            "maintenance": 120514.43,
+            "other_services": 60311.39
+        }
+    }
+},
+{
+    "model": "services.goalaggregate",
+    "pk": "5aa7b0e4-658c-4f0d-99da-5f32c2ce023f",
+    "fields": {
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "start_date": "2020-05-01T20:35:00Z",
+        "end_date": "2020-07-31T20:35:00Z",
+        "number": "1",
+        "group_goals": {
+            "draining": 0,
+            "pavement": 0,
+            "maintenance": 170479.11,
+            "other_services": 151663.31
+        }
+    }
+}
+]

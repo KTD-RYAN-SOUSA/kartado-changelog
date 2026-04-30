@@ -1,0 +1,68 @@
+{
+  "contractInfo": {
+    "city": "Townsville",
+    "hirer": "Departamento Nacional de Infraestrutura - DNIT",
+    "stretch": "km 100,0 ao km 200,0",
+    "roadName": "BR 282",
+    "hirerUnit": "UNIDADE DNIT RESPONSÁVEL",
+    "sicroDate": "XXXX-XX-XX",
+    "hirerShort": "DNIT/SC",
+    "companyName": "EMPREITEIRA DE TESTE LTDA",
+    "contractEnd": "XXXX-XX-XX",
+    "contractStart": "XXXX-XX-XX",
+    "stretchLength": 100,
+    "contractNumber": "1234 / 0000",
+    "responsibleHirer": "XXXXX XXXX XXXXX",
+    "hirerOrganization": "MINISTÉRIO DOS TRANSPORTES",
+    "stretchDescription": "ENTR. ABC ATÉ ENTR. XYZ"
+  },
+  "daily_occurrence_kind": "6",
+  "RP_name_format": {
+    "1": {
+      "type": "CON",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "2": {
+      "type": "IVT",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "3": {
+      "type": "SER",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "4": {
+      "type": "SIN",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "5": {
+      "type": "LEV",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "6": {
+      "type": "DIA",
+      "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+    },
+    "default": {
+      "type": "UNK",
+      "format": "{prefixo}-UNK-{anoCompleto}.{serialAno:05}"
+    }
+  },
+  "company_prefix": "DEMO",
+  "show_project_km": false,
+  "keycode_lane_mapping": {
+    "1": {
+      "24": "1",
+      "25": "1",
+      "79": "1",
+      "85": "1",
+      "87": "1",
+      "88": "1"
+    },
+    "3": {
+      "24": "1",
+      "25": "2",
+      "79": "20"
+    }
+  },
+  "executed_status_order": 3
+}

@@ -1,0 +1,20 @@
+Olá,
+
+{{message}}
+
+Serial: {{number}}
+Descrição: {{description}}
+Número de apontamentos: {{nb_reportings}}
+Responsável: {{responsible}}
+Equipe: {{firm}}
+Visualizadores (usuários): {{watcher_users}}
+Visualizadores (equipes): {{watcher_firms}}
+
+Copie esse link no seu navegador para acessar a programação:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}
+

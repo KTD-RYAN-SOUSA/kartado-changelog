@@ -1,0 +1,36 @@
+[
+    {
+        "model": "companies.subcompany",
+        "pk": "aaa00001-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "fields": {
+            "subcompany_type": "HIRED",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "SubCompany Test A",
+            "cnpj": "91742417000185",
+            "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "contract": "",
+            "contract_start_date": null,
+            "contract_end_date": null,
+            "office": "",
+            "construction_name": "",
+            "active": true
+        }
+    },
+    {
+        "model": "companies.subcompany",
+        "pk": "aaa00002-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "fields": {
+            "subcompany_type": "HIRED",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "SubCompany Test B",
+            "cnpj": "91742417000185",
+            "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "contract": "",
+            "contract_start_date": null,
+            "contract_end_date": null,
+            "office": "",
+            "construction_name": "",
+            "active": true
+        }
+    }
+]

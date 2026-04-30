@@ -1,0 +1,34 @@
+[
+    {
+        "model": "daily_reports.dailyreportequipment",
+        "pk": "378fcc94-c125-4017-9f8c-082a5b561554",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "kind": "Interno",
+            "description": "Soprador",
+            "amount": 4,
+            "total_price": 0,
+            "measurement_bulletin": "0b02c96e-2632-42c4-afaa-0461b47c875b",
+            "extra_hours": [],
+            "multiple_daily_reports": [
+                "0a2daca5-416e-4679-bb59-af8fe1801bba"
+            ]
+        }
+    },
+    {
+        "model": "daily_reports.dailyreportequipment",
+        "pk": "795b821b-3f0f-466b-a2fa-e0d70823ce72",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "kind": "Interno",
+            "description": "Soprador",
+            "amount": 4,
+            "total_price": 1.2,
+            "measurement_bulletin": null,
+            "extra_hours": [],
+            "multiple_daily_reports": [
+                "0a2daca5-416e-4679-bb59-af8fe1801bba"
+            ]
+        }
+    }
+]

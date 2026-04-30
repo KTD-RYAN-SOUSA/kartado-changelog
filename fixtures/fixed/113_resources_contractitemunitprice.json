@@ -1,0 +1,24 @@
+[
+    {
+        "model": "resources.contractitemunitprice",
+        "pk": "aabda400-2527-44a0-b56f-c881ba7f4d10",
+        "fields": {
+            "sort_string": "1.1",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "resource": "002c4697-ad1a-4f85-a1e3-7cd444f694a7",
+            "order": 1
+        }
+    },
+    {
+        "model": "resources.contractitemunitprice",
+        "pk": "7e067c5e-729a-4f0e-91f5-97db2117a068",
+        "fields": {
+            "sort_string": "1.2",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "resource": "71851c6c-1d0a-4e53-9242-8ea11e768ccb",
+            "order": 2
+        }
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "model": "resources.contractadditive",
+        "pk": "b4bbd22d-f47e-450d-99ac-acbc392e1859",
+        "fields": {
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+            "number": "ADV-001",
+            "description": "Aditivo 01",
+            "notes": "Aditivo 01",
+            "created_at": "2024-07-25T00:32:44.787Z",
+            "done": true,
+            "error": false,
+            "additional_percentage": 50,
+            "old_price": 1000,
+            "new_price": 1500
+        }
+    },
+    {
+        "model": "resources.contractadditive",
+        "pk": "ccf0e19d-78cf-4a71-b499-816faddafd61",
+        "fields": {
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+            "number": "ADV-002",
+            "description": "Aditivo 02",
+            "notes": "Aditivo 02",
+            "created_at": "2025-07-25T00:32:44.787Z",
+            "done": true,
+            "error": false,
+            "additional_percentage": 10,
+            "old_price": 2000,
+            "new_price": 2100
+        }
+    }
+]

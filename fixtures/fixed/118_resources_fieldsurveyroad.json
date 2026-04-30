@@ -1,0 +1,12 @@
+[
+    {
+        "model": "resources.fieldsurveyroad",
+        "pk": "289bd6c3-8ad5-4c87-953f-2504fc66d462",
+        "fields": {
+            "start_km": 0,
+            "end_km": 10,
+            "road": "1",
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874"
+        }
+    }
+]

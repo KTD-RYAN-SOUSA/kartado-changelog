@@ -1,0 +1,62 @@
+[
+    {
+        "model": "service_orders.serviceorderactionstatusspecs",
+        "pk": "001b33d9-462e-48b4-a2e5-c25110b170b6",
+        "fields": {
+            "status": "03808932-e576-45da-a204-9c588a133a83",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "color": "#FF0000",
+            "order": 5
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatusspecs",
+        "pk": "0137ac72-c24f-4c84-a579-57221c8717e5",
+        "fields": {
+            "status": "0392d58b-184d-4685-8268-3f4e390d47f1",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "color": "#FF0000",
+            "order": 1
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatusspecs",
+        "pk": "ad1773f7-4521-4477-a67f-fdb47a2a2d32",
+        "fields": {
+            "status": "f92e8241-4fbc-4734-89b9-c5be6416a4da",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "color": "#FF0000",
+            "order": 2
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatusspecs",
+        "pk": "a31773f7-4521-4477-a67f-fdb47a2a2da3",
+        "fields": {
+            "status": "a32e8241-4fbc-4734-89b9-c5be6416a4a3",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "color": "#FF0000",
+            "order": 8
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatusspecs",
+        "pk": "a41773f7-4521-4477-a67f-fdb47a2a2da4",
+        "fields": {
+            "status": "a42e8241-4fbc-4734-89b9-c5be6416a4a4",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "color": "#FF0000",
+            "order": 9
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatusspecs",
+        "pk": "b31773f7-4521-4477-a67f-fdb47a2a2db3",
+        "fields": {
+            "status": "b32e8241-4fbc-4734-89b9-c5be6416a4b3",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "color": "#FF0000",
+            "order": 10
+        }
+    }
+]

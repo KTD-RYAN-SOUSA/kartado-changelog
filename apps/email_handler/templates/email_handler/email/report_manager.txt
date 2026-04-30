@@ -1,0 +1,44 @@
+Olá,
+
+Aqui estão as movimentações de registros, serviços e recursos realizados no Kartado Energia durante o último mês:
+
+Boletim Gerencial {{ month }} / {{year }}
+
+Registros movimentados no mês:
+
+{% for record in records %}
+	Natureza: {{ record.natureza }}
+	Tipo mais recorrente: {{ record.recorrente }}
+	Em Elaboração: {{ record.andamento }}
+	Homologados: {{ record.homologados }}
+	Indeferidos: {{ record.indeferidos }}
+	Total Mensal: {{ record.total_month }}
+	Total Anual: {{ record.total_anual }}
+{% endfor %}
+
+Serviços movimentados no mês:
+
+{% for service in services %}
+	Descrição: {{ service.description }}
+	Novas Entregas: {{ service.actions }}
+	% Entregas Concluídas: {{ service.concluded_actions }}
+	Tarefas Atrasadas: {{ service.late_procedures }}
+	Tarefas Entregues: {{ service.concluded_procedures }}
+	Início: {{ service.creation_date }}
+{% endfor %}
+
+Recursos Vigentes:
+
+{% for contract in contracts %}
+	Descrição: {{ contract.description }}
+	Provisionado: {{ contract.provisioned }}
+	Realizado: {{ contract.used }}
+	Saldo: {{ contract.balance }}
+	Boletins: {{ contract.bulletins }}
+	Início: {{ contract.start_date }}
+	Término: {{ contract.end_date }}
+{% endfor %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

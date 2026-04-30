@@ -1,0 +1,13 @@
+[
+    {
+        "model": "resources.fieldsurveysignature",
+        "pk": "977ac3bc-ddaa-4461-b196-f1d02ec3c3c5",
+        "fields": {
+            "signed_at": "2022-05-10T12:49:03.562715-03:00",
+            "field_survey": "c31b7d6c-3a61-4010-aa7a-591617bf1d04",
+            "hirer": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "hired": "0aa50773-b368-4a50-9f12-4a7d8dfaf256"
+        }
+    }
+
+]

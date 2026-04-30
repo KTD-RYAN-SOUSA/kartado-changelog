@@ -1,0 +1,36 @@
+Olá,
+
+{{header}}
+
+{% for item in data %}
+	Unidade: {{ item.company.name }}
+    Link para unidade: {{item.company_url}}
+	Validadas no prazo¹: {{ item.validated_in_deadline }}
+	Validadas fora do prazo¹: {{ item.validated_off_deadline }}
+	Aguardando validação²: {{ item.waiting_validation }}
+	Atrasadas²: {{ item.late_validation }}
+{% endfor %}
+
+Total Validadas no prazo: {{total_validated_in_deadline}}
+Total Validadas fora do prazo: {{total_validated_off_deadline}}
+Total Aguardando validação: {{total_waiting_validation}}
+Total Atrasadas: {{total_late_validation}}
+
+
+{% for item in data %}
+	Unidade: {{ item.company.name }}
+    Link para unidade: {{item.company_url}}
+	Normal² {{ item.normal }}
+	Atenção² {{ item.attention }}
+	Alerta² {{ item.alert }}
+	Emergência²: {{ item.emergency }}
+{% endfor %}
+
+Total Normal: {{total_normal}}
+Total Atenção: {{total_attention}}
+Total Alerta: {{total_alert}}
+Total Emergência: {{total_emergency}}
+
+¹ Valores do início ao fim {{sub_message}}
+² Valores considerando todas as informações do sistema, independentemente de data.
+

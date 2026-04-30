@@ -1,0 +1,44 @@
+Olá,
+
+Ação requerida em solicitação de acesso.
+
+Solicitação criada por:
+
+{% for info in creator_info %}
+{{ info.0 }}: {{ info.1 }}
+
+{% endfor %}
+
+
+Informações da solicitação:
+
+{% for info in user_info %}
+{{ info.0 }}: {{ info.1 }}
+
+{% endfor %}
+
+
+Você está recebendo esta mensagem por ser um dos responsáveis por aprovar esta solicitação de acesso. Ela também pode ser aprovada pelos usuários listados abaixo.
+
+Responsáveis pela aprovação:
+
+{% for info in approvers %}
+{{info}}
+
+{% endfor %}
+
+{% for action in transitions_names %}
+{{ action.name }}: 
+{{ url }}&name={{ action.name }}
+
+{% endfor %}
+
+
+{% if link_url %}
+Ou copie esse link no seu navegador para acessar a solicitação de acesso: 
+{{ link_url }}
+{% endif %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

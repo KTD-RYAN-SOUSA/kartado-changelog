@@ -1,0 +1,26 @@
+[{
+    "model": "occurrence_records.recordpanel",
+    "pk": "85cd7f75-f946-45eb-b82d-ab04736fc250",
+    "fields": {
+        "name": "Fixture Panel",
+        "panel_type": "LIST",
+        "conditions": {
+            "something": "in the way she moves"
+        },
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "list_columns": [],
+        "list_order_by": [],
+        "kanban_columns": [],
+        "kanban_group_by": [],
+        "created_at": "2022-04-19T19:10:06.815Z",
+        "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "viewer_users": [],
+        "viewer_firms": [],
+        "viewer_permissions": [],
+        "editor_users": [],
+        "editor_firms": [],
+        "editor_permissions": [],
+        "menu": "e1b79573-473e-4f47-9d35-606f8a54b816",
+        "system_default": true
+    }
+}]

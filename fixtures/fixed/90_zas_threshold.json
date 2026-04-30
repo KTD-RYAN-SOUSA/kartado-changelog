@@ -1,0 +1,102 @@
+[
+{
+    "model": "zas.threshold",
+    "pk": "025679d5-f694-4912-bd19-089707f60935",
+    "fields": {
+        "logic": {
+            ">": [
+                {
+                    "var": "nivelReservatorio"
+                },
+                150
+            ]
+        },
+        "description": "Misc 1",
+        "zas_area": "TEST",
+        "cooldown": "00:30:00",
+        "severity": 1,
+        "warning_type": "MISCELLANEOUS",
+        "latest_alert_created_at": null
+    }
+},
+{
+    "model": "zas.threshold",
+    "pk": "025679d5-f694-4912-bd19-089707f60936",
+    "fields": {
+        "logic": {
+            ">": [
+                {
+                    "var": "vazaoAfluente"
+                },
+                150
+            ]
+        },
+        "description": "FLOOD 2",
+        "zas_area": "TEST",
+        "cooldown": "00:30:00",
+        "severity": 1,
+        "warning_type": "FLOOD",
+        "latest_alert_created_at": null
+    }
+},
+{
+    "model": "zas.threshold",
+    "pk": "477f618e-c115-4167-99db-51430fff014b",
+    "fields": {
+        "logic": {
+            ">": [
+                {
+                    "var": "vazaoAfluente"
+                },
+                150
+            ]
+        },
+        "description": "Flood 2",
+        "zas_area": "UHIT",
+        "cooldown": "00:30:00",
+        "severity": 2,
+        "warning_type": "FLOOD",
+        "latest_alert_created_at": null
+    }
+},
+{
+    "model": "zas.threshold",
+    "pk": "477f618e-c115-4167-99db-51430fff014c",
+    "fields": {
+        "logic": {
+            ">": [
+                {
+                    "var": "vazaoAfluente"
+                },
+                200
+            ]
+        },
+        "description": "Flood 3",
+        "zas_area": "UHIT",
+        "cooldown": "00:30:00",
+        "severity": 2,
+        "warning_type": "FLOOD",
+        "latest_alert_created_at": null
+    }
+},
+{
+    "model": "zas.threshold",
+    "pk": "f60dce61-13ad-4f31-bcb7-a3e1773d29bd",
+    "fields": {
+        "logic": {
+            ">": [
+                {
+                    "var": "vazaoAfluente"
+                },
+                100
+            ]
+        },
+        "description": "Flood 1",
+        "zas_area": "UHIT",
+        "cooldown": "00:30:00",
+        "severity": 1,
+        "warning_type": "FLOOD",
+        "latest_alert_created_at": null
+    }
+}
+]

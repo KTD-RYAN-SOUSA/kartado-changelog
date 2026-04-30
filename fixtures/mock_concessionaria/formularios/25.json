@@ -1,0 +1,958 @@
+{
+    "id": 1,
+    "name": "Placa",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "length",
+            "dataType": "float",
+            "displayIf": {
+                "!=": [
+                    {
+                        "var": "data.formData.format"
+                    },
+                    "1"
+                ]
+            },
+            "displayName": "Comprimento (m)"
+        },
+        {
+            "id": 2,
+            "apiName": "width",
+            "dataType": "float",
+            "displayIf": {
+                "!=": [
+                    {
+                        "var": "data.formData.format"
+                    },
+                    "1"
+                ]
+            },
+            "displayName": "Largura (m)"
+        },
+        {
+            "id": 3,
+            "apiName": "diameter",
+            "dataType": "float",
+            "displayIf": {
+                "==": [
+                    {
+                        "var": "data.formData.format"
+                    },
+                    "1"
+                ]
+            },
+            "displayName": "Diametro (m)"
+        },
+        {
+            "id": 4,
+            "logic": {
+                "if": [
+                    {
+                        "!=": [
+                            {
+                                "var": "formData.format"
+                            },
+                            "1"
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.length",
+                                    "formData.width"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    {
+                                        "var": "formData.length"
+                                    },
+                                    {
+                                        "var": "formData.width"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.diameter"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    0.785,
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "var": "formData.diameter"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "apiName": "area",
+            "dataType": "jsonLogic",
+            "displayName": "Area (m\u00b2)"
+        },
+        {
+            "id": 5,
+            "apiName": "notes",
+            "dataType": "string",
+            "displayName": "Observa\u00e7\u00f5es"
+        },
+        {
+            "id": 6,
+            "apiName": "format",
+            "dataType": "select",
+            "displayName": "Formato",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Circular",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Retangular",
+                        "value": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "apiName": "type",
+            "dataType": "select",
+            "displayName": "Tipo de placa",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "A-12",
+                        "value": "0"
+                    },
+                    {
+                        "name": "A-12/COMPOSTA",
+                        "value": "1"
+                    },
+                    {
+                        "name": "A-14",
+                        "value": "2"
+                    },
+                    {
+                        "name": "A-15",
+                        "value": "3"
+                    },
+                    {
+                        "name": "A-15/COMPOSTA",
+                        "value": "4"
+                    },
+                    {
+                        "name": "A-17",
+                        "value": "5"
+                    },
+                    {
+                        "name": "A-18",
+                        "value": "6"
+                    },
+                    {
+                        "name": "A-18/COMPOSTA",
+                        "value": "7"
+                    },
+                    {
+                        "name": "A-19/COMPOSTA",
+                        "value": "8"
+                    },
+                    {
+                        "name": "A-1A",
+                        "value": "9"
+                    },
+                    {
+                        "name": "A-1A/COMPOSTA",
+                        "value": "10"
+                    },
+                    {
+                        "name": "A-1B",
+                        "value": "11"
+                    },
+                    {
+                        "name": "A-1B/COMPOSTA",
+                        "value": "12"
+                    },
+                    {
+                        "name": "A-20A",
+                        "value": "13"
+                    },
+                    {
+                        "name": "A-21B",
+                        "value": "14"
+                    },
+                    {
+                        "name": "A-21B/COMPOSTA",
+                        "value": "15"
+                    },
+                    {
+                        "name": "A-21C",
+                        "value": "16"
+                    },
+                    {
+                        "name": "A-21C/COMPOSTA",
+                        "value": "17"
+                    },
+                    {
+                        "name": "A-21E",
+                        "value": "18"
+                    },
+                    {
+                        "name": "A-22",
+                        "value": "19"
+                    },
+                    {
+                        "name": "A-22/COMPOSTA",
+                        "value": "20"
+                    },
+                    {
+                        "name": "A-242A",
+                        "value": "21"
+                    },
+                    {
+                        "name": "A-24A",
+                        "value": "22"
+                    },
+                    {
+                        "name": "A-25",
+                        "value": "23"
+                    },
+                    {
+                        "name": "A-26B",
+                        "value": "24"
+                    },
+                    {
+                        "name": "A-27",
+                        "value": "25"
+                    },
+                    {
+                        "name": "A-28",
+                        "value": "26"
+                    },
+                    {
+                        "name": "A-2A",
+                        "value": "27"
+                    },
+                    {
+                        "name": "A-2A/COMPOSTA",
+                        "value": "28"
+                    },
+                    {
+                        "name": "A-2B",
+                        "value": "29"
+                    },
+                    {
+                        "name": "A-2B/COMPOSTA",
+                        "value": "30"
+                    },
+                    {
+                        "name": "A-30A",
+                        "value": "31"
+                    },
+                    {
+                        "name": "A-30B",
+                        "value": "32"
+                    },
+                    {
+                        "name": "A-32A",
+                        "value": "33"
+                    },
+                    {
+                        "name": "A-32-A/A-30B",
+                        "value": "34"
+                    },
+                    {
+                        "name": "A-32A/COMPOSTA",
+                        "value": "35"
+                    },
+                    {
+                        "name": "A-32B",
+                        "value": "36"
+                    },
+                    {
+                        "name": "A-32B/COMPOSTA",
+                        "value": "37"
+                    },
+                    {
+                        "name": "A-34A",
+                        "value": "38"
+                    },
+                    {
+                        "name": "A-35/COMPOSTA",
+                        "value": "39"
+                    },
+                    {
+                        "name": "A-36",
+                        "value": "40"
+                    },
+                    {
+                        "name": "A-36/COMPOSTA",
+                        "value": "41"
+                    },
+                    {
+                        "name": "A-36/R-19/COMPOSTA",
+                        "value": "42"
+                    },
+                    {
+                        "name": "A-37",
+                        "value": "43"
+                    },
+                    {
+                        "name": "A-37/COMPOSTA",
+                        "value": "44"
+                    },
+                    {
+                        "name": "A-3A/COMPOSTA",
+                        "value": "45"
+                    },
+                    {
+                        "name": "A-3B/COMPOSTA",
+                        "value": "46"
+                    },
+                    {
+                        "name": "A-42A",
+                        "value": "47"
+                    },
+                    {
+                        "name": "A-42A/COMPOSTA",
+                        "value": "48"
+                    },
+                    {
+                        "name": "A-42B",
+                        "value": "49"
+                    },
+                    {
+                        "name": "A-42B/COMPOSTA",
+                        "value": "50"
+                    },
+                    {
+                        "name": "A-45",
+                        "value": "51"
+                    },
+                    {
+                        "name": "A-4A",
+                        "value": "52"
+                    },
+                    {
+                        "name": "A-4B",
+                        "value": "53"
+                    },
+                    {
+                        "name": "A-4B/COMPOSTA",
+                        "value": "54"
+                    },
+                    {
+                        "name": "A-6",
+                        "value": "55"
+                    },
+                    {
+                        "name": "A-6/COMPOSTA",
+                        "value": "56"
+                    },
+                    {
+                        "name": "A-7B",
+                        "value": "57"
+                    },
+                    {
+                        "name": "A-8",
+                        "value": "58"
+                    },
+                    {
+                        "name": "A-8/COMPOSTA",
+                        "value": "59"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA",
+                        "value": "60"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA/COMPOSTA",
+                        "value": "61"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA/R-14",
+                        "value": "62"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA/R-19",
+                        "value": "63"
+                    },
+                    {
+                        "name": "ADVERT\u00caNCIA/REGULAMENTA\u00c7\u00c3O",
+                        "value": "64"
+                    },
+                    {
+                        "name": "APOIO OPERACIONAL",
+                        "value": "65"
+                    },
+                    {
+                        "name": "ATRATIVO TUR\u00cdSTICO",
+                        "value": "66"
+                    },
+                    {
+                        "name": "DISPOSITIVOS AUXILIARES",
+                        "value": "67"
+                    },
+                    {
+                        "name": "EDUCATIVA",
+                        "value": "68"
+                    },
+                    {
+                        "name": "EDUCATIVA/A-32A/A-30B",
+                        "value": "69"
+                    },
+                    {
+                        "name": "EDUCATIVA/ADVERT\u00caNCIA",
+                        "value": "70"
+                    },
+                    {
+                        "name": "I-33",
+                        "value": "71"
+                    },
+                    {
+                        "name": "IDENTIFICA\u00c7\u00c3O",
+                        "value": "72"
+                    },
+                    {
+                        "name": "IDENTIFICA\u00c7\u00c3O/ORIENTA\u00c7\u00c3O",
+                        "value": "73"
+                    },
+                    {
+                        "name": "IE-1",
+                        "value": "74"
+                    },
+                    {
+                        "name": "IE-13",
+                        "value": "75"
+                    },
+                    {
+                        "name": "IE-14",
+                        "value": "76"
+                    },
+                    {
+                        "name": "IE-2",
+                        "value": "77"
+                    },
+                    {
+                        "name": "IE-21",
+                        "value": "78"
+                    },
+                    {
+                        "name": "IE-3",
+                        "value": "79"
+                    },
+                    {
+                        "name": "IE-5",
+                        "value": "80"
+                    },
+                    {
+                        "name": "IE-8",
+                        "value": "81"
+                    },
+                    {
+                        "name": "II-1",
+                        "value": "82"
+                    },
+                    {
+                        "name": "II-2",
+                        "value": "83"
+                    },
+                    {
+                        "name": "II-2/ORIENTA\u00c7AO",
+                        "value": "84"
+                    },
+                    {
+                        "name": "II-3",
+                        "value": "85"
+                    },
+                    {
+                        "name": "IL-1",
+                        "value": "86"
+                    },
+                    {
+                        "name": "IL-3",
+                        "value": "87"
+                    },
+                    {
+                        "name": "IL-4",
+                        "value": "88"
+                    },
+                    {
+                        "name": "IP-10",
+                        "value": "89"
+                    },
+                    {
+                        "name": "IP-11",
+                        "value": "90"
+                    },
+                    {
+                        "name": "IP-12A",
+                        "value": "91"
+                    },
+                    {
+                        "name": "IP-17",
+                        "value": "92"
+                    },
+                    {
+                        "name": "IP-18",
+                        "value": "93"
+                    },
+                    {
+                        "name": "IP-5",
+                        "value": "94"
+                    },
+                    {
+                        "name": "IP-7",
+                        "value": "95"
+                    },
+                    {
+                        "name": "IP-8",
+                        "value": "96"
+                    },
+                    {
+                        "name": "IP-8 ",
+                        "value": "97"
+                    },
+                    {
+                        "name": "IP-9",
+                        "value": "98"
+                    },
+                    {
+                        "name": "ISA-2 PICTOGRAMAS",
+                        "value": "99"
+                    },
+                    {
+                        "name": "ISA-3",
+                        "value": "100"
+                    },
+                    {
+                        "name": "ISA-3 PICTOGRAMAS",
+                        "value": "101"
+                    },
+                    {
+                        "name": "ISA-4",
+                        "value": "102"
+                    },
+                    {
+                        "name": "M.A.",
+                        "value": "103"
+                    },
+                    {
+                        "name": "MP-1",
+                        "value": "104"
+                    },
+                    {
+                        "name": "MP-2",
+                        "value": "105"
+                    },
+                    {
+                        "name": "MP-3",
+                        "value": "106"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O",
+                        "value": "107"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/EDUCATIVA",
+                        "value": "108"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/IDENTIFICA\u00c7\u00c3O",
+                        "value": "109"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/II-2",
+                        "value": "110"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/S-5",
+                        "value": "111"
+                    },
+                    {
+                        "name": "ORIENTA\u00c7\u00c3O/S-5/COMPOSTA/II-1",
+                        "value": "112"
+                    },
+                    {
+                        "name": "R-1",
+                        "value": "113"
+                    },
+                    {
+                        "name": "R-11",
+                        "value": "114"
+                    },
+                    {
+                        "name": "R-12",
+                        "value": "115"
+                    },
+                    {
+                        "name": "R-15",
+                        "value": "116"
+                    },
+                    {
+                        "name": "R-18",
+                        "value": "117"
+                    },
+                    {
+                        "name": "R-19",
+                        "value": "118"
+                    },
+                    {
+                        "name": "R-19/ADVERT\u00caNCIA",
+                        "value": "119"
+                    },
+                    {
+                        "name": "R-19/COMPOSTA",
+                        "value": "120"
+                    },
+                    {
+                        "name": "R-19/IDENTIFICA\u00c7\u00c3O",
+                        "value": "121"
+                    },
+                    {
+                        "name": "R-2",
+                        "value": "122"
+                    },
+                    {
+                        "name": "R-24",
+                        "value": "123"
+                    },
+                    {
+                        "name": "R-24A",
+                        "value": "124"
+                    },
+                    {
+                        "name": "R-24A/R-33",
+                        "value": "125"
+                    },
+                    {
+                        "name": "R-24B",
+                        "value": "126"
+                    },
+                    {
+                        "name": "R-24B/COMPOSTA",
+                        "value": "127"
+                    },
+                    {
+                        "name": "R-25C",
+                        "value": "128"
+                    },
+                    {
+                        "name": "R-25D",
+                        "value": "129"
+                    },
+                    {
+                        "name": "R-27",
+                        "value": "130"
+                    },
+                    {
+                        "name": "R-27/COMPOSTA",
+                        "value": "131"
+                    },
+                    {
+                        "name": "R-28",
+                        "value": "132"
+                    },
+                    {
+                        "name": "R-2A",
+                        "value": "133"
+                    },
+                    {
+                        "name": "R-3",
+                        "value": "134"
+                    },
+                    {
+                        "name": "R-32B",
+                        "value": "135"
+                    },
+                    {
+                        "name": "R-33",
+                        "value": "136"
+                    },
+                    {
+                        "name": "R-34",
+                        "value": "137"
+                    },
+                    {
+                        "name": "R-37",
+                        "value": "138"
+                    },
+                    {
+                        "name": "R-4A",
+                        "value": "139"
+                    },
+                    {
+                        "name": "R-4B",
+                        "value": "140"
+                    },
+                    {
+                        "name": "R-5",
+                        "value": "141"
+                    },
+                    {
+                        "name": "R-5A",
+                        "value": "142"
+                    },
+                    {
+                        "name": "R-6A",
+                        "value": "143"
+                    },
+                    {
+                        "name": "R-6B",
+                        "value": "144"
+                    },
+                    {
+                        "name": "R-6B/COMPOSTA",
+                        "value": "145"
+                    },
+                    {
+                        "name": "R-6C",
+                        "value": "146"
+                    },
+                    {
+                        "name": "R-6C/COMPOSTA",
+                        "value": "147"
+                    },
+                    {
+                        "name": "R-7",
+                        "value": "148"
+                    },
+                    {
+                        "name": "R-9/COMPOSTA",
+                        "value": "149"
+                    },
+                    {
+                        "name": "S-1/COMPOSTA",
+                        "value": "150"
+                    },
+                    {
+                        "name": "S-11/COMPOSTA/S-6/COMPOSTA",
+                        "value": "151"
+                    },
+                    {
+                        "name": "S-14",
+                        "value": "152"
+                    },
+                    {
+                        "name": "S-14/COMPOSTA",
+                        "value": "153"
+                    },
+                    {
+                        "name": "S-4",
+                        "value": "154"
+                    },
+                    {
+                        "name": "S-5/COMPOSTA",
+                        "value": "155"
+                    },
+                    {
+                        "name": "S-6/COMPOSTA/ORIENTA\u00c7\u00c3O",
+                        "value": "156"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "apiName": "manufacturingDate",
+            "dataType": "timestamp",
+            "displayName": "Data de Fabrica\u00e7\u00e3o"
+        },
+        {
+            "id": 9,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                6,
+                7,
+                8
+            ],
+            "displayName": "Tipo de Placa"
+        },
+        {
+            "order": 2,
+            "members": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "displayName": "Dimens\u00f5es"
+        },
+        {
+            "order": 3,
+            "members": [
+                5,
+                9
+            ],
+            "displayName": "Informa\u00e7\u00f5es Adicionais"
+        }
+    ],
+    "displayName": "Placa",
+    "measurementColumns": [
+        {
+            "key": "length",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 18,
+            "header": "Comprimento (m)"
+        },
+        {
+            "key": "width",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "header": "Largura (m)"
+        },
+        {
+            "key": "diameter",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 14,
+            "header": "Di\u00e2metro (m)"
+        },
+        {
+            "key": "area",
+            "logic": {
+                "if": [
+                    {
+                        "!=": [
+                            {
+                                "var": "formData.format"
+                            },
+                            "1"
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.length",
+                                    "formData.width"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    {
+                                        "var": "formData.length"
+                                    },
+                                    {
+                                        "var": "formData.width"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "missing": [
+                                    "formData.diameter"
+                                ]
+                            },
+                            0,
+                            {
+                                "*": [
+                                    0.785,
+                                    {
+                                        "var": "formData.diameter"
+                                    },
+                                    {
+                                        "var": "formData.diameter"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "numFmt": "0.000"
+            },
+            "width": 10,
+            "header": "Area (m\u00b2)",
+            "addTotal": true
+        },
+        {
+            "key": "type",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.format"
+                            },
+                            1
+                        ]
+                    },
+                    "Circular",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.format"
+                            },
+                            2
+                        ]
+                    },
+                    "Retangular"
+                ]
+            },
+            "width": 18,
+            "header": "Formato"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "2",
+    "deadline": "null"
+}

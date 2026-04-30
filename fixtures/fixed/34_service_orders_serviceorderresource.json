@@ -1,0 +1,113 @@
+[
+    {
+        "model": "service_orders.serviceorderresource",
+        "pk": "002c4697-ad1a-4f85-a1e3-7cd444f694a7",
+        "fields": {
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+            "resource": "02297a24-8777-4f38-bd4b-38fede47503b",
+            "amount": 49.0,
+            "unit_price": 3.0,
+            "used_price": 147.0,
+            "remaining_amount": 49.0,
+            "creation_date": "2020-03-22T05:26:35.553Z",
+            "effective_date": "2020-03-22T05:26:35.553Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "resource_kind": "2",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "additional_control": "17",
+            "additional_control_model": "f2f76ce5-70e9-4a78-8872-c0844fd8dd64"
+        }
+    },
+    {
+        "model": "service_orders.serviceorderresource",
+        "pk": "f112a6eb-03ab-4c37-a5e7-16f09b6c0c6d",
+        "fields": {
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+            "resource": "02297a24-8777-4f38-bd4b-38fede47503b",
+            "amount": 49.0,
+            "unit_price": 3.0,
+            "used_price": 147.0,
+            "remaining_amount": 49.0,
+            "creation_date": "2020-03-22T05:26:35.553Z",
+            "effective_date": "2020-03-22T05:26:35.553Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "resource_kind": "2",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "additional_control": "17",
+            "additional_control_model": "f2f76ce5-70e9-4a78-8872-c0844fd8dd64"
+        }
+    },
+    {
+        "model": "service_orders.serviceorderresource",
+        "pk": "005784eb-57eb-4ecb-92a9-d1ae5b03b174",
+        "fields": {
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+            "resource": "02490e34-d008-4877-a701-c175a388332b",
+            "amount": 20000.0,
+            "unit_price": 0.95,
+            "used_price": 1589.464,
+            "remaining_amount": 20000.0,
+            "creation_date": "2020-02-14T03:01:48.185Z",
+            "effective_date": "2020-02-14T03:01:48.185Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "resource_kind": "1",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "additional_control": "37"
+        }
+    },
+    {
+        "model": "service_orders.serviceorderresource",
+        "pk": "5614572a-3eaf-4c28-bd65-f82d176f244a",
+        "fields": {
+            "contract": "339fc8c2-3351-4509-af8a-aa7c519d89ee",
+            "resource": "02490e34-d008-4877-a701-c175a388332b",
+            "amount": 20000.0,
+            "unit_price": 0.95,
+            "used_price": 1589.464,
+            "remaining_amount": 20000.0,
+            "creation_date": "2020-02-14T03:01:48.185Z",
+            "effective_date": "2020-02-14T03:01:48.185Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "resource_kind": "1",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "additional_control": "37"
+        }
+    },
+    {
+        "model": "service_orders.serviceorderresource",
+        "pk": "7d12d83e-d354-4c90-948a-5f4751bf38dc",
+        "fields": {
+            "contract": "339fc8c2-3351-4509-af8a-aa7c519d89ee",
+            "resource": "02490e34-d008-4877-a701-c175a388332b",
+            "amount": 20000.0,
+            "unit_price": 0.95,
+            "used_price": 1589.464,
+            "remaining_amount": 20000.0,
+            "creation_date": "2020-02-14T03:01:48.185Z",
+            "effective_date": "2020-02-14T03:01:48.185Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "resource_kind": "1",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "additional_control": "37"
+        }
+    },
+    {
+        "model": "service_orders.serviceorderresource",
+        "pk": "71851c6c-1d0a-4e53-9242-8ea11e768ccb",
+        "fields": {
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+            "resource": "eb93baa8-93d1-4969-8b8f-e71131f83b4f",
+            "amount": 49.0,
+            "unit_price": 3.0,
+            "used_price": 147.0,
+            "remaining_amount": 49.0,
+            "creation_date": "2020-03-22T05:26:35.553Z",
+            "effective_date": "2020-03-22T05:26:35.553Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "resource_kind": "2",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "additional_control": "17",
+            "additional_control_model": "f2f76ce5-70e9-4a78-8872-c0844fd8dd64"
+        }
+    }
+]

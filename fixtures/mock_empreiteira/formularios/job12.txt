@@ -1,0 +1,54 @@
+{
+    "id": 1,
+    "name": "job12",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "length",
+            "dataType": "float",
+            "displayName": "Comprimento (m)"
+        },
+        {
+            "id": 2,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1
+            ],
+            "displayName": "Quantitativos"
+        },
+        {
+            "order": 2,
+            "members": [
+                2
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "Faixa de sinaliza\u00e7\u00e3o Definitiva",
+    "measurementColumns": [
+        {
+            "key": "length",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "addTotal": true,
+            "header": "Comprimento"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ]
+}

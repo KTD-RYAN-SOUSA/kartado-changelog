@@ -1,0 +1,170 @@
+[
+    {
+        "model": "companies.firm",
+        "pk": "4ee50e2c-be0b-4d32-9341-efb4c0d89818",
+        "fields": {
+            "name": "Testadores",
+            "manager": "eca34fc1-6e07-44db-bfc0-d1a30bfcb24d",
+            "company": "c2501b6e-34fb-4655-8066-7b2625c869a7",
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": true,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    },
+    {
+        "model": "companies.firm",
+        "pk": "63656635-2476-44fa-bb42-c710c6b6620e",
+        "fields": {
+            "name": "Testadores2",
+            "manager": "e7cfb4c3-ddd1-43e2-8439-c4c6f0a98383",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": false,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    },
+    {
+        "model": "companies.firm",
+        "pk": "ac093034-7f05-4d93-8a7d-cdf8ee04923d",
+        "fields": {
+            "name": "Testadores3",
+            "manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": true,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    },
+    {
+        "model": "companies.firm",
+        "pk": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+        "fields": {
+            "name": "Homologadores",
+            "manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+            "cnpj": "00000000000000",
+            "is_company_team": true,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    },
+    {
+        "model": "companies.firm",
+        "pk": "866e359f-73af-4728-8727-4a31c0c71ec8",
+        "fields": {
+            "name": "Homologadores2",
+            "manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "inspectors": [
+                "4e29d1e0-9745-48d3-b38f-b1210e683e00"
+            ],
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": true,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    },
+    {
+        "model": "companies.firm",
+        "pk": "d9bcc056-2bcc-47a0-af94-fca08c0565d8",
+        "fields": {
+            "name": "HomologadoresNotActive",
+            "manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "inspectors": [
+                "4e29d1e0-9745-48d3-b38f-b1210e683e00"
+            ],
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": true,
+            "active": false,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    },
+    {
+        "model": "companies.firm",
+        "pk": "e26d21bb-a247-43b1-afda-e512940dd868",
+        "fields": {
+            "name": "HomologadoresActive",
+            "manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "inspectors": [
+                "4e29d1e0-9745-48d3-b38f-b1210e683e00"
+            ],
+            "users": [
+                "4e29d1e0-9745-48d3-b38f-b1210e683e00",
+                "0aa50773-b368-4a50-9f12-4a7d8dfaf256"
+            ],
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": true,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "is_judiciary": true,
+            "delete_in_progress": false
+        }
+    }
+]

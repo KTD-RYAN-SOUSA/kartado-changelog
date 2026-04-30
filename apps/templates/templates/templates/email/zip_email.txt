@@ -1,0 +1,11 @@
+Olá,
+
+{{ message }}
+
+{% if link %}
+{{ url }}
+{% endif %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

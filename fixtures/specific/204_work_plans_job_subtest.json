@@ -1,0 +1,77 @@
+[
+    {
+        "model": "work_plans.job",
+        "pk": "eee00001-eeee-eeee-eeee-eeeeeeeeeeee",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "number": "SUB-JOB-001",
+            "title": "Job SubTest A1",
+            "description": "",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": "2024-01-02T00:00:00Z",
+            "progress": 0.0,
+            "executed_reportings": 0,
+            "reporting_count": 0,
+            "worker": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "firm": "bbb00001-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "inspection": null,
+            "parent_inventory": null,
+            "metadata": {},
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "archived": false,
+            "last_notification_sent_at": null,
+            "watcher_firms": [],
+            "watcher_users": []
+        }
+    },
+    {
+        "model": "work_plans.job",
+        "pk": "eee00002-eeee-eeee-eeee-eeeeeeeeeeee",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "number": "SUB-JOB-002",
+            "title": "Job SubTest A2",
+            "description": "",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": "2024-01-02T00:00:00Z",
+            "progress": 0.0,
+            "executed_reportings": 0,
+            "reporting_count": 0,
+            "worker": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "firm": "bbb00002-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "inspection": null,
+            "parent_inventory": null,
+            "metadata": {},
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "archived": false,
+            "last_notification_sent_at": null,
+            "watcher_firms": [],
+            "watcher_users": []
+        }
+    },
+    {
+        "model": "work_plans.job",
+        "pk": "eee00003-eeee-eeee-eeee-eeeeeeeeeeee",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "number": "SUB-JOB-003",
+            "title": "Job SubTest B1",
+            "description": "",
+            "start_date": "2024-01-01T00:00:00Z",
+            "end_date": "2024-01-02T00:00:00Z",
+            "progress": 0.0,
+            "executed_reportings": 0,
+            "reporting_count": 0,
+            "worker": "e7cfb4c3-ddd1-43e2-8439-c4c6f0a98383",
+            "firm": "bbb00003-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "inspection": null,
+            "parent_inventory": null,
+            "metadata": {},
+            "created_by": "e7cfb4c3-ddd1-43e2-8439-c4c6f0a98383",
+            "archived": false,
+            "last_notification_sent_at": null,
+            "watcher_firms": [],
+            "watcher_users": []
+        }
+    }
+]

@@ -1,0 +1,20 @@
+Olá!
+
+Aqui estão os recursos que necessitam de atenção no Kartado durante a última semana:
+
+{% for contract_id, contract_data in contracts.items %}
+Contrato: {{contract_data.title}}
+Link do contrato: {{contract_data.url}}
+
+    {% for proc_res_id, proc_res_data in contract_data.procedure_resources.items %}
+    Item: {{proc_res_data.item}}
+    Quantidade: {{proc_res_data.amount}}
+    Valor unitário: {{proc_res_data.unit_price}}
+    Valor total: {{proc_res_data.total_price}}
+    {% endfor %}
+
+{% endfor %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

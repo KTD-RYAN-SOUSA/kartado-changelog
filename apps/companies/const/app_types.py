@@ -1,0 +1,5 @@
+ENERGY = "energy"
+ROAD = "road"
+UNDEFINED = "undefined"
+
+APP_TYPE_CHOICES = [(ENERGY, ENERGY), (ROAD, ROAD), (UNDEFINED, UNDEFINED)]

@@ -1,0 +1,50 @@
+[
+    {
+        "model": "daily_reports.dailyreportvehicle",
+        "pk": "39710e7f-1510-4f96-864a-16d5f8ef89e3",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "kind": "Externo",
+            "description": "Carro",
+            "amount": 2,
+            "total_price": 0,
+            "measurement_bulletin": null,
+            "extra_hours": [],
+            "multiple_daily_reports": [
+                "0a2daca5-416e-4679-bb59-af8fe1801bba"
+            ]
+        }
+    },
+    {
+        "model": "daily_reports.dailyreportvehicle",
+        "pk": "955946ef-f488-4dd0-85a5-af23b733af8a",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "kind": "Externo",
+            "description": "Caminhão",
+            "amount": 2,
+            "total_price": 0,
+            "measurement_bulletin": "0b02c96e-2632-42c4-afaa-0461b47c875b",
+            "extra_hours": [],
+            "multiple_daily_reports": [
+                "0a2daca5-416e-4679-bb59-af8fe1801bba"
+            ]
+        }
+    },
+    {
+        "model": "daily_reports.dailyreportvehicle",
+        "pk": "1b08d44e-4bcd-490a-8bad-86d406bc12a2",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "kind": "Externo",
+            "description": "Moto",
+            "amount": 2,
+            "total_price": 0.6,
+            "measurement_bulletin": null,
+            "extra_hours": [],
+            "multiple_daily_reports": [
+                "0a2daca5-416e-4679-bb59-af8fe1801bba"
+            ]
+        }
+    }
+]

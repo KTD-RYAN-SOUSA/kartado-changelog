@@ -1,0 +1,71 @@
+[
+    {
+        "model": "companies.firm",
+        "pk": "bbb00001-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+        "fields": {
+            "name": "Firm Test A1",
+            "manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "subcompany": "aaa00001-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": false,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    },
+    {
+        "model": "companies.firm",
+        "pk": "bbb00002-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+        "fields": {
+            "name": "Firm Test A2",
+            "manager": null,
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "subcompany": "aaa00001-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": false,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    },
+    {
+        "model": "companies.firm",
+        "pk": "bbb00003-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+        "fields": {
+            "name": "Firm Test B1",
+            "manager": null,
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "subcompany": "aaa00002-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "entity": null,
+            "cnpj": "00000000000000",
+            "is_company_team": false,
+            "active": true,
+            "logo": "",
+            "custom_options": {},
+            "metadata": {},
+            "members_amount": 0,
+            "street_address": "",
+            "city": null,
+            "can_use_ecm_integration": false,
+            "created_by": null,
+            "delete_in_progress": false
+        }
+    }
+]

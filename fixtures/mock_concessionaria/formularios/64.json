@@ -1,0 +1,158 @@
+{
+    "id": 1,
+    "name": "job93",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "amount",
+            "dataType": "float",
+            "displayName": "Unidades (uns)"
+        },
+        {
+            "id": 2,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        },
+        {
+            "id": 3,
+            "apiName": "artespCode",
+            "dataType": "string",
+            "display_if": {
+                "in": [
+                    "3",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "C\u00f3digo da ocorr\u00eancia ARTESP"
+        },
+        {
+            "id": 4,
+            "apiName": "demandOrigin",
+            "dataType": "selectMultiple",
+            "canFilter": true,
+            "displayName": "Origem",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Interna",
+                        "value": "1"
+                    },
+                    {
+                        "name": "KCOR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ARTESP",
+                        "value": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "apiName": "receivedDate",
+            "dataType": "timestamp",
+            "display_if": {
+                "in": [
+                    "3",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "Recebido da ARTESP em"
+        },
+        {
+            "id": 6,
+            "apiName": "kcorCode",
+            "dataType": "string",
+            "display_if": {
+                "in": [
+                    "2",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "C\u00f3d KCOR"
+        },
+        {
+            "id": 7,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "displayName": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 2,
+            "members": [
+                1
+            ],
+            "displayName": "Quantitativos"
+        },
+        {
+            "order": 3,
+            "members": [
+                2
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "Pintura de sinalizac\u0327a\u0303o horizontal",
+    "measurementColumns": [
+        {
+            "key": "amount",
+            "style": {
+                "numFmt": "0"
+            },
+            "width": 12,
+            "header": "Peso (t)",
+            "addTotal": true
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "1",
+    "deadline": "null"
+}

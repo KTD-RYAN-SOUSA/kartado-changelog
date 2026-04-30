@@ -1,0 +1,18 @@
+[
+    {
+        "model": "work_plans.noticeviewmanager",
+        "pk": "33ddffe5-6370-40c9-b415-a7d671244474",
+        "fields": {
+            "notice": "teste",
+            "views_quantity_limit": 3
+        }
+    },
+    {
+        "model": "work_plans.noticeviewmanager",
+        "pk": "59056d02-754c-46d1-94a0-1605fe879bb4",
+        "fields": {
+            "notice": "teste 2",
+            "views_quantity_limit": 5
+        }
+    }
+]

@@ -1,0 +1,24 @@
+[{
+	"model": "templates.pdfimport",
+	"pk": "74edb9eb-89d7-4e40-a14b-88b41b8defe3",
+	"fields": {
+		"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+		"firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+		"status": "03808932-e576-45da-a204-9c588a133a83",
+		"created_at": "2021-08-09T12:45:45.109Z",
+		"created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+		"name": "PDFImport testing",
+		"pdf_file": "",
+		"preview_file": "",
+		"lane": "10 Cloverfield Lane",
+		"track": "",
+		"branch": "",
+		"km_reference": null,
+		"description": "",
+		"kind": "",
+		"done": false,
+		"error": false,
+		"occurrence_type": "05e3967f-27b3-460d-94a5-d419c1588dce",
+		"form_data": {}
+	}
+}]

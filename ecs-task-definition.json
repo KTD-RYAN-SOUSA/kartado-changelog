@@ -1,0 +1,106 @@
+{
+  "family": "kartado-backend",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "2048",
+  "memory": "4096",
+  "executionRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/ecsTaskRole",
+  "containerDefinitions": [
+    {
+      "name": "kartado-backend",
+      "image": "<IMAGE_URI>",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "STAGE",
+          "value": "<STAGE>"
+        },
+        {
+          "name": "LOG_LEVEL",
+          "value": "DEBUG"
+        },
+        {
+          "name": "DB_PORT",
+          "value": "5432"
+        },
+        {
+          "name": "PYTHONUNBUFFERED",
+          "value": "1"
+        },
+        {
+          "name": "AWS_DEFAULT_REGION",
+          "value": "<AWS_REGION>"
+        },
+        {
+          "name": "AWS_STORAGE_BUCKET_NAME",
+          "value": "<BUCKET_S3>"
+        },
+        {
+          "name": "AWS_ACCESS_KEY_ID",
+          "value": ""
+        },
+        {
+          "name": "AWS_SECRET_ACCESS_KEY",
+          "value": ""
+        },
+        {
+          "name": "DB_HOST",
+          "value": "<DB_HOST>"
+        },
+        {
+          "name": "DB_NAME",
+          "value": "<DB_NAME>"
+        },
+        {
+          "name": "DB_USER",
+          "value": "<DB_USER>"
+        },
+        {
+          "name": "DB_PASSWORD",
+          "value": "<DB_PASSWORD>"
+        },
+        {
+          "name": "SECRET_KEY",
+          "value": "<SECRET_KEY>"
+        }
+      ],
+      "secrets": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/kartado-backend",
+          "awslogs-region": "<AWS_REGION>",
+          "awslogs-stream-prefix": "ecs",
+          "awslogs-create-group": "true"
+        }
+      },
+      "healthCheck": {
+        "command": [
+          "CMD-SHELL",
+          "curl -f http://localhost:8000/health/ || exit 1"
+        ],
+        "interval": 300,
+        "timeout": 30,
+        "retries": 5,
+        "startPeriod": 120
+      },
+      "ulimits": [
+        {
+          "name": "nofile",
+          "softLimit": 65536,
+          "hardLimit": 65536
+        }
+      ],
+      "stopTimeout": 120
+    }
+  ]
+}
+
+

@@ -1,0 +1,25 @@
+[
+{
+    "model": "email_handler.queuedemail",
+    "pk": "0034185f-3a28-4fee-a64c-9d09967948f6",
+    "fields": {
+        "company": null,
+        "title": "Test",
+        "content_plain_text": "teste",
+        "content_html": "test",
+        "cleared": true,
+        "in_progress": false,
+        "sent": false,
+        "error": false,
+        "created_at": "2020-03-14T00:00:00Z",
+        "updated_at": "2020-03-14T00:00:00Z",
+        "send_anyway": false,
+        "custom_headers": {},
+        "content_type": null,
+        "object_id": null,
+        "send_to_users": [
+            "0aa50773-b368-4a50-9f12-4a7d8dfaf256"
+        ]
+    }
+}
+]

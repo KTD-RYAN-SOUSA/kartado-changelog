@@ -1,0 +1,24 @@
+Olá,
+
+Você está recebendo esta mensagem por estar listado como um dos responsáveis pela aprovação de boletins de medição. Acesse o boletim para executá-la.
+
+{% with bulletin=bulletins.0 %}
+Contratada: {{bulletin.firm}}
+Valor total: {{bulletin.total_price}} 
+Data de criação: {{bulletin.creation_date}} 
+Data de medição: {{bulletin.measurement_date}} 
+Status: {{bulletin.status}} 
+Descrição do objeto: {{bulletin.description}} 
+Vigência do objeto: {{bulletin.period}} 
+Classificação contábil: {{bulletin.accounting_classification}} 
+Comentários: {{bulletin.comments}} 
+
+Copie esse link no seu navegador para acessar a tarefa:
+
+{{bulletin.url}}
+
+{% endwith %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

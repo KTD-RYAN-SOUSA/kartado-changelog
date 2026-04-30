@@ -1,0 +1,119 @@
+{% extends "legacy_base_email.html" %}
+
+{% block headcontent %}
+
+<tr>
+    <td>
+      <p class="p-text">
+        {{header}}
+      </p>
+    </td>
+</tr>
+
+{% endblock headcontent %}
+
+{% block content %}
+
+ <tr>
+    <td align="center">
+      <table cellpadding="0" cellspacing="0" class="usr-notif-table">
+        <thead class="usr-notif-th">
+          <tr>
+            <th class="usr-notif-title">
+                Unidade
+            </th>
+            <th class="usr-notif-title">
+                Validadas no prazo<sup>1</sup>
+            </th>
+            <th class="usr-notif-title">
+                Validadas fora do prazo<sup>1</sup>
+            </th>
+            <th class="usr-notif-title">
+                Aguardando validação<sup>2</sup>
+            </th>
+            <th class="usr-notif-title">
+                Atrasadas<sup>2</sup>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td class="usr-notif-cell"><a href="{{item.company_url}}">{{item.company.name}}</a></td>
+                <td class="usr-notif-cell">{{item.validated_in_deadline}}</td>
+                <td class="usr-notif-cell">{{item.validated_off_deadline}}</td>
+                <td class="usr-notif-cell">{{item.waiting_validation}}</td>
+                <td class="usr-notif-cell">{{item.late_validation}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="usr-notif-cell"><b>Total</b></td>
+                <td class="usr-notif-cell"><b>{{total_validated_in_deadline}}</b></td>
+                <td class="usr-notif-cell"><b>{{total_validated_off_deadline}}</b></td>
+                <td class="usr-notif-cell"><b>{{total_waiting_validation}}</b></td>
+                <td class="usr-notif-cell"><b>{{total_late_validation}}</b></td>
+            </tr>
+        </tfoot>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <table cellpadding="0" cellspacing="0" class="usr-notif-table">
+        <thead class="usr-notif-alert-th">
+          <tr>
+            <th class="usr-notif-title">
+                Unidade
+            </th>
+            <th class="usr-notif-title" style="background-color: {{normal_color}}">
+                Normal<sup>2</sup>
+            </th>
+            <th class="usr-notif-title" style="background-color: {{attention_color}}">
+                Atenção<sup>2</sup>
+            </th>
+            <th class="usr-notif-title" style="background-color: {{alert_color}}">
+                Alerta<sup>2</sup>
+            </th>
+            <th class="usr-notif-title" style="background-color: {{emergency_color}}">
+                Emergência<sup>2</sup>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td class="usr-notif-cell"><a href="{{item.company_url}}">{{item.company.name}}</a></td>
+                <td class="usr-notif-cell">{{item.normal}}</td>
+                <td class="usr-notif-cell">{{item.attention}}</td>
+                <td class="usr-notif-cell">{{item.alert}}</td>
+                <td class="usr-notif-cell">{{item.emergency}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="usr-notif-cell"><b>Total</b></td>
+                <td class="usr-notif-cell"><b>{{total_normal}}</b></td>
+                <td class="usr-notif-cell"><b>{{total_attention}}</b></td>
+                <td class="usr-notif-cell"><b>{{total_alert}}</b></td>
+                <td class="usr-notif-cell"><b>{{total_emergency}}</b></td>
+            </tr>
+        </tfoot>
+      </table>
+    </td>
+</tr>
+<tr>
+  <td>
+    <p><sup>1</sup> Valores do início ao fim {{sub_message}}</p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p><sup>2</sup> Valores considerando todas as informações do sistema, independemente de data.</p>
+  </td>
+</tr>
+{% endblock content %}
+

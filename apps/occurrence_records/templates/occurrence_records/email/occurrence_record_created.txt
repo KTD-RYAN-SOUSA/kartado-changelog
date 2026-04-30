@@ -1,0 +1,16 @@
+Olá,
+
+Um novo registro foi criado no sistema:
+
+Número do Registro: {{reg_number}}
+Natureza: {{kind}}
+Tipo: {{type}}
+Emitente: {{created_by}}
+
+Copie esse link no seu navegador para acessar o registro:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

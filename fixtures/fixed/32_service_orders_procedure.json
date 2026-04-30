@@ -1,0 +1,62 @@
+[
+    {
+        "model": "service_orders.procedure",
+        "pk": "001af21f-1384-47f0-ac86-fafb4898a298",
+        "fields": {
+            "action": "004e8fcc-0c9a-4477-a385-3b3788d80c74",
+            "occurrence_kind": "",
+            "occurrence_type": null,
+            "service_order_action_status": "03808932-e576-45da-a204-9c588a133a83",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "procedure_previous": null,
+            "form_data": null,
+            "to_do": "Executar mapeamento com drone nas seguinte lagoas: Lagoa 1 - (https://goo.gl/maps/o75CsN1jKnp), Lagoa 2 - (https://goo.gl/maps/Yc6CNUeKuFn) e Lagoa 3 - (https://goo.gl/maps/yCgT5p2q3eT2). Apresentar mem\u00f3ria de c\u00e1lculo de corte e aterro e se\u00e7\u00f5es t\u00edpicas.",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "created_at": "2020-02-08T16:28:12.266Z",
+            "deadline": "2020-02-11T19:00:00Z",
+            "done_at": "2020-02-07T19:00:00Z",
+            "occurrence_records": []
+        }
+    },
+    {
+        "model": "service_orders.procedure",
+        "pk": "00686fb6-8a1b-48b6-9fe9-08e8540e25ab",
+        "fields": {
+            "action": "9407b107-1a4f-4b60-8155-63dbc020232a",
+            "occurrence_kind": "",
+            "occurrence_type": null,
+            "service_order_action_status": "03808932-e576-45da-a204-9c588a133a83",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "procedure_previous": "001af21f-1384-47f0-ac86-fafb4898a298",
+            "form_data": null,
+            "to_do": "docs",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "created_at": "2020-03-20T16:40:12.118Z",
+            "deadline": "2020-03-20T16:40:07.466Z",
+            "done_at": "2020-03-20T16:40:07.466Z",
+            "occurrence_records": []
+        }
+    },
+    {
+        "model": "service_orders.procedure",
+        "pk": "ada54826-64aa-4ba7-8091-884a6842c0d9",
+        "fields": {
+            "action": "24d5c65a-1d66-4bd9-a458-d12675be9c67",
+            "occurrence_kind": "",
+            "occurrence_type": null,
+            "service_order_action_status": "03808932-e576-45da-a204-9c588a133a83",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "procedure_previous": null,
+            "form_data": null,
+            "to_do": "docs",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "created_at": "2020-03-20T16:40:12.118Z",
+            "deadline": "2020-03-20T16:40:07.466Z",
+            "done_at": "2020-03-20T16:40:07.466Z",
+            "occurrence_records": []
+        }
+    }
+]

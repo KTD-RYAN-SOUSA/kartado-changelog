@@ -1,0 +1,136 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# CI/CD
+.github
+sonar-project.properties
+
+# Documentation
+*.md
+README.md
+docs/
+DOCKER_DEPLOY.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Poetry (manter o lock file!)
+# poetry.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Local data
+local_reports/
+# gdal_data/
+
+# Docker
+docker-compose.yml
+Dockerfile.local
+Dockerfile
+.dockerignore
+
+# Testing (comentado pois pode ser necessário no Fargate)
+# pytest.ini
+# pytest-clean.ini
+# conftest.py
+# **/tests/
+# **/test_*.py
+
+# Scripts de deploy (não precisam estar na imagem)
+scripts/deploy_to_ecr.sh
+scripts/update_ecs_service.sh
+scripts/setup_sqs_queues.py
+
+# Logs
+*.log
+logs/
+
+# Media files (devem estar no S3 em produção)
+# assets/mediafiles/
+# assets/static/  # Comentado - pode ser necessário
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+
+# Locust
+locust/
+
+# Specs
+specs/
+
+# Excel files e fixtures (não precisam em produção)
+# *.xlsx
+# *.xlsm
+# search_keys.xlsx
+# fixtures/
+
+# Notebooks
+MockConcessionaria.ipynb
+MockEmpreiteira.ipynb
+Monitorings.ipynb
+ChangeFormFields.ipynb
+CSP_Calculation.ipynb
+Generate_lane_type_logic_Eixo_SP.ipynb
+Get*.ipynb
+ImportExcel.ipynb
+Test_Notifications.ipynb
+
+# Shared libraries locais (não devem estar no repo)
+# libgdal.so
+# libgeos_c.so.1
+# libgeos-3.7.1.so
+# libjpeg.so.62
+# libltdl.so.7
+# libpng16.so.16
+# libproj.so
+# libxml2.so.2
+# libxmlsec1-openssl.so
+# libxmlsec1.so.1
+# libxslt.so.1
+# xmlsec1
+
+# Makefiles
+Makefile
+
+# Task definition files (configurar manualmente)
+ecs-task-definition.json
+
+# HTML coverage
+htmlcov/
+
+# Access descriptions
+# access_level_descriptions.txt

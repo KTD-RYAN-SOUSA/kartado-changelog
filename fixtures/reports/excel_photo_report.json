@@ -1,0 +1,166 @@
+[
+  {
+    "start_cell": "G2",
+    "end_cell": "G2",
+    "source": "form_data",
+    "logic": {
+      "or": [{ "var": ["tro_number"] }, { "var": ["codigo_engenho"] }]
+    },
+    "field": "number",
+    "alignment_style": {
+      "horizontal": "center",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "A3",
+    "end_cell": "G3",
+    "initial": "À Agência Nacional de Transportes Terrestres – ANTT/UR",
+    "source": "road.uf",
+    "field": "title",
+    "font_style": {
+      "bold": true
+    },
+    "alignment_style": {
+      "horizontal": "left",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "B5",
+    "end_cell": "B5",
+    "source": "form_data",
+    "logic": {
+      "or": [{ "var": ["tro_number"] }, { "var": ["codigo_engenho"] }]
+    },
+    "field": "number",
+    "alignment_style": {
+      "horizontal": "center",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "D5",
+    "end_cell": "G5",
+    "source": "occurrence_type.name",
+    "field": "type",
+    "alignment_style": {
+      "horizontal": "left",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "A6",
+    "end_cell": "B6",
+    "initial": "Recebido em: ",
+    "source": "found_at",
+    "field": "date",
+    "font_style": {
+      "bold": true
+    },
+    "alignment_style": {
+      "horizontal": "center",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "D6",
+    "end_cell": "G6",
+    "source": "form_data",
+    "logic": {
+      "if": [
+        { "var": "tro_number" },
+        "tro_number",
+        { "var": "codigo_engenho" },
+        "codigo_engenho"
+      ]
+    },
+    "field": "location",
+    "alignment_style": {
+      "horizontal": "left",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "B7",
+    "end_cell": "B7",
+    "source": "found_at",
+    "field": "date",
+    "alignment_style": {
+      "horizontal": "center",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "B8",
+    "end_cell": "B8",
+    "source": "found_at",
+    "field": "hour",
+    "alignment_style": {
+      "horizontal": "center",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "D7",
+    "end_cell": "G8",
+    "source": "form_data.notes",
+    "field": "notes",
+    "alignment_style": {
+      "horizontal": "left",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "C10",
+    "end_cell": "G10",
+    "source": "executed_at",
+    "field": "date",
+    "alignment_style": {
+      "horizontal": "left",
+      "vertical": "center",
+      "wrap_text": true
+    }
+  },
+  {
+    "start_cell": "A15",
+    "end_cell": "D15",
+    "source": "0",
+    "margin_top_cm": 0.02,
+    "margin_left_cm": 0.07,
+    "field": "picture"
+  },
+  {
+    "start_cell": "E15",
+    "end_cell": "G15",
+    "source": "1",
+    "margin_top_cm": 0.02,
+    "margin_left_cm": 0.07,
+    "field": "picture"
+  },
+  {
+    "start_cell": "A17",
+    "end_cell": "D17",
+    "source": "2",
+    "margin_top_cm": 0.02,
+    "margin_left_cm": 0.07,
+    "field": "picture"
+  },
+  {
+    "start_cell": "E17",
+    "end_cell": "G17",
+    "source": "3",
+    "margin_top_cm": 0.02,
+    "margin_left_cm": 0.07,
+    "field": "picture"
+  }
+]

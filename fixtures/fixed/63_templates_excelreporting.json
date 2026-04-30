@@ -1,0 +1,12 @@
+[
+{
+    "model": "templates.excelreporting",
+    "pk": "6983f1d9-c9a0-4fa5-9c39-9a1704be513f",
+    "fields": {
+        "reporting": "00016716-4db3-4f90-9762-85fbb02884cf",
+        "excel_import": "e4ff9959-e8fb-45fa-a2c7-77f565399e97",
+        "row": "2",
+        "operation": "CREATE"
+    }
+}
+]

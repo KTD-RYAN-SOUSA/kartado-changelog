@@ -1,0 +1,155 @@
+[
+    {
+        "model": "resources.contract",
+        "pk": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+        "fields": {
+            "name": "Vallis Engenharia - UHE-ITA",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "contract_start": "2017-05-16",
+            "contract_end": "2029-12-31",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "subcompany": "f463e5ea-7d48-4802-89b9-02f817eb6201",
+            "status": null,
+            "higher_grade": 10,
+            "performance_months": 12,
+            "extra_info": {
+                "price": 6412,
+                "r_c_number": "189607",
+                "contract_object": "Elabora\u00e7\u00e3o de PRAD para atendimento da a\u00e7\u00e3o civil p\u00fablica n\u00ba. 5002309-56.2017.404.7212 - R\u00e9u Gaud\u00eancio Machado e Outros.",
+                "additional_control": "34",
+                "accounting_classification": "010-615011121013-01054061-1202024-1103-0-0"
+            },
+            "spend_schedule": {},
+            "responsibles_hirer": [
+                "0aa50773-b368-4a50-9f12-4a7d8dfaf256"
+            ],
+            "responsibles_hired": [],
+            "performance_services": [
+                "b0db7a37-50af-4010-a893-20fb9a85ff72",
+                "0e2f3da9-a75f-4d89-b14d-88b314d89b26",
+                "de3950a1-cdb0-4167-a850-d78ea58bbec2",
+                "50bd74b2-a8d4-4752-8423-28cfcfbacc8d"
+            ],
+            "administration_services": [
+                "d9cbdaad-88d9-4427-aee7-952195166a00"
+            ]
+        }
+    },
+    {
+        "model": "resources.contract",
+        "pk": "d457466e-c598-45ea-a8d4-247bfb5e17c5",
+        "fields": {
+            "name": "Vallis Engenharia - UHE-ITA",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "contract_start": "2017-05-16",
+            "contract_end": "2029-12-31",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "firm": null,
+            "subcompany": "f463e5ea-7d48-4802-89b9-02f817eb6201",
+            "status": null,
+            "higher_grade": 10,
+            "performance_months": 12,
+            "extra_info": {
+                "price": 6412,
+                "r_c_number": "189607",
+                "contract_object": "Elabora\u00e7\u00e3o de PRAD para atendimento da a\u00e7\u00e3o civil p\u00fablica n\u00ba. 5002309-56.2017.404.7212 - R\u00e9u Gaud\u00eancio Machado e Outros.",
+                "additional_control": "34",
+                "accounting_classification": "010-615011121013-01054061-1202024-1103-0-0"
+            },
+            "spend_schedule": {},
+            "responsibles_hirer": [
+                "0aa50773-b368-4a50-9f12-4a7d8dfaf256"
+            ],
+            "responsibles_hired": [],
+            "performance_services": [
+                "b0db7a37-50af-4010-a893-20fb9a85ff72",
+                "0e2f3da9-a75f-4d89-b14d-88b314d89b26",
+                "de3950a1-cdb0-4167-a850-d78ea58bbec2",
+                "50bd74b2-a8d4-4752-8423-28cfcfbacc8d"
+            ],
+            "administration_services": [
+                "d9cbdaad-88d9-4427-aee7-952195166a00"
+            ]
+        }
+    },
+    {
+        "model": "resources.contract",
+        "pk": "339fc8c2-3351-4509-af8a-aa7c519d89ee",
+        "fields": {
+            "name": "Verdes Lagos - UHE-SALTO OSORIO",
+            "created_at": "2020-09-03T15:31:56.354Z",
+            "contract_start": "2017-04-10",
+            "contract_end": "2029-12-31",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "firm": "63656635-2476-44fa-bb42-c710c6b6620e",
+            "status": null,
+            "performance_months": 10,
+            "extra_info": {
+                "price": 1000,
+                "r_c_number": "1010515",
+                "contract_object": "Ficaliza\u00e7\u00e3o",
+                "additional_control": "31",
+                "accounting_classification": "10425132"
+            },
+            "spend_schedule": {},
+            "responsibles_hirer": [
+                "0aa50773-b368-4a50-9f12-4a7d8dfaf256"
+            ],
+            "responsibles_hired": [],
+            "unit_price_services": [
+                "b0db7a37-50af-4010-a893-20fb9a85ff72",
+                "0e2f3da9-a75f-4d89-b14d-88b314d89b26",
+                "de3950a1-cdb0-4167-a850-d78ea58bbec2",
+                "50bd74b2-a8d4-4752-8423-28cfcfbacc8d"
+            ],
+            "administration_services": [
+                "b0db7a37-50af-4010-a893-20fb9a85ff72",
+                "0e2f3da9-a75f-4d89-b14d-88b314d89b26",
+                "de3950a1-cdb0-4167-a850-d78ea58bbec2",
+                "50bd74b2-a8d4-4752-8423-28cfcfbacc8d"
+            ],
+            "performance_services": [
+                "b0db7a37-50af-4010-a893-20fb9a85ff72",
+                "0e2f3da9-a75f-4d89-b14d-88b314d89b26",
+                "de3950a1-cdb0-4167-a850-d78ea58bbec2",
+                "50bd74b2-a8d4-4752-8423-28cfcfbacc8d"
+            ],
+            "total_price": 1000,
+            "spent_price": 500
+        }
+    },
+    {
+        "model": "resources.contract",
+        "pk": "f5c95278-51f5-452e-b124-e737ff67aaaf",
+        "fields": {
+            "name": "Vallis Engenharia - UHE-ITA",
+            "created_at": "2020-09-03T15:31:56.377Z",
+            "contract_start": "2017-05-16",
+            "contract_end": "2029-12-31",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "subcompany": "f463e5ea-7d48-4802-89b9-02f817eb6201",
+            "status": null,
+            "performance_months": 1,
+            "extra_info": {
+                "price": 6412,
+                "r_c_number": "189607",
+                "contract_object": "Elabora\u00e7\u00e3o de PRAD para atendimento da a\u00e7\u00e3o civil p\u00fablica n\u00ba. 5002309-56.2017.404.7212 - R\u00e9u Gaud\u00eancio Machado e Outros.",
+                "additional_control": "34",
+                "accounting_classification": "010-615011121013-01054061-1202024-1103-0-0"
+            },
+            "spend_schedule": {},
+            "responsibles_hirer": [
+                "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+                "4e29d1e0-9745-48d3-b38f-b1210e683e00"
+            ],
+            "responsibles_hired": [
+                "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+                "4e29d1e0-9745-48d3-b38f-b1210e683e00"
+            ],
+            "total_price": 100,
+            "spent_price": 200
+        }
+    }
+]

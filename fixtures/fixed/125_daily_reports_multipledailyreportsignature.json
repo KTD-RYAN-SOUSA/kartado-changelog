@@ -1,0 +1,28 @@
+[
+    {
+        "model": "daily_reports.multipledailyreportsignature",
+        "pk": "656b1598-57d7-4a29-b76b-b2cc14a6d9cf",
+        "fields": {
+            "md5": "",
+            "upload": "1d24f308-8caf-4e56-b429-34133d6b3ce7.jpg",
+            "uploaded_at": "2020-05-22T09:37:17.578Z",
+            "signature_date": "2020-05-22T09:37:17.578Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "signature_name": "Teste 1",
+            "multiple_daily_report": "0a2daca5-416e-4679-bb59-af8fe1801bba"
+        }
+    },
+    {
+        "model": "daily_reports.multipledailyreportsignature",
+        "pk": "31edad18-e71a-4bec-9591-dfe45754778f",
+        "fields": {
+            "md5": "",
+            "upload": "07e1d275-c274-4bde-9e39-a816e2e71d5c.jpg",
+            "uploaded_at": "2020-05-22T09:37:17.578Z",
+            "signature_date": "2020-05-22T09:37:17.578Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "signature_name": "Teste 2",
+            "multiple_daily_report": "0a2daca5-416e-4679-bb59-af8fe1801bba"
+        }
+    }
+]

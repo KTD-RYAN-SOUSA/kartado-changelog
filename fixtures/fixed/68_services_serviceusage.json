@@ -1,0 +1,167 @@
+[
+{
+    "model": "services.serviceusage",
+    "pk": "00050efc-45f2-4efa-8e6b-fd814e39f34c",
+    "fields": {
+        "reporting": "00000db3-a561-4387-ac47-d48fca2d6c24",
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "measurement": "094ba394-621b-453c-b889-3a50e2b6df3e",
+        "amount": 0.0,
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+},
+{
+    "model": "services.serviceusage",
+    "pk": "00190bd3-c6dd-4bfc-986a-b89b39876b31",
+    "fields": {
+        "reporting": "00015140-5cf4-43b9-be76-fa2e21da0b1c",
+        "service": "0130feec-abc5-4dce-8ef0-12dfb8ae2fbf",
+        "measurement": null,
+        "amount": 0.0128,
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+},
+{
+    "model": "services.serviceusage",
+    "pk": "34ca977a-114a-483f-9d48-4f4d288231e3",
+    "fields": {
+        "reporting": "00015140-5cf4-43b9-be76-fa2e21da0b1c",
+        "service": "0130feec-abc5-4dce-8ef0-12dfb8ae2fbf",
+        "measurement": null,
+        "amount": 1.2,
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+},
+{
+    "model": "services.serviceusage",
+    "pk": "6931dfc1-d01a-4cc5-b204-f620ee2e0ee0",
+    "fields": {
+        "reporting": "00015140-5cf4-43b9-be76-fa2e21da0b1c",
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "measurement": null,
+        "amount": 1.2,
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+},
+{
+    "model": "services.serviceusage",
+    "pk": "8ccaa685-e74d-457d-90b4-72ab181d4437",
+    "fields": {
+        "reporting": "00000db3-a561-4387-ac47-d48fca2d6c24",
+        "service": "0130feec-abc5-4dce-8ef0-12dfb8ae2fbf",
+        "measurement": "094ba394-621b-453c-b889-3a50e2b6df3e",
+        "amount": 0.0,
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+},
+{
+    "model": "services.serviceusage",
+    "pk": "b75f54dd-4fa6-4536-bdf4-eb5c3c6392d9",
+    "fields": {
+        "reporting": "00016716-4db3-4f90-9762-85fbb02884cf",
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "measurement": null,
+        "amount": 0.0,
+        "formula": {
+            "backend": {
+                "var": "formData.ammount"
+            }
+        }
+    }
+},
+{
+    "model": "services.serviceusage",
+    "pk": "b7af588d-b0c4-4961-99ee-0d041bdc063d",
+    "fields": {
+        "reporting": "00000db3-a561-4387-ac47-d48fca2d6c24",
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "measurement": "094ba394-621b-453c-b889-3a50e2b6df3e",
+        "amount": 0.0,
+        "formula": {
+            "backend": {
+                "*": [
+                    {
+                        "var": "formData.width"
+                    },
+                    {
+                        "var": "formData.length"
+                    },
+                    {
+                        "var": "formData.height"
+                    }
+                ]
+            }
+        }
+    }
+}
+]

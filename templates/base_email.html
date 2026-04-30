@@ -1,0 +1,301 @@
+{% load premailer %} {% premailer %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+
+    {# Boilerplate #}
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    {# Dinosaur Microsoft stuff :( #}
+    <!--[if gte mso 9
+      ]><xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml><!
+    [endif]-->
+    <!-- [if !mso]><!-->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <!-- <![endif] -->
+
+    {# Base styles #}
+    <link rel="stylesheet" href="./templates/base_email.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    {# Icons #}
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    {% block scoped_css %} {% endblock scoped_css %}
+  </head>
+
+  <body>
+    <div id="main-container">
+      {# Logo #}
+      <img
+        id="logo"
+        src="https://kartado-public-assets.s3.amazonaws.com/kartado-logo-small.png"
+        alt="Kartado Logo"
+      />
+
+      {# Content #}
+      <div id="content">
+        {% block content %} {% endblock content %}
+
+        <p id="complimentary-close">Atenciosamente,<br />Equipe Kartado.</p>
+
+        {% if disclaimer %}
+        <p id="disclaimer">{{ disclaimer }}</p>
+        {% endif %}
+
+        <div id="marketing">
+          <p class="bottom-text">Baixe nosso app:</p>
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            align="center"
+            style="width: auto; margin: 10px auto; border: none"
+          >
+            <tbody>
+              <tr>
+                <td style="padding: 0; border: none">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.spotway2&hl=pt&gl=US"
+                    target="_blank"
+                    style="text-decoration: none"
+                  >
+                    <img
+                      src="https://kartado-public-assets.s3.amazonaws.com/android-btn.gif"
+                      alt="Baixar na Google Play"
+                      width="120"
+                      height="44"
+                      style="display: block; border: 0"
+                    />
+                  </a>
+                </td>
+                <td
+                  style="
+                    width: 8px;
+                    font-size: 1px;
+                    line-height: 1px;
+                    padding: 0;
+                    border: none;
+                  "
+                >
+                  &nbsp;
+                </td>
+                <td style="padding: 0; border: none">
+                  <a
+                    href="https://apps.apple.com/br/app/kartado/id1537918449"
+                    target="_blank"
+                    style="text-decoration: none"
+                  >
+                    <img
+                      src="https://kartado-public-assets.s3.amazonaws.com/ios-btn.gif"
+                      alt="Baixar na App Store"
+                      width="120"
+                      height="44"
+                      style="display: block; border: 0"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            align="center"
+            style="
+              margin: 10px auto;
+              padding: 0;
+              border: none;
+              width: auto;
+              text-align: center;
+            "
+          >
+            <tr>
+              <td
+                style="
+                  padding: 0 4px;
+                  border-top: 0 !important;
+                  border-bottom: 0 !important;
+                "
+              >
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  style="width: 35px; height: 35px; border: none"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      valign="middle"
+                      bgcolor="#012f71"
+                      style="
+                        padding: 0 !important;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        text-align: center;
+                        vertical-align: middle;
+                        border: none !important;
+                        border-top: 0 !important;
+                        border-bottom: 0 !important;
+                      "
+                    >
+                      <a
+                        href="https://www.instagram.com/kartado.com/"
+                        target="_blank"
+                        style="display: inline-block; line-height: 35px"
+                      >
+                        <img
+                          src="https://kartado-public-assets.s3.amazonaws.com/instagram.png"
+                          alt="instagram"
+                          width="20"
+                          height="20"
+                          style="display: inline-block; vertical-align: middle"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td
+                style="
+                  padding: 0 4px;
+                  border: none !important;
+                  border-top: 0 !important;
+                  border-bottom: 0 !important;
+                "
+              >
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  style="width: 35px; height: 35px; border: none"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      valign="middle"
+                      bgcolor="#012f71"
+                      style="
+                        padding: 0 !important;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        text-align: center;
+                        vertical-align: middle;
+                        border: none !important;
+                        border-top: 0 !important;
+                        border-bottom: 0 !important;
+                      "
+                    >
+                      <a
+                        href="https://www.youtube.com/channel/UC8Pg9MnPzTDRaBcXyTwyFiQ/featured"
+                        target="_blank"
+                        style="display: inline-block; line-height: 35px"
+                      >
+                        <img
+                          src="https://kartado-public-assets.s3.amazonaws.com/youtube.png"
+                          alt="youtube"
+                          width="20"
+                          height="20"
+                          style="display: inline-block; vertical-align: middle"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td
+                style="
+                  padding: 0 4px;
+                  border: none !important;
+                  border-top: 0 !important;
+                  border-bottom: 0 !important;
+                "
+              >
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  style="width: 35px; height: 35px; border: none"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      valign="middle"
+                      bgcolor="#012f71"
+                      style="
+                        padding: 0 !important;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        text-align: center;
+                        vertical-align: middle;
+                        border: none !important;
+                        border-top: 0 !important;
+                        border-bottom: 0 !important;
+                      "
+                    >
+                      <a
+                        href="https://www.linkedin.com/company/kartado/"
+                        target="_blank"
+                        style="display: inline-block; line-height: 35px"
+                      >
+                        <img
+                          src="https://kartado-public-assets.s3.amazonaws.com/linkedin.png"
+                          alt="linkedin"
+                          width="20"
+                          height="20"
+                          style="display: inline-block; vertical-align: middle"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        {% if usr_notif_config_url %}
+        <p class="bottom-text">
+          <a href="{{ usr_notif_config_url }}" target="_blank"
+            >Configurar notificações</a
+          >
+        </p>
+        {% endif %} {% if usr_notif_unsubscribe_url %}
+        <p class="bottom-text">
+          <a href="{{ usr_notif_unsubscribe_url }}" target="_blank">
+            Parar de receber este tipo de notificação da Kartado
+          </a>
+        </p>
+        {% endif %} {% if unsubscribe_url %}
+        <p class="bottom-text">
+          <a href="{{ unsubscribe_url }}" target="_blank">
+            Parar de receber notificações da Kartado
+          </a>
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>
+{% endpremailer %}

@@ -1,0 +1,24 @@
+[
+    {
+        "model": "users.usersignature",
+        "pk": "656b1598-57d7-4a29-b76b-b2cc14a6d9cf",
+        "fields": {
+            "md5": "",
+            "upload": "1d24f308-8caf-4e56-b429-34133d6b3ce7.jpg",
+            "created_at": "2025-07-25T16:32:44.787Z",
+            "user": "4e29d1e0-9745-48d3-b38f-b1210e683e00",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+        }
+    },
+    {
+        "model": "users.usersignature",
+        "pk": "31edad18-e71a-4bec-9591-dfe45754778f",
+        "fields": {
+            "md5": "",
+            "upload": "07e1d275-c274-4bde-9e39-a816e2e71d5c.jpg",
+            "created_at": "2025-08-01T12:32:44.787Z",
+            "user": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+        }
+    }
+]

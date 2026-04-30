@@ -1,0 +1,220 @@
+{
+  "service": {
+    "fields": {
+      "kind": {
+        "groups": [
+          {
+            "name": "I - CONSERVAÇÃO RODOVIÁRIA",
+            "values": ["1"]
+          },
+          {
+            "name": "II - SERVIÇOS DIVERSOS",
+            "values": ["2"]
+          },
+          {
+            "name": "III - SINALIZAÇÃO",
+            "values": ["3"]
+          }
+        ],
+        "apiName": "kind",
+        "dataType": "select",
+        "displayName": "Categoria",
+        "selectOptions": {
+          "options": [
+            {
+              "name": "I.I - REMENDO PROFUNDO",
+              "value": "1"
+            },
+            {
+              "name": "II – SERVIÇOS DIVERSOS",
+              "value": "2"
+            },
+            {
+              "name": "III – SINALIZAÇÃO",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "group": {
+        "apiName": "group",
+        "dataType": "select",
+        "displayName": "Grupo",
+        "selectOptions": {
+          "options": [
+            {
+              "name": "Pavimentação",
+              "value": "pavement"
+            },
+            {
+              "name": "Serviços Complementares",
+              "value": "other_services"
+            },
+            {
+              "name": "Sinalização",
+              "value": "signaling"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "reporting": {
+    "fields": {
+      "lane": {
+        "apiName": "lane",
+        "dataType": "select",
+        "displayName": "Faixa",
+        "selectOptions": {
+          "options": [
+            {
+              "name": "Faixa 1",
+              "value": "1"
+            },
+            {
+              "name": "Faixa 2",
+              "value": "2"
+            },
+            {
+              "name": "Acostamento",
+              "value": "20"
+            },
+            {
+              "name": "Trevo",
+              "value": "21"
+            },
+            {
+              "name": "Marginal",
+              "value": "22"
+            },
+            {
+              "name": "Faixa de Domínio",
+              "value": "23"
+            },
+            {
+              "name": "Não se aplica",
+              "value": "99"
+            }
+          ]
+        }
+      },
+      "direction": {
+        "apiName": "direction",
+        "dataType": "select",
+        "displayName": "Sentido",
+        "selectOptions": {
+          "options": [
+            {
+              "name": "Esquerda",
+              "short": "LE",
+              "value": "0"
+            },
+            {
+              "name": "Direita",
+              "short": "LD",
+              "value": "1"
+            },
+            {
+              "name": "Ambos",
+              "short": "A",
+              "value": "4"
+            },
+            {
+              "name": "Não se Aplica",
+              "short": "X",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "occurrenceKind": {
+        "apiName": "occurrenceKind",
+        "dataType": "select",
+        "displayName": "Natureza",
+        "selectOptions": {
+          "options": [
+            {
+              "name": "Pavimento",
+              "value": "1"
+            },
+            {
+              "name": "Inventário",
+              "value": "2"
+            },
+            {
+              "name": "Serviços Diversos",
+              "value": "3"
+            },
+            {
+              "name": "Sinalização",
+              "value": "4"
+            },
+            {
+              "name": "Levantamento",
+              "value": "5"
+            },
+            {
+              "name": "Diário",
+              "value": "6"
+            }
+          ]
+        }
+      }
+    },
+    "listColumns": ["price", "measurement"]
+  },
+  "occurrenceType": {
+    "fields": {
+      "occurrenceKind": {
+        "apiName": "occurrenceKind",
+        "dataType": "select",
+        "displayName": "Natureza",
+        "selectOptions": {
+          "options": [
+            {
+              "name": "Pavimento",
+              "value": "1"
+            },
+            {
+              "name": "Inventário",
+              "value": "2"
+            },
+            {
+              "name": "Serviços Diversos",
+              "value": "3"
+            },
+            {
+              "name": "Sinalização",
+              "value": "4"
+            },
+            {
+              "name": "Levantamento",
+              "value": "5"
+            },
+            {
+              "name": "Diário",
+              "value": "6"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "serviceOrderActionStatus": {
+    "fields": {
+      "kind": {
+        "apiName": "kind",
+        "dataType": "select",
+        "displayName": "Tipo",
+        "selectOptions": {
+          "options": [
+            {
+              "name": "Apontamento",
+              "value": "REPORTING_STATUS"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+Olá,
+
+Um novo registro foi atualizado no sistema e está relacionado à você:
+
+Ação: {{action}}
+Tarefa: {{to_do}}
+Responsável: {{responsible}}
+Número do Registro: {{reg_number}}
+Números dos Serviços: {{os_number}}
+Natureza: {{kind}}
+Tipo: {{type}}
+Emitente: {{created_by}}
+
+Copie esse link no seu navegador para acessar o registro:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

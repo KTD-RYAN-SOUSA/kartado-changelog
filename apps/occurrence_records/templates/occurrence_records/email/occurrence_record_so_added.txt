@@ -1,0 +1,18 @@
+Olá,
+
+Um Serviço foi vinculado ao Registro {{reg_number}}.
+
+Número do Registro: {{reg_number}}
+Número do Serviço: {{os_number}}
+Criador do Serviço: {{created_by}}
+Número de Registros neste Serviço: {{count}}
+Nível GUT do Serviço: {{gut}}
+Equipes envolvidas no Serviço: {{firms}}
+
+Copie esse link no seu navegador para acessar o registro:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

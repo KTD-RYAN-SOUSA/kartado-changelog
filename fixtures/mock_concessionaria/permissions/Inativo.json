@@ -1,0 +1,476 @@
+{
+    "City": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Firm": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "User": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "River": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Company": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Contract": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_view_money": false
+    },
+    "Location": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Resource": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Dashboard": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Procedure": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "allowed_status_transitions": {
+            "08199255-6eaf-4415-838b-56357287152e": [
+                "20134139-c77b-4404-8b9c-6697af03d07c"
+            ],
+            "20134139-c77b-4404-8b9c-6697af03d07c": [],
+            "214a42cb-760b-4478-8a08-7056a7f5f76b": [
+                "ecab3378-1a0b-4b91-8cef-d4dcfc6d1a59",
+                "b2c845e7-4900-4981-885a-977e7cf3ade3",
+                "77261a11-7b39-4cb4-8f4c-d0f545bcf1e6",
+                "33ccc2d4-a195-49db-a6e5-ad5edfce0e09",
+                "fbb50a7a-b212-48be-ab59-b8efafd2f618",
+                "214a42cb-760b-4478-8a08-7056a7f5f76b"
+            ],
+            "33ccc2d4-a195-49db-a6e5-ad5edfce0e09": [
+                "ecab3378-1a0b-4b91-8cef-d4dcfc6d1a59",
+                "b2c845e7-4900-4981-885a-977e7cf3ade3",
+                "77261a11-7b39-4cb4-8f4c-d0f545bcf1e6",
+                "33ccc2d4-a195-49db-a6e5-ad5edfce0e09",
+                "fbb50a7a-b212-48be-ab59-b8efafd2f618",
+                "214a42cb-760b-4478-8a08-7056a7f5f76b"
+            ],
+            "4f89dd8b-dbe9-4cae-be66-ea7ffa2af61b": [
+                "4f89dd8b-dbe9-4cae-be66-ea7ffa2af61b"
+            ],
+            "6f6cdc39-cbcf-4649-84ca-9807f2a61645": [
+                "20134139-c77b-4404-8b9c-6697af03d07c",
+                "6f6cdc39-cbcf-4649-84ca-9807f2a61645"
+            ],
+            "77261a11-7b39-4cb4-8f4c-d0f545bcf1e6": [
+                "ecab3378-1a0b-4b91-8cef-d4dcfc6d1a59",
+                "b2c845e7-4900-4981-885a-977e7cf3ade3",
+                "77261a11-7b39-4cb4-8f4c-d0f545bcf1e6",
+                "33ccc2d4-a195-49db-a6e5-ad5edfce0e09",
+                "fbb50a7a-b212-48be-ab59-b8efafd2f618",
+                "214a42cb-760b-4478-8a08-7056a7f5f76b"
+            ],
+            "b2c845e7-4900-4981-885a-977e7cf3ade3": [
+                "ecab3378-1a0b-4b91-8cef-d4dcfc6d1a59",
+                "b2c845e7-4900-4981-885a-977e7cf3ade3",
+                "77261a11-7b39-4cb4-8f4c-d0f545bcf1e6",
+                "33ccc2d4-a195-49db-a6e5-ad5edfce0e09",
+                "fbb50a7a-b212-48be-ab59-b8efafd2f618",
+                "214a42cb-760b-4478-8a08-7056a7f5f76b"
+            ],
+            "ecab3378-1a0b-4b91-8cef-d4dcfc6d1a59": [
+                "ecab3378-1a0b-4b91-8cef-d4dcfc6d1a59",
+                "b2c845e7-4900-4981-885a-977e7cf3ade3",
+                "77261a11-7b39-4cb4-8f4c-d0f545bcf1e6",
+                "33ccc2d4-a195-49db-a6e5-ad5edfce0e09",
+                "fbb50a7a-b212-48be-ab59-b8efafd2f618",
+                "214a42cb-760b-4478-8a08-7056a7f5f76b"
+            ],
+            "fbb50a7a-b212-48be-ab59-b8efafd2f618": [
+                "ecab3378-1a0b-4b91-8cef-d4dcfc6d1a59",
+                "b2c845e7-4900-4981-885a-977e7cf3ade3",
+                "77261a11-7b39-4cb4-8f4c-d0f545bcf1e6",
+                "33ccc2d4-a195-49db-a6e5-ad5edfce0e09",
+                "fbb50a7a-b212-48be-ab59-b8efafd2f618",
+                "214a42cb-760b-4478-8a08-7056a7f5f76b"
+            ],
+            "ff9face2-8bd7-4ab3-8f1d-8df52d733574": [
+                "ff9face2-8bd7-4ab3-8f1d-8df52d733574"
+            ]
+        }
+    },
+    "ShapeFile": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "TileLayer": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "CanvasCard": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "CanvasList": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Permission": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "PushNotification": {
+        "can_view": true
+    },
+    "UserInFirm": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "UserManual": {
+        "null": null,
+        "can_view": false
+    },
+    "ApprovalFlow": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ApprovalStep": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "CompanyGroup": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MaterialItem": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_view_money": false
+    },
+    "ServiceOrder": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_view_money": false,
+        "can_view_canvas": false
+    },
+    "AccessRequest": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_approve": false
+    },
+    "HumanResource": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MaterialUsage": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_approve": false,
+        "can_view_money": false
+    },
+    "ProcedureFile": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "UserInCompany": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MonitoringPlan": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "OccurrenceType": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ParameterGroup": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "UserPermission": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MonitoringCycle": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MonitoringPoint": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MonitoringRecord": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "OccurrenceRecord": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_approve": true
+    },
+    "CustomizationMenu": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "HumanResourceItem": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_view_money": false
+    },
+    "ProcedureResource": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_approve": false,
+        "can_view_money": false
+    },
+    "AdditionalDocument": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_approve": true
+    },
+    "ApprovalTransition": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "HumanResourceUsage": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_approve": false,
+        "can_view_money": false
+    },
+    "MonitoringCampaign": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MonitoringSchedule": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "OperationalControl": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ServiceOrderAction": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MeasurementBulletin": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_approve": true,
+        "can_view_money": false
+    },
+    "MonitoringFrequency": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "OccurrenceTypeSpecs": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ServiceOrderWatcher": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "OccurrenceRecordFile": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ServiceOrderResource": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_view_money": false
+    },
+    "OccurrenceRecordWatcher": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "OperationalControlRecord": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ServiceOrderActionStatus": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "AdministrativeInformation": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false,
+        "can_view_money": false
+    },
+    "ServiceOrderActionStatusSpecs": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    }
+}

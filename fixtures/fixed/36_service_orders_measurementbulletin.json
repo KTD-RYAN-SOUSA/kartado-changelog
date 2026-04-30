@@ -1,0 +1,65 @@
+[
+    {
+        "model": "service_orders.measurementbulletin",
+        "pk": "0b02c96e-2632-42c4-afaa-0461b47c875b",
+        "fields": {
+            "number": "UHMA-BM-2019.0006",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "firm_manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "creation_date": "2020-07-16T20:02:53.092Z",
+            "measurement_date": "2020-07-16T20:02:50.161Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "total_price": 6000.0,
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+            "extra_info": {},
+            "description": "",
+            "approval_step": null,
+            "editable": true,
+            "work_day": 10,
+            "is_processing": false,
+            "related_firms": []
+        }
+    },
+    {
+        "model": "service_orders.measurementbulletin",
+        "pk": "1041a2ac-b0f1-4bed-8b3c-4804ae37eef7",
+        "fields": {
+            "number": "UHIT-BM-2019.0012",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "firm_manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "creation_date": "2020-04-04T14:18:09.343Z",
+            "measurement_date": "2020-04-04T14:18:07.356Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "total_price": 5765.0265,
+            "contract": "1cede63e-8dd7-45b0-a11a-c45e89c87874",
+            "extra_info": {},
+            "description": "",
+            "approval_step": null,
+            "editable": true,
+            "work_day": 10,
+            "is_processing": false,
+            "related_firms": []
+        }
+    },
+    {
+        "model": "service_orders.measurementbulletin",
+        "pk": "7a514f01-58ec-49ff-83ed-c01d51869781",
+        "fields": {
+            "number": "UHIT-BM-2019.0030",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "firm_manager": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "creation_date": "2020-04-04T14:18:09.343Z",
+            "measurement_date": "2020-04-04T14:18:07.356Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "total_price": 5765.0265,
+            "contract": "d457466e-c598-45ea-a8d4-247bfb5e17c5",
+            "extra_info": {},
+            "description": "",
+            "approval_step": null,
+            "editable": true,
+            "work_day": 10,
+            "is_processing": false,
+            "related_firms": []
+        }
+    }
+]

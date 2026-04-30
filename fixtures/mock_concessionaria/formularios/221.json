@@ -1,0 +1,1601 @@
+{
+    "id": 1,
+    "name": "25",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "randomIdentification25",
+            "dataType": "number",
+            "displayName": "INTSINALHORIENTID"
+        },
+        {
+            "id": 2,
+            "apiName": "description",
+            "dataType": "string",
+            "displayName": "DESCRI\u00c7\u00c3O"
+        },
+        {
+            "id": 3,
+            "apiName": "artespRegister",
+            "dataType": "number",
+            "displayName": "REGISTROARTESP"
+        },
+        {
+            "id": 4,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "apiName": "roadType",
+            "dataType": "select",
+            "displayName": "TIPO DA VIA",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "EXP",
+                        "value": "1"
+                    },
+                    {
+                        "name": "MAR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "DIS",
+                        "value": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "apiName": "itemId",
+            "dataType": "string",
+            "displayName": "IDENTIFICA\u00c7\u00c3O DISPOSITIVO"
+        },
+        {
+            "id": 7,
+            "apiName": "direction",
+            "dataType": "select",
+            "displayName": "DIRECAO DO DISPO.",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "A",
+                        "value": "1"
+                    },
+                    {
+                        "name": "C",
+                        "value": "2"
+                    },
+                    {
+                        "name": "E",
+                        "value": "3"
+                    },
+                    {
+                        "name": "I",
+                        "value": "4"
+                    },
+                    {
+                        "name": "IE",
+                        "value": "5"
+                    },
+                    {
+                        "name": "S",
+                        "value": "6"
+                    },
+                    {
+                        "name": "LO",
+                        "value": "7"
+                    },
+                    {
+                        "name": "L",
+                        "value": "8"
+                    },
+                    {
+                        "name": "O",
+                        "value": "9"
+                    },
+                    {
+                        "name": "N",
+                        "value": "10"
+                    },
+                    {
+                        "name": "NS",
+                        "value": "11"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "apiName": "typePist",
+            "dataType": "select",
+            "displayName": "TIPO PISTA",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Dupla",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Simples",
+                        "value": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "apiName": "typeClass2",
+            "dataType": "select",
+            "displayName": "CLASSIFICA\u00c7\u00c3O",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "LL",
+                        "value": "1"
+                    },
+                    {
+                        "name": "MC",
+                        "value": "2"
+                    },
+                    {
+                        "name": "MT",
+                        "value": "3"
+                    },
+                    {
+                        "name": "IP",
+                        "value": "4"
+                    },
+                    {
+                        "name": "PC",
+                        "value": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "apiName": "typeSign2",
+            "dataType": "select",
+            "displayName": "TIPO SINALIZA\u00c7\u00c3O",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "LSC",
+                        "value": "1"
+                    },
+                    {
+                        "name": "LSS",
+                        "value": "2"
+                    },
+                    {
+                        "name": "LDC",
+                        "value": "3"
+                    },
+                    {
+                        "name": "LDM",
+                        "value": "4"
+                    },
+                    {
+                        "name": "LST",
+                        "value": "5"
+                    },
+                    {
+                        "name": "LB",
+                        "value": "6"
+                    },
+                    {
+                        "name": "LC",
+                        "value": "7"
+                    },
+                    {
+                        "name": "MAP",
+                        "value": "8"
+                    },
+                    {
+                        "name": "MLP",
+                        "value": "9"
+                    },
+                    {
+                        "name": "MCB",
+                        "value": "10"
+                    },
+                    {
+                        "name": "MOP",
+                        "value": "11"
+                    },
+                    {
+                        "name": "MCICF",
+                        "value": "12"
+                    },
+                    {
+                        "name": "LR",
+                        "value": "13"
+                    },
+                    {
+                        "name": "LP",
+                        "value": "14"
+                    },
+                    {
+                        "name": "LERV",
+                        "value": "15"
+                    },
+                    {
+                        "name": "FTP",
+                        "value": "16"
+                    },
+                    {
+                        "name": "PEM",
+                        "value": "17"
+                    },
+                    {
+                        "name": "MOF",
+                        "value": "18"
+                    },
+                    {
+                        "name": "MCV",
+                        "value": "19"
+                    },
+                    {
+                        "name": "SIP",
+                        "value": "20"
+                    },
+                    {
+                        "name": "SIF",
+                        "value": "21"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "apiName": "color",
+            "dataType": "select",
+            "displayName": "COR",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "AM",
+                        "value": "1"
+                    },
+                    {
+                        "name": "BR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "VM",
+                        "value": "3"
+                    },
+                    {
+                        "name": "AZ",
+                        "value": "4"
+                    },
+                    {
+                        "name": "PT",
+                        "value": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 12,
+            "apiName": "cadence1",
+            "dataType": "select",
+            "displayName": "CAD\u00caNCIA - TRA\u00c7O (M)",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Segmento de 1 m",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Segmento de 2 m",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Segmento de 3 m",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Segmento de 4 m",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "apiName": "cadence2",
+            "dataType": "select",
+            "displayName": "CAD\u00caNCIA - ESPA\u00c7AMENTO (M)",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Intervalo de 1 m",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Intervalo de 2 m",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Intervalo de 3 m",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Intervalo de 6 m",
+                        "value": "4"
+                    },
+                    {
+                        "name": "Intervalo de 8 m",
+                        "value": "5"
+                    },
+                    {
+                        "name": "Intervalo de 9 m",
+                        "value": "6"
+                    },
+                    {
+                        "name": "Intervalo de 12 m",
+                        "value": "7"
+                    },
+                    {
+                        "name": "Espa\u00e7amento de 1,5 m",
+                        "value": "8"
+                    },
+                    {
+                        "name": "Espa\u00e7amento de 2,5 m",
+                        "value": "9"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "apiName": "mensagemLegenda",
+            "dataType": "select",
+            "displayName": "MENSAGEM LEGENDA",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "LPO",
+                        "value": "1"
+                    },
+                    {
+                        "name": "LVR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "LSF",
+                        "value": "3"
+                    },
+                    {
+                        "name": "LTE",
+                        "value": "4"
+                    },
+                    {
+                        "name": "LDIST",
+                        "value": "5"
+                    },
+                    {
+                        "name": "LM",
+                        "value": "6"
+                    },
+                    {
+                        "name": "LCA",
+                        "value": "7"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 15,
+            "apiName": "length",
+            "dataType": "float",
+            "displayName": "COMPRIMENTO"
+        },
+        {
+            "id": 16,
+            "apiName": "height",
+            "dataType": "float",
+            "displayName": "ALTURA"
+        },
+        {
+            "id": 17,
+            "apiName": "width",
+            "dataType": "float",
+            "displayName": "LARGURA"
+        },
+        {
+            "id": 18,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+            ],
+            "displayName": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 2,
+            "members": [
+                18
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "SINALIZA\u00c7\u00c3O HORIZONTAL",
+    "measurementColumns": [
+        {
+            "key": "randomIdentification25",
+            "width": 19.0,
+            "header": "INTSINALHORIENTID"
+        },
+        {
+            "key": "description",
+            "width": 12.0,
+            "header": "DESCRI\u00c7\u00c3O"
+        },
+        {
+            "key": "artespRegister",
+            "width": 100.0,
+            "header": "REGISTROARTESP"
+        },
+        {
+            "key": "lot",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 1",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 2",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 3",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 4",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "header": "Lote"
+        },
+        {
+            "key": "roadType",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "EXP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "MAR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "DIS",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 9.0,
+            "header": "TIPO DA VIA"
+        },
+        {
+            "key": "itemId",
+            "width": 3.0,
+            "header": "IDENTIFICA\u00c7\u00c3O DISPOSITIVO"
+        },
+        {
+            "key": "direction",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "A",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "C",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "E",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "I",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "IE",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "S",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "LO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "L",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "O",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "N",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "11",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "NS",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 2.0,
+            "header": "DIRECAO DO DISPO."
+        },
+        {
+            "key": "typePist",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.typePist"
+                                    }
+                                ]
+                            },
+                            "Dupla",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.typePist"
+                                    }
+                                ]
+                            },
+                            "Simples",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 5.0,
+            "header": "TIPO PISTA"
+        },
+        {
+            "key": "typeClass2",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.typeClass2"
+                                    }
+                                ]
+                            },
+                            "LL",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.typeClass2"
+                                    }
+                                ]
+                            },
+                            "MC",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.typeClass2"
+                                    }
+                                ]
+                            },
+                            "MT",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.typeClass2"
+                                    }
+                                ]
+                            },
+                            "IP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.typeClass2"
+                                    }
+                                ]
+                            },
+                            "PC",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 5.0,
+            "header": "CLASSIFICA\u00c7\u00c3O"
+        },
+        {
+            "key": "typeSign2",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LSC",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LSS",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LDC",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LDM",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LST",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LB",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LC",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "MAP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "MLP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "MCB",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "11",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "MOP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "12",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "MCICF",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "13",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "14",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "15",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "LERV",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "16",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "FTP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "17",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "PEM",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "18",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "MOF",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "19",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "MCV",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "20",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "SIP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "21",
+                                    {
+                                        "var": "formData.typeSign2"
+                                    }
+                                ]
+                            },
+                            "SIF",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 5.0,
+            "header": "TIPO SINALIZA\u00c7\u00c3O"
+        },
+        {
+            "key": "color",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.color"
+                                    }
+                                ]
+                            },
+                            "AM",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.color"
+                                    }
+                                ]
+                            },
+                            "BR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.color"
+                                    }
+                                ]
+                            },
+                            "VM",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.color"
+                                    }
+                                ]
+                            },
+                            "AZ",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.color"
+                                    }
+                                ]
+                            },
+                            "PT",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 5.0,
+            "header": "COR"
+        },
+        {
+            "key": "cadence1",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.cadence1"
+                                    }
+                                ]
+                            },
+                            "Segmento de 1 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.cadence1"
+                                    }
+                                ]
+                            },
+                            "Segmento de 2 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.cadence1"
+                                    }
+                                ]
+                            },
+                            "Segmento de 3 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.cadence1"
+                                    }
+                                ]
+                            },
+                            "Segmento de 4 m",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 19.0,
+            "header": "CAD\u00caNCIA - TRA\u00c7O (M)"
+        },
+        {
+            "key": "cadence2",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Intervalo de 1 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Intervalo de 2 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Intervalo de 3 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Intervalo de 6 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Intervalo de 8 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Intervalo de 9 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Intervalo de 12 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Espa\u00e7amento de 1,5 m",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.cadence2"
+                                    }
+                                ]
+                            },
+                            "Espa\u00e7amento de 2,5 m",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 19.0,
+            "header": "CAD\u00caNCIA - ESPA\u00c7AMENTO (M)"
+        },
+        {
+            "key": "mensagemLegenda",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.mensagemLegenda"
+                                    }
+                                ]
+                            },
+                            "LPO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.mensagemLegenda"
+                                    }
+                                ]
+                            },
+                            "LVR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.mensagemLegenda"
+                                    }
+                                ]
+                            },
+                            "LSF",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.mensagemLegenda"
+                                    }
+                                ]
+                            },
+                            "LTE",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.mensagemLegenda"
+                                    }
+                                ]
+                            },
+                            "LDIST",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.mensagemLegenda"
+                                    }
+                                ]
+                            },
+                            "LM",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.mensagemLegenda"
+                                    }
+                                ]
+                            },
+                            "LCA",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 30.0,
+            "header": "MENSAGEM LEGENDA"
+        },
+        {
+            "key": "length",
+            "width": 10.0,
+            "header": "COMPRIMENTO"
+        },
+        {
+            "key": "height",
+            "width": 10.0,
+            "header": "ALTURA"
+        },
+        {
+            "key": "width",
+            "width": 10.0,
+            "header": "LARGURA"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "2",
+    "deadline": "null"
+}

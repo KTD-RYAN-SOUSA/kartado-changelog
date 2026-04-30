@@ -1,0 +1,41 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+<h2>Olá!</h2>
+
+<p>Segue o boletim mensal de {{last_month}}, contendo as pendências em tarefas nos serviços por unidade:</p>
+
+{% for company_name, company_data in grouped_data.items %}
+  <table>
+    <thead>
+      <tr>
+        <th>Equipes em <a href="{{company_data.company_url}}" target="_blank">{{company_name}}</a></th>
+        <th>Atendidas no prazo¹</th>
+        <th>Atendidas fora do prazo¹</th>
+        <th>Pendentes²</th>
+      </tr>
+    </thead>
+
+    {% for firm_name, firm_data in company_data.firms.items %}
+    <tr>
+      <td>{{firm_name}}</td>
+      <td>{{firm_data.done_on_time}}</td>
+      <td>{{firm_data.done_after_deadline}}</td>
+      <td>{{firm_data.pending}}</td>
+    </tr>
+    {% endfor %}
+
+    <tr>
+      <td><b>Total</b></td>
+      <td><b>{{company_data.done_on_time}}</b></td>
+      <td><b>{{company_data.done_after_deadline}}</b></td>
+      <td><b>{{company_data.pending}}</b></td>
+    </tr>
+
+  </table>
+{% endfor %}
+
+<p>¹ Valores desde a última notificação até hoje</p>
+<p>² Valores considerando todas as informações do sistema, independente de data</p>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+[
+    {
+        "model": "companies.subcompany",
+        "pk": "f463e5ea-7d48-4802-89b9-02f817eb6201",
+        "fields": {
+            "subcompany_type": "HIRING",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "Hiring SubCompany",
+            "cnpj": "91742417000185",
+            "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "contract": "54545454",
+            "contract_start_date": "2021-11-10",
+            "contract_end_date": "2021-11-10",
+            "office": "Office name",
+            "construction_name": "A construction"
+        }
+    }
+]

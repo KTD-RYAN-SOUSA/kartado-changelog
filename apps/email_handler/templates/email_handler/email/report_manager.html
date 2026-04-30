@@ -1,0 +1,102 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+
+<h2>Olá!</h2>
+
+<p>Aqui estão as movimentações de registros, serviços e recursos realizados no Kartado Energia durante o último mês, na unidade {{company}}:</p>
+
+<h2>Boletim Gerencial {{ month }} / {{ year }} - {{ company }}</h2>
+
+{% if records %}
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">Registros movimentados no mês</th>
+    </tr>
+    <tr class="alt-header-bg">
+      <th>Natureza</th>
+      <th>Tipo mais recorrente</th>
+      <th>Em Elaboração</th>
+      <th>Homologados</th>
+      <th>Indeferidos</th>
+      <th>Total Mensal</th>
+      <th>Total Anual</th>
+    </tr>
+  </thead>
+
+  {% for record in records %}
+  <tr>
+    <td>{{ record.natureza }}</td>
+    <td>{{ record.recorrente }}</td>
+    <td>{{ record.andamento }}</td>
+    <td>{{ record.homologados }}</td>
+    <td>{{ record.indeferidos }}</td>
+    <td>{{ record.total_month }}</td>
+    <td>{{ record.total_anual }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+
+{% if services %}
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Serviços movimentados no mês</th>
+    </tr>
+    <tr class="alt-header-bg">
+      <th>Descrição</th>
+      <th>Novas Entregas</th>
+      <th>% Entregas Concluídas</th>
+      <th>Tarefas Atrasadas</th>
+      <th>Tarefas Entregues</th>
+      <th>Início</th>
+    </tr>
+  </thead>
+
+  {% for service in services %}
+  <tr>
+    <td>{{ service.description }}</td>
+    <td>{{ service.actions }}</td>
+    <td>{{ service.concluded_actions }}</td>
+    <td>{{ service.late_procedures }}</td>
+    <td>{{ service.concluded_procedures }}</td>
+    <td>{{ service.creation_date }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+
+{% if contracts %}
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">Recursos Vigentes</th>
+    </tr>
+    <tr class="alt-header-bg">
+      <th>Descrição</th>
+      <th>Provisionado</th>
+      <th>Realizado</th>
+      <th>Saldo</th>
+      <th>Boletins</th>
+      <th>Início</th>
+      <th>Término</th>
+    </tr>
+  </thead>
+
+  {% for contract in contracts %}
+  <tr>
+    <td>{{ contract.description }}</td>
+    <td>{{ contract.provisioned }}</td>
+    <td>{{ contract.used }}</td>
+    <td>{{ contract.balance }}</td>
+    <td>{{ contract.bulletins }}</td>
+    <td>{{ contract.start_date }}</td>
+    <td>{{ contract.end_date }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+
+{% endblock %}

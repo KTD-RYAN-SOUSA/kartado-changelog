@@ -1,0 +1,15 @@
+Olá,
+
+O Plano de Monitoramento {{number}} foi atualizado.
+
+Você está recebendo esta mensagem por estar listado como
+um dos responsáveis no ciclo do Plano de Monitoramento. Acesse o
+monitoramento para preencher as informações restantes.
+
+Copie esse link no seu navegador para acessar o registro:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

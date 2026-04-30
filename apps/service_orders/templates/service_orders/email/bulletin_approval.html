@@ -1,0 +1,28 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+<h2>Olá!</h2>
+
+<p>Você está recebendo esta mensagem por estar listado como um dos responsáveis pela aprovação de boletins de medição. Acesse o boletim para executá-la.</p>
+
+{% with bulletin=bulletins.0 %}
+<p>
+  <b>Contratada:</b> {{bulletin.hired}}<br>
+  <b>Valor total:</b> {{bulletin.total_price}} <br>
+  <b>Data de criação:</b> {{bulletin.creation_date}} <br>
+  <b>Data de medição:</b> {{bulletin.measurement_date}} <br>
+  <b>Status:</b> {{bulletin.status}} <br>
+  <b>Descrição do objeto:</b> {{bulletin.description}} <br>
+  <b>Vigência do objeto:</b> {{bulletin.period}} <br>
+  <b>Classificação contábil:</b> {{bulletin.accounting_classification}} <br>
+  <b>Comentários:</b> {{bulletin.comments}} <br>
+</p>
+
+<hr>
+
+<div class="button-container">
+  <a href="{{bulletin.url}}" target="_blank" class="btn btn-primary">ACESSAR BOLETIM DE MEDIÇÃO</a>
+</div>
+{% endwith %}
+
+{% endblock %}

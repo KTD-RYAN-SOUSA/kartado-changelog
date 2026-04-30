@@ -1,0 +1,26 @@
+Olá!
+
+Segue o boletim mensal de {{last_month}}, contendo as pendências em tarefas nos serviços por unidade:
+
+{% for company_name, company_data in grouped_data.items %}
+  Equipes em {{company_name}} ({{company_data.company_url}})
+  Atendidas no prazo¹
+  Atendidas fora do prazo¹
+  Pendentes²
+
+  {% for firm_name, firm_data in company_data.firms.items %}
+    {{firm_name}}
+    {{firm_data.done_on_time}}
+    {{firm_data.done_after_deadline}}
+    {{firm_data.pending}}
+  {% endfor %}
+
+  Total:
+  {{company_data.done_on_time}}
+  {{company_data.done_after_deadline}}
+  {{company_data.pending}}
+
+{% endfor %}
+
+¹ Valores desde a última notificação até hoje
+² Valores considerando todas as informações do sistema, independente de data

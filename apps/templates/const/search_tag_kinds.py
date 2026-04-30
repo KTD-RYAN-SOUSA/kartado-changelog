@@ -1,0 +1,9 @@
+SELECT_OPTION = "select_option"
+TEXT_FIELD = "text_field"
+REDIRECT = "redirect"
+
+SEARCH_TAG_KINDS = [
+    (SELECT_OPTION, SELECT_OPTION),
+    (TEXT_FIELD, TEXT_FIELD),
+    (REDIRECT, REDIRECT),
+]

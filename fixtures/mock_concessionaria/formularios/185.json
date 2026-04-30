@@ -1,0 +1,371 @@
+{
+    "id": 1,
+    "name": "Veculos",
+    "fields": [
+        {
+            "id": 1,
+            "logic": "g",
+            "api_name": "contratualCode",
+            "data_type": "jsonLogic",
+            "display_name": "C\u00f3digo de Edital"
+        },
+        {
+            "id": 2,
+            "logic": "7",
+            "api_name": "csp",
+            "data_type": "jsonLogic",
+            "display_name": "CSP"
+        },
+        {
+            "id": 3,
+            "api_name": "demandOrigin",
+            "data_type": "selectMultiple",
+            "display_name": "Origem",
+            "select_options": {
+                "options": [
+                    {
+                        "name": "Interna",
+                        "value": "1"
+                    },
+                    {
+                        "name": "KCOR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ARTESP DIN",
+                        "value": "3"
+                    },
+                    {
+                        "name": "ARTESP DOP",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "api_name": "artespCode",
+            "data_type": "string",
+            "display_if": {
+                "or": [
+                    {
+                        "in": [
+                            "3",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "4",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "display_name": "C\u00f3digo ARTESP"
+        },
+        {
+            "id": 5,
+            "api_name": "receivedDate",
+            "data_type": "timestamp",
+            "display_if": {
+                "or": [
+                    {
+                        "in": [
+                            "3",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "4",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "display_name": "Recebido da ARTESP em"
+        },
+        {
+            "id": 6,
+            "api_name": "kcorCode",
+            "data_type": "string",
+            "display_if": {
+                "in": [
+                    "2",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "display_name": "C\u00f3d KCOR"
+        },
+        {
+            "id": 7,
+            "api_name": "internCode",
+            "data_type": "string",
+            "display_if": {
+                "in": [
+                    "1",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "display_name": "C\u00f3d interno"
+        },
+        {
+            "id": 8,
+            "api_name": "lot",
+            "data_type": "select",
+            "display_name": "Lote",
+            "select_options": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "api_name": "amount",
+            "data_type": "float",
+            "display_name": "Unidades (uns)"
+        },
+        {
+            "id": 10,
+            "api_name": "notes",
+            "data_type": "textArea",
+            "display_name": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ],
+            "display_name": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 2,
+            "members": [
+                9
+            ],
+            "display_name": "Quantitativos"
+        },
+        {
+            "order": 3,
+            "members": [
+                10
+            ],
+            "display_name": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "display_name": "Ve\u00edculos",
+    "measurement_columns": [
+        {
+            "key": "contratualCode",
+            "logic": "g",
+            "width": 12,
+            "header": "C\u00f3digo de Edital"
+        },
+        {
+            "key": "csp",
+            "logic": "7",
+            "width": 8,
+            "header": "CSP"
+        },
+        {
+            "key": "demandOrigin",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Demanda Interna ",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Demanda Kcor ",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Demanda ARTESP DIN ",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Demanda ARTESP DOP ",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 8,
+            "header": "Origem"
+        },
+        {
+            "key": "artespCode",
+            "logic": {
+                "var": "formData.artespCode"
+            },
+            "width": 8,
+            "header": "C\u00f3digo ARTESP"
+        },
+        {
+            "key": "receivedDate",
+            "logic": {
+                "var": "formData.receivedDate"
+            },
+            "width": 12,
+            "header": "Data de Recebimento da ARTESP"
+        },
+        {
+            "key": "kcorCode",
+            "logic": {
+                "var": "formData.kcorCode"
+            },
+            "width": 12,
+            "header": "C\u00f3digo kcor"
+        },
+        {
+            "key": "internCode",
+            "logic": {
+                "var": "formData.internCode"
+            },
+            "width": 12,
+            "header": "C\u00f3digo interno"
+        },
+        {
+            "key": "lot",
+            "logic": {
+                "if": [
+                    {
+                        "==": [
+                            {
+                                "var": "formData.lot"
+                            },
+                            1
+                        ]
+                    },
+                    "Lote 1",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.lot"
+                            },
+                            2
+                        ]
+                    },
+                    "Lote 2",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.lot"
+                            },
+                            3
+                        ]
+                    },
+                    "Lote 3",
+                    {
+                        "==": [
+                            {
+                                "var": "formData.lot"
+                            },
+                            4
+                        ]
+                    },
+                    "Lote 4"
+                ]
+            },
+            "width": 18,
+            "header": "Lote"
+        },
+        {
+            "key": "amount",
+            "style": {
+                "num_fmt": "0"
+            },
+            "width": 12,
+            "header": "Quantidade (uns)",
+            "add_total": true
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "displayName": "Ve\u00edculos",
+    "kind": "16",
+    "deadline": "{\"__type__\": \"timedelta\", \"days\": 30, \"seconds\": 0, \"microseconds\": 0}"
+}

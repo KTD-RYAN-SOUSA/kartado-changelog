@@ -1,0 +1,25 @@
+Olá,
+
+{{ message }}
+
+{% for job in jobs %}
+	{{ job.title }}
+	{% for reporting in job.reportings %}
+		Serial: {{ reporting.number }}
+		{% if reporting.status %}
+		Status: {{ reporting.status }}
+		{% endif %}
+		{% if reporting.notes %}
+		Observações: {{ reporting.notes }}
+		{% endif %}
+	{% endfor %}
+
+	Copie esse link no seu navegador para acessar a programação:
+
+	{{job.url}}
+	
+{% endfor %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

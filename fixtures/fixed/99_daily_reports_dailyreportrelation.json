@@ -1,0 +1,82 @@
+[
+{
+    "model": "daily_reports.dailyreportrelation",
+    "pk": "00759cf0-4186-4408-8903-441f47200b77",
+    "fields": {
+        "active": true,
+        "daily_planned_amount": null,
+        "daily_report": "d91d2152-4777-4655-a6cf-bf4e936303d5",
+        "multiple_daily_report": null,
+        "worker": null,
+        "external_team": null,
+        "equipment": "378fcc94-c125-4017-9f8c-082a5b561554",
+        "vehicle": null,
+        "signaling": null,
+        "production_goal": null
+    }
+},
+{
+    "model": "daily_reports.dailyreportrelation",
+    "pk": "033a8b74-886c-4f36-b003-d9b322b355af",
+    "fields": {
+        "active": true,
+        "daily_planned_amount": null,
+        "daily_report": "d91d2152-4777-4655-a6cf-bf4e936303d5",
+        "multiple_daily_report": null,
+        "worker": null,
+        "external_team": null,
+        "equipment": null,
+        "vehicle": "39710e7f-1510-4f96-864a-16d5f8ef89e3",
+        "signaling": null,
+        "production_goal": null
+    }
+},
+{
+    "model": "daily_reports.dailyreportrelation",
+    "pk": "075fe67a-4280-4898-acec-c3067a91a2ad",
+    "fields": {
+        "active": true,
+        "daily_planned_amount": null,
+        "daily_report": "d91d2152-4777-4655-a6cf-bf4e936303d5",
+        "multiple_daily_report": null,
+        "worker": null,
+        "external_team": null,
+        "equipment": null,
+        "vehicle": null,
+        "signaling": "262b479b-136d-4543-bde0-f813436fe34d",
+        "production_goal": null
+    }
+},
+{
+    "model": "daily_reports.dailyreportrelation",
+    "pk": "29d791c0-058d-4851-8ffc-4983a85aac38",
+    "fields": {
+        "active": true,
+        "daily_planned_amount": null,
+        "daily_report": "d91d2152-4777-4655-a6cf-bf4e936303d5",
+        "multiple_daily_report": null,
+        "worker": "7630d859-153a-4095-a219-53c818f4e5f3",
+        "external_team": null,
+        "equipment": null,
+        "vehicle": null,
+        "signaling": null,
+        "production_goal": null
+    }
+},
+{
+    "model": "daily_reports.dailyreportrelation",
+    "pk": "e7857af8-4ef4-4b1f-a1a2-be2500882565",
+    "fields": {
+        "active": true,
+        "daily_planned_amount": null,
+        "daily_report": "d91d2152-4777-4655-a6cf-bf4e936303d5",
+        "multiple_daily_report": null,
+        "worker": null,
+        "external_team": "8da2f267-22a9-470f-b4a8-de125635e1f1",
+        "equipment": null,
+        "vehicle": null,
+        "signaling": null,
+        "production_goal": null
+    }
+}
+]

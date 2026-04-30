@@ -1,0 +1,123 @@
+[{
+        "model": "constructions.construction",
+        "pk": "16622b36-f42c-45d6-9e14-123faecedc63",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "Cool construction",
+            "description": "This construction that's happening",
+            "location": "Middle of nowhere",
+            "km": 234.1,
+            "end_km": 235.1,
+            "construction_item": "Item 1",
+            "intervention_type": "1",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "created_at": "2021-05-13T18:30:23.878Z",
+            "scheduling_start_date": "2021-05-13T12:22:51Z",
+            "scheduling_end_date": "2021-05-13T12:22:55Z",
+            "analysis_start_date": "2021-05-13T12:22:58Z",
+            "analysis_end_date": "2021-05-13T12:23:53Z",
+            "execution_start_date": "2021-05-13T12:23:56Z",
+            "execution_end_date": "2021-05-13T12:23:58Z",
+            "spend_schedule_start_date": "2021-05-13T12:24:01Z",
+            "spend_schedule_end_date": "2021-05-13T12:24:03Z",
+            "phases": [],
+            "spend_schedule": {}
+        }
+    },
+    {
+        "model": "constructions.construction",
+        "pk": "f602eb60-d5c1-4702-a050-89adf3bc6315",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "Teste follow up endpoint",
+            "description": "This construction that's happening",
+            "location": "Middle of nowhere",
+            "km": 234.1,
+            "end_km": 235.1,
+            "construction_item": "Item 1",
+            "intervention_type": "1",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "created_at": "2021-05-13T18:30:23.878Z",
+            "scheduling_start_date": "2021-05-13T12:22:51Z",
+            "scheduling_end_date": "2021-05-13T12:22:55Z",
+            "analysis_start_date": "2021-05-13T12:22:58Z",
+            "analysis_end_date": "2021-05-13T12:23:53Z",
+            "execution_start_date": "2021-05-13T12:23:56Z",
+            "execution_end_date": "2021-05-13T12:23:58Z",
+            "spend_schedule_start_date": "2021-05-13T12:24:01Z",
+            "spend_schedule_end_date": "2021-05-13T12:24:03Z",
+            "phases": [{
+                    "weight": 50,
+                    "subphases": [{
+                        "unit": "unidade",
+                        "weight": 100,
+                        "expected_amount": 50,
+                        "subphase_description": "9"
+                    }],
+                    "responsible": "teste",
+                    "phase_description": "3"
+                },
+                {
+                    "weight": 50,
+                    "subphases": [{
+                        "unit": "m2",
+                        "weight": 100,
+                        "expected_amount": 20,
+                        "subphase_description": "8"
+                    }],
+                    "responsible": "teste",
+                    "phase_description": "7"
+                }
+            ],
+            "spend_schedule": {}
+        }
+    },
+    {
+        "model": "constructions.construction",
+        "pk": "04bc90c6-da48-47ce-a355-84278b8f29b1",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "Teste follow up endpoint",
+            "description": "This construction that's happening",
+            "location": "Middle of nowhere",
+            "km": 234.1,
+            "end_km": 235.1,
+            "construction_item": "Item 1",
+            "intervention_type": "1",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "created_at": "2021-05-13T18:30:23.878Z",
+            "scheduling_start_date": "2021-05-13T12:22:51Z",
+            "scheduling_end_date": "2021-05-13T12:22:55Z",
+            "analysis_start_date": "2021-05-13T12:22:58Z",
+            "analysis_end_date": "2021-05-13T12:23:53Z",
+            "execution_start_date": "2021-05-13T12:23:56Z",
+            "execution_end_date": "2021-05-13T12:23:58Z",
+            "spend_schedule_start_date": "2021-05-13T12:24:01Z",
+            "spend_schedule_end_date": "2021-05-13T12:24:03Z",
+            "phases": [{
+                    "weight": 90,
+                    "subphases": [{
+                        "unit": "kg",
+                        "weight": 100,
+                        "expected_amount": 100,
+                        "subphase_description": "1"
+                    }],
+                    "responsible": "Romário",
+                    "phase_description": "1"
+                },
+                {
+                    "weight": 10,
+                    "subphases": [{
+                        "unit": "un",
+                        "weight": 100,
+                        "expected_amount": 100,
+                        "subphase_description": "6"
+                    }],
+                    "responsible": "Teste",
+                    "phase_description": "2"
+                }
+            ],
+            "spend_schedule": {}
+        }
+    }
+]

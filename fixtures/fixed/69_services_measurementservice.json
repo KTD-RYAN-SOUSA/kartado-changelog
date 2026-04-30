@@ -1,0 +1,35 @@
+[
+{
+    "model": "services.measurementservice",
+    "pk": "0005c0ab-fa3d-4e42-9767-893aed4a2ca9",
+    "fields": {
+        "service": "0085f497-f8b0-43f9-962f-86242d2e2305",
+        "measurement": "094ba394-621b-453c-b889-3a50e2b6df3e",
+        "unit_price": 190.5,
+        "balance": 1389704.0,
+        "adjustment_coefficient": 1.2997
+    }
+},
+{
+    "model": "services.measurementservice",
+    "pk": "001b1dd2-d641-45f1-9388-ddf880149423",
+    "fields": {
+        "service": "0130feec-abc5-4dce-8ef0-12dfb8ae2fbf",
+        "measurement": "17339cb4-79fe-47e1-ac94-7c2e42ed48b1",
+        "unit_price": 0.06,
+        "balance": 0.1,
+        "adjustment_coefficient": 1.0
+    }
+},
+{
+    "model": "services.measurementservice",
+    "pk": "003a11f8-83ad-4c59-8a12-1dd90e8794be",
+    "fields": {
+        "service": "0157fe4f-68d1-4639-8193-37d0cdbc2eb0",
+        "measurement": "2cd876c8-19f5-4310-a5be-1fc2856bb9ca",
+        "unit_price": 0.33,
+        "balance": 464.45,
+        "adjustment_coefficient": 1.48411708663751
+    }
+}
+]

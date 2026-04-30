@@ -1,0 +1,21 @@
+[
+  {
+    "model": "quality_control.qualityassay",
+    "pk": "8af97ad7-ed2c-41ec-8ee2-937c547ffe5f",
+    "fields": {
+      "number": "DEMO-default-2021.00035",
+      "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+      "created_at": "2021-09-06T11:53:40.778Z",
+      "executed_at": "2021-09-06T11:53:40.735Z",
+      "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+      "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+      "quality_project": "2c939deb-6893-4a2b-b675-cffc4e89519f",
+      "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+      "quality_sample": null,
+      "form_data": { "cool_stuff": "hell yea" },
+      "notes": "A sentence to test the notes field",
+      "related_assays": [],
+      "reportings": ["00000db3-a561-4387-ac47-d48fca2d6c24"]
+    }
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "model": "occurrence_records.occurrencerecord",
+    "pk": "00942ab6-9d55-4a1e-b9be-f6ba7dc5a505",
+    "fields": {
+      "datetime": "2020-02-22T17:27:33.842Z",
+      "number": "UHPF-DOC-2019.0001",
+      "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+      "editable": true,
+      "is_approved": false,
+      "uf_code": null,
+      "city": null,
+      "location": null,
+      "place_on_dam": "",
+      "river": null,
+      "point": null,
+      "geometry": "SRID=4326;GEOMETRYCOLLECTION (POINT (-52.37451802007854 -27.24884188268334))",
+      "properties": [
+        {
+          "name": "Mount Ruapehu",
+          "elevation_m": 2797
+        }
+      ],
+      "distance_from_dam": 0.0,
+      "other_reference": "",
+      "origin": "",
+      "origin_media": "",
+      "informer": {},
+      "territorial_administration": "",
+      "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+      "search_tag_description": "",
+      "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+      "form_data": {
+        "property_intersections": [
+          {
+            "attributes": {
+              "uuid": "00942ab6-9d55-4a1e-b9be-f6ba7dc5a505-99999",
+              "OBRA": "BAIT-D",
+              "SEQUENCIAL": "0533",
+              "IDENTIFICADOR": "240583"
+            }
+          }
+        ]
+      },
+      "arcgis_ids": {},
+      "created_at": "2020-09-03T15:32:42.433Z",
+      "updated_at": "2020-09-03T15:32:42.433Z",
+      "reviews": 0,
+      "status": "03808932-e576-45da-a204-9c588a133a83",
+      "parent_action": "004e8fcc-0c9a-4477-a385-3b3788d80c74",
+      "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+      "responsible": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+      "keywords": "",
+      "approval_step": null,
+      "involved_parts": [
+        {
+          "involved_parts": "1",
+          "name": "Test Homolog"
+        }
+      ],
+      "active_tile_layer": null,
+      "search_tags": [],
+      "service_orders": [
+        "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af"
+      ],
+      "active_shape_files": [],
+      "main_linked_record": "01624450-0efe-4cd4-bba2-e97fd1b7a6f2"
+    }
+  },
+  {
+    "model": "occurrence_records.occurrencerecord",
+    "pk": "01624450-0efe-4cd4-bba2-e97fd1b7a6f2",
+    "fields": {
+      "datetime": "2020-01-14T16:43:59.250Z",
+      "number": "UHIT-RG-2019.0003",
+      "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+      "editable": true,
+      "is_approved": false,
+      "uf_code": 43,
+      "city": null,
+      "location": null,
+      "place_on_dam": "",
+      "river": null,
+      "point": "SRID=4326;POINT (-52.37451802007854 -27.24884188268334)",
+      "geometry": "SRID=4326;GEOMETRYCOLLECTION (POINT (-52.37451802007854 -27.24884188268334))",
+      "properties": [
+        {}
+      ],
+      "distance_from_dam": 0.0,
+      "other_reference": "",
+      "origin": "",
+      "origin_media": "",
+      "informer": {
+        "mail": "",
+        "phone": "",
+        "mobile": "",
+        "last_name": "",
+        "first_name": "",
+        "qualification": ""
+      },
+      "territorial_administration": "",
+      "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+      "search_tag_description": "",
+      "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+      "form_data": {},
+      "arcgis_ids": {},
+      "created_at": "2020-06-12T20:38:44.845Z",
+      "updated_at": "2020-11-06T22:46:01.793Z",
+      "reviews": 3,
+      "status": "03808932-e576-45da-a204-9c588a133a83",
+      "parent_action": null,
+      "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+      "responsible": null,
+      "keywords": "",
+      "approval_step": "3ed67d5d-68fa-4ecb-9b37-49f45e88cda4",
+      "involved_parts": [],
+      "active_tile_layer": null,
+      "search_tags": [],
+      "service_orders": [
+        "022c4a9e-ea59-4aa2-8b21-8394f0f7d7af"
+      ],
+      "active_shape_files": []
+    }
+  },
+  {
+    "model": "occurrence_records.occurrencerecord",
+    "pk": "1521a932-86d1-4f60-bcc5-97682d303926",
+    "fields": {
+      "datetime": "2020-01-14T16:43:59.250Z",
+      "number": "UHIT-RG-2019.0004",
+      "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+      "editable": true,
+      "is_approved": false,
+      "uf_code": 43,
+      "city": null,
+      "location": null,
+      "place_on_dam": "",
+      "river": null,
+      "point": "SRID=4326;POINT (-52.37451802007854 -27.24884188268334)",
+      "geometry": "SRID=4326;GEOMETRYCOLLECTION (POINT (-52.37451802007854 -27.24884188268334))",
+      "properties": [
+        {}
+      ],
+      "distance_from_dam": 0.0,
+      "other_reference": "",
+      "origin": "",
+      "origin_media": "",
+      "informer": {
+        "mail": "",
+        "phone": "",
+        "mobile": "",
+        "last_name": "",
+        "first_name": "",
+        "qualification": ""
+      },
+      "territorial_administration": "",
+      "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+      "search_tag_description": "",
+      "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+      "form_data": {},
+      "arcgis_ids": {},
+      "created_at": "2020-06-12T20:38:44.845Z",
+      "updated_at": "2020-11-06T22:46:01.793Z",
+      "reviews": 3,
+      "status": "03808932-e576-45da-a204-9c588a133a83",
+      "parent_action": null,
+      "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+      "responsible": null,
+      "keywords": "",
+      "approval_step": "1923f543-d1b0-4ee2-9d47-dab5f700028e",
+      "involved_parts": [],
+      "active_tile_layer": null,
+      "search_tags": [],
+      "service_orders": [],
+      "active_shape_files": []
+    }
+  },
+  {
+    "model": "occurrence_records.occurrencerecord",
+    "pk": "f7fb07ab-e7f7-4b4e-8be2-9c8df59d46ce",
+    "fields": {
+      "datetime": "2020-01-14T16:43:59.250Z",
+      "number": "UHIT-RG-2019.0005",
+      "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+      "editable": true,
+      "is_approved": false,
+      "uf_code": 43,
+      "city": null,
+      "location": null,
+      "place_on_dam": "",
+      "river": null,
+      "point": "SRID=4326;POINT (-52.37451802007854 -27.24884188268334)",
+      "geometry": "SRID=4326;GEOMETRYCOLLECTION (POINT (-52.37451802007854 -27.24884188268334))",
+      "properties": [
+        {}
+      ],
+      "distance_from_dam": 0.0,
+      "other_reference": "",
+      "origin": "",
+      "origin_media": "",
+      "informer": {
+        "mail": "",
+        "phone": "",
+        "mobile": "",
+        "last_name": "",
+        "first_name": "",
+        "qualification": ""
+      },
+      "territorial_administration": "",
+      "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+      "search_tag_description": "",
+      "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+      "form_data": {
+        "shape_file_property": "testing",
+        "property_intersections": [
+          "testing"
+        ]
+      },
+      "arcgis_ids": {},
+      "created_at": "2020-06-12T20:38:44.845Z",
+      "updated_at": "2020-11-06T22:46:01.793Z",
+      "reviews": 3,
+      "status": "03808932-e576-45da-a204-9c588a133a83",
+      "parent_action": null,
+      "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+      "responsible": null,
+      "keywords": "",
+      "approval_step": "b70d929d-7dc1-4579-8352-5a4212175d6f",
+      "involved_parts": [],
+      "active_tile_layer": null,
+      "search_tags": [],
+      "service_orders": [],
+      "active_shape_files": []
+    }
+  }
+]

@@ -1,0 +1,62 @@
+{
+    "id": 1,
+    "name": "access",
+    "fields": [
+        {
+            "id": 1,
+            "api_name": "notes",
+            "data_type": "textArea",
+            "display_name": "Observa\u00e7\u00e3o"
+        },
+        {
+            "id": 2,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2
+            ],
+            "display_name": "Informa\u00e7\u00f5es Adicionais"
+        }
+    ],
+    "display_name": "Acesso N\u00e3o Autorizado",
+    "measurement_columns": [
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "displayName": "Acesso n\u00e3o autorizado",
+    "kind": "2",
+    "deadline": "{\"__type__\": \"timedelta\", \"days\": 90, \"seconds\": 0, \"microseconds\": 0}"
+}

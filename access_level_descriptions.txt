@@ -1,0 +1,27 @@
+Níveis de acesso:
+
+- Homologadores:
+  * criam registros;
+  * acessam históricos completos;
+  * acessam editam e criam contratos completos;
+  * acess Edit e create planos de trabalho;
+  * acessam relatórios e indicadores
+
+- Coordenadores:
+  * Acessam tudo que os homologadores têm acesso e podem mexer nas personalizações
+
+- Gerente:
+  * Podem ver tudo
+  * Não aprovam ROs e OSs
+  * Não criam PTs
+
+- Colaborador:
+  * Ve e atualiza registros pertinentes a ele
+  * Emite registros a vontade
+  * Acesso completo a planos de trabalho
+
+- Fornecedor:
+  * Igual a colaborador, porém tudo que ele ver é pertinente exclusivamente a ele
+
+- AdminTI:
+  * Possivelmente com acesso a um banco de dados e relatório de falhas

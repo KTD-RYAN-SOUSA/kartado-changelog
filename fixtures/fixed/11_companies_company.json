@@ -1,0 +1,2339 @@
+[
+    {
+        "model": "companies.company",
+        "pk": "c2501b6e-34fb-4655-8066-7b2625c869a7",
+        "fields": {
+            "name": "UHE-TESTE",
+            "active": true,
+            "owner": "eca34fc1-6e07-44db-bfc0-d1a30bfcb24d",
+            "cnpj": "00000000000000",
+            "logo": "",
+            "provider_logo": "",
+            "company_group": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+            "street_address": "",
+            "custom_options": {},
+            "metadata": {},
+            "shape": null,
+            "key_users": []
+        }
+    },
+    {
+        "model": "companies.company",
+        "pk": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "fields": {
+            "name": "UHE-ITA-TESTE",
+            "active": true,
+            "owner": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "cnpj": "00000000000000",
+            "logo": "companies-logos/download.png",
+            "provider_logo": "",
+            "company_group": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+            "street_address": "",
+            "custom_options": {
+                "service": {
+                    "fields": {
+                        "kind": {
+                            "groups": [
+                                {
+                                    "name": "Conjunto 2 N Pedido SAP",
+                                    "values": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "apiName": "kind",
+                            "dataType": "select",
+                            "displayName": "Categoria",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Conjunto 2 N Pedido SAP",
+                                        "value": "1"
+                                    }
+                                ]
+                            }
+                        },
+                        "group": {
+                            "apiName": "group",
+                            "dataType": "select",
+                            "displayName": "Grupo",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Conjunto I",
+                                        "value": "firstGroup"
+                                    },
+                                    {
+                                        "name": "Conjunto II",
+                                        "value": "secondGroup"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "dashboard": {
+                    "fields": {
+                        "occurrenceKind": {
+                            "apiName": "occurrenceKind",
+                            "dataType": "select",
+                            "displayName": "Natureza",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Ocorr\u00eancia",
+                                        "value": "1",
+                                        "listColumns": [
+                                            "date",
+                                            "number",
+                                            "city",
+                                            "location",
+                                            "occurrenceType",
+                                            "serviceOrderNumber",
+                                            "status"
+                                        ],
+                                        "availableFilters": [
+                                            "occurrence_kind",
+                                            "occurrence_type",
+                                            "uf_code",
+                                            "city",
+                                            "location",
+                                            "river",
+                                            "origin",
+                                            "place_on_dam",
+                                            "datetime",
+                                            "status",
+                                            "is_closed"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "watchPoint": {
+                    "fields": {
+                        "river": {
+                            "displayIf": {
+                                "placeOnDam": [
+                                    "1",
+                                    "2"
+                                ]
+                            }
+                        },
+                        "placeOnDam": {
+                            "apiName": "placeOnDam",
+                            "dataType": "select",
+                            "displayName": "Local",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Reservat\u00f3rio",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Jusante",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "\u00c1rea Industrial",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "\u00c1rea circunvizinha",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "\u00c1rea de preserva\u00e7\u00e3o permanente",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "\u00c1rea Remanescente",
+                                        "value": "6"
+                                    },
+                                    {
+                                        "name": "\u00c1rea de terceiros",
+                                        "value": "7"
+                                    },
+                                    {
+                                        "name": "Faixa de Oscila\u00e7\u00e3o",
+                                        "value": "8"
+                                    },
+                                    {
+                                        "name": "Casa de M\u00e1quinas",
+                                        "value": "9"
+                                    },
+                                    {
+                                        "name": "Canal de Fuga",
+                                        "value": "10"
+                                    },
+                                    {
+                                        "name": "Canal de Adu\u00e7\u00e3o",
+                                        "value": "11"
+                                    },
+                                    {
+                                        "name": "Tomada d'\u00c1gua",
+                                        "value": "12"
+                                    },
+                                    {
+                                        "name": "Vertedouro",
+                                        "value": "13"
+                                    },
+                                    {
+                                        "name": "Log Boom",
+                                        "value": "14"
+                                    },
+                                    {
+                                        "name": "Bacia de Dissipa\u00e7\u00e3o",
+                                        "value": "15"
+                                    },
+                                    {
+                                        "name": "Canteiro de Obra",
+                                        "value": "16"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "serviceOrder": {
+                    "fields": {
+                        "kind": {
+                            "apiName": "kind",
+                            "dataType": "select",
+                            "displayName": "Tipo",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Patrimonial",
+                                        "value": "LAND"
+                                    },
+                                    {
+                                        "name": "Ambiental",
+                                        "value": "ENVIRONMENT"
+                                    }
+                                ]
+                            }
+                        },
+                        "priority": {
+                            "trend": {
+                                "apiName": "trend",
+                                "dataType": "select",
+                                "displayName": "Tend\u00eancia",
+                                "selectOptions": {
+                                    "options": [
+                                        {
+                                            "name": "Ir\u00e1 piorar rapidamente",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "Ir\u00e1 piorar a curto prazo",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "name": "Ir\u00e1 piorar a m\u00e9dio prazo",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "name": "Ir\u00e1 piorar a longo prazo",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "name": "N\u00e3o ir\u00e1 mudar",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            },
+                            "urgency": {
+                                "apiName": "urgency",
+                                "dataType": "select",
+                                "displayName": "Urg\u00eancia",
+                                "selectOptions": {
+                                    "options": [
+                                        {
+                                            "name": "Precisa de a\u00e7\u00e3o imediata",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "Muito urgente",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "name": "Urgente, merece aten\u00e7\u00e3o no curto prazo",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "name": "Pouco urgente",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "name": "Pode esperar",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            },
+                            "seriousness": {
+                                "apiName": "seriousness",
+                                "dataType": "select",
+                                "displayName": "Gravidade",
+                                "selectOptions": {
+                                    "options": [
+                                        {
+                                            "name": "Extremamente grave",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "Muito grave",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "name": "Grave",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "name": "Pouco grave",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "name": "Sem gravidade",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "processType": {
+                            "apiName": "processType",
+                            "dataType": "select",
+                            "displayName": "Processo",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Corre\u00e7\u00e3o de uso e ocupa\u00e7\u00e3o",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Regulariza\u00e7\u00e3o Fundi\u00e1ria",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Outros",
+                                        "value": "3"
+                                    }
+                                ]
+                            }
+                        },
+                        "occurrenceKind": {
+                            "apiName": "occurrenceKind",
+                            "dataType": "select",
+                            "displayName": "Natureza",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Ocorr\u00eancia",
+                                        "value": "1",
+                                        "listColumns": [
+                                            "priority",
+                                            "number",
+                                            "occurrenceType",
+                                            "city",
+                                            "location",
+                                            "createdBy",
+                                            "actionsAmount",
+                                            "closedDescription",
+                                            "openedAt",
+                                            "closedAt"
+                                        ],
+                                        "available_filters": [
+                                            "occurrence_type",
+                                            "opened_at",
+                                            "closed_at",
+                                            "updated_at",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Requisi\u00e7\u00e3o",
+                                        "value": "2",
+                                        "listColumns": [
+                                            "priority",
+                                            "number",
+                                            "occurrenceType",
+                                            "actionToTake",
+                                            "createdBy",
+                                            "actionsAmount",
+                                            "closedDescription",
+                                            "openedAt",
+                                            "closedAt"
+                                        ],
+                                        "available_filters": [
+                                            "occurrence_type",
+                                            "opened_at",
+                                            "closed_at",
+                                            "updated_at",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Comunica\u00e7\u00e3o",
+                                        "value": "3",
+                                        "listColumns": [
+                                            "priority",
+                                            "number",
+                                            "occurrenceType",
+                                            "actionToTake",
+                                            "createdBy",
+                                            "actionsAmount",
+                                            "closedDescription",
+                                            "openedAt",
+                                            "closedAt"
+                                        ],
+                                        "available_filters": [
+                                            "occurrence_type",
+                                            "opened_at",
+                                            "closed_at",
+                                            "updated_at",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Servi\u00e7os e Aquisi\u00e7\u00f5es",
+                                        "value": "14",
+                                        "listColumns": [
+                                            "priority",
+                                            "number",
+                                            "occurrenceType",
+                                            "serviceKind",
+                                            "actionToTake",
+                                            "createdBy",
+                                            "actionsAmount",
+                                            "provisionedValue",
+                                            "usedValue",
+                                            "balanceValue",
+                                            "measurementBulletinsAmount",
+                                            "openedAt",
+                                            "closedAt"
+                                        ],
+                                        "available_filters": [
+                                            "occurrence_type",
+                                            "opened_at",
+                                            "closed_at",
+                                            "updated_at",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Condi\u00e7\u00f5es Extraordin\u00e1rias",
+                                        "value": "15",
+                                        "listColumns": [
+                                            "priority",
+                                            "number",
+                                            "occurrenceType",
+                                            "actionToTake",
+                                            "createdBy",
+                                            "actionsAmount",
+                                            "closedDescription",
+                                            "openedAt",
+                                            "closedAt"
+                                        ],
+                                        "available_filters": [
+                                            "occurrence_type",
+                                            "opened_at",
+                                            "closed_at",
+                                            "updated_at",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Controle Operacional",
+                                        "value": "16",
+                                        "listColumns": [
+                                            "number",
+                                            "occurrenceType",
+                                            "city",
+                                            "location",
+                                            "createdBy",
+                                            "actionsAmount",
+                                            "closedDescription",
+                                            "openedAt",
+                                            "closedAt"
+                                        ],
+                                        "available_filters": [
+                                            "occurrence_type",
+                                            "opened_at",
+                                            "closed_at",
+                                            "updated_at",
+                                            "is_closed"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "actionResource": {
+                    "fields": {
+                        "provider": {
+                            "apiName": "provider",
+                            "dataType": "select",
+                            "displayName": "Desembolso",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Engie",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Cons\u00f3rcio",
+                                        "value": "2"
+                                    }
+                                ]
+                            }
+                        },
+                        "resource": {
+                            "disableIf": {
+                                "resourceKind": [
+                                    "1",
+                                    "2",
+                                    "3"
+                                ]
+                            }
+                        },
+                        "resourceKind": {
+                            "apiName": "resourceKind",
+                            "dataType": "select",
+                            "displayName": "Natureza",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Servi\u00e7o Intelectual",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Servi\u00e7o com Aplica\u00e7\u00e3o de Material",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Servi\u00e7o sem Aplica\u00e7\u00e3o de Material",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Material com Aplica\u00e7\u00e3o Direta",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "Reposi\u00e7\u00e3o de Estoque",
+                                        "value": "5"
+                                    }
+                                ]
+                            }
+                        },
+                        "additional_control": {
+                            "apiName": "additional_control",
+                            "dataType": "select",
+                            "displayName": "Controle Adicional",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Comunica\u00e7\u00e3o Socioambiental",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Comunidades Ind\u00edgenas e/ou Outros Grupos \u00c9tnicos",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Educa\u00e7\u00e3o Ambiental e Visitas \u00e0 Usina",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Fundo de Desenvolvimento Regional",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "Patrim\u00f4nio Cultural, Hist\u00f3rico e Arqueol\u00f3gico",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "Recomposi\u00e7\u00e3o da Infra-Estrutura",
+                                        "value": "6"
+                                    },
+                                    {
+                                        "name": "Reloca\u00e7\u00e3o de Popula\u00e7\u00f5es Urbanas",
+                                        "value": "7"
+                                    },
+                                    {
+                                        "name": "Remanejamento da Popula\u00e7\u00e3o Rural",
+                                        "value": "8"
+                                    },
+                                    {
+                                        "name": "Reorganiza\u00e7\u00e3o das Atividades Econ\u00f4micas",
+                                        "value": "9"
+                                    },
+                                    {
+                                        "name": "Sa\u00fade da Popula\u00e7\u00e3o Afetada",
+                                        "value": "10"
+                                    },
+                                    {
+                                        "name": "Conserva\u00e7\u00e3o da Fauna Terrestre e Alada",
+                                        "value": "11"
+                                    },
+                                    {
+                                        "name": "Conserva\u00e7\u00e3o da Flora",
+                                        "value": "12"
+                                    },
+                                    {
+                                        "name": "Conserva\u00e7\u00e3o da Ictiofauna",
+                                        "value": "13"
+                                    },
+                                    {
+                                        "name": "Consolida\u00e7\u00e3o de \u00c1reas de Preserva\u00e7\u00e3o Permanente e Reserva Legal",
+                                        "value": "14"
+                                    },
+                                    {
+                                        "name": "Efluentes",
+                                        "value": "15"
+                                    },
+                                    {
+                                        "name": "Emiss\u00f5es Atmosf\u00e9ricas",
+                                        "value": "16"
+                                    },
+                                    {
+                                        "name": "Estabiliza\u00e7\u00e3o dos Taludes Marginais",
+                                        "value": "17"
+                                    },
+                                    {
+                                        "name": "Estudos de Dispers\u00e3o Atmosf\u00e9rica",
+                                        "value": "18"
+                                    },
+                                    {
+                                        "name": "Gerenciamento de Res\u00edduos",
+                                        "value": "19"
+                                    },
+                                    {
+                                        "name": "Horto Florestal e Viveiro de Produ\u00e7\u00e3o de Mudas",
+                                        "value": "20"
+                                    },
+                                    {
+                                        "name": "Limpeza da \u00c1rea dos Reservat\u00f3rios",
+                                        "value": "21"
+                                    },
+                                    {
+                                        "name": "Macr\u00f3fitas Aqu\u00e1ticas",
+                                        "value": "22"
+                                    },
+                                    {
+                                        "name": "Mexilh\u00e3o Dourado",
+                                        "value": "23"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Climatol\u00f3gicas",
+                                        "value": "24"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Hidrometeorol\u00f3gicas",
+                                        "value": "25"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Hidrossedimentol\u00f3gicas",
+                                        "value": "26"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Meteorol\u00f3gicas",
+                                        "value": "27"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Sismol\u00f3gicas",
+                                        "value": "28"
+                                    },
+                                    {
+                                        "name": "Qualidade da \u00c1gua da Chuva",
+                                        "value": "29"
+                                    },
+                                    {
+                                        "name": "Qualidade das \u00c1guas Subterr\u00e2neas",
+                                        "value": "30"
+                                    },
+                                    {
+                                        "name": "Qualidade das \u00c1guas Superficiais",
+                                        "value": "31"
+                                    },
+                                    {
+                                        "name": "Qualidade do Ar",
+                                        "value": "32"
+                                    },
+                                    {
+                                        "name": "Qualidade do Solo",
+                                        "value": "33"
+                                    },
+                                    {
+                                        "name": "Recupera\u00e7\u00e3o de \u00c1reas Degradadas",
+                                        "value": "34"
+                                    },
+                                    {
+                                        "name": "Ru\u00eddos",
+                                        "value": "35"
+                                    },
+                                    {
+                                        "name": "Unidades de Conserva\u00e7\u00e3o",
+                                        "value": "36"
+                                    },
+                                    {
+                                        "name": "Uso, Ocupa\u00e7\u00e3o e Fiscaliza\u00e7\u00e3o Ambiental e Socio-Patrimonial do Entorno do Reservat\u00f3rio",
+                                        "value": "37"
+                                    },
+                                    {
+                                        "name": "Emerg\u00eancias Ambientais",
+                                        "value": "38"
+                                    },
+                                    {
+                                        "name": "Geoweb Ambiental (Sistema de Informa\u00e7\u00f5es Georreferenciadas)",
+                                        "value": "39"
+                                    },
+                                    {
+                                        "name": "Licenciamento Ambiental",
+                                        "value": "40"
+                                    },
+                                    {
+                                        "name": "MDL - Mecanismo de Desenvolvimento Limpo",
+                                        "value": "41"
+                                    },
+                                    {
+                                        "name": "Mudan\u00e7as Clim\u00e1ticas",
+                                        "value": "42"
+                                    },
+                                    {
+                                        "name": "Sistema de Gest\u00e3o Ambiental (NBR ISO 14.001)",
+                                        "value": "43"
+                                    },
+                                    {
+                                        "name": "Usos M\u00faltiplos do Reservat\u00f3rio",
+                                        "value": "44"
+                                    },
+                                    {
+                                        "name": "Servi\u00e7os Especiais e Extraordin\u00e1rios",
+                                        "value": "45"
+                                    },
+                                    {
+                                        "name": "Ingresso Imobiliza\u00e7\u00e3o em Curso",
+                                        "value": "46"
+                                    },
+                                    {
+                                        "name": "Baixas Imobiliza\u00e7\u00e3o em Curso - Ingressos de Exerc\u00edcios Anteriores - Meio Ambiente",
+                                        "value": "47"
+                                    },
+                                    {
+                                        "name": "Gest\u00e3o sociopatrimonial ",
+                                        "value": "48"
+                                    }
+                                ]
+                            }
+                        },
+                        "exceptionalResourceButton": {
+                            "displayIf": {
+                                "resourceKind": [
+                                    "1",
+                                    "2",
+                                    "3"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "occurrenceType": {
+                    "fields": {
+                        "occurrenceKind": {
+                            "apiName": "occurrenceKind",
+                            "dataType": "select",
+                            "displayName": "Natureza",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Ocorr\u00eancia",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Requisi\u00e7\u00e3o",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Comunica\u00e7\u00e3o",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Servi\u00e7os e Aquisi\u00e7\u00f5es",
+                                        "value": "14"
+                                    },
+                                    {
+                                        "name": "Condi\u00e7\u00f5es Extraordin\u00e1rias",
+                                        "value": "15"
+                                    },
+                                    {
+                                        "name": "Controle Operacional",
+                                        "value": "16"
+                                    },
+                                    {
+                                        "name": "Relat\u00f3rio",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "Vistoria",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "Comunica\u00e7\u00e3o",
+                                        "value": "7"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "occurrenceRecord": {
+                    "fields": {
+                        "river": {
+                            "displayIf": {
+                                "placeOnDam": [
+                                    "1",
+                                    "2"
+                                ]
+                            }
+                        },
+                        "origin": {
+                            "apiName": "origin",
+                            "dataType": "select",
+                            "displayName": "Tipo da Comunica\u00e7\u00e3o",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Agradecimento",
+                                        "value": "1",
+                                        "displayIf": {
+                                            "occurrenceKind": [
+                                                "3"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "Den\u00fancia",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Elogio",
+                                        "value": "3",
+                                        "displayIf": {
+                                            "occurrenceKind": [
+                                                "3"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "Informa\u00e7\u00e3o",
+                                        "value": "4",
+                                        "displayIf": {
+                                            "occurrenceKind": [
+                                                "3"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "Inspe\u00e7\u00e3o",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "Reclama\u00e7\u00e3o",
+                                        "value": "6",
+                                        "displayIf": {
+                                            "occurrenceKind": [
+                                                "3"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "Solicita\u00e7\u00e3o",
+                                        "value": "7",
+                                        "displayIf": {
+                                            "occurrenceKind": [
+                                                "1",
+                                                "3"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "placeOnDam": {
+                            "apiName": "placeOnDam",
+                            "dataType": "select",
+                            "displayName": "Local",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Reservat\u00f3rio",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Jusante",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "\u00c1rea Industrial",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "\u00c1rea circunvizinha",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "\u00c1rea de preserva\u00e7\u00e3o permanente",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "\u00c1rea Remanescente",
+                                        "value": "6"
+                                    },
+                                    {
+                                        "name": "\u00c1rea de terceiros",
+                                        "value": "7"
+                                    },
+                                    {
+                                        "name": "Faixa de Oscila\u00e7\u00e3o",
+                                        "value": "8"
+                                    },
+                                    {
+                                        "name": "Casa de M\u00e1quinas",
+                                        "value": "9"
+                                    },
+                                    {
+                                        "name": "Canal de Fuga",
+                                        "value": "10"
+                                    },
+                                    {
+                                        "name": "Canal de Adu\u00e7\u00e3o",
+                                        "value": "11"
+                                    },
+                                    {
+                                        "name": "Tomada d'\u00c1gua",
+                                        "value": "12"
+                                    },
+                                    {
+                                        "name": "Vertedouro",
+                                        "value": "13"
+                                    },
+                                    {
+                                        "name": "Log Boom",
+                                        "value": "14"
+                                    },
+                                    {
+                                        "name": "Bacia de Dissipa\u00e7\u00e3o",
+                                        "value": "15"
+                                    },
+                                    {
+                                        "name": "Canteiro de Obra",
+                                        "value": "16"
+                                    }
+                                ]
+                            }
+                        },
+                        "originMedia": {
+                            "apiName": "originMedia",
+                            "dataType": "select",
+                            "displayIf": {
+                                "origin": [
+                                    "1",
+                                    "2",
+                                    "3",
+                                    "4",
+                                    "6",
+                                    "7"
+                                ]
+                            },
+                            "displayName": "Ve\u00edculo de Comunica\u00e7\u00e3o",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Carta",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "E-mail",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Fax",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Internet",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "Jornal",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "Of\u00edcio",
+                                        "value": "6"
+                                    },
+                                    {
+                                        "name": "R\u00e1dio",
+                                        "value": "7"
+                                    },
+                                    {
+                                        "name": "Telefone",
+                                        "value": "8"
+                                    },
+                                    {
+                                        "name": "TV",
+                                        "value": "9"
+                                    },
+                                    {
+                                        "name": "Verbal",
+                                        "value": "10"
+                                    }
+                                ]
+                            }
+                        },
+                        "occurrenceKind": {
+                            "apiName": "occurrenceKind",
+                            "dataType": "select",
+                            "displayName": "Natureza",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Ocorr\u00eancia",
+                                        "value": "1",
+                                        "listColumns": [
+                                            "date",
+                                            "number",
+                                            "city",
+                                            "location",
+                                            "occurrenceType",
+                                            "serviceOrderNumber",
+                                            "status"
+                                        ],
+                                        "availableFilters": [
+                                            "occurrence_type",
+                                            "uf_code",
+                                            "city",
+                                            "location",
+                                            "river",
+                                            "origin",
+                                            "place_on_dam",
+                                            "datetime",
+                                            "status",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Requisi\u00e7\u00e3o",
+                                        "value": "2",
+                                        "listColumns": [
+                                            "date",
+                                            "number",
+                                            "occurrenceType",
+                                            "description",
+                                            "serviceOrderNumber",
+                                            "status"
+                                        ],
+                                        "availableFilters": [
+                                            "occurrence_type",
+                                            "datetime",
+                                            "status",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Comunica\u00e7\u00e3o",
+                                        "value": "3",
+                                        "listColumns": [
+                                            "date",
+                                            "number",
+                                            "occurrenceType",
+                                            "serviceOrderNumber",
+                                            "status"
+                                        ],
+                                        "availableFilters": [
+                                            "occurrence_type",
+                                            "datetime",
+                                            "status",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Servi\u00e7os e Aquisi\u00e7\u00f5es",
+                                        "value": "14",
+                                        "listColumns": [
+                                            "date",
+                                            "number",
+                                            "occurrenceType",
+                                            "description",
+                                            "serviceOrderNumber",
+                                            "status"
+                                        ],
+                                        "availableFilters": [
+                                            "occurrence_type",
+                                            "datetime",
+                                            "status",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Condi\u00e7\u00f5es Extraordin\u00e1rias",
+                                        "value": "15",
+                                        "listColumns": [
+                                            "date",
+                                            "number",
+                                            "occurrenceType",
+                                            "description",
+                                            "serviceOrderNumber",
+                                            "status"
+                                        ],
+                                        "availableFilters": [
+                                            "occurrence_type",
+                                            "datetime",
+                                            "status",
+                                            "is_closed"
+                                        ]
+                                    },
+                                    {
+                                        "name": "Controle Operacional",
+                                        "value": "16",
+                                        "listColumns": [
+                                            "date",
+                                            "number",
+                                            "city",
+                                            "location",
+                                            "occurrenceType",
+                                            "serviceOrderNumber",
+                                            "status"
+                                        ],
+                                        "availableFilters": [
+                                            "occurrence_type",
+                                            "uf_code",
+                                            "city",
+                                            "location",
+                                            "river",
+                                            "origin",
+                                            "place_on_dam",
+                                            "datetime",
+                                            "status",
+                                            "is_closed"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "groups": {
+                        "origin": {
+                            "displayIf": {
+                                "occurrenceKind": [
+                                    "1",
+                                    "3"
+                                ]
+                            }
+                        },
+                        "informer": {
+                            "displayIf": {
+                                "origin": [
+                                    "1",
+                                    "2",
+                                    "3",
+                                    "4",
+                                    "6",
+                                    "7"
+                                ]
+                            }
+                        },
+                        "location": {
+                            "displayIf": {
+                                "occurrenceKind": [
+                                    "1",
+                                    "16"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "additionalDocument": {
+                    "fields": {
+                        "occurrenceKind": {
+                            "apiName": "occurrenceKind",
+                            "dataType": "select",
+                            "displayName": "Natureza",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Relat\u00f3rio",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "Vistoria",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "Comunica\u00e7\u00e3o",
+                                        "value": "7"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "serviceOrderResource": {
+                    "fields": {
+                        "provider": {
+                            "apiName": "provider",
+                            "dataType": "select",
+                            "displayName": "Desembolso",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Engie",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Cons\u00f3rcio",
+                                        "value": "2"
+                                    }
+                                ]
+                            }
+                        },
+                        "resource": {
+                            "disableIf": {
+                                "resourceKind": [
+                                    "1",
+                                    "2",
+                                    "3"
+                                ]
+                            }
+                        },
+                        "resourceKind": {
+                            "apiName": "resourceKind",
+                            "dataType": "select",
+                            "displayName": "Natureza",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Servi\u00e7o Intelectual",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Servi\u00e7o com Aplica\u00e7\u00e3o de Material",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Servi\u00e7o sem Aplica\u00e7\u00e3o de Material",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Material com Aplica\u00e7\u00e3o Direta",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "Reposi\u00e7\u00e3o de Estoque",
+                                        "value": "5"
+                                    }
+                                ]
+                            }
+                        },
+                        "additional_control": {
+                            "apiName": "additional_control",
+                            "dataType": "select",
+                            "displayName": "Controle Adicional",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Comunica\u00e7\u00e3o Socioambiental",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Comunidades Ind\u00edgenas e/ou Outros Grupos \u00c9tnicos",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Educa\u00e7\u00e3o Ambiental e Visitas \u00e0 Usina",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Fundo de Desenvolvimento Regional",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "Patrim\u00f4nio Cultural, Hist\u00f3rico e Arqueol\u00f3gico",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "Recomposi\u00e7\u00e3o da Infra-Estrutura",
+                                        "value": "6"
+                                    },
+                                    {
+                                        "name": "Reloca\u00e7\u00e3o de Popula\u00e7\u00f5es Urbanas",
+                                        "value": "7"
+                                    },
+                                    {
+                                        "name": "Remanejamento da Popula\u00e7\u00e3o Rural",
+                                        "value": "8"
+                                    },
+                                    {
+                                        "name": "Reorganiza\u00e7\u00e3o das Atividades Econ\u00f4micas",
+                                        "value": "9"
+                                    },
+                                    {
+                                        "name": "Sa\u00fade da Popula\u00e7\u00e3o Afetada",
+                                        "value": "10"
+                                    },
+                                    {
+                                        "name": "Conserva\u00e7\u00e3o da Fauna Terrestre e Alada",
+                                        "value": "11"
+                                    },
+                                    {
+                                        "name": "Conserva\u00e7\u00e3o da Flora",
+                                        "value": "12"
+                                    },
+                                    {
+                                        "name": "Conserva\u00e7\u00e3o da Ictiofauna",
+                                        "value": "13"
+                                    },
+                                    {
+                                        "name": "Consolida\u00e7\u00e3o de \u00c1reas de Preserva\u00e7\u00e3o Permanente e Reserva Legal",
+                                        "value": "14"
+                                    },
+                                    {
+                                        "name": "Efluentes",
+                                        "value": "15"
+                                    },
+                                    {
+                                        "name": "Emiss\u00f5es Atmosf\u00e9ricas",
+                                        "value": "16"
+                                    },
+                                    {
+                                        "name": "Estabiliza\u00e7\u00e3o dos Taludes Marginais",
+                                        "value": "17"
+                                    },
+                                    {
+                                        "name": "Estudos de Dispers\u00e3o Atmosf\u00e9rica",
+                                        "value": "18"
+                                    },
+                                    {
+                                        "name": "Gerenciamento de Res\u00edduos",
+                                        "value": "19"
+                                    },
+                                    {
+                                        "name": "Horto Florestal e Viveiro de Produ\u00e7\u00e3o de Mudas",
+                                        "value": "20"
+                                    },
+                                    {
+                                        "name": "Limpeza da \u00c1rea dos Reservat\u00f3rios",
+                                        "value": "21"
+                                    },
+                                    {
+                                        "name": "Macr\u00f3fitas Aqu\u00e1ticas",
+                                        "value": "22"
+                                    },
+                                    {
+                                        "name": "Mexilh\u00e3o Dourado",
+                                        "value": "23"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Climatol\u00f3gicas",
+                                        "value": "24"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Hidrometeorol\u00f3gicas",
+                                        "value": "25"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Hidrossedimentol\u00f3gicas",
+                                        "value": "26"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Meteorol\u00f3gicas",
+                                        "value": "27"
+                                    },
+                                    {
+                                        "name": "Monitoramento das Condi\u00e7\u00f5es Sismol\u00f3gicas",
+                                        "value": "28"
+                                    },
+                                    {
+                                        "name": "Qualidade da \u00c1gua da Chuva",
+                                        "value": "29"
+                                    },
+                                    {
+                                        "name": "Qualidade das \u00c1guas Subterr\u00e2neas",
+                                        "value": "30"
+                                    },
+                                    {
+                                        "name": "Qualidade das \u00c1guas Superficiais",
+                                        "value": "31"
+                                    },
+                                    {
+                                        "name": "Qualidade do Ar",
+                                        "value": "32"
+                                    },
+                                    {
+                                        "name": "Qualidade do Solo",
+                                        "value": "33"
+                                    },
+                                    {
+                                        "name": "Recupera\u00e7\u00e3o de \u00c1reas Degradadas",
+                                        "value": "34"
+                                    },
+                                    {
+                                        "name": "Ru\u00eddos",
+                                        "value": "35"
+                                    },
+                                    {
+                                        "name": "Unidades de Conserva\u00e7\u00e3o",
+                                        "value": "36"
+                                    },
+                                    {
+                                        "name": "Uso, Ocupa\u00e7\u00e3o e Fiscaliza\u00e7\u00e3o Ambiental e Socio-Patrimonial do Entorno do Reservat\u00f3rio",
+                                        "value": "37"
+                                    },
+                                    {
+                                        "name": "Emerg\u00eancias Ambientais",
+                                        "value": "38"
+                                    },
+                                    {
+                                        "name": "Geoweb Ambiental (Sistema de Informa\u00e7\u00f5es Georreferenciadas)",
+                                        "value": "39"
+                                    },
+                                    {
+                                        "name": "Licenciamento Ambiental",
+                                        "value": "40"
+                                    },
+                                    {
+                                        "name": "MDL - Mecanismo de Desenvolvimento Limpo",
+                                        "value": "41"
+                                    },
+                                    {
+                                        "name": "Mudan\u00e7as Clim\u00e1ticas",
+                                        "value": "42"
+                                    },
+                                    {
+                                        "name": "Sistema de Gest\u00e3o Ambiental (NBR ISO 14.001)",
+                                        "value": "43"
+                                    },
+                                    {
+                                        "name": "Usos M\u00faltiplos do Reservat\u00f3rio",
+                                        "value": "44"
+                                    },
+                                    {
+                                        "name": "Servi\u00e7os Especiais e Extraordin\u00e1rios",
+                                        "value": "45"
+                                    },
+                                    {
+                                        "name": "Ingresso Imobiliza\u00e7\u00e3o em Curso",
+                                        "value": "46"
+                                    },
+                                    {
+                                        "name": "Baixas Imobiliza\u00e7\u00e3o em Curso - Ingressos de Exerc\u00edcios Anteriores - Meio Ambiente",
+                                        "value": "47"
+                                    },
+                                    {
+                                        "name": "Gest\u00e3o sociopatrimonial ",
+                                        "value": "48"
+                                    }
+                                ]
+                            }
+                        },
+                        "exceptionalResourceButton": {
+                            "displayIf": {
+                                "resourceKind": [
+                                    "1",
+                                    "2",
+                                    "3"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "administrativeInformation": {
+                    "fields": {
+                        "extra_info": {
+                            "additional_control": {
+                                "apiName": "additional_control",
+                                "dataType": "select",
+                                "displayName": "Controle Adicional",
+                                "selectOptions": {
+                                    "options": [
+                                        {
+                                            "name": "Comunica\u00e7\u00e3o Socioambiental",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "name": "Comunidades Ind\u00edgenas e/ou Outros Grupos \u00c9tnicos",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "name": "Educa\u00e7\u00e3o Ambiental e Visitas \u00e0 Usina",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "name": "Fundo de Desenvolvimento Regional",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "name": "Patrim\u00f4nio Cultural, Hist\u00f3rico e Arqueol\u00f3gico",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "Recomposi\u00e7\u00e3o da Infra-Estrutura",
+                                            "value": "6"
+                                        },
+                                        {
+                                            "name": "Reloca\u00e7\u00e3o de Popula\u00e7\u00f5es Urbanas",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "name": "Remanejamento da Popula\u00e7\u00e3o Rural",
+                                            "value": "8"
+                                        },
+                                        {
+                                            "name": "Reorganiza\u00e7\u00e3o das Atividades Econ\u00f4micas",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "name": "Sa\u00fade da Popula\u00e7\u00e3o Afetada",
+                                            "value": "10"
+                                        },
+                                        {
+                                            "name": "Conserva\u00e7\u00e3o da Fauna Terrestre e Alada",
+                                            "value": "11"
+                                        },
+                                        {
+                                            "name": "Conserva\u00e7\u00e3o da Flora",
+                                            "value": "12"
+                                        },
+                                        {
+                                            "name": "Conserva\u00e7\u00e3o da Ictiofauna",
+                                            "value": "13"
+                                        },
+                                        {
+                                            "name": "Consolida\u00e7\u00e3o de \u00c1reas de Preserva\u00e7\u00e3o Permanente e Reserva Legal",
+                                            "value": "14"
+                                        },
+                                        {
+                                            "name": "Efluentes",
+                                            "value": "15"
+                                        },
+                                        {
+                                            "name": "Emiss\u00f5es Atmosf\u00e9ricas",
+                                            "value": "16"
+                                        },
+                                        {
+                                            "name": "Estabiliza\u00e7\u00e3o dos Taludes Marginais",
+                                            "value": "17"
+                                        },
+                                        {
+                                            "name": "Estudos de Dispers\u00e3o Atmosf\u00e9rica",
+                                            "value": "18"
+                                        },
+                                        {
+                                            "name": "Gerenciamento de Res\u00edduos",
+                                            "value": "19"
+                                        },
+                                        {
+                                            "name": "Horto Florestal e Viveiro de Produ\u00e7\u00e3o de Mudas",
+                                            "value": "20"
+                                        },
+                                        {
+                                            "name": "Limpeza da \u00c1rea dos Reservat\u00f3rios",
+                                            "value": "21"
+                                        },
+                                        {
+                                            "name": "Macr\u00f3fitas Aqu\u00e1ticas",
+                                            "value": "22"
+                                        },
+                                        {
+                                            "name": "Mexilh\u00e3o Dourado",
+                                            "value": "23"
+                                        },
+                                        {
+                                            "name": "Monitoramento das Condi\u00e7\u00f5es Climatol\u00f3gicas",
+                                            "value": "24"
+                                        },
+                                        {
+                                            "name": "Monitoramento das Condi\u00e7\u00f5es Hidrometeorol\u00f3gicas",
+                                            "value": "25"
+                                        },
+                                        {
+                                            "name": "Monitoramento das Condi\u00e7\u00f5es Hidrossedimentol\u00f3gicas",
+                                            "value": "26"
+                                        },
+                                        {
+                                            "name": "Monitoramento das Condi\u00e7\u00f5es Meteorol\u00f3gicas",
+                                            "value": "27"
+                                        },
+                                        {
+                                            "name": "Monitoramento das Condi\u00e7\u00f5es Sismol\u00f3gicas",
+                                            "value": "28"
+                                        },
+                                        {
+                                            "name": "Qualidade da \u00c1gua da Chuva",
+                                            "value": "29"
+                                        },
+                                        {
+                                            "name": "Qualidade das \u00c1guas Subterr\u00e2neas",
+                                            "value": "30"
+                                        },
+                                        {
+                                            "name": "Qualidade das \u00c1guas Superficiais",
+                                            "value": "31"
+                                        },
+                                        {
+                                            "name": "Qualidade do Ar",
+                                            "value": "32"
+                                        },
+                                        {
+                                            "name": "Qualidade do Solo",
+                                            "value": "33"
+                                        },
+                                        {
+                                            "name": "Recupera\u00e7\u00e3o de \u00c1reas Degradadas",
+                                            "value": "34"
+                                        },
+                                        {
+                                            "name": "Ru\u00eddos",
+                                            "value": "35"
+                                        },
+                                        {
+                                            "name": "Unidades de Conserva\u00e7\u00e3o",
+                                            "value": "36"
+                                        },
+                                        {
+                                            "name": "Uso, Ocupa\u00e7\u00e3o e Fiscaliza\u00e7\u00e3o Ambiental e Socio-Patrimonial do Entorno do Reservat\u00f3rio",
+                                            "value": "37"
+                                        },
+                                        {
+                                            "name": "Emerg\u00eancias Ambientais",
+                                            "value": "38"
+                                        },
+                                        {
+                                            "name": "Geoweb Ambiental (Sistema de Informa\u00e7\u00f5es Georreferenciadas)",
+                                            "value": "39"
+                                        },
+                                        {
+                                            "name": "Licenciamento Ambiental",
+                                            "value": "40"
+                                        },
+                                        {
+                                            "name": "MDL - Mecanismo de Desenvolvimento Limpo",
+                                            "value": "41"
+                                        },
+                                        {
+                                            "name": "Mudan\u00e7as Clim\u00e1ticas",
+                                            "value": "42"
+                                        },
+                                        {
+                                            "name": "Sistema de Gest\u00e3o Ambiental (NBR ISO 14.001)",
+                                            "value": "43"
+                                        },
+                                        {
+                                            "name": "Usos M\u00faltiplos do Reservat\u00f3rio",
+                                            "value": "44"
+                                        },
+                                        {
+                                            "name": "Servi\u00e7os Especiais e Extraordin\u00e1rios",
+                                            "value": "45"
+                                        },
+                                        {
+                                            "name": "Ingresso Imobiliza\u00e7\u00e3o em Curso",
+                                            "value": "46"
+                                        },
+                                        {
+                                            "name": "Baixas Imobiliza\u00e7\u00e3o em Curso - Ingressos de Exerc\u00edcios Anteriores - Meio Ambiente",
+                                            "value": "47"
+                                        },
+                                        {
+                                            "name": "Gest\u00e3o sociopatrimonial ",
+                                            "value": "48"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "multipleDailyReport": {
+                    "extraHoursContractIds": [
+                        "339fc8c2-3351-4509-af8a-aa7c519d89ee"
+                    ]
+                },
+                "reporting": {
+                    "fields": {
+                        "lot": {
+                            "apiName": "lot",
+                            "dataType": "select",
+                            "displayName": "Lote",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Lote 1",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Lote 2",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Lote 3",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Lote 4",
+                                        "value": "4"
+                                    }
+                                ]
+                            }
+                        },
+                        "lane": {
+                            "apiName": "lane",
+                            "dataType": "select",
+                            "displayName": "Faixa",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Faixa 1",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Faixa 2",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Faixa 3",
+                                        "value": "3"
+                                    }
+                                ]
+                            }
+                        },
+                        "track": {
+                            "apiName": "track",
+                            "dataType": "select",
+                            "displayName": "Pista",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Tronco",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Dispositivo",
+                                        "value": "2"
+                                    }
+                                ]
+                            }
+                        },
+                        "branch": {
+                            "apiName": "branch",
+                            "dataType": "select",
+                            "displayIf": {
+                                "track": [
+                                    "2"
+                                ]
+                            },
+                            "displayName": "Ramo",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Ramo A",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Ramo B",
+                                        "value": "2"
+                                    }
+                                ]
+                            }
+                        },
+                        "direction": {
+                            "apiName": "direction",
+                            "dataType": "select",
+                            "displayName": "Sentido",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Norte",
+                                        "short": "N",
+                                        "value": "0"
+                                    },
+                                    {
+                                        "name": "Sul",
+                                        "short": "S",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Leste",
+                                        "short": "L",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Oeste",
+                                        "short": "O",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Ambos",
+                                        "short": "A",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "Não se Aplica",
+                                        "short": "X",
+                                        "value": "5"
+                                    }
+                                ]
+                            }
+                        },
+                        "kmReference": {
+                            "displayIf": {
+                                "track": [
+                                    "2"
+                                ]
+                            }
+                        },
+                        "occurrenceKind": {
+                            "apiName": "occurrenceKind",
+                            "dataType": "select",
+                            "displayName": "Natureza",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Levantamento",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Inventário",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "OAE",
+                                        "value": "501"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "filters": {
+                        "lot": {
+                            "apiName": "lot",
+                            "dataType": "selectMultiple",
+                            "displayName": "Lote",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Lote 1",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Lote 2",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "Lote 3",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "Lote 4",
+                                        "value": "4"
+                                    }
+                                ]
+                            }
+                        },
+                        "formDatawidth": {
+                            "apiName": "form_data.width",
+                            "dataType": "number",
+                            "displayName": "Largura"
+                        },
+                        "formDatalength": {
+                            "apiName": "form_data.length",
+                            "dataType": "float",
+                            "displayName": "Comprimento"
+                        },
+                        "formDatakcorCode": {
+                            "apiName": "form_data.kcor_code",
+                            "dataType": "textArea",
+                            "displayName": "Cód KCOR"
+                        },
+                        "formDataartespCode": {
+                            "apiName": "form_data.artesp_code",
+                            "dataType": "textArea",
+                            "displayName": "Cód ARTESP"
+                        },
+                        "formDatainternCode": {
+                            "apiName": "form_data.intern_code",
+                            "dataType": "textArea",
+                            "displayName": "Cód Interno"
+                        },
+                        "formDatademandOrigin": {
+                            "apiName": "form_data.demandOrigin",
+                            "dataType": "selectMultiple",
+                            "displayName": "Origem",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Interna",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "KCOR",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "ARTESP DIN",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "ARTESP DOP",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "ARTESP DIN - Meio Ambiente",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "Autovias",
+                                        "value": "6"
+                                    },
+                                    {
+                                        "name": "Outros",
+                                        "value": "99"
+                                    }
+                                ]
+                            }
+                        },
+                        "formDatareceivedDate": {
+                            "apiName": "form_data.received_date",
+                            "dataType": "timestamp",
+                            "displayName": "Recebido da ARTESP em"
+                        }
+                    },
+                    "exporter": {
+                        "artespCode": true,
+                        "artespReport": {
+                            "color": "#d4c4fbff"
+                        },
+                        "extraColumns": [
+                            {
+                                "key": "demandOrigin",
+                                "header": "Origem",
+                                "isSelect": true
+                            },
+                            {
+                                "key": "artespCode",
+                                "header": "Código ARTESP"
+                            },
+                            {
+                                "key": "area",
+                                "logic": {
+                                    "if": [
+                                        {
+                                            "missing": [
+                                                "formData.length",
+                                                "formData.width"
+                                            ]
+                                        },
+                                        0,
+                                        {
+                                            "*": [
+                                                {
+                                                    "var": "formData.length"
+                                                },
+                                                {
+                                                    "var": "formData.width"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "header": "Área"
+                            },
+                            {
+                                "key": "stepBuilding",
+                                "fields": [
+                                    {
+                                        "field": "kmCancha",
+                                        "header": "Km da cancha"
+                                    },
+                                    {
+                                        "field": "directionCancha",
+                                        "header": "Sentido da cancha",
+                                        "isSelect": true
+                                    }
+                                ],
+                                "header": "Canchas de fresagem",
+                                "isArray": true,
+                                "maxRepetitions": 3
+                            }
+                        ],
+                        "reportingSectionFieldsIndividualRDOExport": [
+                            "km",
+                            "end_km",
+                            "occurrence_type",
+                            "direction",
+                            "width",
+                            "road",
+                            "demandOrigin",
+                            "number",
+                            "receivedDate"
+                        ]
+                    },
+                    "listColumns": [
+                        "dueAt",
+                        "foundAt",
+                        "artespCode",
+                        "kcorCode",
+                        {
+                            "apiName": "formData.altitude",
+                            "dataType": "float",
+                            "displayName": "Referencial altimétrico"
+                        }
+                    ],
+                    "availableFilters": [
+                        "has_artesp_code",
+                        "csp",
+                        "lot"
+                    ]
+                },
+                "reportingFile": {
+                    "fields": {
+                        "kind": {
+                            "apiName": "kind",
+                            "dataType": "select",
+                            "displayName": "Tipo",
+                            "selectOptions": {
+                                "options": [
+                                    {
+                                        "name": "Antes",
+                                        "value": "antes"
+                                    },
+                                    {
+                                        "name": "Durante",
+                                        "value": "durante"
+                                    },
+                                    {
+                                        "name": "Depois",
+                                        "value": "depois"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "metadata": {
+                "extra_actions": {
+                    "create": {
+                        "dest_status": "603ce3ed-d6cc-438e-862d-39f82948973f"
+                    },
+                    "reject": {
+                        "dest_status": "826cf573-8aa0-483d-b7df-e62efa39239b"
+                    },
+                    "approve": {
+                        "dest_status": "0cf668a1-5cfb-4497-9635-aff70a6f2558"
+                    },
+                    "requestReview": {
+                        "dest_status": "0e61a9db-7996-4ca5-b473-04d857a09d03",
+                        "return_to_creator": true
+                    },
+                    "sendToApproval": {
+                        "dest_firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+                        "dest_status": "ffb84144-d731-415e-9d87-388f6004e903"
+                    },
+                    "requestReviewAction": {
+                        "dest_status": "53fd1400-0eaa-4c76-91cf-fb1781fd74d9"
+                    }
+                },
+                "BM_name_format": "{prefixo}-BM-{anoCompleto}.{serialAno:04}",
+                "CM_name_format": "{prefixo}-CM-{anoCompleto}.{serialAno:04}",
+                "OR_name_format": "{prefixo}-OR-{anoCompleto}.{serialAno:04}",
+                "OS_name_format": "{prefixo}-OS-{anoCompleto}.{serialAno:04}",
+                "PM_name_format": "{prefixo}-PM-{anoCompleto}.{serialAno:04}",
+                "RM_name_format": "{prefixo}-RM-{anoCompleto}.{serialAno:04}",
+                "RO_name_format": "{prefixo}-RG-{anoCompleto}.{serialAno:04}",
+                "RP_name_format": {
+                    "1": {
+                        "type": "AP",
+                        "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+                    },
+                    "2": {
+                        "type": "IT",
+                        "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+                    },
+                    "4": {
+                        "type": "DO",
+                        "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+                    },
+                    "default": {
+                        "type": "default",
+                        "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+                    }
+                },
+                "FS_name_format": {
+                    "default": {
+                        "type": "default",
+                        "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+                    }
+                },
+                "company_prefix": "UHIT",
+                "DOC_name_format": "{prefixo}-DOC-{anoCompleto}.{serialAno:04}",
+                "properties_shape": "386ffbf6-cfea-4c12-a880-2f959fdde4f3",
+                "land_action_names": [
+                    {
+                        "name": "An\u00e1lise Jur\u00eddica",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Cancelado",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Conclu\u00eddo por Autua\u00e7\u00e3o do Org\u00e3o Ambiental",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Conclu\u00eddo por A\u00e7\u00e3o Judicial",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "RO Devolvido a UHE",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Pendente",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Envio da Minuta da NE para DJU",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Encaminhado para A\u00e7\u00e3o do Minist\u00e9rio P\u00fablico",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "NE Assinada e Encaminhada a UHE",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Pendente Vistoria Complementar",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Acordo Judicial (Sob Fiscaliza\u00e7\u00e3o)",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Ocorr\u00eancia Extraordin\u00e1ria Registrada no Sistema",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Conclu\u00eddo Amigavelmente",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Pendente Minuta da NE",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Solicita\u00e7\u00e3o de Complementa\u00e7\u00e3o de Documento",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Envio da NE Assinada para a Fiscaliza\u00e7\u00e3o",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Aguardando Prazo da NE",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Encaminhado ao Org\u00e3o Ambiental",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Im\u00f3vel em Processo de Identifica\u00e7\u00e3o",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Aguardando Prazo Amig\u00e1vel",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Aguardando Topografia",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Devolvido ao Emitente",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Inativo",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Documento Complementar ao RO Encaminhado a Assessoria Jur\u00eddica",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Aguardando Cumprimento da Decis\u00e3o Judicial",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Infrator Descumpriu o Acordo Judicial",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Solicita\u00e7\u00e3o de A\u00e7\u00e3o Judicial a Assessoria Jur\u00eddica",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Solicita\u00e7\u00e3o de Provid\u00eancias Judiciais",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Conclu\u00eddo ap\u00f3s Den\u00fancia ao Org\u00e3o Ambiental",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    },
+                    {
+                        "name": "Conclu\u00eddo por Decis\u00e3o Administrativa",
+                        "timedelta": {
+                            "weeks": 1
+                        }
+                    }
+                ],
+                "executed_status_order": 3,
+                "approve_service_order_at": "0cf668a1-5cfb-4497-9635-aff70a6f2558",
+                "lock_occurrence_record_at": [
+                    "0ae1850d-ade6-45b2-87d4-59c44add0e0f",
+                    "0cf668a1-5cfb-4497-9635-aff70a6f2558",
+                    "1870d358-5907-4730-a915-7f576b959e53",
+                    "598a4dac-9860-4a43-9b89-e2abab1e1f3e",
+                    "826cf573-8aa0-483d-b7df-e62efa39239b",
+                    "8460c2e0-d5cd-4e34-b5be-0f86a86935dc",
+                    "e4f6f5f2-9958-4239-a6e1-431b4aa9b2be",
+                    "ffb84144-d731-415e-9d87-388f6004e903"
+                ],
+                "unlock_occurrence_record_at": [
+                    "0e61a9db-7996-4ca5-b473-04d857a09d03"
+                ],
+                "shared_approval_steps": [
+                    "0208377c-8269-4950-a6a6-883e28bbd96e"
+                ],
+                "sheet_inventory_occurrence_type_mapper_for_inspection": [
+                    {
+                        "origin": "006f411d-1388-49c5-989c-7e7447482ae9",
+                        "target": "05e3967f-27b3-460d-94a5-d419c1588dce"
+                    }
+                ],
+                "recuperation_reporting_relation": "4b518ea1-5e65-4400-9929-eca2b0f87aef",
+                "inspection_occurrence_kind": [
+                    "501"
+                ],
+                "show_coordinate_input": true,
+                "MDR_name_format": {
+                    "default": {
+                        "type": "RDO",
+                        "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+                    }
+                },
+                "QS_name_format": {
+                    "default": {
+                        "type": "default",
+                        "format": "{prefixo}-{nome}-{anoCompleto}.{serialAno:05}"
+                    }
+                },
+                "allow_mass_edit_import": true,
+                "ADV_name_format": {
+                    "default": {
+                        "type": "ADV",
+                        "format": "{nome}-{serial:03}"
+                    }
+                }
+            },
+            "shape": null,
+            "key_users": []
+        }
+    },
+    {
+        "model": "companies.company",
+        "pk": "858e7f22-79e3-4498-965c-a0b880e1673d",
+        "fields": {
+            "name": "UHE-TESTE-1",
+            "active": false,
+            "owner": "eca34fc1-6e07-44db-bfc0-d1a30bfcb24d",
+            "cnpj": "92.964.361/0001-76",
+            "logo": "",
+            "provider_logo": "",
+            "company_group": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+            "street_address": "",
+            "custom_options": {},
+            "metadata": {},
+            "shape": null,
+            "key_users": []
+        }
+    }
+]

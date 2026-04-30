@@ -1,0 +1,112 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  CI_IMAGE: marcosh72/python-gdal-xmlsec:3.11-v2
+
+jobs:
+  qa:
+    name: Quality Assurance
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull CI image
+        run: docker pull $CI_IMAGE
+
+      - name: Install dependencies and lint
+        run: |
+          docker run --rm --entrypoint "" \
+            -v "${{ github.workspace }}:/app" -w /app \
+            $CI_IMAGE bash -c '
+              pip install --upgrade pip &&
+              pip install poetry==1.3.1 &&
+              poetry config virtualenvs.in-project true &&
+              poetry env use 3.11 &&
+              poetry install --no-root --extras "ci-tools" &&
+              echo "=== flake8 ===" &&
+              poetry run flake8 . --config .flake8 &&
+              echo "=== black ===" &&
+              poetry run black --check . --config pyproject.toml &&
+              echo "=== isort ===" &&
+              poetry run isort . --check-only --settings-file pyproject.toml
+            '
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgis/postgis
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull CI image
+        run: docker pull $CI_IMAGE
+
+      - name: Install dependencies and run tests
+        run: |
+          docker run --rm --entrypoint "" \
+            --network host \
+            -v "${{ github.workspace }}:/app" -w /app \
+            -e DB_HOST=localhost \
+            -e DB_PORT=5432 \
+            -e DB_USER=postgres \
+            -e DB_PASSWORD=postgres \
+            $CI_IMAGE bash -c '
+              pip install --upgrade pip &&
+              pip install poetry==1.3.1 &&
+              poetry config virtualenvs.in-project true &&
+              poetry env use 3.11 &&
+              poetry install --extras "ci-tools" &&
+              poetry run pytest --ds=RoadLabsAPI.settings.testing
+            '
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.xml
+          retention-days: 1
+
+  sonarqube:
+    name: SonarQube Analysis
+    needs: [test]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: coverage-report
+        continue-on-error: true
+
+      - uses: sonarsource/sonarqube-scan-action@v4
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}

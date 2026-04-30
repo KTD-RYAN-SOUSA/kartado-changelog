@@ -1,0 +1,622 @@
+[
+    {
+        "model": "permissions.userpermission",
+        "pk": "0504215b-9a3a-42c8-9218-1ed846f026a8",
+        "fields": {
+            "name": "HOMOLOGATOR",
+            "permissions": {
+                "City": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "Firm": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ToDo": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "User": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "River": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "Company": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "self",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "Location": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "Resource": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "Dashboard": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "Procedure": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true,
+                    "allowed_status_transitions": {
+                        "1524a42c-913e-42f0-82a7-b69b3a0f5b35": [
+                            "9733307b-9e2a-4635-8144-a7c8a815cd84",
+                            "1524a42c-913e-42f0-82a7-b69b3a0f5b35",
+                            "c04bf98b-7402-4b76-bc4a-563f3f19da04",
+                            "6428d068-bc41-4f8c-9f40-102eb29c6b52",
+                            "6d636f0d-fdad-42ea-b5da-20debe84f8ca",
+                            "8ace6b35-e456-48e3-8970-cb60df9174a9"
+                        ],
+                        "4473584f-2d70-4e94-8e8b-2cd1404c0986": [
+                            "4473584f-2d70-4e94-8e8b-2cd1404c0986",
+                            "95117902-f24e-424f-b877-c153f371690c",
+                            "dd7e71c3-2bb1-4fd0-8442-8c09c79ecdeb",
+                            "d1014a6a-0ca6-487e-8779-0905e4a5c259"
+                        ],
+                        "6428d068-bc41-4f8c-9f40-102eb29c6b52": [
+                            "9733307b-9e2a-4635-8144-a7c8a815cd84",
+                            "1524a42c-913e-42f0-82a7-b69b3a0f5b35",
+                            "c04bf98b-7402-4b76-bc4a-563f3f19da04",
+                            "6428d068-bc41-4f8c-9f40-102eb29c6b52",
+                            "6d636f0d-fdad-42ea-b5da-20debe84f8ca",
+                            "8ace6b35-e456-48e3-8970-cb60df9174a9"
+                        ],
+                        "6d636f0d-fdad-42ea-b5da-20debe84f8ca": [
+                            "9733307b-9e2a-4635-8144-a7c8a815cd84",
+                            "1524a42c-913e-42f0-82a7-b69b3a0f5b35",
+                            "c04bf98b-7402-4b76-bc4a-563f3f19da04",
+                            "6428d068-bc41-4f8c-9f40-102eb29c6b52",
+                            "6d636f0d-fdad-42ea-b5da-20debe84f8ca",
+                            "8ace6b35-e456-48e3-8970-cb60df9174a9"
+                        ],
+                        "8ace6b35-e456-48e3-8970-cb60df9174a9": [
+                            "9733307b-9e2a-4635-8144-a7c8a815cd84",
+                            "1524a42c-913e-42f0-82a7-b69b3a0f5b35",
+                            "c04bf98b-7402-4b76-bc4a-563f3f19da04",
+                            "6428d068-bc41-4f8c-9f40-102eb29c6b52",
+                            "6d636f0d-fdad-42ea-b5da-20debe84f8ca",
+                            "8ace6b35-e456-48e3-8970-cb60df9174a9"
+                        ],
+                        "95117902-f24e-424f-b877-c153f371690c": [
+                            "95117902-f24e-424f-b877-c153f371690c",
+                            "dd7e71c3-2bb1-4fd0-8442-8c09c79ecdeb",
+                            "4473584f-2d70-4e94-8e8b-2cd1404c0986",
+                            "d1014a6a-0ca6-487e-8779-0905e4a5c259"
+                        ],
+                        "9733307b-9e2a-4635-8144-a7c8a815cd84": [
+                            "9733307b-9e2a-4635-8144-a7c8a815cd84",
+                            "1524a42c-913e-42f0-82a7-b69b3a0f5b35",
+                            "c04bf98b-7402-4b76-bc4a-563f3f19da04",
+                            "6428d068-bc41-4f8c-9f40-102eb29c6b52",
+                            "6d636f0d-fdad-42ea-b5da-20debe84f8ca",
+                            "8ace6b35-e456-48e3-8970-cb60df9174a9"
+                        ],
+                        "c04bf98b-7402-4b76-bc4a-563f3f19da04": [
+                            "9733307b-9e2a-4635-8144-a7c8a815cd84",
+                            "1524a42c-913e-42f0-82a7-b69b3a0f5b35",
+                            "c04bf98b-7402-4b76-bc4a-563f3f19da04",
+                            "6428d068-bc41-4f8c-9f40-102eb29c6b52",
+                            "6d636f0d-fdad-42ea-b5da-20debe84f8ca",
+                            "8ace6b35-e456-48e3-8970-cb60df9174a9"
+                        ],
+                        "d1014a6a-0ca6-487e-8779-0905e4a5c259": [
+                            "d1014a6a-0ca6-487e-8779-0905e4a5c259"
+                        ],
+                        "d52aa4f7-6097-442a-aef2-58b8b9d91eaf": [
+                            "95117902-f24e-424f-b877-c153f371690c",
+                            "d52aa4f7-6097-442a-aef2-58b8b9d91eaf"
+                        ],
+                        "dd7e71c3-2bb1-4fd0-8442-8c09c79ecdeb": [
+                            "dd7e71c3-2bb1-4fd0-8442-8c09c79ecdeb"
+                        ]
+                    }
+                },
+                "Permission": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "UserInFirm": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "WatchPoint": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ExcelImport": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ServiceOrder": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ProcedureFile": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "UserInCompany": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ExcelReporting": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "OccurrenceType": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "OccurrenceRecord": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true,
+                    "can_view_bi": true,
+                    "can_approve": true
+                },
+                "CustomizationMenu": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ProcedureResource": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true,
+                    "can_approve": true,
+                    "can_view_money": true
+                },
+                "AdditionalDocument": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ServiceOrderAction": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "MeasurementBulletin": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ServiceOrderResource": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true,
+                    "can_view_money": true
+                },
+                "ServiceOrderActionStatus": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "AdministrativeInformation": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "MultipleDailyReport": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true,
+                    "can_set_extra_hours": true
+                },
+                "Job": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true,
+                    "can_reschedule": true
+                },
+                "DailyReportContractUsage": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ContractItemAdministration": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "ContractItemUnitPrice": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "NoticeViewManager": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "Reporting": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "Inventory": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                }
+            },
+            "is_inactive": false,
+            "companies": [
+                "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+            ],
+            "is_admin": false
+        }
+    },
+    {
+        "model": "permissions.userpermission",
+        "pk": "4ea9b6ee-ac29-46ad-b1fc-a2b0ab11b338",
+        "fields": {
+            "name": "COLLABORATOR",
+            "permissions": {
+                "city": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "firm": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "toDo": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "user": {
+                    "canEdit": true,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "river": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "company": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "self",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "location": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "resource": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "dashboard": {
+                    "canEdit": false,
+                    "canView": false,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "procedure": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": true,
+                    "canDelete": false,
+                    "allowedStatusTransitions": {
+                        "0ae1850d-ade6-45b2-87d4-59c44add0e0f": [
+                            "0ae1850d-ade6-45b2-87d4-59c44add0e0f",
+                            "1870d358-5907-4730-a915-7f576b959e53",
+                            "53fd1400-0eaa-4c76-91cf-fb1781fd74d9",
+                            "598a4dac-9860-4a43-9b89-e2abab1e1f3e",
+                            "8460c2e0-d5cd-4e34-b5be-0f86a86935dc",
+                            "e4f6f5f2-9958-4239-a6e1-431b4aa9b2be"
+                        ],
+                        "0cf668a1-5cfb-4497-9635-aff70a6f2558": [
+                            "0cf668a1-5cfb-4497-9635-aff70a6f2558"
+                        ],
+                        "0e61a9db-7996-4ca5-b473-04d857a09d03": [
+                            "ffb84144-d731-415e-9d87-388f6004e903"
+                        ],
+                        "1870d358-5907-4730-a915-7f576b959e53": [
+                            "0ae1850d-ade6-45b2-87d4-59c44add0e0f",
+                            "1870d358-5907-4730-a915-7f576b959e53",
+                            "53fd1400-0eaa-4c76-91cf-fb1781fd74d9",
+                            "598a4dac-9860-4a43-9b89-e2abab1e1f3e",
+                            "8460c2e0-d5cd-4e34-b5be-0f86a86935dc",
+                            "e4f6f5f2-9958-4239-a6e1-431b4aa9b2be"
+                        ],
+                        "53fd1400-0eaa-4c76-91cf-fb1781fd74d9": [
+                            "0ae1850d-ade6-45b2-87d4-59c44add0e0f",
+                            "1870d358-5907-4730-a915-7f576b959e53",
+                            "53fd1400-0eaa-4c76-91cf-fb1781fd74d9",
+                            "598a4dac-9860-4a43-9b89-e2abab1e1f3e",
+                            "8460c2e0-d5cd-4e34-b5be-0f86a86935dc",
+                            "e4f6f5f2-9958-4239-a6e1-431b4aa9b2be"
+                        ],
+                        "598a4dac-9860-4a43-9b89-e2abab1e1f3e": [
+                            "0ae1850d-ade6-45b2-87d4-59c44add0e0f",
+                            "1870d358-5907-4730-a915-7f576b959e53",
+                            "53fd1400-0eaa-4c76-91cf-fb1781fd74d9",
+                            "598a4dac-9860-4a43-9b89-e2abab1e1f3e",
+                            "8460c2e0-d5cd-4e34-b5be-0f86a86935dc",
+                            "e4f6f5f2-9958-4239-a6e1-431b4aa9b2be"
+                        ],
+                        "603ce3ed-d6cc-438e-862d-39f82948973f": [
+                            "ffb84144-d731-415e-9d87-388f6004e903",
+                            "603ce3ed-d6cc-438e-862d-39f82948973f"
+                        ],
+                        "826cf573-8aa0-483d-b7df-e62efa39239b": [
+                            "826cf573-8aa0-483d-b7df-e62efa39239b"
+                        ],
+                        "8460c2e0-d5cd-4e34-b5be-0f86a86935dc": [
+                            "0ae1850d-ade6-45b2-87d4-59c44add0e0f",
+                            "1870d358-5907-4730-a915-7f576b959e53",
+                            "53fd1400-0eaa-4c76-91cf-fb1781fd74d9",
+                            "598a4dac-9860-4a43-9b89-e2abab1e1f3e",
+                            "8460c2e0-d5cd-4e34-b5be-0f86a86935dc",
+                            "e4f6f5f2-9958-4239-a6e1-431b4aa9b2be"
+                        ],
+                        "e4f6f5f2-9958-4239-a6e1-431b4aa9b2be": [
+                            "0ae1850d-ade6-45b2-87d4-59c44add0e0f",
+                            "1870d358-5907-4730-a915-7f576b959e53",
+                            "53fd1400-0eaa-4c76-91cf-fb1781fd74d9",
+                            "598a4dac-9860-4a43-9b89-e2abab1e1f3e",
+                            "8460c2e0-d5cd-4e34-b5be-0f86a86935dc",
+                            "e4f6f5f2-9958-4239-a6e1-431b4aa9b2be"
+                        ],
+                        "ffb84144-d731-415e-9d87-388f6004e903": []
+                    }
+                },
+                "permission": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "watchPoint": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "excelImport": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "serviceOrder": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": true,
+                    "canDelete": false
+                },
+                "procedureFile": {
+                    "canEdit": true,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": true,
+                    "canDelete": false
+                },
+                "userInCompany": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "excelReporting": {
+                    "can_edit": true,
+                    "can_view": true,
+                    "queryset": "all",
+                    "can_create": true,
+                    "can_delete": true
+                },
+                "occurrenceType": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "occurrenceRecord": {
+                    "canEdit": true,
+                    "canView": true,
+                    "queryset": "self",
+                    "canCreate": true,
+                    "canDelete": false,
+                    "canViewBi": true
+                },
+                "customizationMenu": {
+                    "canEdit": false,
+                    "canView": false,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "procedureResource": {
+                    "canEdit": true,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": true,
+                    "canDelete": false
+                },
+                "additionalDocument": {
+                    "canEdit": true,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": true,
+                    "canDelete": false
+                },
+                "serviceOrderAction": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "measurementBulletin": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "serviceOrderResource": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "serviceOrderActionStatus": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "administrativeInformation": {
+                    "canEdit": false,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": false,
+                    "canDelete": false
+                },
+                "recordMenu": {
+                    "canEdit": true,
+                    "canView": true,
+                    "queryset": "all",
+                    "canCreate": true,
+                    "canDelete": true
+                }
+            },
+            "is_inactive": false,
+            "companies": [
+                "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+            ],
+            "is_admin": true
+        }
+    }
+]

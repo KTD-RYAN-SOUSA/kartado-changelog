@@ -1,0 +1,16 @@
+Olá,
+
+Um novo usuário requer a sua aprovação:
+
+Username: {{username}}
+Nome: {{first_name}} {{last_name}}
+Usina: {{company}}
+Email: {{email}}
+
+Copie esse link no seu navegador para aprovar o usuário:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

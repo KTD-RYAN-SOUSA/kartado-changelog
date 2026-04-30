@@ -1,0 +1,20 @@
+[
+    {
+        "model": "templates.excelimport",
+        "pk": "e4ff9959-e8fb-45fa-a2c7-77f565399e97",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "created_at": "2020-07-25T00:32:44.787Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "name": "Teste",
+            "excel_file": "",
+            "preview_file": "",
+            "done": false,
+            "error": false,
+            "generating_preview": false,
+            "uploading_zip_images": false,
+            "is_over_limit": false,
+            "is_forbidden": false
+        }
+    }
+]

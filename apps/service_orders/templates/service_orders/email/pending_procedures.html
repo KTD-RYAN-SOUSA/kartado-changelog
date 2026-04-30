@@ -1,0 +1,83 @@
+{% extends "usr_notif.html" %}
+{% load app_filters %}
+
+{% block scoped_css %}
+<link rel="stylesheet" href="apps/service_orders/templates/service_orders/email/pending_procedures.css">
+{% endblock scoped_css %}
+
+{% block content %}
+<h2>Olá!</h2>
+
+<p>Você tem {{procedure_count}} tarefa{% if procedure_count > 1 %}s{% endif %} para hoje:</p>
+
+<div id="pending-body">
+  {% if delayed %}
+    <h2 class="btn-icon"><span class="material-icons delayed">assignment_late</span> Você tem tarefas pendentes.</h2>
+    
+    <div id="procedure-container">
+      {% for procedure in delayed %}
+      <div class="procedure-item">
+        <p>
+          <a href="{{procedure.url}}" target="_blank">{{ procedure.to_do }}</a> <br>
+          <b>Entrega:</b> {{procedure.action}} <br>
+          <b>Número da Ordem de Serviço:</b> {{procedure.os_number}} <br>
+        </p>
+        <div class="deadline-container">
+          <div class="date btn-icon">
+            <span class="material-icons">event</span> {{procedure.deadline}}
+          </div>
+          <div class="day-counter delayed delayed-bg">{{procedure.delay}} dia{% if procedure.delay > 1 %}s{% endif %} de atraso</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if deadline_close or deadline_soon %}<hr>{% endif %}
+  {% endif %}
+
+  {% if deadline_close %}
+    <h2 class="btn-icon"><span class="material-icons due-tomorrow">assignment_late</span> Você tem tarefas para hoje.</h2>
+
+    <div id="procedure-container">
+      {% for procedure in deadline_close %}
+      <div class="procedure-item">
+        <p>
+          <a href="{{procedure.url}}" target="_blank">{{ procedure.to_do }}</a> <br>
+          <b>Entrega:</b> {{procedure.action}} <br>
+          <b>Número da Ordem de Serviço:</b> {{procedure.os_number}} <br>
+        </p>
+        <div class="deadline-container">
+          <div class="date btn-icon">
+            <span class="material-icons">event</span> {{procedure.deadline}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if deadline_soon %}<hr>{% endif %}
+  {% endif %}
+
+  {% if deadline_soon %}
+    <h2 class="btn-icon"><span class="material-icons due-tomorrow">assignment_late</span> Você tem tarefas próximas a vencer.</h2>
+
+    <div id="procedure-container">
+      {% for procedure in deadline_soon %}
+      <div class="procedure-item">
+        <p>
+          <a href="{{procedure.url}}" target="_blank">{{ procedure.to_do }}</a> <br>
+          <b>Entrega:</b> {{procedure.action}} <br>
+          <b>Número da Ordem de Serviço:</b> {{procedure.os_number}} <br>
+        </p>
+        <div class="deadline-container">
+          <div class="date btn-icon">
+            <span class="material-icons">event</span> {{procedure.deadline}}
+          </div>
+          <div class="day-counter soon-bg">Vencimento em {{procedure.delay|to_abs}} dia{% if procedure.delay|to_abs > 1 %}s{% endif %}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

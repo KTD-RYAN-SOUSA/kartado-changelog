@@ -1,0 +1,68 @@
+FROM marcosh72/python-gdal-xmlsec:3.11-v2
+
+# Expose port
+EXPOSE 8000
+
+# Environment variables
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    POETRY_VERSION=1.5.1 \
+    POETRY_HOME="/opt/poetry" \
+    POETRY_NO_INTERACTION=1 \
+    POETRY_VIRTUALENVS_CREATE=false
+
+# Set working directory
+WORKDIR /usr/src/app
+
+# Install pip and poetry
+# (GDAL, xmlsec1 e pkg-config já estão na imagem base marcosh72/python-gdal-xmlsec)
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir poetry==${POETRY_VERSION}
+
+# Copy dependency files
+COPY pyproject.toml poetry.lock ./
+
+# Install Python dependencies (production only, no dev dependencies, with server group for gunicorn)
+RUN poetry install --only main,server --no-root --no-interaction --no-ansi
+
+# Copy application code
+COPY . .
+
+# Sobrescreve o entrypoint da imagem base Lambda (que espera um handler Lambda)
+# para permitir rodar gunicorn normalmente
+ENTRYPOINT []
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD python -c "import requests; requests.get('http://localhost:8000/health/', timeout=5)" || exit 1
+
+# Use gunicorn for production with detailed logging
+# --preload carrega Django ANTES de aceitar conexões (reduz tempo do primeiro health check)
+# timeout 1800 (externo): encerra o container automaticamente após 30 minutos
+#   - exit code 124 = timeout disparou (logado abaixo)
+#   - outros códigos = encerramento normal (export concluiu e enviou SIGTERM ao PID 1)
+# --timeout 1800 (gunicorn): permite requests de até 30 minutos sem matar workers
+CMD ["sh", "-c", "\
+    timeout 1800 gunicorn \
+        --bind 0.0.0.0:8000 \
+        --workers 3 \
+        --threads 2 \
+        --worker-class sync \
+        --timeout 1800 \
+        --preload \
+        --max-requests 1000 \
+        --max-requests-jitter 50 \
+        --worker-tmp-dir /dev/shm \
+        --access-logfile - \
+        --error-logfile - \
+        --log-level debug \
+        --access-logformat '%({X-Forwarded-For}i)s %(l)s %(u)s %(t)s \"%(r)s\" %(s)s %(b)s \"%(f)s\" \"%(a)s\" %(D)s' \
+        --capture-output \
+        --enable-stdio-inheritance \
+        RoadLabsAPI.wsgi:application; \
+    EXIT_CODE=$?; \
+    if [ $EXIT_CODE -eq 124 ]; then \
+        echo '[Fargate Timeout] Container encerrado por timeout de 30 minutos (exit 124)'; \
+    fi; \
+    exit $EXIT_CODE \
+"]

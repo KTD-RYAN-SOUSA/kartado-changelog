@@ -1,0 +1,79 @@
+{% extends "legacy_base_email.html" %}
+
+{% block headcontent %}
+
+<tr>
+  <td>
+    <p class="p-text">
+      {{ message }}
+    </p>
+  </td>
+</tr>
+
+{% endblock headcontent %}
+
+{% block content %}
+
+<tr>
+  <td align="center" class="td-big-table">
+    <table border="0" cellpadding="0" cellspacing="0" class="title-big-table">
+      <tbody>
+        <tr>
+          <td class="table-section-title">
+            Apontamentos atualizados
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" class="td-big-table-rows">
+    <table border="0" cellpadding="0" cellspacing="0" class="title-big-table">
+      <tbody>
+        <tr class="table-header">
+          <td class="table-header-td">
+            <b>Serial</b>
+          </td>
+          <td class="table-header-td">
+            <b>Status, Status de Aprovação e Observações</b>
+          </td>
+        </tr>
+        {% for reporting in reportings %}
+        <tr class="table-row">
+          <td class="table-row-td">
+            {{ reporting.number }}
+          </td>
+          <td class="table-row-td">
+            {% if reporting.step %}
+            {{ reporting.status }} - {{ reporting.step }}<br>
+            {% else %}
+            {{ reporting.status }}<br>
+            {% endif %}
+            {{ reporting.notes }}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" class="td-buttton">
+    <table border="0" cellpadding="0" cellspacing="0" class="table-button">
+      <tbody>
+        <tr>
+          <td align="center">
+            <a href="{{url}}" target="_blank" class="a-button">
+              ACESSAR APONTAMENTOS
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+{% endblock content %}

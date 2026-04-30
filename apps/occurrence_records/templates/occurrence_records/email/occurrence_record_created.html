@@ -1,0 +1,53 @@
+{% extends "legacy_base_email.html" %}
+
+{% block content %}
+
+<tr>
+  <td>
+    <p class="p-text">
+      Um novo registro foi criado no sistema:
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Número do Registro:</b> {{reg_number}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Natureza:</b> {{kind}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Tipo:</b> {{type}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Emitente:</b> {{created_by}}
+  </td>
+</tr>
+
+<tr>
+  <td align="center" class="td-buttton">
+    <table border="0" cellpadding="0" cellspacing="0" class="table-button">
+      <tbody>
+        <tr>
+          <td align="center">
+            <a href="{{url}}" target="_blank" class="a-button">
+              ACESSAR REGISTRO
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+{% endblock %}

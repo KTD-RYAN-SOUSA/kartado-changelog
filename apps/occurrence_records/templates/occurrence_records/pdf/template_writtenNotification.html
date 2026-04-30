@@ -1,0 +1,55 @@
+{% extends 'occurrence_records/pdf/base/base_report.html' %}
+{% block logo %}
+{% if company.logo %}
+<img src="{{ company.logo.url }}" alt="{{ company.name }}" />
+{% else %}
+<span>{{ company.name }}</span>
+{% endif %}
+{% endblock %}
+{% block context %}
+<section class="context" style="padding-top: 30px;">
+{% for item in generic_fields %}
+    <div class="">
+        {% if item.name == "Corpo da notificação" %}
+            {% for field in item.fields %}
+                {% if field.display_value %}
+                    {% if field.display_name != "Referência" %}
+                        {% if field.display_value|lower|slice:":21" == "prezado(a) senhor(a)," %}
+                            Prezado(a) Senhor(a), <br><br>
+                            {{ field.display_value|slice:"21:" }} <br><br>
+                        {% else %}
+                            {{ field.display_value }} <br><br>
+                        {% endif %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endfor %}
+
+</section>
+{% endblock %}
+
+{% block footer %}
+<table class="footer-table">
+    <tr>
+        <td class="footer-text-center" colspan="2">
+            {% if approved_by.full_name %}
+            Assinado digitalmente em
+            {{ approved_date|date:'d/m/Y H:i' }}
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div class="footer-title">HOMOLOGADOR</div>
+            <div class="footer-text-center-name">
+                {% if approved_by.full_name %}{{ approved_by.full_name }}{% endif %}
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="footer-text" colspan="2">{{ now }}</td>
+    </tr>
+</table>
+{% endblock %}

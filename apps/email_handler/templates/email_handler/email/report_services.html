@@ -1,0 +1,35 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+<h2>Olá!</h2>
+
+<p>Aqui estão as movimentações em serviços realizados no Kartado Energia durante {{period_text}}:</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Movimentações em serviços {{date}} - {{company}}</th>
+    </tr>
+    <tr class="alt-header-bg">
+      <th>Descrição</th>
+      <th>Novas entregas</th>
+      <th>% de entregas concluídas</th>
+      <th>Tarefas atrasadas</th>
+      <th>Tarefas entregues</th>
+      <th>Início</th>
+    </tr>
+  </thead>
+
+  {% for service in services %}
+  <tr>
+    <td><a href="{{service.url}}" target="_blank">{{service.description}}</a></td>
+    <td>{{service.actions}}</td>
+    <td>{{service.concluded_actions}}</td>
+    <td>{{service.late_procedures}}</td>
+    <td>{{service.concluded_procedures}}</td>
+    <td>{{service.creation_date}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,20 @@
+[
+{
+    "model": "locations.city",
+    "pk": "02d12c1a-2321-4825-9ac0-aa6a6f2f4aa9",
+    "fields": {
+        "uf_code": 41,
+        "name": "Porto Barreiro",
+        "coordinates": null
+    }
+},
+{
+    "model": "locations.city",
+    "pk": "048b93e7-1f88-4daa-8de2-678d2eb2a1e5",
+    "fields": {
+        "uf_code": 41,
+        "name": "Chopinzinho",
+        "coordinates": null
+    }
+}
+]

@@ -1,0 +1,15 @@
+# Docker Compose Override Example
+# Copy this file to docker-compose.override.yml for your local environment
+
+# If you're having trouble setting up postgres on  Mac ARM (M1/M2/+) machines:
+# This forces PostGIS to run on AMD64 architecture for compatibility
+version: "3"
+
+services:
+    postgis:
+        platform: linux/amd64
+        image: "postgis/postgis:15-3.3"
+
+# For other environments:
+# You can leave docker-compose.override.yml empty or not create it at all
+# The default docker-compose.yml will be used

@@ -1,0 +1,17 @@
+[
+    {
+        "model": "occurrence_records.dataseries",
+        "pk": "443954d5-93d1-4bd3-9fed-9d40d302b14c",
+        "fields": {
+            "name": "Fixture Data Series",
+            "operational_position": "opPosition",
+            "field_name": "fieldName",
+            "data_type": "dataType",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "instrument_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+            "instrument_record": "01624450-0efe-4cd4-bba2-e97fd1b7a6f2",
+            "created_at": "2022-07-15T16:04:21.337Z",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256"
+        }
+    }
+]

@@ -1,0 +1,57 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+
+<h2>Olá!</h2>
+
+<p>Ação requerida em solicitação de acesso.</p>
+
+<hr>
+
+<h2>Solicitação criada por</h2>
+<p>
+  {% for info in creator_info %}
+  <b>{{ info.0 }}</b>: {{ info.1 }}<br>
+  {% endfor %}
+</p>
+
+<hr>
+
+<h2>Informações da solicitação</h2>
+<p>
+  {% for info in user_info %}
+  <b>{{ info.0 }}</b>: {{ info.1 }}<br>
+  {% endfor %}
+</p>
+
+<hr>
+
+<h2>Responsáveis pela aprovação</h2>
+<p>Você está recebendo esta mensagem por ser um dos responsáveis por aprovar esta solicitação de acesso. Ela também pode ser aprovada pelos usuários listados abaixo:</p>
+
+{% for info in approvers %}
+<p>{{info}}</p>
+{% endfor %}
+
+<hr>
+
+<div class="button-container">
+  {% for action in transitions_names %}
+  <a href="{{ url }}&name={{ action.name }}" target="_blank" class="btn {% if action.name|lower == 'aprovar' %} btn-icon btn-primary {% endif %} {% if action.name|lower == 'rejeitar' %} btn-icon btn-danger {% endif %}">
+    {% if action.name|lower == 'aprovar' %} <span class="material-icons">done</span> {% endif %}
+    {% if action.name|lower == 'rejeitar' %} <span class="material-icons">close</span> {% endif %}
+    {{ action.name }}
+  </a>
+  {% endfor %}
+</div>
+
+{% if link_url %}
+<p>Ou copie esse link no seu navegador para acessar a solicitação de acesso:</p>
+<p>
+  <a href="{{link_url}}" target="_blank">
+    {{link_url}}
+  </a>
+</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,51 @@
+[{
+	"model": "reportings.reportingrelation",
+	"pk": "a6a3db62-ceff-442d-8ba4-0d80d4652675",
+	"fields": {
+		"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+		"name": "Teste 1",
+		"outward": "relação out",
+		"inward": "relação in"
+	}
+},
+{
+	"model": "reportings.reportingrelation",
+	"pk": "4b518ea1-5e65-4400-9929-eca2b0f87aef",
+	"fields": {
+		"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+		"name": "Teste 2",
+		"outward": "montante",
+		"inward": "jusante"
+	}
+},
+{
+	"model": "reportings.reportingrelation",
+	"pk": "161d8498-f34a-4f3b-b962-052310752090",
+	"fields": {
+		"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+		"name": "Teste 3",
+		"outward": "montante",
+		"inward": "relação in"
+	}
+},
+{
+	"model": "reportings.reportingrelation",
+	"pk": "ab8076db-7590-4e6c-83fa-a724e2d7133d",
+	"fields": {
+		"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+		"name": "Teste 4",
+		"outward": "apontamento",
+		"inward": "jusante"
+	}
+},
+{
+	"model": "reportings.reportingrelation",
+	"pk": "aa78b48e-6e2f-4541-90c4-7ef4043a0519",
+	"fields": {
+		"company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+		"name": "Teste 5",
+		"outward": "inventario",
+		"inward": "relação in"
+	}
+}
+]

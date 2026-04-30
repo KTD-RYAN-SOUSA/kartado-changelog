@@ -1,0 +1,5 @@
+O status do registro {{ number }} foi alterado para {{ status }}.
+
+Você está recebendo esta mensagem por estar listado como um dos responsáveis pela próxima alteração de status. Acesse o registro para executá-la.
+
+Link do registro: {{ url }}

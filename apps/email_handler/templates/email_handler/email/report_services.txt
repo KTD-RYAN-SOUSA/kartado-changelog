@@ -1,0 +1,20 @@
+Olá,
+
+Aqui estão as movimentações em serviços realizados no Kartado Energia durante {{period_text}}:
+
+Movimentações em serviços {{date}} - {{ company }}:
+
+Serviços movimentados:
+
+{% for service in services %}
+	Descrição: {{ service.description }}
+	Novas Entregas: {{ service.actions }}
+	% Entregas Concluídas: {{ service.concluded_actions }}
+	Tarefas Atrasadas: {{ service.late_procedures }}
+	Tarefas Entregues: {{ service.concluded_procedures }}
+	Início: {{ service.creation_date }}
+{% endfor %}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

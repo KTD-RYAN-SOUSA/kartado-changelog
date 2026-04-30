@@ -1,0 +1,211 @@
+[{
+        "model": "users.user",
+        "pk": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "fields": {
+            "password": "pbkdf2_sha256$120000$gmVeyCIeP5Fk$26RIh7HMwWxkQBn3OqZTeJInaegElBKB1wA+qz7qOi0=",
+            "last_login": "2021-02-10T19:09:15.690Z",
+            "is_superuser": true,
+            "username": "engie",
+            "first_name": "Engie",
+            "last_name": "Energia",
+            "email": "contato@roadlabs.com.br",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2019-09-26T15:47:07Z",
+            "cpf": null,
+            "avatar": "",
+            "metadata": {
+                "role": "Gerador de Energia",
+                "occupation": "Gerador de Energia",
+                "board_registration": "12345678"
+            },
+            "configuration": {
+                "send_email_notifications": true
+            },
+            "jwt_secret": "c2343f09d-08J-8-98M-((__M--8j-8j-v\u00e7lkxcxlknv__))",
+            "saml_idp": null,
+            "saml_nameid": null,
+            "company_group": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+            "supervisor": null,
+            "is_supervisor": false,
+            "is_internal": false,
+            "has_accepted_tos": false,
+            "responsible": null,
+            "birth_date": null,
+            "firm_name": null,
+            "phone": null,
+            "auth_error": null,
+            "groups": [],
+            "user_permissions": [],
+            "push_devices": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": "4e29d1e0-9745-48d3-b38f-b1210e683e00",
+        "fields": {
+            "password": "pbkdf2_sha256$120000$gmVeyCIeP5Fk$26RIh7HMwWxkQBn3OqZTeJInaegElBKB1wA+qz7qOia=",
+            "last_login": "2020-08-29T01:29:05.806Z",
+            "is_superuser": true,
+            "username": "engie3",
+            "first_name": "Engie3",
+            "last_name": "Energia3",
+            "email": "coontato3@roadlabs.com.br",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2019-09-26T15:47:07Z",
+            "cpf": null,
+            "avatar": "",
+            "metadata": {
+                "role": "Gerador de Energia",
+                "occupation": "Gerador de Energia",
+                "board_registration": "12345678"
+            },
+            "configuration": {
+                "send_email_notifications": true
+            },
+            "jwt_secret": "c2343f09d-08J-8-98M-((__M--8j-8j-v\u00e7lkxcxlkna__))",
+            "saml_idp": null,
+            "saml_nameid": null,
+            "company_group": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+            "supervisor": null,
+            "is_supervisor": false,
+            "is_internal": false,
+            "has_accepted_tos": false,
+            "responsible": null,
+            "birth_date": null,
+            "firm_name": null,
+            "phone": null,
+            "auth_error": null,
+            "groups": [],
+            "user_permissions": [],
+            "push_devices": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": "e7cfb4c3-ddd1-43e2-8439-c4c6f0a98383",
+        "fields": {
+            "password": "pbkdf2_sha256$120000$gmVeyCIeP5Fk$26RIh7HMwWxkQBn3OqZTeJInaegElBKB1wA+qz7qOia=",
+            "last_login": "2020-08-29T01:29:05.806Z",
+            "is_superuser": true,
+            "username": "engie2",
+            "first_name": "Engie2",
+            "last_name": "Energia2",
+            "email": "coontato2@roadlabs.com.br",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2019-09-26T15:47:07Z",
+            "cpf": null,
+            "avatar": "",
+            "metadata": {
+                "role": "Gerador de Energia",
+                "occupation": "Gerador de Energia",
+                "board_registration": "12345678"
+            },
+            "configuration": {
+                "send_email_notifications": true
+            },
+            "jwt_secret": "c2343f09d-08J-8-98M-((__M--8j-8j-v\u00e7lkxcxlkna__))",
+            "saml_idp": null,
+            "saml_nameid": null,
+            "company_group": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+            "supervisor": null,
+            "is_supervisor": false,
+            "is_internal": false,
+            "has_accepted_tos": false,
+            "responsible": null,
+            "birth_date": null,
+            "firm_name": null,
+            "phone": null,
+            "auth_error": null,
+            "groups": [],
+            "user_permissions": [],
+            "push_devices": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": "eca34fc1-6e07-44db-bfc0-d1a30bfcb24d",
+        "fields": {
+            "password": "pbkdf2_sha256$120000$gmVeyCIeP5Fk$26RIh7HMwWxkQBn3OqZTeJInaegElBKB1wA+qz7qOia=",
+            "last_login": "2020-08-29T01:29:05.806Z",
+            "is_superuser": true,
+            "username": "engie4",
+            "first_name": "Engie4",
+            "last_name": "Energia4",
+            "email": "coontato4@roadlabs.com.br",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2019-09-26T15:47:07Z",
+            "cpf": null,
+            "avatar": "",
+            "metadata": {
+                "role": "Gerador de Energia",
+                "occupation": "Gerador de Energia",
+                "board_registration": "12345678"
+            },
+            "configuration": {
+                "send_email_notifications": true
+            },
+            "jwt_secret": "c2343f09d-08J-8-98M-((__M--8j-8j-v\u00e7lkxcxlkna__))",
+            "saml_idp": null,
+            "saml_nameid": null,
+            "company_group": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+            "supervisor": null,
+            "is_supervisor": false,
+            "is_internal": false,
+            "has_accepted_tos": false,
+            "responsible": null,
+            "birth_date": null,
+            "firm_name": null,
+            "phone": null,
+            "auth_error": null,
+            "groups": [],
+            "user_permissions": [],
+            "push_devices": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": "9a107ec3-7a4f-4efb-bbec-b3db7a3347ad",
+        "fields": {
+            "password": "pbkdf2_sha256$120000$gmVeyCIeP5Fk$26RIh7HMwWxkQBn3OqZTeJInaegElBKB1wA+qz7qOi0=",
+            "last_login": "2021-02-10T19:09:15.690Z",
+            "is_superuser": true,
+            "username": "engiehehe",
+            "first_name": "Engie",
+            "last_name": "Energia",
+            "email": "contatohehe@roadlabs.com.br",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2019-09-26T15:47:07Z",
+            "cpf": null,
+            "avatar": "",
+            "metadata": {
+                "role": "Gerador de Energia",
+                "occupation": "Gerador de Energia",
+                "board_registration": "12345678"
+            },
+            "configuration": {
+                "send_email_notifications": true
+            },
+            "jwt_secret": "c2343f09d-08J-8-98M-((__M--8j-8j-v\u00e7lkxcxlknv__))",
+            "saml_idp": null,
+            "saml_nameid": null,
+            "company_group": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+            "supervisor": null,
+            "is_supervisor": false,
+            "is_internal": false,
+            "has_accepted_tos": false,
+            "responsible": null,
+            "birth_date": null,
+            "firm_name": null,
+            "phone": null,
+            "auth_error": null,
+            "groups": [],
+            "user_permissions": [],
+            "push_devices": []
+        }
+    }
+]

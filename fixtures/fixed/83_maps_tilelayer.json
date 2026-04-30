@@ -1,0 +1,23 @@
+[
+{
+    "model": "maps.tilelayer",
+    "pk": "f0c0e4b0-3c55-4bc3-ab25-3fbb7478e5d3",
+    "fields": {
+        "type": "mapbox",
+        "name": "Mapa Claro",
+        "description": "Mapa Claro",
+        "provider_info": {
+            "url": "https://api.mapbox.com/styles/v1/natank/cjmmhqxpt0jsn2smsihy5nx5w/tiles/{z}/{x}/{y}.mapbox",
+            "type": "mapbox",
+            "order": 4,
+            "accessToken": "MAPBOX_TEST_TOKEN",
+            "attribution": "Licensed by &copy; <a href=\"https://www.mapbox.com/\">Mapbox</a>",
+            "styleString": "mapbox://styles/natank/ck0z9bp0r0z4l1cqhp4wt15ew"
+        },
+        "mapbox_styles": {},
+        "companies": [
+            "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+        ]
+    }
+}
+]

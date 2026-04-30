@@ -1,0 +1,2731 @@
+{
+    "User": {
+        "fields": {
+            "metadata": {
+                "role": {
+                    "displayIf": {
+                        "logic": true
+                    }
+                },
+                "occupation": {
+                    "displayIf": {
+                        "logic": true
+                    }
+                },
+                "boardRegistration": {
+                    "displayIf": {
+                        "logic": true
+                    }
+                }
+            },
+            "createAccessRequest": {
+                "displayIf": {
+                    "logic": true
+                }
+            }
+        }
+    },
+    "reporting": {
+        "fields": {
+            "lot": {
+                "apiName": "lot",
+                "dataType": "select",
+                "displayName": "Lote",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Lote 1",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Lote 2",
+                            "value": "2"
+                        },
+                        {
+                            "name": "Lote 3",
+                            "value": "3"
+                        },
+                        {
+                            "name": "Lote 4",
+                            "value": "4"
+                        }
+                    ]
+                }
+            },
+            "lane": {
+                "apiName": "lane",
+                "dataType": "select",
+                "displayName": "Faixa",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Faixa 1",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Faixa 2",
+                            "value": "2"
+                        },
+                        {
+                            "name": "Faixa 3",
+                            "value": "3"
+                        },
+                        {
+                            "name": "Faixa 4",
+                            "value": "4"
+                        },
+                        {
+                            "name": "Acostamento",
+                            "value": "5"
+                        },
+                        {
+                            "name": "Marginal 1",
+                            "value": "6"
+                        },
+                        {
+                            "name": "Marginal 2",
+                            "value": "7"
+                        },
+                        {
+                            "name": "Balan\u00e7a",
+                            "value": "8"
+                        },
+                        {
+                            "name": "Viaduto/Ponte",
+                            "value": "9"
+                        },
+                        {
+                            "name": "Taper",
+                            "value": "10"
+                        },
+                        {
+                            "name": "Contorno",
+                            "value": "11"
+                        },
+                        {
+                            "name": "Retorno",
+                            "value": "12"
+                        },
+                        {
+                            "name": "Al\u00e7a",
+                            "value": "13"
+                        },
+                        {
+                            "name": "Passagem Inferior",
+                            "value": "14"
+                        },
+                        {
+                            "name": "Garraf\u00e3o",
+                            "value": "15"
+                        },
+                        {
+                            "name": "Canteiro Central",
+                            "value": "16"
+                        },
+                        {
+                            "name": "Faixa Lateral",
+                            "value": "17"
+                        },
+                        {
+                            "name": "Bordo Direito",
+                            "value": "18"
+                        },
+                        {
+                            "name": "Bordo Esquerdo",
+                            "value": "19"
+                        },
+                        {
+                            "name": "Eixo",
+                            "value": "20"
+                        },
+                        {
+                            "name": "Dispositivo em n\u00edvel",
+                            "value": "21"
+                        },
+                        {
+                            "name": "Faixa de dom\u00ednio",
+                            "value": "22"
+                        },
+                        {
+                            "name": "Zebrado",
+                            "value": "23"
+                        },
+                        {
+                            "name": "Faixa de seguran\u00e7a",
+                            "value": "24"
+                        },
+                        {
+                            "name": "N\u00e3o se aplica",
+                            "value": "99"
+                        }
+                    ]
+                }
+            },
+            "direction": {
+                "apiName": "direction",
+                "dataType": "select",
+                "displayName": "Sentido",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Norte",
+                            "short": "N",
+                            "value": "0"
+                        },
+                        {
+                            "name": "Sul",
+                            "short": "S",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Leste",
+                            "short": "L",
+                            "value": "2"
+                        },
+                        {
+                            "name": "Oeste",
+                            "short": "O",
+                            "value": "3"
+                        },
+                        {
+                            "name": "Ambos",
+                            "short": "A",
+                            "value": "4"
+                        },
+                        {
+                            "name": "N\u00e3o se Aplica",
+                            "short": "X",
+                            "value": "5"
+                        },
+                        {
+                            "name": "Norte/Sul",
+                            "short": "N/S",
+                            "value": "6"
+                        },
+                        {
+                            "name": "Leste/Oeste",
+                            "short": "L/O",
+                            "value": "7"
+                        },
+                        {
+                            "name": "Transversal",
+                            "short": "T",
+                            "value": "8"
+                        },
+                        {
+                            "name": "Transversal Norte",
+                            "short": "TN",
+                            "value": "9"
+                        },
+                        {
+                            "name": "Transversal Sul",
+                            "short": "TS",
+                            "value": "10"
+                        }
+                    ]
+                }
+            },
+            "occurrenceKind": {
+                "apiName": "occurrenceKind",
+                "dataType": "select",
+                "displayName": "Natureza",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Levantamento",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Invent\u00e1rio",
+                            "value": "2"
+                        },
+                        {
+                            "name": "Pavimento flex\u00edvel",
+                            "value": "13"
+                        },
+                        {
+                            "name": "Pavimento r\u00edgido",
+                            "value": "6"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Conserva\u00e7\u00e3o do Revestimento Vegetal",
+                            "value": "701"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Limpeza",
+                            "value": "702"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Eros\u00f5es",
+                            "value": "703"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Paradas de \u00f4nibus, monumentos e utilidades p\u00fablicas",
+                            "value": "704"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Picha\u00e7\u00e3o",
+                            "value": "705"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Conforma\u00e7\u00e3o Lateral",
+                            "value": "706"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Passagens de Fauna",
+                            "value": "707"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem Superficial de Plataforma",
+                            "value": "801"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem Superficial de Plataforma",
+                            "value": "801"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem Superficial Fora de Plataforma",
+                            "value": "802"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Bueiros, galerias e drenos",
+                            "value": "803"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Caixas de capta\u00e7\u00e3o",
+                            "value": "804"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem de t\u00faneis",
+                            "value": "805"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Caixas de reten\u00e7\u00e3o de vazamentos",
+                            "value": "806"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Defensas met\u00e1licas",
+                            "value": "901"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Barreiras de concreto",
+                            "value": "902"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Elementos antiofuscamento",
+                            "value": "903"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Vedos, cercas, alambrados e telamentos",
+                            "value": "904"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Guarda-corpos e bala\u00fastres",
+                            "value": "905"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Atenuadores de impacto",
+                            "value": "906"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Muros",
+                            "value": "907"
+                        },
+                        {
+                            "name": "Estruturas",
+                            "value": "10"
+                        },
+                        {
+                            "name": "Pr\u00e9dios e P\u00e1tios",
+                            "value": "11"
+                        },
+                        {
+                            "name": "Ilumina\u00e7\u00e3o",
+                            "value": "14"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o DIN",
+                            "value": "12"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o horizontal",
+                            "value": "2001"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o vertical",
+                            "value": "2002"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Tachas e tach\u00f5es refletivos",
+                            "value": "2003"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Balizadores e delineadores",
+                            "value": "2004"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o semaf\u00f3rica",
+                            "value": "2005"
+                        },
+                        {
+                            "name": "Meio Ambiente",
+                            "value": "15"
+                        },
+                        {
+                            "name": "Di\u00e1rio",
+                            "value": "5"
+                        },
+                        {
+                            "name": "Manuten\u00e7\u00e3o Geral",
+                            "value": "16"
+                        }
+                    ]
+                }
+            }
+        },
+        "filters": {
+            "csp": {
+                "apiName": "csp",
+                "dataType": "selectMultiple",
+                "displayName": "CSP",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "5",
+                            "limit": 0.9,
+                            "value": "5"
+                        },
+                        {
+                            "name": "6",
+                            "limit": 0.9,
+                            "value": "6"
+                        },
+                        {
+                            "name": "7",
+                            "limit": 0.9,
+                            "value": "7"
+                        },
+                        {
+                            "name": "11",
+                            "limit": 0.7,
+                            "value": "11"
+                        }
+                    ]
+                }
+            },
+            "lot": {
+                "apiName": "form_data.lot",
+                "dataType": "selectMultiple",
+                "displayName": "Lote",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Lote 1",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Lote 2",
+                            "value": "2"
+                        },
+                        {
+                            "name": "Lote 3",
+                            "value": "3"
+                        },
+                        {
+                            "name": "Lote 4",
+                            "value": "4"
+                        }
+                    ]
+                }
+            },
+            "demandOrigin": {
+                "apiName": "form_data.demandOrigin",
+                "dataType": "selectMultiple",
+                "displayName": "Origem",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Interna",
+                            "value": "1"
+                        },
+                        {
+                            "name": "KCOR",
+                            "value": "2"
+                        },
+                        {
+                            "name": "ARTESP DIN",
+                            "value": "3"
+                        },
+                        {
+                            "name": "ARTESP DOP",
+                            "value": "4"
+                        },
+                        {
+                            "name": "ARTESP DIN - Meio Ambiente",
+                            "value": "5"
+                        }
+                    ]
+                }
+            }
+        },
+        "exporter": {
+            "artespCode": true,
+            "extraColumns": [
+                {
+                    "key": "contratualCode",
+                    "logic": {
+                        "var": "formData.contratualCode"
+                    },
+                    "width": 12,
+                    "header": "C\u00f3digo de Edital"
+                },
+                {
+                    "key": "csp",
+                    "logic": {
+                        "var": "formData.csp"
+                    },
+                    "width": 8,
+                    "header": "CSP"
+                },
+                {
+                    "key": "demandOrigin",
+                    "logic": {
+                        "cat": [
+                            {
+                                "if": [
+                                    {
+                                        "in": [
+                                            "1",
+                                            {
+                                                "var": "formData.demandOrigin"
+                                            }
+                                        ]
+                                    },
+                                    "Demanda Interna ",
+                                    ""
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "in": [
+                                            "2",
+                                            {
+                                                "var": "formData.demandOrigin"
+                                            }
+                                        ]
+                                    },
+                                    "Demanda Kcor ",
+                                    ""
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "in": [
+                                            "3",
+                                            {
+                                                "var": "formData.demandOrigin"
+                                            }
+                                        ]
+                                    },
+                                    "Demanda ARTESP DIN ",
+                                    ""
+                                ]
+                            },
+                            {
+                                "if": [
+                                    {
+                                        "in": [
+                                            "4",
+                                            {
+                                                "var": "formData.demandOrigin"
+                                            }
+                                        ]
+                                    },
+                                    "Demanda ARTESP DOP ",
+                                    ""
+                                ]
+                            }
+                        ]
+                    },
+                    "width": 8,
+                    "header": "Origem"
+                },
+                {
+                    "key": "artespCode",
+                    "logic": {
+                        "var": "formData.artespCode"
+                    },
+                    "width": 25,
+                    "header": "C\u00f3d. ARTESP"
+                },
+                {
+                    "key": "receivedDate",
+                    "logic": {
+                        "var": "formData.receivedDate"
+                    },
+                    "width": 25,
+                    "header": "Data Recebimento ARTESP",
+                    "isDate": true
+                },
+                {
+                    "key": "kcorCode",
+                    "logic": {
+                        "var": "formData.kcorCode"
+                    },
+                    "width": 25,
+                    "header": "C\u00f3d. KCOR"
+                },
+                {
+                    "key": "internCode",
+                    "logic": {
+                        "var": "formData.internCode"
+                    },
+                    "width": 25,
+                    "header": "C\u00f3d. Interno"
+                },
+                {
+                    "key": "signType",
+                    "logic": {
+                        "if": [
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    1
+                                ]
+                            },
+                            "Placa de regulamenta\u00e7\u00e3o - SVR",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    2
+                                ]
+                            },
+                            "Placa de advert\u00eancia - SVA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    3
+                                ]
+                            },
+                            "Demais placas - SVD",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    4
+                                ]
+                            },
+                            "Inadequa\u00e7\u00f5es na pintura - SHP",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    5
+                                ]
+                            },
+                            "Inadequa\u00e7\u00f5es nas tachas - SHT",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    6
+                                ]
+                            },
+                            "Dispositivos de prote\u00e7\u00e3o - DPC",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    7
+                                ]
+                            },
+                            "Dispositivos de prote\u00e7\u00e3o - delineadores - DPCD",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    8
+                                ]
+                            },
+                            "Dispositivos de sinaliza\u00e7\u00e3o ou uso tempor\u00e1rio ou sinaliza\u00e7\u00e3o semaf\u00f3rica - DS",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signType"
+                                    },
+                                    9
+                                ]
+                            },
+                            "Acessibilidade - ACESS"
+                        ]
+                    },
+                    "width": 18,
+                    "header": "Tipo de Placa"
+                },
+                {
+                    "key": "signName",
+                    "logic": {
+                        "if": [
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    0
+                                ]
+                            },
+                            "ADVERT\u00caNCIA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    1
+                                ]
+                            },
+                            "ADVERT\u00caNCIA/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    2
+                                ]
+                            },
+                            "ADVERT\u00caNCIA/R-14",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    3
+                                ]
+                            },
+                            "ADVERT\u00caNCIA/R-19",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    4
+                                ]
+                            },
+                            "ADVERT\u00caNCIA/REGULAMENTA\u00c7\u00c3O",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    5
+                                ]
+                            },
+                            "APOIO OPERACIONAL",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    6
+                                ]
+                            },
+                            "ATRATIVO TUR\u00cdSTICO",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    7
+                                ]
+                            },
+                            "DISPOSITIVOS AUXILIARES",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    8
+                                ]
+                            },
+                            "EDUCATIVA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    9
+                                ]
+                            },
+                            "EDUCATIVA/A-32A/A-30B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    10
+                                ]
+                            },
+                            "EDUCATIVA/ADVERT\u00caNCIA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    11
+                                ]
+                            },
+                            "I-33",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    12
+                                ]
+                            },
+                            "IDENTIFICA\u00c7\u00c3O",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    13
+                                ]
+                            },
+                            "IDENTIFICA\u00c7\u00c3O/ORIENTA\u00c7\u00c3O",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    14
+                                ]
+                            },
+                            "IE-1",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    15
+                                ]
+                            },
+                            "IE-13",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    16
+                                ]
+                            },
+                            "IE-14",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    17
+                                ]
+                            },
+                            "IE-2",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    18
+                                ]
+                            },
+                            "IE-21",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    19
+                                ]
+                            },
+                            "IE-3",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    20
+                                ]
+                            },
+                            "IE-5",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    21
+                                ]
+                            },
+                            "IE-8",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    22
+                                ]
+                            },
+                            "II-1",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    23
+                                ]
+                            },
+                            "II-2",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    24
+                                ]
+                            },
+                            "II-2/ORIENTA\u00c7AO",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    25
+                                ]
+                            },
+                            "II-3",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    26
+                                ]
+                            },
+                            "IL-1",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    27
+                                ]
+                            },
+                            "IL-3",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    28
+                                ]
+                            },
+                            "IL-4",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    29
+                                ]
+                            },
+                            "IP-10",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    30
+                                ]
+                            },
+                            "IP-11",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    31
+                                ]
+                            },
+                            "IP-12A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    32
+                                ]
+                            },
+                            "IP-17",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    33
+                                ]
+                            },
+                            "IP-18",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    34
+                                ]
+                            },
+                            "IP-5",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    35
+                                ]
+                            },
+                            "IP-7",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    36
+                                ]
+                            },
+                            "IP-8",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    37
+                                ]
+                            },
+                            "IP-8 ",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    38
+                                ]
+                            },
+                            "IP-9",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    39
+                                ]
+                            },
+                            "ISA-2 PICTOGRAMAS",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    40
+                                ]
+                            },
+                            "ISA-3",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    41
+                                ]
+                            },
+                            "ISA-3 PICTOGRAMAS",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    42
+                                ]
+                            },
+                            "ISA-4",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    43
+                                ]
+                            },
+                            "M.A.",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    44
+                                ]
+                            },
+                            "MP-1",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    45
+                                ]
+                            },
+                            "MP-2",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    46
+                                ]
+                            },
+                            "MP-3",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    47
+                                ]
+                            },
+                            "ORIENTA\u00c7\u00c3O",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    48
+                                ]
+                            },
+                            "ORIENTA\u00c7\u00c3O/EDUCATIVA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    49
+                                ]
+                            },
+                            "ORIENTA\u00c7\u00c3O/IDENTIFICA\u00c7\u00c3O",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    50
+                                ]
+                            },
+                            "ORIENTA\u00c7\u00c3O/II-2",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    51
+                                ]
+                            },
+                            "ORIENTA\u00c7\u00c3O/S-5",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    52
+                                ]
+                            },
+                            "ORIENTA\u00c7\u00c3O/S-5/COMPOSTA/II-1",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    53
+                                ]
+                            },
+                            "S-1/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    54
+                                ]
+                            },
+                            "S-11/COMPOSTA/S-6/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    55
+                                ]
+                            },
+                            "S-14",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    56
+                                ]
+                            },
+                            "S-14/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    57
+                                ]
+                            },
+                            "S-4",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    58
+                                ]
+                            },
+                            "S-5/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    59
+                                ]
+                            },
+                            "S-6/COMPOSTA/ORIENTA\u00c7\u00c3O",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    60
+                                ]
+                            },
+                            "A-12",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    61
+                                ]
+                            },
+                            "A-12/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    62
+                                ]
+                            },
+                            "A-14",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    63
+                                ]
+                            },
+                            "A-15",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    64
+                                ]
+                            },
+                            "A-15/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    65
+                                ]
+                            },
+                            "A-17",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    66
+                                ]
+                            },
+                            "A-18",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    67
+                                ]
+                            },
+                            "A-18/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    68
+                                ]
+                            },
+                            "A-19/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    69
+                                ]
+                            },
+                            "A-1A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    70
+                                ]
+                            },
+                            "A-1A/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    71
+                                ]
+                            },
+                            "A-1B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    72
+                                ]
+                            },
+                            "A-1B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    73
+                                ]
+                            },
+                            "A-20A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    74
+                                ]
+                            },
+                            "A-21B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    75
+                                ]
+                            },
+                            "A-21B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    76
+                                ]
+                            },
+                            "A-21C",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    77
+                                ]
+                            },
+                            "A-21C/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    78
+                                ]
+                            },
+                            "A-21E",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    79
+                                ]
+                            },
+                            "A-22",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    80
+                                ]
+                            },
+                            "A-22/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    81
+                                ]
+                            },
+                            "A-242A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    82
+                                ]
+                            },
+                            "A-24A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    83
+                                ]
+                            },
+                            "A-25",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    84
+                                ]
+                            },
+                            "A-26B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    85
+                                ]
+                            },
+                            "A-27",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    86
+                                ]
+                            },
+                            "A-28",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    87
+                                ]
+                            },
+                            "A-2A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    88
+                                ]
+                            },
+                            "A-2A/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    89
+                                ]
+                            },
+                            "A-2B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    90
+                                ]
+                            },
+                            "A-2B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    91
+                                ]
+                            },
+                            "A-30A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    92
+                                ]
+                            },
+                            "A-30B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    93
+                                ]
+                            },
+                            "A-32A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    94
+                                ]
+                            },
+                            "A-32-A/A-30B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    95
+                                ]
+                            },
+                            "A-32A/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    96
+                                ]
+                            },
+                            "A-32B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    97
+                                ]
+                            },
+                            "A-32B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    98
+                                ]
+                            },
+                            "A-34A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    99
+                                ]
+                            },
+                            "A-35/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    100
+                                ]
+                            },
+                            "A-36",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    101
+                                ]
+                            },
+                            "A-36/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    102
+                                ]
+                            },
+                            "A-36/R-19/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    103
+                                ]
+                            },
+                            "A-37",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    104
+                                ]
+                            },
+                            "A-37/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    105
+                                ]
+                            },
+                            "A-3A/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    106
+                                ]
+                            },
+                            "A-3B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    107
+                                ]
+                            },
+                            "A-42A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    108
+                                ]
+                            },
+                            "A-42A/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    109
+                                ]
+                            },
+                            "A-42B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    110
+                                ]
+                            },
+                            "A-42B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    111
+                                ]
+                            },
+                            "A-45",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    112
+                                ]
+                            },
+                            "A-4A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    113
+                                ]
+                            },
+                            "A-4B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    114
+                                ]
+                            },
+                            "A-4B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    115
+                                ]
+                            },
+                            "A-6",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    116
+                                ]
+                            },
+                            "A-6/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    117
+                                ]
+                            },
+                            "A-7B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    118
+                                ]
+                            },
+                            "A-8",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    119
+                                ]
+                            },
+                            "A-8/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    120
+                                ]
+                            },
+                            "R-1",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    121
+                                ]
+                            },
+                            "R-11",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    122
+                                ]
+                            },
+                            "R-12",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    123
+                                ]
+                            },
+                            "R-15",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    124
+                                ]
+                            },
+                            "R-18",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    125
+                                ]
+                            },
+                            "R-19",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    126
+                                ]
+                            },
+                            "R-19/ADVERT\u00caNCIA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    127
+                                ]
+                            },
+                            "R-19/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    128
+                                ]
+                            },
+                            "R-19/IDENTIFICA\u00c7\u00c3O",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    129
+                                ]
+                            },
+                            "R-2",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    130
+                                ]
+                            },
+                            "R-24",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    131
+                                ]
+                            },
+                            "R-24A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    132
+                                ]
+                            },
+                            "R-24A/R-33",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    133
+                                ]
+                            },
+                            "R-24B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    134
+                                ]
+                            },
+                            "R-24B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    135
+                                ]
+                            },
+                            "R-25C",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    136
+                                ]
+                            },
+                            "R-25D",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    137
+                                ]
+                            },
+                            "R-27",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    138
+                                ]
+                            },
+                            "R-27/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    139
+                                ]
+                            },
+                            "R-28",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    140
+                                ]
+                            },
+                            "R-2A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    141
+                                ]
+                            },
+                            "R-3",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    142
+                                ]
+                            },
+                            "R-32B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    143
+                                ]
+                            },
+                            "R-33",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    144
+                                ]
+                            },
+                            "R-34",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    145
+                                ]
+                            },
+                            "R-37",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    146
+                                ]
+                            },
+                            "R-4A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    147
+                                ]
+                            },
+                            "R-4B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    148
+                                ]
+                            },
+                            "R-5",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    149
+                                ]
+                            },
+                            "R-5A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    150
+                                ]
+                            },
+                            "R-6A",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    151
+                                ]
+                            },
+                            "R-6B",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    152
+                                ]
+                            },
+                            "R-6B/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    153
+                                ]
+                            },
+                            "R-6C",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    154
+                                ]
+                            },
+                            "R-6C/COMPOSTA",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    155
+                                ]
+                            },
+                            "R-7",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.signName"
+                                    },
+                                    156
+                                ]
+                            },
+                            "R-9/COMPOSTA"
+                        ]
+                    },
+                    "width": 18,
+                    "header": "Nome da Placa"
+                },
+                {
+                    "key": "lot",
+                    "logic": {
+                        "if": [
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.lot"
+                                    },
+                                    1
+                                ]
+                            },
+                            "Lote 1",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.lot"
+                                    },
+                                    2
+                                ]
+                            },
+                            "Lote 2",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.lot"
+                                    },
+                                    3
+                                ]
+                            },
+                            "Lote 3",
+                            {
+                                "==": [
+                                    {
+                                        "var": "formData.lot"
+                                    },
+                                    4
+                                ]
+                            },
+                            "Lote 4"
+                        ]
+                    },
+                    "width": 18,
+                    "header": "Lote"
+                },
+                {
+                    "key": "weight",
+                    "style": {
+                        "numFmt": "0.000"
+                    },
+                    "width": 12,
+                    "header": "Peso (kg)"
+                },
+                {
+                    "key": "amount",
+                    "style": {
+                        "numFmt": "0"
+                    },
+                    "width": 12,
+                    "header": "Quantidade (uns)"
+                }
+            ],
+            "photoReportExtraOptions": [
+                "addArtespCode",
+                "addReceivedDate",
+                "addKcorCode",
+                "addLot"
+            ]
+        },
+        "listColumns": [
+            "dueAt",
+            "artespCode",
+            "kcorCode"
+        ],
+        "availableFilters": [
+            "has_artesp_code",
+            "csp",
+            "lot",
+            "demandOrigin"
+        ]
+    },
+    "occurrenceType": {
+        "fields": {
+            "occurrenceKind": {
+                "apiName": "occurrenceKind",
+                "dataType": "select",
+                "displayName": "Natureza",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Levantamento",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Invent\u00e1rio",
+                            "value": "2"
+                        },
+                        {
+                            "name": "RDO",
+                            "value": "5"
+                        },
+                        {
+                            "name": "Pavimento Flex\u00edvel",
+                            "value": "13"
+                        },
+                        {
+                            "name": "Pavimento R\u00edgido",
+                            "value": "6"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Conserva\u00e7\u00e3o do Revestimento Vegetal",
+                            "value": "701"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Limpeza",
+                            "value": "702"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Eros\u00f5es",
+                            "value": "703"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Paradas de \u00f4nibus, monumentos e utilidades p\u00fablicas",
+                            "value": "704"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Picha\u00e7\u00e3o",
+                            "value": "705"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Conforma\u00e7\u00e3o Lateral",
+                            "value": "706"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Passagens de Fauna",
+                            "value": "707"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem Superficial de Plataforma",
+                            "value": "801"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem Superficial Fora de Plataforma",
+                            "value": "802"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Bueiros, galerias e drenos",
+                            "value": "803"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Caixas de capta\u00e7\u00e3o",
+                            "value": "804"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem de t\u00faneis",
+                            "value": "805"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Caixas de reten\u00e7\u00e3o de vazamentos",
+                            "value": "806"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Defensas met\u00e1licas",
+                            "value": "901"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Barreiras de concreto",
+                            "value": "902"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Elementos antiofuscamento",
+                            "value": "903"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Vedos, cercas, alambrados e telamentos",
+                            "value": "904"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Guarda-corpos e bala\u00fastres",
+                            "value": "905"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Atenuadores de impacto",
+                            "value": "906"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Muros",
+                            "value": "907"
+                        },
+                        {
+                            "name": "Estruturas - Pontes, Viadutos, T\u00faneis e Passarelas",
+                            "value": "10"
+                        },
+                        {
+                            "name": "Pr\u00e9dios e P\u00e1tios",
+                            "value": "11"
+                        },
+                        {
+                            "name": "Ilumina\u00e7\u00e3o",
+                            "value": "14"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o horizontal",
+                            "value": "2001"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o vertical",
+                            "value": "2002"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Tachas e tach\u00f5es refletivos",
+                            "value": "2003"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Balizadores e delineadores",
+                            "value": "2004"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o semaf\u00f3rica",
+                            "value": "2005"
+                        },
+                        {
+                            "name": "Meio Ambiente",
+                            "value": "15"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o DIN",
+                            "value": "12"
+                        },
+                        {
+                            "name": "Manuten\u00e7\u00e3o Geral",
+                            "value": "16"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "reporting_deadline": {
+        "fields": {
+            "lane": {
+                "apiName": "lane",
+                "dataType": "select",
+                "displayName": "Faixa",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Faixa 1",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Faixa 2",
+                            "value": "2"
+                        },
+                        {
+                            "name": "Faixa 3",
+                            "value": "3"
+                        },
+                        {
+                            "name": "Faixa 4",
+                            "value": "4"
+                        },
+                        {
+                            "name": "Acostamento",
+                            "value": "5"
+                        },
+                        {
+                            "name": "Marginal 1",
+                            "value": "6"
+                        },
+                        {
+                            "name": "Marginal 2",
+                            "value": "7"
+                        },
+                        {
+                            "name": "Balan\u00e7a",
+                            "value": "8"
+                        },
+                        {
+                            "name": "Viaduto/Ponte",
+                            "value": "9"
+                        },
+                        {
+                            "name": "Taper",
+                            "value": "10"
+                        },
+                        {
+                            "name": "Contorno",
+                            "value": "11"
+                        },
+                        {
+                            "name": "Retorno",
+                            "value": "12"
+                        },
+                        {
+                            "name": "Al\u00e7a",
+                            "value": "13"
+                        },
+                        {
+                            "name": "Passagem Inferior",
+                            "value": "14"
+                        },
+                        {
+                            "name": "Garraf\u00e3o",
+                            "value": "15"
+                        },
+                        {
+                            "name": "Canteiro Central",
+                            "value": "16"
+                        },
+                        {
+                            "name": "Faixa Lateral",
+                            "value": "17"
+                        },
+                        {
+                            "name": "Bordo Direito",
+                            "value": "18"
+                        },
+                        {
+                            "name": "Bordo Esquerdo",
+                            "value": "19"
+                        },
+                        {
+                            "name": "Eixo",
+                            "value": "20"
+                        },
+                        {
+                            "name": "Dispositivo em n\u00edvel",
+                            "value": "21"
+                        },
+                        {
+                            "name": "Faixa de dom\u00ednio",
+                            "value": "22"
+                        },
+                        {
+                            "name": "Zebrado",
+                            "value": "23"
+                        },
+                        {
+                            "name": "Faixa de seguran\u00e7a",
+                            "value": "24"
+                        },
+                        {
+                            "name": "N\u00e3o se aplica",
+                            "value": "99"
+                        }
+                    ]
+                }
+            },
+            "direction": {
+                "apiName": "direction",
+                "dataType": "select",
+                "displayName": "Sentido",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Decrescente",
+                            "short": "D",
+                            "value": "0"
+                        },
+                        {
+                            "name": "Crescente",
+                            "short": "C",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Ambos",
+                            "short": "A",
+                            "value": "4"
+                        },
+                        {
+                            "name": "N\u00e3o se Aplica",
+                            "short": "X",
+                            "value": "5"
+                        }
+                    ]
+                }
+            },
+            "occurrenceKind": {
+                "apiName": "occurrenceKind",
+                "dataType": "select",
+                "displayName": "Natureza",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Levantamento",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Invent\u00e1rio",
+                            "value": "2"
+                        },
+                        {
+                            "name": "Pavimento flex\u00edvel",
+                            "value": "13"
+                        },
+                        {
+                            "name": "Pavimento r\u00edgido",
+                            "value": "6"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Conserva\u00e7\u00e3o do Revestimento Vegetal",
+                            "value": "701"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Limpeza",
+                            "value": "702"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Eros\u00f5es",
+                            "value": "703"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Paradas de \u00f4nibus, monumentos e utilidades p\u00fablicas",
+                            "value": "704"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Picha\u00e7\u00e3o",
+                            "value": "705"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Conforma\u00e7\u00e3o Lateral",
+                            "value": "706"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Passagens de Fauna",
+                            "value": "707"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem Superficial de Plataforma",
+                            "value": "801"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem Superficial de Plataforma",
+                            "value": "801"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem Superficial Fora de Plataforma",
+                            "value": "802"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Bueiros, galerias e drenos",
+                            "value": "803"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Caixas de capta\u00e7\u00e3o",
+                            "value": "804"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Drenagem de t\u00faneis",
+                            "value": "805"
+                        },
+                        {
+                            "name": "Faixa de Dom\u00ednio - Caixas de reten\u00e7\u00e3o de vazamentos",
+                            "value": "806"
+                        },
+                        {
+                            "name": "Dispositivos de Conten\u00e7\u00e3o Vi\u00e1ria - Defensas met\u00e1licas",
+                            "value": "901"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Barreiras de concreto",
+                            "value": "902"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Elementos antiofuscamento",
+                            "value": "903"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Vedos, cercas, alambrados e telamentos",
+                            "value": "904"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Guarda-corpos e bala\u00fastres",
+                            "value": "905"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Atenuadores de impacto",
+                            "value": "906"
+                        },
+                        {
+                            "name": "Dispositivos de conten\u00e7\u00e3o - Muros",
+                            "value": "907"
+                        },
+                        {
+                            "name": "Estruturas",
+                            "value": "10"
+                        },
+                        {
+                            "name": "Pr\u00e9dios e P\u00e1tios",
+                            "value": "11"
+                        },
+                        {
+                            "name": "Ilumina\u00e7\u00e3o",
+                            "value": "14"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o DIN",
+                            "value": "12"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o horizontal",
+                            "value": "2001"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o vertical",
+                            "value": "2002"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Tachas e tach\u00f5es refletivos",
+                            "value": "2003"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Balizadores e delineadores",
+                            "value": "2004"
+                        },
+                        {
+                            "name": "Sinaliza\u00e7\u00e3o - Sinaliza\u00e7\u00e3o semaf\u00f3rica",
+                            "value": "2005"
+                        },
+                        {
+                            "name": "Meio Ambiente",
+                            "value": "15"
+                        },
+                        {
+                            "name": "Di\u00e1rio",
+                            "value": "5"
+                        },
+                        {
+                            "name": "Manuten\u00e7\u00e3o Geral",
+                            "value": "16"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "serviceOrderResource": {
+        "fields": {
+            "provider": {
+                "apiName": "provider",
+                "dataType": "select",
+                "displayName": "Desembolso",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Arteris",
+                            "value": "1"
+                        }
+                    ]
+                }
+            },
+            "resource": {
+                "disableIf": {
+                    "resourceKind": [
+                        "1",
+                        "2",
+                        "3"
+                    ]
+                }
+            },
+            "resourceKind": {
+                "apiName": "resourceKind",
+                "dataType": "select",
+                "displayName": "Natureza",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Servi\u00e7o Intelectual",
+                            "value": "1"
+                        },
+                        {
+                            "name": "Servi\u00e7o com Aplica\u00e7\u00e3o de Material",
+                            "value": "2"
+                        },
+                        {
+                            "name": "Servi\u00e7o sem Aplica\u00e7\u00e3o de Material",
+                            "value": "3"
+                        },
+                        {
+                            "name": "Material com Aplica\u00e7\u00e3o Direta",
+                            "value": "4"
+                        },
+                        {
+                            "name": "Reposi\u00e7\u00e3o de Estoque",
+                            "value": "5"
+                        }
+                    ]
+                }
+            },
+            "additional_control": {
+                "apiName": "additional_control",
+                "dataType": "select",
+                "displayName": "Controle Adicional",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Conserva",
+                            "value": "1"
+                        }
+                    ]
+                }
+            },
+            "exceptionalResourceButton": {
+                "displayIf": {
+                    "resourceKind": [
+                        "1",
+                        "2",
+                        "3"
+                    ]
+                }
+            }
+        }
+    },
+    "serviceOrderActionStatus": {
+        "fields": {
+            "kind": {
+                "apiName": "kind",
+                "dataType": "select",
+                "displayName": "Tipo",
+                "selectOptions": {
+                    "options": [
+                        {
+                            "name": "Apontamento",
+                            "value": "REPORTING_STATUS"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

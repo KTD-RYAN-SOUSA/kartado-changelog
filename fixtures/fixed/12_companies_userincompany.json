@@ -1,0 +1,41 @@
+[
+    {
+        "model": "companies.userincompany",
+        "pk": "0051abf1-3824-4409-b10c-1fabfd81b1c8",
+        "fields": {
+            "user": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "expiration_date": "2032-02-02",
+            "level": 2,
+            "permissions": "0504215b-9a3a-42c8-9218-1ed846f026a8",
+            "added_permissions": null,
+            "is_active": true
+        }
+    },
+    {
+        "model": "companies.userincompany",
+        "pk": "e32e160b-b852-4baf-a939-8b3089ed0df2",
+        "fields": {
+            "user": "e7cfb4c3-ddd1-43e2-8439-c4c6f0a98383",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "expiration_date": "2032-02-02",
+            "level": 2,
+            "permissions": "4ea9b6ee-ac29-46ad-b1fc-a2b0ab11b338",
+            "added_permissions": null,
+            "is_active": true
+        }
+    },
+    {
+        "model": "companies.userincompany",
+        "pk": "07112468-a355-43e2-9b3d-48ac198a50ad",
+        "fields": {
+            "user": "9a107ec3-7a4f-4efb-bbec-b3db7a3347ad",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "expiration_date": "2032-02-02",
+            "level": 2,
+            "permissions": "4ea9b6ee-ac29-46ad-b1fc-a2b0ab11b338",
+            "added_permissions": null,
+            "is_active": false
+        }
+    }
+]

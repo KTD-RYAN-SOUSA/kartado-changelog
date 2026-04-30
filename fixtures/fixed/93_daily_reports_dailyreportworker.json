@@ -1,0 +1,57 @@
+[
+    {
+        "model": "daily_reports.dailyreportworker",
+        "pk": "7630d859-153a-4095-a219-53c818f4e5f3",
+        "fields": {
+            "daily_reports": [],
+            "multiple_daily_reports": [],
+            "company": null,
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "members": "Daniel, Maria, Deniel, Dahniel",
+            "amount": 3,
+            "role": "Druid",
+            "creation_date": "2021-06-10T17:24:23.372Z",
+            "total_price": 23.22,
+            "measurement_bulletin": null,
+            "extra_hours": []
+        }
+    },
+    {
+        "model": "daily_reports.dailyreportworker",
+        "pk": "d0b36749-bd45-42c1-80d0-4a5f7820b16d",
+        "fields": {
+            "daily_reports": [],
+            "multiple_daily_reports": [
+                "0a2daca5-416e-4679-bb59-af8fe1801bba"
+            ],
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "members": "Daniel, Maria, Deniel, Dahniel",
+            "amount": 43,
+            "role": "Druid",
+            "creation_date": "2021-06-10T17:24:23.372Z",
+            "total_price": 0,
+            "measurement_bulletin": "0b02c96e-2632-42c4-afaa-0461b47c875b",
+            "extra_hours": []
+        }
+    },
+    {
+        "model": "daily_reports.dailyreportworker",
+        "pk": "e87d3bfc-ae17-400a-967d-cb1c3b2611f3",
+        "fields": {
+            "daily_reports": [],
+            "multiple_daily_reports": [
+                "0a2daca5-416e-4679-bb59-af8fe1801bba"
+            ],
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+            "members": "Daniel, Maria, Deniel, Dahniel",
+            "amount": 4,
+            "role": "Druid",
+            "creation_date": "2021-06-10T17:24:23.372Z",
+            "total_price": 1.2,
+            "measurement_bulletin": null,
+            "extra_hours": []
+        }
+    }
+]

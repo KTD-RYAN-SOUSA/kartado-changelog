@@ -1,0 +1,47 @@
+Olá!
+
+Aqui você receberá informações de registros criados, atualizados ou inclusos em serviços da data {{report_start_date}} até hoje ({{report_end_date}}).
+
+{% if created %}
+  Registros criados
+
+  {% for record in created %}
+    Número: {{record.number}}
+    Natureza: {{record.kind}}
+    Tipo: {{record.type}}
+    Emitente: {{record.created_by}}
+    URL: {{record.url}}
+
+  {% endfor %}
+{% endif %}
+
+{% if updated %}
+  Registros atualizados
+
+  {% for record in updated %}
+    Número: {{record.number}}
+    Natureza: {{record.kind}}
+    Tipo: {{record.type}}
+    Emitente: {{record.created_by}}
+    Editado por: {{record.edited_by}}
+    URL: {{record.url}}
+
+  {% endfor %}
+{% endif %}
+
+{% if services %}
+  Inclusões de registros em serviços
+
+  {% for service in services %}
+    Nº do Registro: {{service.occ_number}}
+    Nº de Registros Neste Serviço: {{service.occurrence_record_count}}
+    URL do Registro: {{service.occ_url}}
+    Nº do Serviço: {{service.number}}
+    Nível GUT do Serviço: {{service.gut}}
+    Criador do Serviço: {{service.created_by}}
+    Equipes Envolvidas no Serviço: {{service.firms}}
+    URL do Serviço: {{service.url}}
+    Descrição do Serviço: {{service.description}}
+
+  {% endfor %}
+{% endif %}

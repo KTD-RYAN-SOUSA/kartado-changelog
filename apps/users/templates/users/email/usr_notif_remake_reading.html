@@ -1,0 +1,23 @@
+{% extends "usr_notif.html" %}
+
+{% block scoped_css %}
+{% endblock scoped_css %}
+
+{% block notification-body %}
+<div>
+    <h2>Olá!</h2>
+    
+    {% for reading_item in reading_items %}
+    <div class="reading-item">
+        <p>
+            A leitura do instrumento
+            <a href="{{ reading_item.reading.url }}" target="_blank">{{ reading_item.instrument.name }}</a>
+            foi sinalizada para ser refeita.
+        </p>
+        <p>
+            {% if reading_item.reading.observation %}Observação: "{{ reading_item.reading.observation }}"{% endif %}
+        </p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock notification-body %}

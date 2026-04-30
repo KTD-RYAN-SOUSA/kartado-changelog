@@ -1,0 +1,11 @@
+Olá,
+
+{{ message }}
+
+Copie esse link no seu navegador para acessar o boletim de medição:
+
+{{ url }}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

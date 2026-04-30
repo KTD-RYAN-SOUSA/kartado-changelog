@@ -1,0 +1,519 @@
+{
+    "id": 1,
+    "name": "3",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "randomIdentification3",
+            "dataType": "number",
+            "displayName": "INTPMVENTID"
+        },
+        {
+            "id": 2,
+            "apiName": "roadType",
+            "dataType": "select",
+            "displayName": "TIPO DA VIA",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "EXP",
+                        "value": "1"
+                    },
+                    {
+                        "name": "MAR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "DIS",
+                        "value": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "apiName": "itemId",
+            "dataType": "string",
+            "displayName": "IDENTIFICA\u00c7\u00c3O DISPOSITIVO"
+        },
+        {
+            "id": 4,
+            "apiName": "description",
+            "dataType": "string",
+            "displayName": "DESCRI\u00c7\u00c3O"
+        },
+        {
+            "id": 5,
+            "apiName": "artespRegister",
+            "dataType": "number",
+            "displayName": "REGISTROARTESP"
+        },
+        {
+            "id": 6,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "apiName": "direction",
+            "dataType": "select",
+            "displayName": "DIRECAO DO DISPO.",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "A",
+                        "value": "1"
+                    },
+                    {
+                        "name": "C",
+                        "value": "2"
+                    },
+                    {
+                        "name": "E",
+                        "value": "3"
+                    },
+                    {
+                        "name": "I",
+                        "value": "4"
+                    },
+                    {
+                        "name": "IE",
+                        "value": "5"
+                    },
+                    {
+                        "name": "S",
+                        "value": "6"
+                    },
+                    {
+                        "name": "LO",
+                        "value": "7"
+                    },
+                    {
+                        "name": "L",
+                        "value": "8"
+                    },
+                    {
+                        "name": "O",
+                        "value": "9"
+                    },
+                    {
+                        "name": "N",
+                        "value": "10"
+                    },
+                    {
+                        "name": "NS",
+                        "value": "11"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "apiName": "operationDate",
+            "dataType": "timestamp",
+            "displayName": "DATAOPERACAO"
+        },
+        {
+            "id": 9,
+            "apiName": "receptionDate",
+            "dataType": "timestamp",
+            "displayName": "DATARECEP"
+        },
+        {
+            "id": 10,
+            "apiName": "equipamentMarc",
+            "dataType": "string",
+            "displayName": "MARCA"
+        },
+        {
+            "id": 11,
+            "apiName": "equipamentModel",
+            "dataType": "string",
+            "displayName": "MODELO"
+        },
+        {
+            "id": 12,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "displayName": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 2,
+            "members": [
+                12
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "PMV (PAINEL DE MENSAGEM VARI\u00c1VEL / FIXO)",
+    "measurementColumns": [
+        {
+            "key": "randomIdentification3",
+            "width": 19.0,
+            "header": "INTPMVENTID"
+        },
+        {
+            "key": "roadType",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "EXP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "MAR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "DIS",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 9.0,
+            "header": "TIPO DA VIA"
+        },
+        {
+            "key": "itemId",
+            "width": 3.0,
+            "header": "IDENTIFICA\u00c7\u00c3O DISPOSITIVO"
+        },
+        {
+            "key": "description",
+            "width": 12.0,
+            "header": "DESCRI\u00c7\u00c3O"
+        },
+        {
+            "key": "artespRegister",
+            "width": 100.0,
+            "header": "REGISTROARTESP"
+        },
+        {
+            "key": "lot",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 1",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 2",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 3",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 4",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "header": "Lote"
+        },
+        {
+            "key": "direction",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "A",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "C",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "E",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "I",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "IE",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "S",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "LO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "L",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "O",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "N",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "11",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "NS",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 2.0,
+            "header": "DIRECAO DO DISPO."
+        },
+        {
+            "key": "operationDate",
+            "width": 19.0,
+            "header": "DATAOPERACAO"
+        },
+        {
+            "key": "receptionDate",
+            "width": 19.0,
+            "header": "DATARECEP"
+        },
+        {
+            "key": "equipamentMarc",
+            "width": 10.0,
+            "header": "MARCA"
+        },
+        {
+            "key": "equipamentModel",
+            "width": 10.0,
+            "header": "MODELO"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "2",
+    "deadline": "null"
+}

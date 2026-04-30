@@ -1,0 +1,10 @@
+[
+    {
+        "model": "daily_reports.dailyreportsignaling",
+        "pk": "262b479b-136d-4543-bde0-f813436fe34d",
+        "fields": {
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "kind": "Cone"
+        }
+    }
+]

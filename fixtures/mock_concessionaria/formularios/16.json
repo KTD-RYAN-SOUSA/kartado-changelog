@@ -1,0 +1,548 @@
+{
+    "id": 1,
+    "name": "job21",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "length",
+            "dataType": "float",
+            "displayName": "Comprimento (m)"
+        },
+        {
+            "id": 2,
+            "apiName": "width",
+            "dataType": "float",
+            "displayName": "Largura (m)"
+        },
+        {
+            "id": 3,
+            "apiName": "height",
+            "dataType": "float",
+            "displayName": "Altura/Espessura (m)"
+        },
+        {
+            "id": 4,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "apiName": "area",
+            "dataType": "jsonLogic",
+            "displayName": "\u00c1rea (m\u00b2)"
+        },
+        {
+            "id": 5,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width",
+                            "formData.height"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            },
+                            {
+                                "var": "formData.height"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "apiName": "volume",
+            "dataType": "jsonLogic",
+            "displayName": "Volume (m\u00b3)"
+        },
+        {
+            "id": 6,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "apiName": "demandOrigin",
+            "dataType": "selectMultiple",
+            "displayName": "Origem",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Interna",
+                        "value": "1"
+                    },
+                    {
+                        "name": "KCOR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ARTESP DIN",
+                        "value": "3"
+                    },
+                    {
+                        "name": "ARTESP DOP",
+                        "value": "4"
+                    },
+                    {
+                        "name": "ARTESP DIN - Meio ambiente",
+                        "value": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "apiName": "internCode",
+            "dataType": "string",
+            "displayIf": {
+                "in": [
+                    "1",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "C\u00f3digo Interno"
+        },
+        {
+            "id": 9,
+            "apiName": "kcorCode",
+            "dataType": "string",
+            "displayIf": {
+                "in": [
+                    "2",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "C\u00f3digo Kcor"
+        },
+        {
+            "id": 10,
+            "apiName": "artespCode",
+            "dataType": "string",
+            "displayIf": {
+                "or": [
+                    {
+                        "in": [
+                            "3",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "4",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "5",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "displayName": "C\u00f3digo ARTESP"
+        },
+        {
+            "id": 11,
+            "apiName": "receivedDate",
+            "dataType": "timestamp",
+            "displayIf": {
+                "or": [
+                    {
+                        "in": [
+                            "3",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "4",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "5",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "displayName": "Recebido da ARTESP em"
+        },
+        {
+            "id": 12,
+            "logic": {
+                "+": 11
+            },
+            "apiName": "csp",
+            "dataType": "jsonLogic",
+            "displayName": "CSP"
+        },
+        {
+            "id": 13,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "displayName": "Quantitativos"
+        },
+        {
+            "order": 2,
+            "members": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ],
+            "displayName": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 3,
+            "members": [
+                13
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "Res\u00edduos de galhos",
+    "measurementColumns": [
+        {
+            "key": "length",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "header": "Comprimento (m)"
+        },
+        {
+            "key": "width",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "header": "Largura (m)"
+        },
+        {
+            "key": "height",
+            "style": {
+                "numFmt": "0.00"
+            },
+            "width": 12,
+            "header": "Altura/Espessura (m)"
+        },
+        {
+            "key": "area",
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "numFmt": "0.000"
+            },
+            "width": 12,
+            "header": "\u00c1rea (m\u00b2)",
+            "addTotal": true
+        },
+        {
+            "key": "volume",
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width",
+                            "formData.height"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            },
+                            {
+                                "var": "formData.height"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "numFmt": "0.000"
+            },
+            "width": 12,
+            "header": "Volume (m\u00b3)",
+            "addTotal": true
+        },
+        {
+            "key": "lot",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 1",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 2",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 3",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 4",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "header": "Lote"
+        },
+        {
+            "key": "demandOrigin",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Interna",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "KCOR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "ARTESP DIN",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "ARTESP DOP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "ARTESP DIN - Meio ambiente",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "header": "Origem"
+        },
+        {
+            "key": "internCode",
+            "header": "C\u00f3digo Interno"
+        },
+        {
+            "key": "kcorCode",
+            "header": "C\u00f3digo Kcor"
+        },
+        {
+            "key": "artespCode",
+            "header": "C\u00f3digo ARTESP"
+        },
+        {
+            "key": "receivedDate",
+            "header": "Recebido da ARTESP em"
+        },
+        {
+            "key": "csp",
+            "logic": {
+                "+": 11
+            },
+            "header": "CSP"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "15",
+    "deadline": "null"
+}

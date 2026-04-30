@@ -1,0 +1,267 @@
+{
+    "Job": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "firm",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Firm": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Road": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    },
+    "User": {
+        "can_edit": "self",
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false,
+        "can_edit_all_fields": true
+    },
+    "Company": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Service": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "none",
+        "can_create": true,
+        "can_delete": false
+    },
+    "Contract": {
+        "can_edit": true,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": true,
+        "can_delete": true,
+        "can_view_money": true
+    },
+    "HelpChat": {
+        "can_view": true
+    },
+    "Resource": {
+        "can_edit": true,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": true,
+        "can_delete": true
+    },
+    "Inventory": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Reporting": {
+        "can_edit": true,
+        "can_view": true,
+        "queryset": "firm",
+        "can_create": true,
+        "can_delete": false,
+        "can_approve": true,
+        "can_hold_button": false,
+        "can_use_buttons": false,
+        "can_download_arteris_pdf": false
+    },
+    "ShapeFile": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "none",
+        "can_create": false,
+        "can_delete": false
+    },
+    "TileLayer": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "none",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Dashboard2": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "none",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Permission": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "PushNotification": {
+        "can_view": true
+    },
+    "UserInFirm": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "firm",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ExcelImport": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    },
+    "Measurement": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ApprovalFlow": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ApprovalStep": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ServiceUsage": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": true,
+        "can_delete": false
+    },
+    "AccessRequest": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "none",
+        "can_create": false,
+        "can_delete": false,
+        "can_approve": false
+    },
+    "ExportRequest": {
+        "can_edit": true,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": true,
+        "can_delete": true
+    },
+    "ReportingFile": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": true,
+        "can_delete": false
+    },
+    "UserInCompany": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    },
+    "OccurrenceType": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    },
+    "UserPermission": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ReportingMessage": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "none",
+        "can_create": false,
+        "can_delete": false
+    },
+    "CustomizationMenu": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "none",
+        "can_create": false,
+        "can_delete": false
+    },
+    "ProcedureResource": {
+        "can_edit": true,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": true,
+        "can_delete": true,
+        "can_view_money": true
+    },
+    "ReportingDeadline": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false,
+        "can_hold_button": false,
+        "can_use_buttons": false,
+        "can_download_arteris_pdf": false
+    },
+    "ApprovalTransition": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    },
+    "MeasurementService": {
+        "can_edit": false,
+        "can_view": false,
+        "queryset": "none",
+        "can_create": true,
+        "can_delete": false
+    },
+    "MeasurementBulletin": {
+        "can_edit": true,
+        "can_view": true,
+        "queryset": "self",
+        "can_create": true,
+        "can_delete": true,
+        "can_approve": true,
+        "can_view_money": true
+    },
+    "ServiceOrderResource": {
+        "can_edit": true,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": true,
+        "can_delete": true,
+        "can_view_money": true
+    },
+    "ServiceOrderActionStatus": {
+        "can_edit": false,
+        "can_view": true,
+        "queryset": "all",
+        "can_create": false,
+        "can_delete": false
+    }
+}

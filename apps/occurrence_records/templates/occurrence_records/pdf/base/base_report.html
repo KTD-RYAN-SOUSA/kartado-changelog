@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+    }
+
+    @page {
+      size: a4;
+      margin: 42mm 16mm 45mm 16mm;
+      /* esse paramentro se for alterado tem que alterando no occurrence_records/helpers/gen/pdf.py pois é usando para auto modificar na notificação escrita*/
+    }
+
+    #page-count-content::after {
+      content: counter(page) '/' counter(pages);
+      counter-increment: page;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 0.5px solid black;
+      padding: 4px 6px;
+      text-align: left;
+      font-size: 10pt;
+      position: relative;
+    }
+
+    th {
+      font-size: 6pt;
+      vertical-align: top;
+      position: relative;
+    }
+
+    th.title {
+      vertical-align: bottom;
+    }
+
+    .table-top {
+      position: fixed;
+      top: -78pt;
+      /* necessário deixa em em pt para auto ajuste do form de notificação escrita*/
+      right: 0;
+      left: 0;
+    }
+
+    .table-bottom {
+      position: fixed;
+      bottom: -110pt;
+      right: 0;
+      left: 0;
+    }
+
+    .header-logo {
+      width: 25%;
+      text-align: center;
+      border-left: 0;
+    }
+
+    .header-logo img {
+      max-width: 100%;
+      max-height: 100px;
+    }
+
+    td.header-logo {
+      border: 0px solid black;
+      position: static;
+    }
+
+    .logo {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .header-border-right {
+      border-right: 0;
+    }
+
+    .header-title-logo {
+      font-size: 10px;
+      font-weight: bold;
+      position: absolute;
+      top: 10;
+      left: 5%;
+    }
+
+    .header-title {
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .header-text {
+      font-size: 12px;
+    }
+
+    .header-text-ref {
+      font-size: 9px;
+      line-height: 12pt;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .header-table {
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+    }
+
+    .table-top .header-table {
+      border-bottom: 1px solid black;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    section.context {
+      font-size: 10pt;
+      line-height: 18pt;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .footer-table th {
+      border: 1px solid black;
+    }
+
+    .noborder-left {
+      border-left: none;
+      border-left-style: none;
+      border-left-width: 0;
+    }
+
+    .footer-text-center-name {
+      text-align: center;
+      font-size: 10px;
+    }
+
+    .footer-text-center {
+      text-align: center;
+      font-size: 10px;
+    }
+
+    .footer-text {
+      text-align: right;
+      font-size: 10px;
+    }
+
+    .footer-title {
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .footer-divider {
+      border: none;
+      height: 1px;
+      background-color: black;
+    }
+
+    .footer-logo {
+      width: 20%;
+      height: 50px;
+    }
+
+    .container-div-text-logo {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .container-div-text-logo img {
+      width: 100%;
+    }
+
+    .container-text-logo {
+      width: 90%;
+      margin-left: 15px;
+    }
+
+    .footer-title-logo {
+      text-align: left;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .footer-text-logo {
+      text-align: left;
+      font-size: 12px;
+    }
+
+    .container-disclaimer {
+      position: fixed;
+      transform: rotate(-90deg);
+      font-size: 6pt;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 800px;
+      top: 50%;
+      right: -430px;
+    }
+
+    .box-numeric {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+    }
+
+    .vertical-line {
+      border-left: 1px solid #000;
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+
+    .body-title {
+      font-weight: bold;
+      font-size: 13pt;
+      margin-top: 18px;
+    }
+
+    span.title-label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .body-line {
+      border-top: 1px solid #000;
+      margin-bottom: 10px;
+    }
+
+    .body-content-column {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .body-content-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .body-item-column {
+      font-size: 11pt;
+      flex: 0 1 auto;
+    }
+
+    .body-item-column span {
+      display: block;
+    }
+
+    .body-item-row {
+      font-size: 11pt;
+      margin: 0 0.5rem;
+    }
+
+    .table-referenceiinformation {
+      width: 100%;
+    }
+
+    .table-referenceiinformation th,
+    .table-referenceiinformation td {
+      text-align: center;
+      font-size: 7pt;
+    }
+
+    .table-referenceiinformation th {
+      font-weight: bold;
+      background-color: #bcdffb;
+      line-height: 10pt;
+    }
+
+    .container-map-image {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+
+    .container-image {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+
+    .image {
+      width: 100%;
+      max-height: 500px;
+    }
+
+    .map-image {
+      max-height: 320px;
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .header-text-ref {
+      line-height: 12pt;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <section class="table-top">
+      <table class="header-table">
+        <tr>
+          <td class="header-logo" rowspan="6">
+            <div class="header-title-logo" style="position: absolute;top:13px; left: 0px">Emitente</div>
+            <div class="logo">
+              {% block logo %}
+              {% if firm.logo %}
+              <img src="{{ firm.logo.url }}" alt="{{ firm.name }}" />
+              {% elif firm.subcompany and firm.subcompany.logo %}
+              <img src="{{ firm.subcompany.logo.url }}" alt="{{ firm.subcompany.name }}" />
+              {% else %}
+              <span>{{ firm.name }}</span>
+              {% endif %}
+              {% endblock logo %}
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="noborder-left">
+            <div class="header-title">Registro</div>
+            <div class="header-text">{{ register }}</div>
+          </td>
+          <td>
+            <div class="header-title">Registro N°</div>
+            <div class="header-text">{{ number }}</div>
+          </td>
+          <td>
+            <div class="header-title">Data do Registro</div>
+            <div class="header-text">{{ created }}</div>
+          </td>
+          <td class="header-border-right">
+            <div class="header-title page-count-label">Página</div>
+            <div class="header-text" id="page-count-content"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="noborder-left">
+            <div class="header-title">Tipo</div>
+            <div class="header-text">{{ type }}</div>
+          </td>
+          <td class="header-border-right" colspan="2">
+            <div class="header-title">U.O.</div>
+            <div class="header-text">{{ company.name }}</div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="noborder-left">
+            <div class="header-title">Natureza</div>
+            <div class="header-text">{{ nature }}</div>
+          </td>
+          <td class="header-border-right" colspan="2">
+            <div class="header-title">Homologado por</div>
+            <div class="header-text">{% if approved_by.full_name %}{{ approved_by.full_name }}{% endif %}</div>
+          </td>
+        </tr>
+        {% if subject and not is_written_notification %}
+        <tr>
+          <td class="header-border-right noborder-left" colspan="4">
+            <div class="header-title">Assunto</div>
+            <div class="header-text">{{ subject }}</div>
+          </td>
+        </tr>
+        {% endif %}
+        {% if is_written_notification or title %}
+        <tr>
+          <td class="header-border-right noborder-left" colspan="4">
+            {% if is_written_notification %}
+            {% for item in generic_fields %}
+            <div class="">
+              {% if item.name == "Corpo da notificação" %}
+              {% for field in item.fields %}
+              {% if field.display_value %}
+              {% if field.display_name == "Referência" %}
+              <span class="header-title">{{ field.display_name }}:</span><br>
+              <span class="header-text-ref">{{ field.display_value }}</span><br>
+              {% endif %}
+              {% endif %}
+              {% endfor %}
+              {% endif %}
+            </div>
+            {% endfor %}
+            <div class="header-text-ref"></div>
+            {% else %}
+            <div class="header-title">Título</div>
+            <div class="header-text">{{ title }}</div>
+            {% endif %}
+          </td>
+        </tr>
+        {% endif %}
+      </table>
+    </section>
+
+    <section class="container-disclaimer">{{ company.company_group.metadata.disclaimer }}</section>
+
+    {% if not is_written_notification %}
+    <section class="context">
+      {% endif %}
+      <!-- add the specific content of each record to the PDF -->
+      {% block context %}
+      {% endblock %}
+      <!-- add the specific content of each record to the PDF -->
+
+      {% if is_map %}
+      <div class="page-break"></div>
+      <div class="body-title">Geolocalização da Área</div>
+      <div class="body-line"></div>
+      {% for map_group in maps %}
+      <div class="container-map-image">
+        {% for map in map_group %}
+        <img class="map-image" src="data:image/png;base64,{{ map }}" alt="Mapa Geolocalização" />
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <div class="page-break"></div>
+      <div class="body-title">Legenda do Mapa</div>
+      <div class="body-line"></div>
+      <table class="table-referenceiinformation">
+        <tr>
+          <th>Cor</th>
+          <th>Descrição</th>
+          <th>X[m]</th>
+          <th>Y[m]</th>
+          {% if is_altimetry %}
+          <th>Altitude[m]</th>
+          {% endif %}
+          <th>Fuso</th>
+        </tr>
+        {% for legend in legend_map %}
+        <tr>
+          <td style="background-color:{{ legend.color }}"></td>
+          <td>{{ legend.label }}</td>
+          <td>{{ legend.x }}</td>
+          <td>{{ legend.y }}</td>
+          {% if is_altimetry %}
+          <td>{{ legend.altimetry }}</td>
+          {% endif %}
+          <td>{{ legend.zone }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% endif %}
+      {% if legend_property_intersections %}
+      <div class="body-title">Propriedades envolvidas</div>
+      <div class="body-line"></div>
+      <table class="table-referenceiinformation">
+        <tr>
+          {% if options__legends__properties__is_color %}
+          <th>Cor</th>
+          {% endif %}
+          <th>Obra</th>
+          <th>Sequencial</th>
+          <th>Identificador</th>
+        </tr>
+        {% for legend in legend_property_intersections %}
+        <tr>
+          {% if options__legends__properties__is_color %}
+          <td style="background-color:{{ legend.color }}"></td>
+          {% endif %}
+          <td>{{ legend.construction }}</td>
+          <td>{{ legend.sequential }}</td>
+          <td>{{ legend.Identifier }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% endif %}
+    </section>
+
+    <section class="table-bottom">
+      {% block footer %}
+      <table class="footer-table">
+        <tr>
+          <td class="footer-text-center">
+            Assinado digitalmente em {% if signature_date %}{{ signature_date|date:'d/m/Y H:i' }}{% endif %}
+          </td>
+          <td class="footer-text-center">
+            Assinado digitalmente em {% if approved_by.full_name %}{{ approved_date|date:'d/m/Y H:i' }}{% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="footer-title">EMITENTE</div>
+            <div class="footer-text-center-name">
+              {{ occurrence.created_by.full_name }}
+            </div>
+          </td>
+          <td>
+            <div class="footer-title">HOMOLOGADOR</div>
+            <div class="footer-text-center-name">
+              {% if approved_by.full_name %}{{ approved_by.full_name }}{% endif %}
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="footer-text" colspan="2">{{ now }}</td>
+        </tr>
+      </table>
+      {% endblock footer %}
+      <hr class="footer-divider" />
+      <div class="container-div-text-logo">
+        <div class="footer-logo"
+          style="background: url({{company.logo.url}}) no-repeat center center; background-size: 90% auto;">
+          {% if not company.logo %}
+          {{ company.name }}
+          {% endif %}
+        </div>
+        <div class="container-text-logo">
+          <div class="footer-title-logo">ENGIE BRASIL ENERGIA S.A. | Centro Corporativo</div>
+          <div class="footer-text-logo" colspan="2">Rua Pachoal Apóstol Pístsica, 5064 | Agrônomica | Florianópolis | SC
+            | CEP 88025-255</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

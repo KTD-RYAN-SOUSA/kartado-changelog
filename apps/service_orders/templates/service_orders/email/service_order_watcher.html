@@ -1,0 +1,24 @@
+{% extends "usr_notif.html" %}
+
+{% block content %}
+
+<h2>Olá!</h2>
+
+<p>{{message}}.</p>
+
+<p>Clique <a href="{{url_watcher}}" target="_blank">AQUI</a> para parar de receber notificações sobre este Serviço.</p>
+
+<hr>
+
+<div class="button-container">
+  <a href="{{url}}" target="_blank" class="btn btn-primary">ACESSAR SERVIÇO</a>
+</div>
+
+<p>Ou copie esse link no seu navegador para acessar o serviço:</p>
+<p>
+  <a href="{{url}}" target="_blank">
+    {{url}}
+  </a>
+</p>
+
+{% endblock %}

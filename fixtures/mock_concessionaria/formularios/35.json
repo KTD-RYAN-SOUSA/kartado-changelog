@@ -1,0 +1,316 @@
+{
+    "id": 20,
+    "name": "rdo",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "activityStartHour",
+            "dataType": "number",
+            "displayName": "Hora Inicial"
+        },
+        {
+            "id": 2,
+            "apiName": "activityEndHour",
+            "dataType": "number",
+            "displayName": "Hora final"
+        },
+        {
+            "id": 3,
+            "apiName": "activityStartMinute",
+            "dataType": "number",
+            "displayName": "Minuto Inicial"
+        },
+        {
+            "id": 4,
+            "apiName": "activityEndMinute",
+            "dataType": "number",
+            "displayName": "Minuto Final"
+        },
+        {
+            "id": 5,
+            "apiName": "epiUsage",
+            "dataType": "boolean",
+            "displayName": "Todos os funcion\u00e1rios da obra est\u00e3o utilizando os EPIs?"
+        },
+        {
+            "id": 6,
+            "apiName": "trashCollection",
+            "dataType": "boolean",
+            "displayName": "Todos os res\u00edduos gerados pela atividade foram recolhidos?"
+        },
+        {
+            "id": 7,
+            "apiName": "wheater",
+            "dataType": "arrayOfObjects",
+            "displayName": "Clima",
+            "innerFields": [
+                {
+                    "order": 1,
+                    "apiName": "period",
+                    "dataType": "select",
+                    "displayName": "Per\u00edodo",
+                    "selectOptions": {
+                        "options": [
+                            {
+                                "name": "Manh\u00e3",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Tarde",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Noite",
+                                "value": "3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "order": 2,
+                    "apiName": "conditions",
+                    "dataType": "select",
+                    "displayName": "Tempo",
+                    "selectOptions": {
+                        "options": [
+                            {
+                                "name": "Bom",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Nublado",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Chuvoso",
+                                "value": "3"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "apiName": "labor",
+            "dataType": "arrayOfObjects",
+            "displayName": "M\u00e3o de Obra",
+            "innerFields": [
+                {
+                    "order": 1,
+                    "apiName": "role",
+                    "dataType": "select",
+                    "displayName": "Cargo",
+                    "selectOptions": {
+                        "options": [
+                            {
+                                "name": "Ajudante / Auxiliar / Servente",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Encarregado / L\u00edder de Equipe",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Engenheiro",
+                                "value": "3"
+                            },
+                            {
+                                "name": "Feitor",
+                                "value": "4"
+                            },
+                            {
+                                "name": "Motorista",
+                                "value": "5"
+                            },
+                            {
+                                "name": "Oficial (Pedreiro, pintor, carpinteiro)",
+                                "value": "6"
+                            },
+                            {
+                                "name": "Operador (Trator, Rolo, M\u00e1q, etc)",
+                                "value": "7"
+                            },
+                            {
+                                "name": "Operador de Bate Estaca/Munck",
+                                "value": "8"
+                            },
+                            {
+                                "name": "T\u00e9cnico",
+                                "value": "9"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "order": 2,
+                    "apiName": "laborQuantity",
+                    "dataType": "number",
+                    "displayName": "Quantidade"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "apiName": "equipments",
+            "dataType": "arrayOfObjects",
+            "displayName": "Equipamentos",
+            "innerFields": [
+                {
+                    "order": 1,
+                    "apiName": "equipment",
+                    "dataType": "select",
+                    "displayName": "Equipamento",
+                    "selectOptions": {
+                        "options": [
+                            {
+                                "name": "Caminh\u00e3o",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Caminh\u00e3o e bate estaca",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Compressor de ar",
+                                "value": "3"
+                            },
+                            {
+                                "name": "Equipamentos el\u00e9tricos",
+                                "value": "4"
+                            },
+                            {
+                                "name": "Esmelhideira",
+                                "value": "5"
+                            },
+                            {
+                                "name": "Ferramentas",
+                                "value": "6"
+                            },
+                            {
+                                "name": "Grupo gerador de 10kVA",
+                                "value": "7"
+                            },
+                            {
+                                "name": "Jogo de sinaliza\u00e7\u00e3o",
+                                "value": "8"
+                            },
+                            {
+                                "name": "M\u00e1quina",
+                                "value": "9"
+                            },
+                            {
+                                "name": "Martelete perfurador",
+                                "value": "10"
+                            },
+                            {
+                                "name": "Parafusadeira pneum\u00e1tica",
+                                "value": "11"
+                            },
+                            {
+                                "name": "Pistola fica pino",
+                                "value": "12"
+                            },
+                            {
+                                "name": "Sanit\u00e1rio",
+                                "value": "13"
+                            },
+                            {
+                                "name": "Torqu\u00edmetro",
+                                "value": "14"
+                            },
+                            {
+                                "name": "Ve\u00edculo leve",
+                                "value": "15"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "order": 2,
+                    "apiName": "equipmentQuantity",
+                    "dataType": "number",
+                    "displayName": "Quantidade"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        },
+        {
+            "id": 11,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                5,
+                6,
+                11
+            ],
+            "displayName": ""
+        },
+        {
+            "order": 2,
+            "members": [
+                1,
+                3,
+                2,
+                4
+            ],
+            "displayName": "In\u00edcio e t\u00e9rmino das atividades"
+        },
+        {
+            "order": 3,
+            "members": [
+                7
+            ],
+            "displayName": "Clima"
+        },
+        {
+            "order": 4,
+            "members": [
+                8,
+                9
+            ],
+            "displayName": "M\u00e3o de obra e equipamentos"
+        },
+        {
+            "order": 5,
+            "members": [
+                10
+            ],
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "displayName": "RDO",
+    "kind": "5",
+    "deadline": "null"
+}

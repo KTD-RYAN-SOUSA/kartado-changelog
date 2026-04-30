@@ -1,0 +1,46 @@
+{% extends "usr_notif.html" %}
+
+{% block scoped_css %}
+<link rel="stylesheet" href="apps/users/templates/users/email/usr_notif_overdue_validation.css">
+{% endblock scoped_css %}
+
+{% block notification-body %}
+<h2>Olá!</h2>
+
+<p>As seguintes leituras ultrapassaram seus prazos de validação e estão atrasadas:</p>
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Unidade</th>
+            <th scope="col">Posição Operacional</th>
+            <th scope="col">Tipo de Instrumento</th>
+            <th scope="col">Código do Instrumento</th>
+            <th scope="col">Prazo Original</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for reading_item in reading_items %}
+        <tr>
+            <td>{{ reading_item.company_name }}</td>
+            <td>{{ reading_item.operational_position }}</td>
+            <td>{{ reading_item.instrument_type }}</td>
+            <td><a href="{{ reading_item.reading_url }}" target="_blank">{{ reading_item.instrument_code }}</a></td>
+            <td>{{ reading_item.validation_deadline }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="4">
+                <strong>
+                    Total de leituras atrasadas e ainda não validadas
+                </strong>
+            </td>
+            <td id="readings-amount">
+                <strong>
+                    {{ readings_amount }}
+                </strong>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock notification-body %}

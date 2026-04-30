@@ -1,0 +1,11 @@
+Atenção,
+
+{{ message }}
+
+Copie esse link no seu navegador para acessar o registro:
+
+{{ url }}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

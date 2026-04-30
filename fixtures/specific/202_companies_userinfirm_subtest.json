@@ -1,0 +1,10 @@
+[
+    {
+        "model": "companies.userinfirm",
+        "pk": "ccc00002-cccc-cccc-cccc-cccccccccccc",
+        "fields": {
+            "user": "e7cfb4c3-ddd1-43e2-8439-c4c6f0a98383",
+            "firm": "bbb00003-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
+        }
+    }
+]

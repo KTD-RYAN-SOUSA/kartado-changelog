@@ -1,0 +1,18 @@
+.service {
+  padding: 0 10px;
+}
+
+.service:nth-child(odd) {
+  background-color: #F2F5F8;
+}
+
+.service table {
+  border: 0;
+}
+
+.service td {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  border: 0;
+}

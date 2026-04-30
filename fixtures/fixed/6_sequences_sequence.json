@@ -1,0 +1,16 @@
+[
+{
+    "model": "sequences.sequence",
+    "pk": "job-company-daac1370-ee61-45ce-ad13-63aa131bf4e6",
+    "fields": {
+        "last": 2
+    }
+},
+{
+    "model": "sequences.sequence",
+    "pk": "job-company-daac1370-ee61-45ce-ad13-63aa131bf4e6-year-20",
+    "fields": {
+        "last": 2
+    }
+}
+]

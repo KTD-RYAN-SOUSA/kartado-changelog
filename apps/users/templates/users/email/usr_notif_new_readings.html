@@ -1,0 +1,57 @@
+{% extends "usr_notif.html" %}
+
+{% block scoped_css %}
+<link rel="stylesheet" href="apps/users/templates/users/email/usr_notif_new_readings.css">
+{% endblock scoped_css %}
+
+{% block notification-body %}
+{% for reading_item in reading_items %}
+<div class="reading-item">
+    <p>
+        A leitura do instrumento
+        <a href="{{ reading_item.instrument.url }}" target="_blank">
+            {{ reading_item.instrument.name }}
+        </a>
+        está no nível
+        <strong style="background-color: {{reading_item.condition_color}}">
+            {{ reading_item.condition }}
+        </strong>!
+    </p>
+
+    <div class="reading-info">
+        <div class="reading-values">
+            <div class="reading-values-margin">
+                <span class="colored-circle" style="background-color: {{ reading_item.condition_color }};"></span>
+                <p class="reading-value-text">
+                    <strong>
+                        <a href="{{ reading_item.reading.url }}" target="_blank">
+                            {{reading_item.reading.field_name}}: {{reading_item.reading.value }}
+                        </a>
+                    </strong>
+                </p>
+            </div>
+            {% if reading_item.reference_values %}
+            {% for ref_value in reading_item.reference_values %}
+            <div {% if not forloop.counter0 %} class="reading-values-margin" {% endif %}>
+                <span class="colored-circle" style="background-color: {{ ref_value.color }};"></span>
+                <p class="reading-value-text">
+                    {{ref_value.name}}: {{ ref_value.value }}
+                </p>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <div class="reading-dashboards">
+            {% if reading_item.custom_dashboards %}
+            <p><strong>Indicadores:</strong></p>
+            <ul>
+                {% for dashboard in reading_item.custom_dashboards %}
+                <li><a href="{{ dashboard.url }}" target="_blank">{{ dashboard.name }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock notification-body %}

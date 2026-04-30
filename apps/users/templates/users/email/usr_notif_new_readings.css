@@ -1,0 +1,51 @@
+li {
+    margin-bottom: 1.2em;
+}
+
+.reading-item {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+.reading-item:last-child {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.reading-info {
+    line-height: 1em;
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* Can't use flexbox :( */
+    font-size: 0;
+}
+
+.reading-values,
+.reading-dashboards {
+    /* Can't use flexbox :( */
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 14px;
+}
+
+.reading-values-margin {
+    margin-top: 20px
+}
+
+.reading-value-text {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.colored-circle {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+}

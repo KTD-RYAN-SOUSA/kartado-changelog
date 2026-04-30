@@ -1,0 +1,15 @@
+[
+  {
+    "model": "daily_reports.dailyreportoccurrence",
+    "pk": "f8d6b428-78dc-48f1-aab3-b3f78586a351",
+    "fields": {
+      "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+      "starts_at": "10:36:27",
+      "ends_at": "10:36:28",
+      "impact_duration": "10:36:30",
+      "description": "Test Occurrence",
+      "extra_info": "Some kind of extra info",
+      "origin": "EXECUTOR"
+    }
+  }
+]

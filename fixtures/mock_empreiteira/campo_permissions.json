@@ -1,0 +1,154 @@
+{
+	"job": {
+		"can_edit": true,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": true,
+		"can_delete": true
+	},
+	"firm": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"goal": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"road": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"user": {
+		"can_edit": true,
+		"can_view": true,
+		"queryset": "self",
+		"can_create": false,
+		"can_delete": false
+	},
+	"company": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "self",
+		"can_create": false,
+		"can_delete": false
+	},
+	"ShapeFile": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "self",
+		"can_create": true,
+		"can_delete": false
+	},
+	"TileLayer": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "self",
+		"can_create": true,
+		"can_delete": false
+	},
+	"equipment": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"inventory": {
+		"can_edit": true,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": true,
+		"can_delete": false
+	},
+	"reporting": {
+		"can_edit": true,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": true,
+		"can_delete": false,
+		"can_use_buttons": true,
+		"can_edit_resource": true,
+		"can_create_resource": true,
+		"can_view_price_accumulator": true
+	},
+	"dashboard2": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false,
+		"can_view_r_d_o": true
+	},
+	"excel_import": {
+		"can_edit": false,
+		"can_view": false,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"user_in_firm": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"goal_aggregate": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"reporting_file": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": true,
+		"can_delete": false
+	},
+	"occurrence_type": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"user_in_company": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"customization_menu": {
+		"can_edit": false,
+		"can_view": false,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"service_order_action_status": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	},
+	"multiple_daily_report_file": {
+		"can_edit": false,
+		"can_view": true,
+		"queryset": "all",
+		"can_create": false,
+		"can_delete": false
+	}
+}

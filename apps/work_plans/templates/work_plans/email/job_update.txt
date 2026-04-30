@@ -1,0 +1,12 @@
+Olá,
+
+{{message}}
+
+Copie esse link no seu navegador para acessar a programação:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}
+

@@ -1,0 +1,44 @@
+Olá,
+
+Uma nova tarefa foi criada no sistema e está relacionada a você:
+
+Emitente: {{ created_by }}
+Entrega: {{ action }}
+Tarefa: {{ to_do }}
+Prazo: {{ deadline }}
+Data da Criação: {{ created_at }}
+Responsável: {{ responsible }}
+Número da Ordem de Serviço: {{ os_number }}
+Descrição da Ordem de Serviço: {{ os_description }}
+
+{# Forwarding specific fields #}
+{% if zip_file_url %}
+Processo: {{process}}
+Obra: {{ construction }}
+Sequencial: {{ sequential }}
+ID: {{ id }}
+Infrator: {{ offender_name }}
+{% endif %}
+
+{% if zip_file_url %}
+
+Ou copie esse link no seu navegador para baixar os anexos:
+
+{{ zip_file_url }}
+
+Link para a tarefa:
+
+{{ url }}
+
+{% else %}
+
+Copie esse link no seu navegador para acessar a tarefa:
+
+{{ url }}
+
+{% endif %}
+
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

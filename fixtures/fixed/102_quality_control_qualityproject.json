@@ -1,0 +1,17 @@
+[
+{
+    "model": "quality_control.qualityproject",
+    "pk": "2c939deb-6893-4a2b-b675-cffc4e89519f",
+    "fields": {
+    "project_number": "123ABC",
+    "firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d",
+    "created_at": "2021-07-06",
+    "expires_at": "2021-07-06",
+    "registered_at": "2021-07-05",
+    "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+    "form_data": {
+        "exampleData": 47
+    }
+    }
+}
+]

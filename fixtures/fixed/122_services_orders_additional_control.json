@@ -1,0 +1,12 @@
+[
+    {
+        "model": "service_orders.additionalcontrol",
+        "pk": "f2f76ce5-70e9-4a78-8872-c0844fd8dd64",
+        "fields": {
+            "name": "Fixture Data Series",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "created_at": "2022-07-15T16:04:21.337Z",
+            "company": "50bd74b2-a8d4-4752-8423-28cfcfbacc8d"
+        }
+    }
+]

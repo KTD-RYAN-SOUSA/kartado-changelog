@@ -1,0 +1,220 @@
+{
+    "id": 1,
+    "name": "POSTERealocar",
+    "fields": [
+        {
+            "id": 1,
+            "api_name": "length",
+            "data_type": "float",
+            "display_name": "Comprimento (m)"
+        },
+        {
+            "id": 2,
+            "api_name": "width",
+            "data_type": "float",
+            "display_name": "Largura (m)"
+        },
+        {
+            "id": 3,
+            "api_name": "height",
+            "data_type": "float",
+            "display_name": "Altura/Espessura (m)"
+        },
+        {
+            "id": 4,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "api_name": "area",
+            "data_type": "jsonLogic",
+            "display_name": "Area (m\u00b2)"
+        },
+        {
+            "id": 5,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width",
+                            "formData.height"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            },
+                            {
+                                "var": "formData.height"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "api_name": "volume",
+            "data_type": "jsonLogic",
+            "display_name": "Volume (m\u00b3)"
+        },
+        {
+            "id": 6,
+            "api_name": "notes",
+            "data_type": "string",
+            "display_name": "Observa\u00e7\u00f5es"
+        },
+        {
+            "id": 7,
+            "apiName": "artespCode",
+            "dataType": "string",
+            "display_if": {
+                "in": [
+                    "3",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "C\u00f3digo da ocorr\u00eancia ARTESP"
+        },
+        {
+            "id": 8,
+            "apiName": "demandOrigin",
+            "dataType": "selectMultiple",
+            "canFilter": true,
+            "displayName": "Origem",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Interna",
+                        "value": "1"
+                    },
+                    {
+                        "name": "KCOR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ARTESP",
+                        "value": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "apiName": "receivedDate",
+            "dataType": "timestamp",
+            "display_if": {
+                "in": [
+                    "3",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "Recebido da ARTESP em"
+        },
+        {
+            "id": 10,
+            "apiName": "kcorCode",
+            "dataType": "string",
+            "display_if": {
+                "in": [
+                    "2",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "displayName": "C\u00f3d KCOR"
+        },
+        {
+            "id": 11,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "displayName": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 2,
+            "members": [
+                1,
+                2,
+                3
+            ],
+            "display_name": "Dimens\u00f5es"
+        },
+        {
+            "order": 3,
+            "members": [
+                4,
+                5
+            ],
+            "display_name": "Quantitativos"
+        },
+        {
+            "order": 6,
+            "members": [
+                6
+            ],
+            "display_name": "Informa\u00e7\u00f5es Adicionais"
+        }
+    ],
+    "display_name": "POSTE - Realocar",
+    "displayName": "POSTE - Realocar",
+    "kind": "1",
+    "deadline": "{\"__type__\": \"timedelta\", \"days\": 30, \"seconds\": 0, \"microseconds\": 0}"
+}

@@ -1,0 +1,80 @@
+{% extends "legacy_base_email.html" %}
+
+{% block headcontent %}
+
+<tr>
+  <td>
+    <p class="p-text">
+      {{ message }}
+    </p>
+  </td>
+</tr>
+
+{% endblock headcontent %}
+
+{% block content %}
+{% for job in jobs %}
+<tr>
+  <td align="center" class="td-big-table">
+    <table border="0" cellpadding="0" cellspacing="0" class="title-big-table">
+      <tbody>
+        <tr>
+          <td class="table-section-title">
+            {{ job.title }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" class="td-big-table-rows">
+    <table border="0" cellpadding="0" cellspacing="0" class="title-big-table">
+      <tbody>
+        <tr class="table-header">
+          <td class="table-header-td">
+            <b>Serial</b>
+          </td>
+          <td class="table-header-td">
+            <b>Status</b>
+          </td>
+          <td class="table-header-td">
+            <b>Observações</b>
+          </td>
+        </tr>
+        {% for reporting in job.reportings %}
+        <tr class="table-row">
+          <td class="table-row-td">
+            {{ reporting.number }}
+          </td>
+          <td class="table-row-td">
+            {{ reporting.status }}
+          </td>
+          <td class="table-row-td">
+            {{ reporting.notes }}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td align="center" class="td-buttton">
+    <table border="0" cellpadding="0" cellspacing="0" class="table-button">
+      <tbody>
+        <tr>
+          <td align="center">
+            <a href="{{job.url}}" target="_blank" class="a-button">
+              ACESSAR PROGRAMAÇÃO
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+{% endfor %}
+{% endblock content %}

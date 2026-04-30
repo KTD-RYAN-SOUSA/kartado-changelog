@@ -1,0 +1,11 @@
+Olá,
+
+Você tem uma nova mensagem no apontamento {{number}}.
+
+Copie esse link no seu navegador para acessar o apontamento:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

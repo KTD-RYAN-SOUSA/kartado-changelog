@@ -1,0 +1,26 @@
+Olá,
+
+{{ message }}
+
+Apontamentos atualizados:
+
+{% for reporting in reportings %}
+	Serial: {{ reporting.number }}
+	{% if reporting.status %}
+	Status: {{ reporting.status }}
+	{% endif %}
+	{% if reporting.step %}
+	Status de aprovação: {{ reporting.step }}
+	{% endif %}
+	{% if reporting.notes %}
+	Observações: {{ reporting.notes }}
+	{% endif %}
+{% endfor %}
+
+Copie esse link no seu navegador para acessar os apontamentos:
+
+{{url}}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

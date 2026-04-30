@@ -1,0 +1,41 @@
+{% load app_filters %}
+
+Olá!
+
+Você tem {{procedure_count}} tarefa{% if procedure_count > 1 %}s{% endif %} para hoje:
+
+{% if delayed %}
+  Você tem tarefas pendentes:
+
+  {% for procedure in delayed %}
+    Entrega: {{procedure.action}}
+    Número da Ordem de Serviço: {{procedure.os_number}}
+    Prazo: {{procedure.deadline}} ({{procedure.delay}} dia{% if procedure.delay > 1 %}s{% endif %} de atraso)
+    Link da tarefa: {{procedure.url}}
+
+  {% endfor %}
+{% endif %}
+
+{% if deadline_close %}
+  Você tem tarefas para hoje:
+  
+  {% for procedure in deadline_close %}
+    Entrega: {{procedure.action}}
+    Número da Ordem de Serviço: {{procedure.os_number}}
+    Prazo: {{procedure.deadline}}
+    Link da tarefa: {{procedure.url}}
+
+  {% endfor %}
+{% endif %}
+
+{% if deadline_soon %}
+  Você tem tarefas próximas a vencer:
+
+  {% for procedure in deadline_soon %}
+    Entrega: {{procedure.action}}
+    Número da Ordem de Serviço: {{procedure.os_number}}
+    Prazo: {{procedure.deadline}} (Vencimento em {{procedure.delay|to_abs}} dia{% if procedure.delay|to_abs > 1 %}s{% endif %})
+    Link da tarefa: {{procedure.url}}
+
+  {% endfor %}
+{% endif %}

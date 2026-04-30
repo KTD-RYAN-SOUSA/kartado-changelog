@@ -1,0 +1,17 @@
+Olá!
+
+{{message}}
+
+RDOs
+
+{% for approval_step, mdr_data in mdr_approval_data.items %}
+    {% if mdr_data %}
+        {% for mdr in mdr_data %}
+            Serial: {{mdr.number}}
+            Data do RDO: {{mdr.date}}
+            Empresa: {{mdr.subcompany}}
+            Equipe: {{mdr.firm}}
+            Aprovação: {{mdr.approval_step}}
+        {% endfor %}
+    {% endif %}
+{% endfor %}

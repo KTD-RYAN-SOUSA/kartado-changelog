@@ -1,0 +1,13 @@
+[
+    {
+        "model": "companies.entity",
+        "pk": "052196eb-008f-4b2f-880b-7943670baa4e",
+        "fields": {
+            "created_at": "2020-11-24T03:44:58.455Z",
+            "created_by": null,
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "name": "Engie",
+            "approver_firm": "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+        }
+    }
+]

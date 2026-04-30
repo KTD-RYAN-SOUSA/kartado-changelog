@@ -1,0 +1,38 @@
+[
+{
+    "model": "occurrence_records.occurrencetypespecs",
+    "pk": "00642d94-99de-4f14-be6e-15306c16744f",
+    "fields": {
+        "occurrence_type": "006f411d-1388-49c5-989c-7e7447482ae9",
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "color": "#c1815c"
+    }
+},
+{
+    "model": "occurrence_records.occurrencetypespecs",
+    "pk": "008acc85-8d43-46d8-95c3-ea7b7269265e",
+    "fields": {
+        "occurrence_type": "05e3967f-27b3-460d-94a5-d419c1588dce",
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "color": "#FF0000"
+    }
+},
+{
+    "model": "occurrence_records.occurrencetypespecs",
+    "pk": "43d34fcd-e72e-428e-8ab9-1ec09d963495",
+    "fields": {
+        "occurrence_type": "1bb4364c-26b9-4b31-a7c1-e8d7876594fc",
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "color": "#FF0000"
+    }
+},
+{
+    "model": "occurrence_records.occurrencetypespecs",
+    "pk": "487d2a22-6b7f-4006-a9b9-89513707fd72",
+    "fields": {
+        "occurrence_type": "8c745a3b-ca56-419d-a012-117b5f5f1dd1",
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "color": "#FF0000"
+    }
+}
+]

@@ -1,0 +1,11 @@
+Olá,
+
+{{ message }}
+
+Copie esse link no seu navegador para acessar os apontamentos:
+
+{{ url }}
+
+{% if disclaimer %}
+{{ disclaimer }}
+{% endif %}

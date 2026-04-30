@@ -1,0 +1,22 @@
+[
+{
+    "model": "zas.zasarea",
+    "pk": "TEST",
+    "fields": {
+        "initials": "TEST",
+        "full_name": "Usina Hidroel\u00e9trica Teste",
+        "push_devices": [],
+        "sms_devices": []
+    }
+},
+{
+    "model": "zas.zasarea",
+    "pk": "UHIT",
+    "fields": {
+        "initials": "UHIT",
+        "full_name": "Usina Hidroel\u00e9trica de It\u00e1",
+        "push_devices": [],
+        "sms_devices": []
+    }
+}
+]

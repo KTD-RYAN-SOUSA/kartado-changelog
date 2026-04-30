@@ -1,0 +1,17 @@
+[
+  {
+    "model": "resources.contractitemadministration",
+    "pk": "fdbc54e8-ab5a-4520-97ce-d299fd00ec0f",
+    "fields": {
+      "sort_string": "1.1",
+      "entity": "052196eb-008f-4b2f-880b-7943670baa4e",
+      "created_at": "2020-09-03T15:31:56.377Z",
+      "resource": "002c4697-ad1a-4f85-a1e3-7cd444f694a7",
+      "content_type": [
+        "daily_reports",
+        "dailyreportworker"
+      ],
+      "order": 1
+    }
+  }
+]

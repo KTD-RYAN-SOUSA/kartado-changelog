@@ -1,0 +1,3984 @@
+[
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "0208377c-8269-4950-a6a6-883e28bbd96e",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "206ff9d6-3060-446d-923f-f5e96f9c792e",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "06ebb4e9-63f7-444f-8917-227092826a4b",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "6b63d659-0263-4125-aa73-c186b2b324b7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "072acb7a-c6e5-4276-a00a-00ac7c1fe1dc",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "8d5e5921-402e-424f-bdf5-c91bb1d64ce4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "0930cd48-4f18-465e-ad6e-cde7a6c517ba",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "419ffa09-3278-422d-b586-6b8c9f0257a3",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "0b549258-f65e-4ad7-8b82-1bc3d24eaa89",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "ebf66e3e-8455-4b09-9eb5-4426b77d6d45",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "0e4e1328-e4ae-40ce-b61a-7696a896128c",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "210470c3-e1a4-458d-aeec-8b0c40066d4a",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "1179974b-c860-4084-9e0a-107c81f3ac39",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "1265812b-48bb-4f17-8dbd-b7891580035d",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "ebf66e3e-8455-4b09-9eb5-4426b77d6d45",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "13213e16-a0eb-476c-a0dd-fb0a32de1546",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "419ffa09-3278-422d-b586-6b8c9f0257a3",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "136e8cf3-327c-41c0-8008-5551ab2fcd29",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "9dd44eb7-6621-4e6d-8566-8a9c14ee6929",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "13a0234c-3b38-42a3-aa78-6bdc96d91bdb",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "7b4d40e3-92e4-465e-ade6-89ceead25fdf",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "1923f543-d1b0-4ee2-9d47-dab5f700028e",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [
+            "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+        ],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "19b35ab0-defc-454a-bafb-f77de19fe5f7",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "9dd44eb7-6621-4e6d-8566-8a9c14ee6929",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "1b39927b-46bb-42cc-9edf-f532f142cb6f",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "b32f5fd9-0995-427c-866a-cb81b496ee50",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "1d2fef63-5423-4e82-b5e5-657222340717",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "b5074db9-7d90-4bdf-b182-fea6289f9993",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "1f7c753d-1310-4242-a558-d20726b81861",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "79447fcc-57fb-4476-8c15-3738ada867c5",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "22777b5f-4b49-48ad-bf8f-94d68160d9eb",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "22dc9b9f-c79f-451c-b2d4-1d9630fdc340",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "2472745d-a20f-40e5-b5fe-e05feb63b845",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "d469f08c-a0c9-4c1c-b0b4-4bf5d29d050e",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "29c97e67-545b-4683-a38e-f9884123202f",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "2a99c1bc-3821-4383-ab5a-8aa24875d7e8",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "925978de-9e44-4817-a167-e82187946566",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "2be1f7f1-220c-451c-88ba-aa1516f3b2b2",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "2dd149b9-4bff-4ecf-956f-18471019e8d3",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "ebf66e3e-8455-4b09-9eb5-4426b77d6d45",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "2f1fe4c6-e4b6-4380-a2a1-9ed5dfd087db",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "d469f08c-a0c9-4c1c-b0b4-4bf5d29d050e",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "31a5f0f2-68b8-4cfc-930c-814ad68ae04a",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "c374c486-45dc-4ab7-a976-aa042ffcc710",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "351b0036-7282-42e9-ba34-f9ea6c2ff437",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "419ffa09-3278-422d-b586-6b8c9f0257a3",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "352b6b82-5765-49b1-ae73-d631cf3aba95",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3594c133-5eb3-4bd3-ad47-822a09ed39b4",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "d469f08c-a0c9-4c1c-b0b4-4bf5d29d050e",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "35991f9c-ef1d-493a-a18a-429c2fc80634",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "78a122a2-7afa-4860-954a-8b7d2919b42b",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3743477a-ca1a-40d1-9d25-51e344b41b32",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "384ecdfb-94ab-440e-bc99-e934a312b326",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3899d1ab-cbc0-4ba2-9cab-ee1cfbf3a813",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3967952e-8ae5-49ef-b395-ce8056426b69",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "a4afb935-6aa3-4742-aa75-0d40a97b46e2",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3a9e4bad-6b4b-487f-8d46-0861388d8386",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "210470c3-e1a4-458d-aeec-8b0c40066d4a",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3b0247cf-c44f-4ad1-a684-606b041ded07",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "384ecdfb-94ab-440e-bc99-e934a312b326",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3cefa699-2814-4fa8-bdd0-0bece71ae74b",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "da566d67-623f-4b8c-836f-65be8383e0a7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3d994c20-352a-428d-b0de-33674036054a",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "800ca99b-a1da-4541-baac-6092966b04b3",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3e11214d-519b-4c14-9812-4858eab29259",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "30d69274-88b9-4d46-b9ac-a73bfe7c39b5",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3ed67d5d-68fa-4ecb-9b37-49f45e88cda4",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "8e8fc7e2-c511-4701-a714-083ce1ce95d9",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": true,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": [
+            "0aa50773-b368-4a50-9f12-4a7d8dfaf256"
+        ]
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3ef09c9a-4eca-4fd0-bf2f-812d0f1bc2e7",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "206ff9d6-3060-446d-923f-f5e96f9c792e",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "3f87461b-2105-4726-b22a-a6ff3d3d58ad",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "925978de-9e44-4817-a167-e82187946566",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "4124f56d-656f-4ef7-8289-eaf2bb8e34c9",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "5a7771a0-8dcb-4834-b459-34896998097d",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "42b212f3-14a7-4274-a1a3-7fae951f98a4",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "8d5e5921-402e-424f-bdf5-c91bb1d64ce4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "42d6d905-a3a2-4923-92c1-0c04fc18c1ac",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "79447fcc-57fb-4476-8c15-3738ada867c5",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "43f3dda4-6ef5-4256-80ac-f4de00fc4603",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "419ffa09-3278-422d-b586-6b8c9f0257a3",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "44057881-31ea-4bb6-ad2d-7fa12cf03876",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "2b7bf662-2d56-45b0-9b38-78d764a21c39",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "479318d1-533a-48eb-ba48-d8c55da9b45f",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o",
+        "approval_flow": "f51da0a2-76e6-49a4-9e88-ba7b57f32dbb",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": true,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "47b8f7a9-ef2c-4867-8200-2fd063af1d02",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "49819dbc-f92f-4460-b1da-27ada4ddd38b",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "37c2fc5c-b862-40e1-ba63-96815059f4b2",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "4cba964e-acb4-4211-986c-c04cf1b6ba07",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "ff2b84b6-c33f-4e52-8b06-d8918833c443",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "4dc7377f-a3bd-48d8-b57f-35ec0cfacf2b",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "6b63d659-0263-4125-aa73-c186b2b324b7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "51994a37-78c2-4e5d-b174-85a8e774c8e8",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "419ffa09-3278-422d-b586-6b8c9f0257a3",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "51c6efca-2f00-41dd-ae9b-941c614d98a2",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "028d96d7-6fbd-4e56-9236-9a8cc4a22519",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "51f7a970-f743-4ba1-8bfd-8d2309629faa",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "b4b37cf8-132a-44e4-a63b-f05bba436ebe",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "54d9417d-b81f-434e-98b5-d8f84c9d1fce",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "df360f7e-f62f-4a18-889b-cc65c2c11af1",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "55b1aa52-3a3b-4e8d-a5a2-c8a2412f6fdb",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "d9cbff3a-7a96-4250-8237-9dcee4b34cd3",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "59bf8915-61e9-4f76-8991-3a0e6ce2895b",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "210470c3-e1a4-458d-aeec-8b0c40066d4a",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "59e84091-5144-475d-a8f5-9b72b56a3839",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5a28bcdf-5a17-4031-874c-bb5d9e3cef62",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "2b7bf662-2d56-45b0-9b38-78d764a21c39",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5abe6165-1bba-4731-be6f-e4c8d00be5be",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "78a122a2-7afa-4860-954a-8b7d2919b42b",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5acbc34e-aa43-4054-a55f-a31a3d561de9",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "b32f5fd9-0995-427c-866a-cb81b496ee50",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5c085b98-caab-45e7-a094-fe7bb96306f9",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "f51da0a2-76e6-49a4-9e88-ba7b57f32dbb",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5c11e87a-e56c-4042-89b6-570dc006b6cd",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5f784a09-7b04-4fbf-9692-72cd8529b7f6",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5f9f750d-c417-48f0-aee4-f77d89b9a348",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "5529269f-714d-40f9-a003-8684c8cf288a",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5fd568ce-7ff0-43cb-bae9-5dd4b32e20b9",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "df360f7e-f62f-4a18-889b-cc65c2c11af1",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "5ff37880-7355-4bb2-ac2c-c3850d2564ef",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "132e2dfb-196b-47ab-b260-5a6a38a085f7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [
+            "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+        ],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "60a6fab5-b640-4880-8143-c181f5b5139f",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "419ffa09-3278-422d-b586-6b8c9f0257a3",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "616451d9-c3d1-4819-b0f8-4b3264dff21a",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "72a70430-bd4e-4757-8b65-af9e91f54a51",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "61bdd1ee-3e29-445d-a8ea-352dfa3642f7",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "63d253fd-7a8a-43da-ad32-3d407a127a85",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "2b7bf662-2d56-45b0-9b38-78d764a21c39",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "640c7ede-1bca-478a-842b-b0bb9449c8f3",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "c374c486-45dc-4ab7-a976-aa042ffcc710",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "67de8bb9-77d0-4aca-8a75-a130ecd5de34",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "b32f5fd9-0995-427c-866a-cb81b496ee50",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "68b044ec-d35d-4302-94c7-1adb54512d39",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "79447fcc-57fb-4476-8c15-3738ada867c5",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "68cddf5f-cb83-43e6-97d8-7bab561f8f4c",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "5a7771a0-8dcb-4834-b459-34896998097d",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "69714cc4-1622-444d-9bf5-121877789b67",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "8e8fc7e2-c511-4701-a714-083ce1ce95d9",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6a00dd84-bb9e-47bc-bfbf-6fbac4c369e9",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "f2b1b269-773e-4813-bc3c-e4146082285d",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6acf85fc-977a-47b5-a8d1-2c563606112f",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "71e431bf-3054-40c6-b465-d3f9e1b59d79",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6b9ecf31-0aa1-4644-9178-9f349012b5e3",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6c631ae9-8a09-4d69-8f96-5f7db3a6a640",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "9dd44eb7-6621-4e6d-8566-8a9c14ee6929",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6ccd26b1-9a38-4cc5-b7c6-7f3724ccb86f",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "71e431bf-3054-40c6-b465-d3f9e1b59d79",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6cd399bf-df70-429b-b611-85a9a38459f1",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "6b63d659-0263-4125-aa73-c186b2b324b7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6dcb9e83-aaae-4f58-b077-18d53ca8a86f",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "b5074db9-7d90-4bdf-b182-fea6289f9993",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6e6a72a6-bc33-44f1-8a7a-341096031367",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "8d5e5921-402e-424f-bdf5-c91bb1d64ce4",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6ea59e0e-fc69-425e-849e-0d1d7c61cf69",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "210470c3-e1a4-458d-aeec-8b0c40066d4a",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6eb47bb7-0379-4291-aa43-c3e5664226aa",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "da566d67-623f-4b8c-836f-65be8383e0a7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "6ecbca98-d706-479a-a5cf-e40e21ce0bda",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "210470c3-e1a4-458d-aeec-8b0c40066d4a",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "725aff5d-d204-486f-9aaa-65767398d26a",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "d469f08c-a0c9-4c1c-b0b4-4bf5d29d050e",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "7367dc46-c429-412e-bfc1-950272ab4090",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "a6d8be59-8e11-4bfc-ac71-89c08d55219a",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "73d0c3a8-b819-49e8-bd54-433fd342581f",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "16061163-56df-47d9-8d3b-f33504ca5e83",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "7447bd17-addb-4ab2-b844-703f4836bd1d",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "745a6842-aff3-481c-bc9f-3837ddeb1d15",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "74cf92d6-00c8-4e5e-8334-d8963e65cc6d",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "5a7771a0-8dcb-4834-b459-34896998097d",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "757dc2c7-4969-4ced-b15d-b2ea02ba3971",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "6090560e-a269-4d7f-b49a-ba58ff57bd20",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "76b6d8f5-f29c-4dfb-ab8f-7c6638b310d8",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "37c2fc5c-b862-40e1-ba63-96815059f4b2",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "76beb332-4b55-45e3-aaeb-5f4a8e9f0b86",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "79447fcc-57fb-4476-8c15-3738ada867c5",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "7712fb80-274d-495c-a329-f7b652fd5642",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "bbd952de-8942-4361-b742-68bb595d0b25",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "78d34d51-5c49-471e-9c95-6b8574ca155c",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "81a4bde8-a635-4072-8afe-175a77d70596",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "7901637e-85f2-403f-815d-1e4b66394ea9",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "a4afb935-6aa3-4742-aa75-0d40a97b46e2",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "79844f17-6d29-4b07-b922-2c3f3d94b4db",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "79ac0bdf-d0cc-4088-8b59-f18bb7b4a3cc",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "c57dba2f-d10c-4090-a8ae-0df1c08c5b47",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "79cabf1e-5db7-4f41-b284-96ab0abb9000",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "b4b37cf8-132a-44e4-a63b-f05bba436ebe",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "7a3e66fa-50fa-40fa-a7ee-91a13ecb18bf",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "6090560e-a269-4d7f-b49a-ba58ff57bd20",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "7a803044-12fe-492f-b725-5c3215957787",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "6b63d659-0263-4125-aa73-c186b2b324b7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "7b73096e-5fef-4c03-af14-f917e2073bee",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "d9cbff3a-7a96-4250-8237-9dcee4b34cd3",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "7b8cdad6-2189-4de2-81a6-d0b6f2f36e62",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "8052ca5d-8ee7-4310-a993-1a1dcb14473e",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "384ecdfb-94ab-440e-bc99-e934a312b326",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "8a8bf0bc-18f2-46e0-ad88-291a9d91832d",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "72a70430-bd4e-4757-8b65-af9e91f54a51",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "8b5d2a56-576d-4ef9-9772-62007a6f3d62",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "df360f7e-f62f-4a18-889b-cc65c2c11af1",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "8b85b095-9da4-41b4-9ec8-caae7948a0ee",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "37c2fc5c-b862-40e1-ba63-96815059f4b2",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "8dc864c4-6a4e-4e8d-ab34-a0fb06125239",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "800ca99b-a1da-4541-baac-6092966b04b3",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "8ef99974-9047-4e7b-bee2-3be4f5711476",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "a6d8be59-8e11-4bfc-ac71-89c08d55219a",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "9012f7ba-9ece-44a8-8d1b-cb685bf5b2cc",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "da566d67-623f-4b8c-836f-65be8383e0a7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "91d504e5-9de3-4ad7-8f8b-b505a8fea473",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "bbd952de-8942-4361-b742-68bb595d0b25",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "93246337-7a64-463d-bcb0-2a19f7395bd7",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "b5074db9-7d90-4bdf-b182-fea6289f9993",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "94cc86c7-cbf6-4cc2-8750-aad26b19e35d",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "7b4d40e3-92e4-465e-ade6-89ceead25fdf",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "950ddcd3-58b8-4182-ba87-1f418d044ba5",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "493b1769-42ef-4362-87e3-e304800dc722",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "95c6053c-9661-4888-bd29-a21c048d9f60",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "78a122a2-7afa-4860-954a-8b7d2919b42b",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "95f41185-c789-456b-ab40-73205dc94967",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "8e8fc7e2-c511-4701-a714-083ce1ce95d9",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "96073252-9ef6-4c14-b80f-3d6a04ee5762",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "419ffa09-3278-422d-b586-6b8c9f0257a3",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "967dbff6-dac4-441b-a9de-484db43d21c8",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "81a4bde8-a635-4072-8afe-175a77d70596",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "96a8ebec-e623-4bc8-9432-c4791dbcd166",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "a6d8be59-8e11-4bfc-ac71-89c08d55219a",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "9787a2c1-58ba-4613-bff1-b346372d4ba3",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "71e431bf-3054-40c6-b465-d3f9e1b59d79",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "9ad3c7ff-cebf-4eae-825f-a0f5b71653f2",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "9d43c010-bf03-4d7d-acac-bb35d7f59db3",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "d469f08c-a0c9-4c1c-b0b4-4bf5d29d050e",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "9dedb46b-d1ad-41cf-8969-f70577cb27a4",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "210470c3-e1a4-458d-aeec-8b0c40066d4a",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "9e705ad9-ddc1-4c81-8ac7-d22e0a775ef2",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "ebf66e3e-8455-4b09-9eb5-4426b77d6d45",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "9ec21a23-acaf-4f66-855f-5a4ef9f6daee",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "945a60bb-c2cc-4a46-8ce4-85ba44b6e0e1",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "a1b2fdb6-d89a-41e1-9c89-ef06893cc22b",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "c374c486-45dc-4ab7-a976-aa042ffcc710",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "a313d757-0ea8-404d-b8fb-cef99168142e",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "a3176b36-4441-4324-86db-979fc5a6f9ff",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "925978de-9e44-4817-a167-e82187946566",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "a368bf6b-7bf5-4c81-8610-3c5065413dc2",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "8d5e5921-402e-424f-bdf5-c91bb1d64ce4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "a699db77-4dc6-403b-adfd-b26c19b87698",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "5529269f-714d-40f9-a003-8684c8cf288a",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "a6da7675-036a-465c-9e25-2223a369c2dd",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "800ca99b-a1da-4541-baac-6092966b04b3",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "a9bbcf64-40b0-4a7a-b5a9-80c767698fb3",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "945a60bb-c2cc-4a46-8ce4-85ba44b6e0e1",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "a9e5283d-ba82-4f98-b88b-b8dc26d58d7d",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "79447fcc-57fb-4476-8c15-3738ada867c5",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "ab06ce01-bf76-420d-849e-8696e381b631",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "ab1c994c-9898-4bfa-9c74-0c13182910ed",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "79447fcc-57fb-4476-8c15-3738ada867c5",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "ab5fce55-ce9c-43af-9155-b377c6521ac5",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "ad8623da-3b80-4bc4-869e-aa6ce7908679",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "ff2b84b6-c33f-4e52-8b06-d8918833c443",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "b1b74421-4b15-4483-9f4e-80b0c353ff57",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "a4afb935-6aa3-4742-aa75-0d40a97b46e2",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "b26cebbf-08c5-4166-a4a7-960e0b70d4cd",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "ff2b84b6-c33f-4e52-8b06-d8918833c443",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "b6869088-a461-40c6-a08b-26663bef11f0",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "a6d8be59-8e11-4bfc-ac71-89c08d55219a",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "b70d929d-7dc1-4579-8352-5a4212175d6f",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": true,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "b81a3ec1-4f01-44a2-95ed-0f0451cb1f6d",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "71e431bf-3054-40c6-b465-d3f9e1b59d79",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "b876d67a-f986-4231-bb45-faa663de9f12",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "5a7771a0-8dcb-4834-b459-34896998097d",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "b9d170ec-c486-4aaa-bc52-0fde70900ef7",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "81a4bde8-a635-4072-8afe-175a77d70596",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "b9df2b70-87a2-4fb6-8f2e-269f21cb7165",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "210470c3-e1a4-458d-aeec-8b0c40066d4a",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "bbf06d42-c92d-4a2c-bf15-970dab80b725",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "7b4d40e3-92e4-465e-ade6-89ceead25fdf",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "bc530223-d3f2-4435-acbc-4899d2381328",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "8d5e5921-402e-424f-bdf5-c91bb1d64ce4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "bc771557-3be7-47fe-8b12-11f65abbb6e7",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "c57dba2f-d10c-4090-a8ae-0df1c08c5b47",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c054be53-b1ce-4eab-9888-6dec6b7c6ea7",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "30d69274-88b9-4d46-b9ac-a73bfe7c39b5",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c0d31c88-a891-43c6-be20-f3797afe6367",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c17b01b7-95bb-42c6-9426-72b5458912a1",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "79447fcc-57fb-4476-8c15-3738ada867c5",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c294d09d-58ea-4e9c-b924-5516df4f3745",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "206ff9d6-3060-446d-923f-f5e96f9c792e",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c4c398fb-ddf2-4ed0-8166-484f02d4cd1a",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "5a7771a0-8dcb-4834-b459-34896998097d",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c4f9bbeb-649f-4023-8e22-625a96663d21",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "b4b37cf8-132a-44e4-a63b-f05bba436ebe",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c6d9e1c7-3407-427a-82f0-6472e4702fce",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "493b1769-42ef-4362-87e3-e304800dc722",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c830fc5b-9f57-4672-a7b1-8f5f58975e7f",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "09dbe53c-b2ec-4fb1-8f1d-4f3e92006b1f",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c938c9cd-db11-40aa-a8a1-5edce5bc03ba",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "8d5e5921-402e-424f-bdf5-c91bb1d64ce4",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "c9ca4dc2-4d9a-456c-8b0a-3e42b048939c",
+    "fields": {
+        "name": "Atendido",
+        "approval_flow": "09dbe53c-b2ec-4fb1-8f1d-4f3e92006b1f",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "cb13b30f-11a0-4773-9556-f7ce75307f9f",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "30d69274-88b9-4d46-b9ac-a73bfe7c39b5",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "cee47dbc-8751-47cb-8c0b-bc99d39c04ca",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "16061163-56df-47d9-8d3b-f33504ca5e83",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "cf337d43-0cd8-4dc9-a7e8-f2f798da9dcd",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "72a70430-bd4e-4757-8b65-af9e91f54a51",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d010d76f-f4b0-40b0-9f5a-5f5e2db4f9ba",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "71e431bf-3054-40c6-b465-d3f9e1b59d79",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d02842df-d259-4c2d-82b1-587bd05fefbd",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "206ff9d6-3060-446d-923f-f5e96f9c792e",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d113542d-890a-466c-97be-78f53941b3c7",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "d469f08c-a0c9-4c1c-b0b4-4bf5d29d050e",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d1692dc2-58f8-4f13-b87f-9d21e6376b5b",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "a4afb935-6aa3-4742-aa75-0d40a97b46e2",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d1d44336-818d-40db-bfd5-d214b96e54b0",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d305eb79-20ed-40a6-8cb0-d5e077289345",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "71e431bf-3054-40c6-b465-d3f9e1b59d79",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d3424033-b992-4cbb-a3de-16e5c005f97f",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d3d7a17f-7eb1-4fb2-9345-a32c55933c00",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "f2b1b269-773e-4813-bc3c-e4146082285d",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d409bb57-430b-4be2-bda5-eec65c40a8f2",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "7b4d40e3-92e4-465e-ade6-89ceead25fdf",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d4f02623-5272-4ef1-aba2-c49d16ad080f",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "c57dba2f-d10c-4090-a8ae-0df1c08c5b47",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d5a9c37a-2b91-4bac-83f2-00e113f20025",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "09dbe53c-b2ec-4fb1-8f1d-4f3e92006b1f",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d609d994-7bb0-4902-b432-e988869f9f9b",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "028d96d7-6fbd-4e56-9236-9a8cc4a22519",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d778a13d-c674-4752-8863-ed4862865253",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "30d69274-88b9-4d46-b9ac-a73bfe7c39b5",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d9281b47-4614-4985-a13d-373f7d5479ea",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "df360f7e-f62f-4a18-889b-cc65c2c11af1",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "d98e71a5-9585-4575-86c5-2a91fb7726ef",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "bbd952de-8942-4361-b742-68bb595d0b25",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "da8a4c76-d289-4166-bc52-5f5127b0d421",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": true,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "dcf7e485-372b-41ea-9499-2e56589e37d1",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "c57dba2f-d10c-4090-a8ae-0df1c08c5b47",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "dd9aa6bf-19cb-4e5c-8414-744e78755d4a",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "206ff9d6-3060-446d-923f-f5e96f9c792e",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "de27e70f-9b01-4f83-9cd1-515142c2d227",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "5a7771a0-8dcb-4834-b459-34896998097d",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "df162335-e584-4fdb-b220-47ad79369e37",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [
+            "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+        ],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e2bae1df-f102-4ea1-b1f9-ef7b49a3a42b",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "9dd44eb7-6621-4e6d-8566-8a9c14ee6929",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e41ccd69-4657-48a9-99fe-8e9cbc2e29f5",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "ebf66e3e-8455-4b09-9eb5-4426b77d6d45",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e4f53fbd-f66f-407c-8392-ee9961944981",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "028d96d7-6fbd-4e56-9236-9a8cc4a22519",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e56431c4-0126-4fed-8deb-042acf01d0e7",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "f2b1b269-773e-4813-bc3c-e4146082285d",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e6a2a27b-1b4c-4004-95f5-44a93723d82b",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "d9cbff3a-7a96-4250-8237-9dcee4b34cd3",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e86c42b1-7b9a-4ef7-8f1f-aa3192251b77",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "8d5e5921-402e-424f-bdf5-c91bb1d64ce4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e99cf723-2051-44f4-b267-6a09ea4ae257",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "09dbe53c-b2ec-4fb1-8f1d-4f3e92006b1f",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e9a3bac4-583c-4505-b0a2-4e0ac55147a0",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "71e431bf-3054-40c6-b465-d3f9e1b59d79",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e9e1e86b-7299-4081-b632-46b2af3a517e",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Supervisor",
+        "approval_flow": "16061163-56df-47d9-8d3b-f33504ca5e83",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": true,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "e9e6fad6-4915-4ed9-85fd-551acc328439",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "09dbe53c-b2ec-4fb1-8f1d-4f3e92006b1f",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "eb20b1db-eb63-40db-89e9-622d56d828fc",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "5529269f-714d-40f9-a003-8684c8cf288a",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "eb2e9069-96d6-42ec-83f1-46491c6fffa0",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "132e2dfb-196b-47ab-b260-5a6a38a085f7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "ed44f2f2-e3f3-4525-9680-4099a9b24ec3",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "5529269f-714d-40f9-a003-8684c8cf288a",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "eddbe74c-b558-4f86-880a-3ce992035a6b",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "efa845a7-07e7-4156-b2a1-f1736a8141d3",
+    "fields": {
+        "name": "Registro Deferido",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f00a101f-9770-4cf6-b66d-72ee343f050e",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "8e8fc7e2-c511-4701-a714-083ce1ce95d9",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f02817e1-5ef6-4a30-9f1c-f6aa91fb1df9",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "09dbe53c-b2ec-4fb1-8f1d-4f3e92006b1f",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f07d4c78-c5b9-4dc2-b3eb-bfa50cc4d80f",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "6090560e-a269-4d7f-b49a-ba58ff57bd20",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f12b9979-d268-45a7-acee-2c78de5facdf",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "7b4d40e3-92e4-465e-ade6-89ceead25fdf",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f160fd33-d7e0-4653-bb55-5ba132635648",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Usu\u00e1rio-Chave",
+        "approval_flow": "da566d67-623f-4b8c-836f-65be8383e0a7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f2c9969c-83a2-4e82-ac08-16dc9e0c9954",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "eeb85b44-b4b3-4b5b-80d2-37d095d3e5a4",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f35c8542-598a-4bef-b917-34ff42ee5b0b",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "d469f08c-a0c9-4c1c-b0b4-4bf5d29d050e",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f64842f5-86c2-4b81-b457-cae171aa986e",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Terceiro",
+        "approval_flow": "132e2dfb-196b-47ab-b260-5a6a38a085f7",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f6b31abe-5ed6-4b0f-869e-0a4ad1aa3526",
+    "fields": {
+        "name": "Registro Deferido em Car\u00e1ter Emergencial",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [
+            "eb093034-7f05-4d93-8a7d-cdf8ee04923d"
+        ],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f6c287e4-9256-4dd4-9095-0ea98598b951",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "16061163-56df-47d9-8d3b-f33504ca5e83",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f6f16cc9-fa6b-4bf4-b7ac-6a55ef470e93",
+    "fields": {
+        "name": "Necessita Revis\u00e3o",
+        "approval_flow": "09dbe53c-b2ec-4fb1-8f1d-4f3e92006b1f",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f928200e-e1c2-445b-a6a3-c5d5fd6094d6",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "78a122a2-7afa-4860-954a-8b7d2919b42b",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "f96e38a8-974b-4b62-ab03-7abb920995ca",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "493b1769-42ef-4362-87e3-e304800dc722",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "fa3dda1e-7974-40ec-9fff-56376b870918",
+    "fields": {
+        "name": "Aguardando Aprova\u00e7\u00e3o do Preposto ENGIE",
+        "approval_flow": "945a60bb-c2cc-4a46-8ce4-85ba44b6e0e1",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "fa3e41a7-97c2-4f20-ab49-dfda2c5976a2",
+    "fields": {
+        "name": "Registro em Elabora\u00e7\u00e3o",
+        "approval_flow": "fbe97b3b-8822-4977-9363-1cabe985fd7c",
+        "field_options": {},
+        "responsible_created_by": true,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "fa7ebb37-e5d5-434a-8330-07b72dcef375",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "2bc452e3-6af0-4de5-8826-e623c8d04614",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "fc274c31-139d-46bf-acbb-d636f7051d00",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "5a7771a0-8dcb-4834-b459-34896998097d",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "fd8a0283-08e8-4e02-8d63-5a2fc1173516",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "384ecdfb-94ab-440e-bc99-e934a312b326",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "fe021b25-22af-44c9-84db-693b833b0331",
+    "fields": {
+        "name": "Negado",
+        "approval_flow": "37c2fc5c-b862-40e1-ba63-96815059f4b2",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "fe69be1e-7006-4601-99ae-db256ff1bdf4",
+    "fields": {
+        "name": "Aguardando Homologa\u00e7\u00e3o",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "ff1b412f-56a9-49c1-85c3-6ba3d6b11b67",
+    "fields": {
+        "name": "Registro Indeferido",
+        "approval_flow": "4754ec6f-884a-41e9-82d4-bed43120af37",
+        "field_options": {},
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+},
+{
+    "model": "approval_flows.approvalstep",
+    "pk": "ffad6d2d-41f4-4188-8fa7-e70553a8ef35",
+    "fields": {
+        "name": "Aprovado",
+        "approval_flow": "b5074db9-7d90-4bdf-b182-fea6289f9993",
+        "field_options": {
+            "required": [
+                "relationships.permissions.data.id"
+            ]
+        },
+        "responsible_created_by": false,
+        "responsible_supervisor": false,
+        "responsible_firm_entity": false,
+        "auto_execute_transition": false,
+        "responsible_json_logic": {},
+        "responsible_firms": [],
+        "responsible_users": []
+    }
+}
+]

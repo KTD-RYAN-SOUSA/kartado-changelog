@@ -1,0 +1,80 @@
+[
+    {
+        "model": "service_orders.serviceorderactionstatus",
+        "pk": "03808932-e576-45da-a204-9c588a133a83",
+        "fields": {
+            "kind": "OCCURRENCE_RECORD_STATUS",
+            "name": "Aguardando Homologa\u00e7\u00e3o",
+            "metadata": {
+                "displayInApp": false,
+                "displayInFront": false
+            },
+            "is_final": false
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatus",
+        "pk": "0392d58b-184d-4685-8268-3f4e390d47f1",
+        "fields": {
+            "kind": "ACTION_STATUS",
+            "name": "Para Fazer",
+            "metadata": {
+                "displayInApp": true,
+                "displayInFront": true
+            },
+            "is_final": false
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatus",
+        "pk": "f92e8241-4fbc-4734-89b9-c5be6416a4da",
+        "fields": {
+            "kind": "ACTION_STATUS",
+            "name": "Para Fazer",
+            "metadata": {
+                "displayInApp": true,
+                "displayInFront": true
+            },
+            "is_final": false
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatus",
+        "pk": "a32e8241-4fbc-4734-89b9-c5be6416a4a3",
+        "fields": {
+            "kind": "LAND_SERVICE_PROGRESS",
+            "name": "Em notificação verbal",
+            "metadata": {
+                "displayInApp": true,
+                "displayInFront": true
+            },
+            "is_final": false
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatus",
+        "pk": "a42e8241-4fbc-4734-89b9-c5be6416a4a4",
+        "fields": {
+            "kind": "LAND_SERVICE_PROGRESS",
+            "name": "Em notificação escrita",
+            "metadata": {
+                "displayInApp": true,
+                "displayInFront": true
+            },
+            "is_final": false
+        }
+    },
+    {
+        "model": "service_orders.serviceorderactionstatus",
+        "pk": "b32e8241-4fbc-4734-89b9-c5be6416a4b3",
+        "fields": {
+            "kind": "ENVIRONMENTAL_SERVICE_PROGRESS",
+            "name": "Em andamento",
+            "metadata": {
+                "displayInApp": true,
+                "displayInFront": true
+            },
+            "is_final": false
+        }
+    }
+]

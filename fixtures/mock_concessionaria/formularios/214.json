@@ -1,0 +1,639 @@
+{
+    "id": 1,
+    "name": "9",
+    "fields": [
+        {
+            "id": 1,
+            "apiName": "randomIdentification9",
+            "dataType": "number",
+            "displayName": "INTPGFID"
+        },
+        {
+            "id": 2,
+            "apiName": "description",
+            "dataType": "string",
+            "displayName": "DESCRI\u00c7\u00c3O"
+        },
+        {
+            "id": 3,
+            "apiName": "artespRegister",
+            "dataType": "number",
+            "displayName": "REGISTROARTESP"
+        },
+        {
+            "id": 4,
+            "apiName": "lot",
+            "dataType": "select",
+            "displayName": "Lote",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "apiName": "roadType",
+            "dataType": "select",
+            "displayName": "TIPO DA VIA",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "EXP",
+                        "value": "1"
+                    },
+                    {
+                        "name": "MAR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "DIS",
+                        "value": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "apiName": "itemId",
+            "dataType": "string",
+            "displayName": "IDENTIFICA\u00c7\u00c3O DISPOSITIVO"
+        },
+        {
+            "id": 7,
+            "apiName": "direction",
+            "dataType": "select",
+            "displayName": "DIRECAO DO DISPO.",
+            "selectOptions": {
+                "options": [
+                    {
+                        "name": "A",
+                        "value": "1"
+                    },
+                    {
+                        "name": "C",
+                        "value": "2"
+                    },
+                    {
+                        "name": "E",
+                        "value": "3"
+                    },
+                    {
+                        "name": "I",
+                        "value": "4"
+                    },
+                    {
+                        "name": "IE",
+                        "value": "5"
+                    },
+                    {
+                        "name": "S",
+                        "value": "6"
+                    },
+                    {
+                        "name": "LO",
+                        "value": "7"
+                    },
+                    {
+                        "name": "L",
+                        "value": "8"
+                    },
+                    {
+                        "name": "O",
+                        "value": "9"
+                    },
+                    {
+                        "name": "N",
+                        "value": "10"
+                    },
+                    {
+                        "name": "NS",
+                        "value": "11"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "apiName": "city",
+            "dataType": "string",
+            "displayName": "MUNIC\u00cdPIO"
+        },
+        {
+            "id": 9,
+            "apiName": "weighingSistem",
+            "dataType": "string",
+            "displayName": "SISTEMA DE PESAGEM FIXA"
+        },
+        {
+            "id": 10,
+            "apiName": "selectiveBalance",
+            "dataType": "string",
+            "displayName": "BALAN\u00c7A SELETIVA"
+        },
+        {
+            "id": 11,
+            "apiName": "prcisionBalance",
+            "dataType": "string",
+            "displayName": "BALAN\u00c7A DE PRECIS\u00c3O FIXA"
+        },
+        {
+            "id": 12,
+            "apiName": "subWeighingSistem",
+            "dataType": "string",
+            "displayName": "SUBSITEMA DE PESAGEM"
+        },
+        {
+            "id": 13,
+            "apiName": "veicDetector",
+            "dataType": "string",
+            "displayName": "DETECTOR DE PRESEN\u00c7A DE VEICULOS"
+        },
+        {
+            "id": 14,
+            "apiName": "imageRegister",
+            "dataType": "string",
+            "displayName": "REGITRO DE IMAGENS"
+        },
+        {
+            "id": 15,
+            "apiName": "perifericos",
+            "dataType": "string",
+            "displayName": "PERIF\u00c9RICOS"
+        },
+        {
+            "id": 16,
+            "apiName": "velocityItem",
+            "dataType": "string",
+            "displayName": "DISPOSITIVOS DE VELOCIDADE"
+        },
+        {
+            "id": 17,
+            "apiName": "operationDate",
+            "dataType": "timestamp",
+            "displayName": "DATAOPERACAO"
+        },
+        {
+            "id": 18,
+            "apiName": "receptionDate",
+            "dataType": "timestamp",
+            "displayName": "DATARECEP"
+        },
+        {
+            "id": 19,
+            "apiName": "lastDate",
+            "dataType": "timestamp",
+            "displayName": "DATA ULTIMA AFERI\u00c7\u00c3O"
+        },
+        {
+            "id": 20,
+            "apiName": "lastDateValidated",
+            "dataType": "timestamp",
+            "displayName": "DATA VALIDA DE AFERI\u00c7\u00c3O"
+        },
+        {
+            "id": 21,
+            "apiName": "numberValidated",
+            "dataType": "string",
+            "displayName": "CERTIFICADO DE AFERI\u00c7\u00c3O"
+        },
+        {
+            "id": 22,
+            "apiName": "notes",
+            "dataType": "textArea",
+            "displayName": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+            ],
+            "displayName": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 2,
+            "members": [
+                22
+            ],
+            "displayName": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "displayName": "PGF (POSTO GERAL DE FISCALIZA\u00c7\u00c3O)",
+    "measurementColumns": [
+        {
+            "key": "randomIdentification9",
+            "width": 19.0,
+            "header": "INTPGFID"
+        },
+        {
+            "key": "description",
+            "width": 12.0,
+            "header": "DESCRI\u00c7\u00c3O"
+        },
+        {
+            "key": "artespRegister",
+            "width": 100.0,
+            "header": "REGISTROARTESP"
+        },
+        {
+            "key": "lot",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 1",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 2",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 3",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 4",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "header": "Lote"
+        },
+        {
+            "key": "roadType",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "EXP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "MAR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.roadType"
+                                    }
+                                ]
+                            },
+                            "DIS",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 9.0,
+            "header": "TIPO DA VIA"
+        },
+        {
+            "key": "itemId",
+            "width": 3.0,
+            "header": "IDENTIFICA\u00c7\u00c3O DISPOSITIVO"
+        },
+        {
+            "key": "direction",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "A",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "C",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "E",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "I",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "IE",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "6",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "S",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "7",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "LO",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "8",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "L",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "9",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "O",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "10",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "N",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "11",
+                                    {
+                                        "var": "formData.direction"
+                                    }
+                                ]
+                            },
+                            "NS",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "width": 2.0,
+            "header": "DIRECAO DO DISPO."
+        },
+        {
+            "key": "city",
+            "width": 15.0,
+            "header": "MUNIC\u00cdPIO"
+        },
+        {
+            "key": "weighingSistem",
+            "width": 3.0,
+            "header": "SISTEMA DE PESAGEM FIXA"
+        },
+        {
+            "key": "selectiveBalance",
+            "width": 3.0,
+            "header": "BALAN\u00c7A SELETIVA"
+        },
+        {
+            "key": "prcisionBalance",
+            "width": 3.0,
+            "header": "BALAN\u00c7A DE PRECIS\u00c3O FIXA"
+        },
+        {
+            "key": "subWeighingSistem",
+            "width": 8.0,
+            "header": "SUBSITEMA DE PESAGEM"
+        },
+        {
+            "key": "veicDetector",
+            "width": 3.0,
+            "header": "DETECTOR DE PRESEN\u00c7A DE VEICULOS"
+        },
+        {
+            "key": "imageRegister",
+            "width": 3.0,
+            "header": "REGITRO DE IMAGENS"
+        },
+        {
+            "key": "perifericos",
+            "width": 50.0,
+            "header": "PERIF\u00c9RICOS"
+        },
+        {
+            "key": "velocityItem",
+            "width": 20.0,
+            "header": "DISPOSITIVOS DE VELOCIDADE"
+        },
+        {
+            "key": "operationDate",
+            "width": 19.0,
+            "header": "DATAOPERACAO"
+        },
+        {
+            "key": "receptionDate",
+            "width": 19.0,
+            "header": "DATARECEP"
+        },
+        {
+            "key": "lastDate",
+            "width": 19.0,
+            "header": "DATA ULTIMA AFERI\u00c7\u00c3O"
+        },
+        {
+            "key": "lastDateValidated",
+            "width": 19.0,
+            "header": "DATA VALIDA DE AFERI\u00c7\u00c3O"
+        },
+        {
+            "key": "numberValidated",
+            "width": 50.0,
+            "header": "CERTIFICADO DE AFERI\u00c7\u00c3O"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "kind": "2",
+    "deadline": "null"
+}

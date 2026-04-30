@@ -1,0 +1,56 @@
+[
+{
+    "model": "services.service",
+    "pk": "0085f497-f8b0-43f9-962f-86242d2e2305",
+    "fields": {
+        "name": "FORNECIMENTO E IMPLANTA\u00c7\u00c3O PLACA SINALIZA\u00c7\u00c3O TOTALMENTE REFLETIVA",
+        "unit_price": 388.31,
+        "total_amount": 0.0,
+        "current_balance": 71.5,
+        "adjustment_coefficient": 1.3716,
+        "kind": "9",
+        "group": "maintenance",
+        "code": "4.S.06.200.02",
+        "unit": "m\u00b2",
+        "initial_price": 0.0,
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "metadata": {}
+    }
+},
+{
+    "model": "services.service",
+    "pk": "0130feec-abc5-4dce-8ef0-12dfb8ae2fbf",
+    "fields": {
+        "name": "TRANSPORTE DE RR-1C P/ TAPA BURACO",
+        "unit_price": 0.57,
+        "total_amount": 0.0,
+        "current_balance": 752.583489999999,
+        "adjustment_coefficient": 1.0,
+        "kind": "1",
+        "group": "pavement",
+        "code": "X",
+        "unit": "m\u00b3",
+        "initial_price": 0.0,
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "metadata": {}
+    }
+},
+{
+    "model": "services.service",
+    "pk": "0157fe4f-68d1-4639-8193-37d0cdbc2eb0",
+    "fields": {
+        "name": "TUBO PVC D = 100 MM",
+        "unit_price": 10.85,
+        "total_amount": 0.0,
+        "current_balance": 3439000.0,
+        "adjustment_coefficient": 1.2187,
+        "kind": "12",
+        "group": "maintenance",
+        "code": "M911",
+        "unit": "m",
+        "initial_price": 0.0,
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "metadata": {}
+    }
+}
+]

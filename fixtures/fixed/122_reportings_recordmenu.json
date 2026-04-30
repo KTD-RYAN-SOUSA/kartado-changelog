@@ -1,0 +1,54 @@
+[
+    {
+        "model": "reportings.recordmenu",
+        "pk": "3fbc8d53-3eb6-4cbe-b44e-41db30df7ac3",
+        "fields": {
+            "name": "a",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "order": 3,
+            "system_default": true,
+            "created_at": "2020-09-03",
+            "content_type": 91
+        }
+    },
+    {
+        "model": "reportings.recordmenu",
+        "pk": "e1b79573-473e-4f47-9d35-606f8a54b816",
+        "fields": {
+            "name": "b",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+            "order": 2,
+            "system_default": false,
+            "created_at": "2020-09-03",
+            "content_type": 91
+        }
+    },
+    {
+        "model": "reportings.recordmenu",
+        "pk": "31e9a760-57d6-4f1d-aa5e-55319abaa491",
+        "fields": {
+            "name": "c",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "created_by": "4e29d1e0-9745-48d3-b38f-b1210e683e00",
+            "order": 2,
+            "system_default": false,
+            "created_at": "2020-09-03",
+            "content_type": 91
+        }
+    },
+    {
+        "model": "reportings.recordmenu",
+        "pk": "b0b0806b-328d-44c6-a52c-409903b6cb81",
+        "fields": {
+            "name": "cd",
+            "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+            "created_by": "9a107ec3-7a4f-4efb-bbec-b3db7a3347ad",
+            "order": 2,
+            "system_default": false,
+            "created_at": "2020-09-03",
+            "content_type": 91
+        }
+    }
+]

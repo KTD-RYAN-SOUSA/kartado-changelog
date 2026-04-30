@@ -1,0 +1,47 @@
+{% extends "reportings/email/user_notif_reporting.html" %}
+
+{% block scoped_css %}
+<link rel="stylesheet" href="apps/reportings/templates/reportings/email/reporting_approval_notifications.css">
+{% endblock scoped_css %}
+
+{% block content %}
+<p class="p-title">Olá!</p>
+
+<p class="p-title">{{message}}</p>
+
+<hr />
+
+<h2>Apontamentos</h2>
+{% for approval_uuid, reporting_data in reporting_approval_data.items %}
+{% if reporting_data %}
+<table>
+    <thead>
+        <tr>
+            <th>Serial</th>
+            {% if show_subcompany %}
+            <th>Empresa</th>
+            {% endif %}
+            <th>Equipe</th>
+            <th>Classe</th>
+            <th>Aprovação</th>
+        </tr>
+    </thead>
+
+    {% for reporting in reporting_data %}
+    <tr>
+        <td><a href="{{reporting.url}}" target="_blank">{{reporting.number}}</a></td>
+        {% if show_subcompany %}
+        <td>{{reporting.subcompany}}</td>
+        {% endif %}
+        <td>{{reporting.firm}}</td>
+        <td>{{reporting.occurrence_type}}</td>
+        <td>{{reporting.approval_step}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+<span style="line-height: 10px;" />
+{% endfor %}
+
+
+{% endblock %}

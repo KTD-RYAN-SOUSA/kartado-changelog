@@ -1,0 +1,60 @@
+[
+{
+    "model": "maps.shapefile",
+    "pk": "386ffbf6-cfea-4c12-a880-2f959fdde4f3",
+    "fields": {
+        "created_by": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "created_at": "2021-03-24T16:28:26.954Z",
+        "updated_at": "2021-03-24T16:39:37.610Z",
+        "synced_at": "2021-03-24T16:28:26Z",
+        "name": "ACATE",
+        "description": "ACATE",
+        "private": false,
+        "parent": null,
+        "geometry": "SRID=4326;GEOMETRYCOLLECTION (POLYGON ((-27.54425933517804 -48.50085675716399, -27.5444341320799 -48.50072935223578, -27.54448407400079 -48.50082725286483, -27.54464222326713 -48.50071460008621, -27.54441748476791 -48.50032702088355, -27.5443378154541 -48.5003900527954, -27.54430927717837 -48.50034981966019, -27.54407026882822 -48.50053086876868, -27.54425933517804 -48.50085675716399)))",
+        "properties": [
+            {
+                "OBRA": "BAJA-D",
+                "OBJECTID": 1,
+                "SEQUENCIAL": "0004",
+                "IDENTIFICADOR": "393320"
+            }
+        ],
+        "metadata": {
+            "ecmSearchType": "imovel",
+            "arcgis_layer_info": {
+                "fields": [
+                    {
+                        "name": "OBJECTID",
+                        "type": "esriFieldTypeOID",
+                        "alias": "OBJECTID",
+                        "domain": null
+                    },
+                    {
+                        "name": "SEQUENCIAL",
+                        "type": "esriFieldTypeString",
+                        "alias": "SEQUENCIAL",
+                        "domain": null
+                    },
+                    {
+                        "name": "IDENTIFICADOR",
+                        "type": "esriFieldTypeString",
+                        "alias": "IDENTIFICADOR",
+                        "domain": null
+                    },
+                    {
+                        "name": "OBRA",
+                        "type": "esriFieldTypeString",
+                        "alias": "OBRA",
+                        "domain": null
+                    }
+                ]
+            }
+        },
+        "enable_default": false,
+        "companies": [
+            "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+        ]
+    }
+}
+]

@@ -1,0 +1,549 @@
+{
+    "id": 1,
+    "name": "Resduosslidosemcursodgua",
+    "fields": [
+        {
+            "id": 1,
+            "api_name": "length",
+            "data_type": "float",
+            "display_name": "Comprimento (m)"
+        },
+        {
+            "id": 2,
+            "api_name": "width",
+            "data_type": "float",
+            "display_name": "Largura (m)"
+        },
+        {
+            "id": 3,
+            "api_name": "height",
+            "data_type": "float",
+            "display_name": "Altura/Espessura (m)"
+        },
+        {
+            "id": 4,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "api_name": "area",
+            "data_type": "jsonLogic",
+            "display_name": "\u00c1rea (m\u00b2)"
+        },
+        {
+            "id": 5,
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width",
+                            "formData.height"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            },
+                            {
+                                "var": "formData.height"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "api_name": "volume",
+            "data_type": "jsonLogic",
+            "display_name": "Volume (m\u00b3)"
+        },
+        {
+            "id": 6,
+            "api_name": "lot",
+            "data_type": "select",
+            "display_name": "Lote",
+            "select_options": {
+                "options": [
+                    {
+                        "name": "Lote 1",
+                        "value": "1"
+                    },
+                    {
+                        "name": "Lote 2",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Lote 3",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Lote 4",
+                        "value": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "api_name": "demandOrigin",
+            "data_type": "selectMultiple",
+            "display_name": "Origem",
+            "select_options": {
+                "options": [
+                    {
+                        "name": "Interna",
+                        "value": "1"
+                    },
+                    {
+                        "name": "KCOR",
+                        "value": "2"
+                    },
+                    {
+                        "name": "ARTESP DIN",
+                        "value": "3"
+                    },
+                    {
+                        "name": "ARTESP DOP",
+                        "value": "4"
+                    },
+                    {
+                        "name": "ARTESP DIN - Meio ambiente",
+                        "value": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "api_name": "internCode",
+            "data_type": "string",
+            "display_if": {
+                "in": [
+                    "1",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "display_name": "C\u00f3digo Interno"
+        },
+        {
+            "id": 9,
+            "api_name": "kcorCode",
+            "data_type": "string",
+            "display_if": {
+                "in": [
+                    "2",
+                    {
+                        "var": "data.formData.demandOrigin"
+                    }
+                ]
+            },
+            "display_name": "C\u00f3digo Kcor"
+        },
+        {
+            "id": 10,
+            "api_name": "artespCode",
+            "data_type": "string",
+            "display_if": {
+                "or": [
+                    {
+                        "in": [
+                            "3",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "4",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "5",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "display_name": "C\u00f3digo ARTESP"
+        },
+        {
+            "id": 11,
+            "api_name": "receivedDate",
+            "data_type": "timestamp",
+            "display_if": {
+                "or": [
+                    {
+                        "in": [
+                            "3",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "4",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    },
+                    {
+                        "in": [
+                            "5",
+                            {
+                                "var": "data.formData.demandOrigin"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "display_name": "Recebido da ARTESP em"
+        },
+        {
+            "id": 12,
+            "logic": {
+                "+": 11
+            },
+            "api_name": "csp",
+            "data_type": "jsonLogic",
+            "display_name": "CSP"
+        },
+        {
+            "id": 13,
+            "api_name": "notes",
+            "data_type": "textArea",
+            "display_name": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "groups": [
+        {
+            "order": 1,
+            "members": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "display_name": "Quantitativos"
+        },
+        {
+            "order": 2,
+            "members": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ],
+            "display_name": "Identifica\u00e7\u00e3o"
+        },
+        {
+            "order": 3,
+            "members": [
+                13
+            ],
+            "display_name": "Informa\u00e7\u00f5es adicionais"
+        }
+    ],
+    "display_name": "Res\u00edduos s\u00f3lidos em curso d'\u00e1gua ",
+    "measurement_columns": [
+        {
+            "key": "length",
+            "style": {
+                "num_fmt": "0.00"
+            },
+            "width": 12,
+            "header": "Comprimento (m)"
+        },
+        {
+            "key": "width",
+            "style": {
+                "num_fmt": "0.00"
+            },
+            "width": 12,
+            "header": "Largura (m)"
+        },
+        {
+            "key": "height",
+            "style": {
+                "num_fmt": "0.00"
+            },
+            "width": 12,
+            "header": "Altura/Espessura (m)"
+        },
+        {
+            "key": "area",
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "num_fmt": "0.000"
+            },
+            "width": 12,
+            "header": "\u00c1rea (m\u00b2)",
+            "add_total": true
+        },
+        {
+            "key": "volume",
+            "logic": {
+                "if": [
+                    {
+                        "missing": [
+                            "formData.length",
+                            "formData.width",
+                            "formData.height"
+                        ]
+                    },
+                    0,
+                    {
+                        "*": [
+                            {
+                                "var": "formData.length"
+                            },
+                            {
+                                "var": "formData.width"
+                            },
+                            {
+                                "var": "formData.height"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "style": {
+                "num_fmt": "0.000"
+            },
+            "width": 12,
+            "header": "Volume (m\u00b3)",
+            "add_total": true
+        },
+        {
+            "key": "lot",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 1",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 2",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 3",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.lot"
+                                    }
+                                ]
+                            },
+                            "Lote 4",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "header": "Lote"
+        },
+        {
+            "key": "demandOrigin",
+            "logic": {
+                "cat": [
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "1",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "Interna",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "2",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "KCOR",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "3",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "ARTESP DIN",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "4",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "ARTESP DOP",
+                            ""
+                        ]
+                    },
+                    {
+                        "if": [
+                            {
+                                "in": [
+                                    "5",
+                                    {
+                                        "var": "formData.demandOrigin"
+                                    }
+                                ]
+                            },
+                            "ARTESP DIN - Meio ambiente",
+                            ""
+                        ]
+                    }
+                ]
+            },
+            "header": "Origem"
+        },
+        {
+            "key": "internCode",
+            "header": "C\u00f3digo Interno"
+        },
+        {
+            "key": "kcorCode",
+            "header": "C\u00f3digo Kcor"
+        },
+        {
+            "key": "artespCode",
+            "header": "C\u00f3digo ARTESP"
+        },
+        {
+            "key": "receivedDate",
+            "header": "Recebido da ARTESP em"
+        },
+        {
+            "key": "csp",
+            "logic": {
+                "+": 11
+            },
+            "header": "CSP"
+        },
+        {
+            "key": "notes",
+            "logic": {
+                "var": "formData.notes"
+            },
+            "width": 20,
+            "header": "Observa\u00e7\u00f5es"
+        }
+    ],
+    "displayName": "Res\u00edduos s\u00f3lidos em curso d'\u00e1gua",
+    "kind": "15",
+    "deadline": "{\"__type__\": \"timedelta\", \"days\": 15, \"seconds\": 0, \"microseconds\": 0}"
+}

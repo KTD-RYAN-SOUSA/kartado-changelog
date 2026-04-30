@@ -1,0 +1,578 @@
+{
+  "production": {
+    "aws_region": "us-east-1",
+    "django_settings": "RoadLabsAPI.settings.production",
+    "profile_name": "default",
+    "project_name": "kartado-general",
+    "runtime": "python3.11",
+    "memory_size": 1728,
+    "ephemeral_storage": {
+      "Size": 10240
+    },
+    "timeout_seconds": 900,
+    "s3_bucket": "roadlabs-backend-production",
+    "environment_variables": {
+      "ZAPPA_ENVIRONMENT_NAME": "production"
+    },
+    "exclude": [
+      ".git",
+      "__pycache__",
+      "venv"
+    ],
+    "events": [
+      {
+        "function": "apps.notifications.asynchronous.process_sqs_push_notification",
+        "event_source": {
+          "arn": "arn:aws:sqs:us-east-1:608592777334:kartado-push-notifications-production",
+          "batch_size": 3,
+          "maximum_batching_window_in_seconds": 5
+        }
+      },
+      {
+        "function": "apps.email_handler.asynchronous.send_queued_emails",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.notifications.asynchronous.send_queued_push_notifications",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.reportings.notifications.approval_step_report_email",
+        "expression": "cron(30 7 ? * MON *)"
+      },
+      {
+        "function": "apps.reportings.notifications.reporting_job_email",
+        "expression": "cron(30 7 ? * MON *)"
+      },
+      {
+        "function": "helpers.aws.send_aws_metrics",
+        "expression": "rate(5 minutes)"
+      },
+      {
+        "function": "apps.templates.notifications.call_email_mobile_sync_not_done",
+        "expression": "rate(30 minutes)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_async_batch",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_rep_in_rep_batches",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.email_handler.asynchronous.delete_old_queued_emails",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.notifications.asynchronous.delete_old_queued_push",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.companies.create_instances_company_model",
+        "expression": "cron(1 3 1 * ? *)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.archive_completed_jobs",
+        "expression": "cron(0 3 * * ? *)"
+      },
+      {
+        "function": "apps.companies.asynchronous.cleanup_bim_disabled_companies",
+        "expression": "cron(0 3 * * ? *)"
+      },
+      {
+        "function": "apps.ml_predictions.asynchronous.fetch_ml_predictions_daily",
+        "expression": "cron(0 9 * * ? *)"
+      }
+    ],
+    "cloudwatch_log_level": "ERROR",
+    "log_level": "DEBUG"
+  },
+  "staging": {
+    "aws_region": "us-east-1",
+    "django_settings": "RoadLabsAPI.settings.staging",
+    "profile_name": "default",
+    "project_name": "kartado-backend",
+    "runtime": "python3.11",
+    "memory_size": 1728,
+    "timeout_seconds": 900,
+    "ephemeral_storage": {
+      "Size": 10240
+    },
+    "s3_bucket": "kartado-backend-staging",
+    "environment_variables": {
+      "ZAPPA_ENVIRONMENT_NAME": "staging"
+    },
+    "keep_warm": false,
+    "exclude": [
+      ".git",
+      "__pycache__",
+      "venv"
+    ],
+    "events": [
+      {
+        "function": "apps.notifications.asynchronous.process_sqs_push_notification",
+        "event_source": {
+          "arn": "arn:aws:sqs:us-east-1:270002629958:kartado-push-notifications-homolog",
+          "batch_size": 3,
+          "maximum_batching_window_in_seconds": 5
+        }
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_async_batch",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_rep_in_rep_batches",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.email_handler.asynchronous.delete_old_queued_emails",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.notifications.asynchronous.delete_old_queued_push",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.archive_completed_jobs",
+        "expression": "cron(0 0 * * ? *)"
+      },
+      {
+        "function": "apps.companies.asynchronous.cleanup_bim_disabled_companies",
+        "expression": "cron(0 3 * * ? *)"
+      },
+      {
+        "function": "apps.ml_predictions.asynchronous.fetch_ml_predictions_daily",
+        "expression": "cron(0 9 * * ? *)"
+      }
+    ],
+    "cloudwatch_log_level": "ERROR",
+    "log_level": "DEBUG"
+  },
+  "homolog": {
+    "extends": "staging",
+    "django_settings": "RoadLabsAPI.settings.homolog",
+    "project_name": "kartado-homolog",
+    "timeout_seconds": 900,
+    "s3_bucket": "kartado-backend-homolog",
+    "environment_variables": {
+      "ZAPPA_ENVIRONMENT_NAME": "homolog"
+    },
+    "cloudwatch_log_level": "ERROR",
+    "log_level": "DEBUG"
+  },
+  "engie_production": {
+    "extends": "production",
+    "aws_region": "sa-east-1",
+    "django_settings": "RoadLabsAPI.settings.engie.production",
+    "project_name": "kartado-engie",
+    "memory_size": 2048,
+    "s3_bucket": "engie-production",
+    "xray_tracing": true,
+    "domain": "api.engie.kartado.com.br",
+    "certificate_arn": "arn:aws:acm:us-east-1:608592777334:certificate/342cb5f2-0d34-4bc7-a907-57301351ef1f",
+    "events": [
+      {
+        "function": "apps.notifications.asynchronous.process_sqs_push_notification",
+        "event_source": {
+          "arn": "arn:aws:sqs:sa-east-1:608592777334:kartado-push-notifications-engie-production",
+          "batch_size": 3,
+          "maximum_batching_window_in_seconds": 5
+        }
+      },
+      {
+        "function": "apps.email_handler.asynchronous.send_queued_emails",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.notifications.asynchronous.send_queued_push_notifications",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.email_handler.asynchronous.manager_report_email",
+        "expression": "cron(0 7 1 * ? *)"
+      },
+      {
+        "function": "apps.email_handler.asynchronous.service_order_report_email",
+        "expression": "cron(0 7 ? * MON-FRI *)"
+      },
+      {
+        "function": "apps.email_handler.asynchronous.monitoring_cycles_emails",
+        "expression": "cron(0 7 ? * MON-FRI *)"
+      },
+      {
+        "function": "apps.integrations.asynchronous.run_integrations_hourly",
+        "expression": "cron(5 * * * ? *)"
+      },
+      {
+        "function": "apps.integrations.asynchronous.run_integrations_daily_noon",
+        "expression": "cron(5 12 * * ? *)"
+      },
+      {
+        "function": "apps.integrations.asynchronous.run_integrations_daily_midnight",
+        "expression": "cron(5 0 * * ? *)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_async_batch",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_rep_in_rep_batches",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.users.asynchronous.generate_debounced_notifications",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.occurrence_records.asynchronous.notify_overdue_validations",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.service_orders.asynchronous.notify_pending_procedures",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.service_orders.asynchronous.notify_pending_for_report",
+        "expression": "cron(0 7 1 * ? *)"
+      },
+      {
+        "function": "apps.service_orders.notifications.notify_resources_approval",
+        "expression": "cron(30 7 ? * MON *)"
+      },
+      {
+        "function": "apps.users.notifications.handle_email_boletim_mensal",
+        "expression": "cron(0 5 1 * ? *)"
+      },
+      {
+        "function": "apps.users.notifications.handle_email_boletim_semanal",
+        "expression": "cron(0 5 ? * MON *)"
+      },
+      {
+        "function": "apps.users.notifications.handle_email_boletim_diario",
+        "expression": "cron(0 5 ? * MON-FRI *)"
+      },
+      {
+        "function": "apps.email_handler.asynchronous.delete_old_queued_emails",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.notifications.asynchronous.delete_old_queued_push",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "helpers.apps.engie_idm_rh.run_engie_rh",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.archive_completed_jobs",
+        "expression": "cron(0 3 * * ? *)"
+      },
+      {
+        "function": "apps.companies.asynchronous.cleanup_bim_disabled_companies",
+        "expression": "cron(0 3 * * ? *)"
+      }
+    ],
+    "environment_variables": {
+      "ZAPPA_ENVIRONMENT_NAME": "engie_production"
+    },
+    "cloudwatch_log_level": "ERROR",
+    "log_level": "DEBUG"
+  },
+  "engie_staging": {
+    "extends": "staging",
+    "aws_region": "sa-east-1",
+    "django_settings": "RoadLabsAPI.settings.engie.staging",
+    "project_name": "engie_staging",
+    "memory_size": 2048,
+    "s3_bucket": "engie-kartado-staging",
+    "xray_tracing": true,
+    "domain": "pre.api.engie.kartado.com.br",
+    "certificate_arn": "arn:aws:acm:us-east-1:608592777334:certificate/342cb5f2-0d34-4bc7-a907-57301351ef1f",
+    "events": [
+      {
+        "function": "apps.email_handler.asynchronous.send_queued_emails",
+        "expression": "rate(5 minutes)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_async_batch",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_rep_in_rep_batches",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.users.asynchronous.generate_debounced_notifications",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.service_orders.asynchronous.notify_pending_procedures",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.service_orders.asynchronous.notify_pending_for_report",
+        "expression": "cron(0 7 1 * ? *)"
+      },
+      {
+        "function": "apps.email_handler.asynchronous.manager_report_email",
+        "expression": "cron(0 7 1 * ? *)"
+      },
+      {
+        "function": "apps.service_orders.notifications.notify_resources_approval",
+        "expression": "cron(30 7 ? * MON *)"
+      },
+      {
+        "function": "apps.integrations.asynchronous.run_integrations_hourly",
+        "expression": "cron(5 * * * ? *)"
+      },
+      {
+        "function": "apps.integrations.asynchronous.run_integrations_daily_noon",
+        "expression": "cron(5 12 * * ? *)"
+      },
+      {
+        "function": "apps.integrations.asynchronous.run_integrations_daily_midnight",
+        "expression": "cron(5 0 * * ? *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "helpers.apps.engie_idm_rh.run_engie_rh",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.archive_completed_jobs",
+        "expression": "cron(0 3 * * ? *)"
+      },
+      {
+        "function": "apps.companies.asynchronous.cleanup_bim_disabled_companies",
+        "expression": "cron(0 3 * * ? *)"
+      }
+    ],
+    "environment_variables": {
+      "ZAPPA_ENVIRONMENT_NAME": "engie_staging"
+    },
+    "cloudwatch_log_level": "ERROR",
+    "log_level": "DEBUG"
+  },
+  "ccr_production": {
+    "extends": "production",
+    "aws_region": "sa-east-1",
+    "django_settings": "RoadLabsAPI.settings.ccr.production",
+    "project_name": "kartado-ccr",
+    "memory_size": 2048,
+    "s3_bucket": "kartado-ccr-production",
+    "xray_tracing": true,
+    "domain": "ccr.api.kartado.com.br",
+    "certificate_arn": "arn:aws:acm:us-east-1:608592777334:certificate/342cb5f2-0d34-4bc7-a907-57301351ef1f",
+    "timeout_seconds": 900,
+    "events": [
+      {
+        "function": "apps.notifications.asynchronous.process_sqs_push_notification",
+        "event_source": {
+          "arn": "arn:aws:sqs:sa-east-1:608592777334:kartado-push-notifications-ccr-production",
+          "batch_size": 3,
+          "maximum_batching_window_in_seconds": 5
+        }
+      },
+      {
+        "function": "apps.email_handler.asynchronous.send_queued_emails",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.notifications.asynchronous.send_queued_push_notifications",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.reportings.notifications.approval_step_report_email",
+        "expression": "cron(30 7 ? * MON *)"
+      },
+      {
+        "function": "apps.reportings.notifications.reporting_job_email",
+        "expression": "cron(30 7 ? * MON *)"
+      },
+      {
+        "function": "apps.templates.notifications.call_email_mobile_sync_not_done",
+        "expression": "rate(30 minutes)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_async_batch",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_rep_in_rep_batches",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.email_handler.asynchronous.delete_old_queued_emails",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.notifications.asynchronous.delete_old_queued_push",
+        "expression": "cron(5 6 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.archive_completed_jobs",
+        "expression": "cron(0 3 * * ? *)"
+      },
+      {
+        "function": "apps.companies.asynchronous.cleanup_bim_disabled_companies",
+        "expression": "cron(0 3 * * ? *)"
+      },
+      {
+        "function": "apps.ml_predictions.asynchronous.fetch_ml_predictions_daily",
+        "expression": "cron(0 9 * * ? *)"
+      }
+    ],
+    "environment_variables": {
+      "ZAPPA_ENVIRONMENT_NAME": "ccr_production"
+    }
+  },
+  "ccr_homolog": {
+    "extends": "staging",
+    "aws_region": "sa-east-1",
+    "django_settings": "RoadLabsAPI.settings.ccr.homolog",
+    "project_name": "ccr_homolog",
+    "memory_size": 2048,
+    "s3_bucket": "ccr-homolog",
+    "xray_tracing": true,
+    "domain": "homolog-ccr.api.kartado.com.br",
+    "certificate_arn": "arn:aws:acm:us-east-1:608592777334:certificate/342cb5f2-0d34-4bc7-a907-57301351ef1f",
+    "timeout_seconds": 900,
+    "events": [
+      {
+        "function": "apps.email_handler.asynchronous.send_queued_emails",
+        "expression": "rate(5 minutes)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_async_batch",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.process_job_rep_in_rep_batches",
+        "expression": "rate(1 minute)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.reporting_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_weekly",
+        "expression": "cron(0 21 ? * MON *)"
+      },
+      {
+        "function": "apps.approval_flows.asynchronous.daily_report_approval_daily",
+        "expression": "cron(5 21 ? * * *)"
+      },
+      {
+        "function": "apps.work_plans.asynchronous.archive_completed_jobs",
+        "expression": "cron(0 3 * * ? *)"
+      },
+      {
+        "function": "apps.companies.asynchronous.cleanup_bim_disabled_companies",
+        "expression": "cron(0 3 * * ? *)"
+      }
+    ],
+    "environment_variables": {
+      "ZAPPA_ENVIRONMENT_NAME": "ccr_homolog"
+    },
+    "cloudwatch_log_level": "ERROR",
+    "log_level": "DEBUG"
+  },
+  "eco_production": {
+    "extends": "production",
+    "project_name": "kartado-eco",
+    "s3_bucket": "kartado-eco-production",
+    "domain": "api.eco.kartado.com.br",
+    "certificate_arn": "arn:aws:acm:us-east-1:608592777334:certificate/342cb5f2-0d34-4bc7-a907-57301351ef1f",
+    "events": [],
+    "environment_variables": {
+      "ZAPPA_ENVIRONMENT_NAME": "eco_production"
+    },
+    "cloudwatch_log_level": "ERROR",
+    "log_level": "DEBUG"
+  }
+}

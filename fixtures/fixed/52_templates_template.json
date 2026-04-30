@@ -1,0 +1,15 @@
+[
+{
+    "model": "templates.template",
+    "pk": "92ef7809-0589-4086-af3f-a8faca8d0952",
+    "fields": {
+        "model_name": "Teste",
+        "item_name": "Teste",
+        "options": {},
+        "validation": {},
+        "companies": [
+            "daac1370-ee61-45ce-ad13-63aa131bf4e6"
+        ]
+    }
+}
+]

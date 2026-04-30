@@ -1,0 +1,13 @@
+[
+{
+    "model": "companies.companygroup",
+    "pk": "09492fd1-26b6-4ec7-b78f-802989dabf07",
+    "fields": {
+        "name": "Teste",
+        "key_user": "0aa50773-b368-4a50-9f12-4a7d8dfaf256",
+        "saml_idp": null,
+        "metadata": {},
+        "mobile_app": "road"
+    }
+}
+]

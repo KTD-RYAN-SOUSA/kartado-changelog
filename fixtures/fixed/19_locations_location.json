@@ -1,0 +1,22 @@
+[
+{
+    "model": "locations.location",
+    "pk": "00b92669-d48f-46ef-8f92-58dac61a74b2",
+    "fields": {
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "city": "02d12c1a-2321-4825-9ac0-aa6a6f2f4aa9",
+        "name": "Tr\u00eas Barras",
+        "coordinates": null
+    }
+},
+{
+    "model": "locations.location",
+    "pk": "01085daf-1896-40b5-ab39-78120f9b2d4f",
+    "fields": {
+        "company": "daac1370-ee61-45ce-ad13-63aa131bf4e6",
+        "city": "02d12c1a-2321-4825-9ac0-aa6a6f2f4aa9",
+        "name": "Linha Alvorada.",
+        "coordinates": "SRID=4326;POINT (3.383306795747196 53.02294095321272)"
+    }
+}
+]

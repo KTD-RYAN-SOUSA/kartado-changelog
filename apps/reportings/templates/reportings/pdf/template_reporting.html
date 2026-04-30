@@ -1,0 +1,154 @@
+{% extends 'reportings/pdf/base/base_reporting.html' %}
+{% load custom_filters %}
+
+{% block context %}
+    <div class="body-title">Identificação</div>
+    <div class="body-line"></div>
+    <div class="body-content-row">
+        <div class="body-item-row">
+            <span><strong>Empresa: </strong>{{ subcompany.name }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Equipe: </strong>{{ firm.name }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Encontrado em: </strong>{{ found_at }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Prazo: </strong>{{ due_at }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Executado em: </strong>{{ executed_at }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Serial: </strong>{{ number }}</span>
+        </div>
+    </div>
+
+    {% if has_inventory %}
+        <div>
+            <div class="body-title">Inventários vinculados</div>
+            <div class="body-line"></div>
+                <section class="">
+                    <table class="table-referenceiinformation">
+                        <tr>
+                            <th>Serial</th>
+                            <th>Rodovia</th>
+                            <th>Km</th>
+                            <th>Km de Projeto</th>
+                            <th>Sentido</th>
+                            <th>Faixa</th>
+                            <th>Classe</th>
+                            <th>Encontrado em</th>
+                        </tr>
+                        <tr>
+                            <td>{{ inventory_number }}</td>
+                            <td>{{ inventory_road_name }}</td>
+                            <td>{{ inventory_km }}</td>
+                            <td>{{ inventory_project_km }}</td>
+                            <td>{{ inventory_occurrence_type }}</td>
+                            <td>{{ inventory_direction }}</td>
+                            <td>{{ inventory_lane }}</td>
+                            <td>{{ inventory_created_at }}</td>
+                        </tr>
+                    </table>
+                </section>
+        </div>
+    {% endif %}
+
+    {% if not hide_reporting_location and road_can_view %}
+    <div class="body-title">Localização</div>
+    <div class="body-line"></div>
+    <div class="body-content-row">
+        <div class="body-item-row">
+            <span><strong>Rodovia: </strong> {{ road_name }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Km: </strong> {{ km }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Km final: </strong> {{ end_km }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Lote: </strong> {{ lot }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Sentido: </strong> {{ direction }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Faixa: </strong> {{ lane }}</span>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="body-title">Descrição</div>
+    <div class="body-line"></div>
+    <div class="body-content-row">
+        <div class="body-item-row">
+            <span><strong>Natureza: </strong> {{ kind }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Classe: </strong> {{ occurrence_type.name }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Status : </strong> {{ status.name }}</span>
+        </div>
+        <div class="body-item-row">
+            <span><strong>Aprovação: </strong> {{ approval_step.name }}</span>
+        </div>
+    </div>
+
+    <!-- ABAIXO - Campos genéricos para TODOS os tipos de Apontamentos -->
+    {% for item in generic_fields %}
+    <div class="left-margin">
+        <div class="body-title">{{ item.name }}</div>
+        <div class="body-line"></div>
+        {% for field in item.fields %}
+            {% if field.data %}
+                <div class="box-numeric">
+                    <div class="box-numeric-label">
+                        <span>{{ field.group_index }}</span>
+                    </div>
+                    <div class="box-numeric-context vertical-line">
+                        {% for item in field.data %}
+                            {% if item.display_value %}
+                                <div>
+                                    <span class="title-label">{{ item.display_name }}:</span> {{ item.display_value }} <br>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% else %}
+                {% if field.display_value %}
+                    <span class="title-label">{{ field.display_name }}:</span> {{ field.display_value }} <br>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+    <!-- ACIMA - Campos genéricos para TODOS os tipos de Apontamentos -->
+
+    {% if images %}
+        <div class="page-break"></div>
+        <div class="body-title">Arquivos e Imagens</div>
+        <div class="body-line"></div>
+        {% for image in images %}
+            <div class="body-title">
+                <span><strong>Descrição: </strong>{{ image.description }}</span><br>
+                <span><strong>Data de Criação:</strong> {{ image.date }}</span><br>
+                <div class="container-image">
+                    <img 
+                        class="image"
+                        src="{{ image.img_data }}" 
+                        alt="{{ image.description }}"
+                    /><br><br>
+                </div>
+            </div>
+            {% if not image.is_last %}
+                <div class="page-break"></div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

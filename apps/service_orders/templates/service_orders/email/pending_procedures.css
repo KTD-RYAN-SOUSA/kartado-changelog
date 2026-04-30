@@ -1,0 +1,45 @@
+#pending-body {
+    margin-top: 30px;
+    padding: 20px 80px;
+    background-color: #fafbfc;
+    border-radius: 5px;
+}
+
+.delayed {
+    color: #D32F2F;
+}
+
+.delayed-bg {
+    background-color: #FFCCBC;
+}
+
+.due-tomorrow {
+    color: #388E3C;
+}
+
+.soon-bg {
+    background-color: #E0E0E0;
+}
+
+.procedure-item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 20px 20px;
+    margin-bottom: 40px;
+    border: 1px solid #d3d3d3;
+}
+
+.deadline-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date{
+    margin-right: 30px;
+}
+
+.day-counter {
+    padding: 5px 10px;
+    border-radius: 500px;
+}

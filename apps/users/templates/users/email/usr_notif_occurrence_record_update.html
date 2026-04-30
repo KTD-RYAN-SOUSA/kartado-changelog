@@ -1,0 +1,92 @@
+{% extends "usr_notif.html" %}
+
+{% block scoped_css %}
+<link rel="stylesheet" href="apps/users/templates/users/email/usr_notif_occurrence_record_update.css">
+{% endblock scoped_css %}
+
+{% block content %}
+<h2>Olá!</h2>
+
+<p>Aqui você receberá informações de registros criados, atualizados ou inclusos em serviços da data {{report_start_date}} até {{report_end_date}}.</p>
+
+<hr>
+
+{% if created %}
+  <h2>Registros criados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Natureza</th>
+        <th>Tipo</th>
+        <th>Emitente</th>
+      </tr>
+    </thead>
+
+    {% for record in created %}
+    <tr>
+      <td><a href="{{record.url}}" target="_blank">{{record.number}}</a></td>
+      <td>{{record.kind}}</td>
+      <td>{{record.type}}</td>
+      <td>{{record.created_by}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  {% if updated or included_in_so %}<hr>{% endif %}
+{% endif %}
+
+{% if updated %}
+  <h2>Registros atualizados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Natureza</th>
+        <th>Tipo</th>
+        <th>Emitente</th>
+        <th>Editado por</th>
+      </tr>
+    </thead>
+
+    {% for record in updated %}
+    <tr>
+      <td><a href="{{record.url}}" target="_blank">{{record.number}}</a></td>
+      <td>{{record.kind}}</td>
+      <td>{{record.type}}</td>
+      <td>{{record.created_by}}</td>
+      <td>{{record.edited_by}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  {% if included_in_so %}<hr>{% endif %}
+{% endif %}
+
+{% if services %}
+  <h2>Inclusões de registros em serviços</h2>
+
+  {% for service in services %}
+    <div class="service">
+      <table>
+        <tr>
+          <td><b>Nº do Registro:</b> <a href="{{service.occ_url}}" target="_blank">{{service.occ_number}}</a></td>
+          <td><b>Nº de Registros Neste Serviço:</b> {{service.occurrence_record_count}}</td>
+          <td><b>Criador do Serviço:</b> {{service.created_by}}</td>
+        </tr>
+        <tr>
+          <td><b>Nº do Serviço:</b> <a href="{{service.url}}" target="_blank">{{service.number}}</a></td>
+          <td><b>Nível GUT do Serviço:</b> {{service.gut}}</td>
+        </tr>
+        <tr>
+          <td colspan="3"><b>Equipes Envolvidas no Serviço:</b> {{service.firms}}</td>
+        </tr>
+        <tr>
+          <td colspan="3"><b>Descrição do Serviço:</b> {{service.description}}</td>
+        </tr>
+      </table>
+    </div>
+  {% endfor %}
+{% endif %}
+
+{% endblock %}

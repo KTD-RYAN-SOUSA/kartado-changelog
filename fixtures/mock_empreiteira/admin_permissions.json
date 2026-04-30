@@ -1,0 +1,239 @@
+{
+  "company": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "self",
+    "can_create": true,
+    "can_delete": true
+  },
+  "firm": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "user_in_company": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "user_in_firm": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "job": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "goal": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "road": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "user": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": false
+  },
+  "service": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "shape_file": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "tile_layer": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "equipment": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "inventory": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": false
+  },
+  "reporting": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true,
+    "can_use_buttons": true,
+    "can_edit_resource": true,
+    "can_create_resource": true,
+    "can_view_price_accumulator": true
+  },
+  "user_in_firm": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "dashboard2": {
+    "can_edit": false,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": false,
+    "can_delete": false,
+    "can_view_r_d_o": true
+  },
+  "permission": {
+    "can_edit": false,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": false,
+    "can_delete": false
+  },
+  "user_permission": {
+    "can_edit": false,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": false,
+    "can_delete": false
+  },
+  "measurement": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "approval_flow": {
+    "can_edit": false,
+    "can_view": true,
+    "queryset": "self",
+    "can_create": false,
+    "can_delete": false
+  },
+  "approval_step": {
+    "can_edit": false,
+    "can_view": true,
+    "queryset": "self",
+    "can_create": false,
+    "can_delete": false
+  },
+  "excel_import": {
+    "can_edit": false,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": false,
+    "can_delete": false
+  },
+  "access_request": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "self",
+    "can_create": true,
+    "can_delete": true,
+    "can_approve": true
+  },
+  "service_specs": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "service_usage": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "goal_aggregate": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "reporting_file": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "occurrence_type": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": false
+  },
+  "approval_transition": {
+    "can_edit": false,
+    "can_view": true,
+    "queryset": "self",
+    "can_create": false,
+    "can_delete": false
+  },
+  "customization_menu": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "measurement_service": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "service_order_action_status": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  },
+  "multiple_daily_report_file": {
+    "can_edit": true,
+    "can_view": true,
+    "queryset": "all",
+    "can_create": true,
+    "can_delete": true
+  }
+}

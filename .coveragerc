@@ -1,0 +1,11 @@
+[run]
+omit =
+  *migrations/*,
+  RoadLabsAPI/*,
+  *tests/*,
+  *urls.py,
+  *wsgy.py,
+  *wsgi/*,
+  *venv*,
+  *apps.py,
+  manage.py

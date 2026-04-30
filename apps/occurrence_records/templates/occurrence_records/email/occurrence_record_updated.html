@@ -1,0 +1,77 @@
+{% extends "legacy_base_email.html" %}
+
+{% block content %}
+
+<tr>
+  <td>
+    <p class="p-text">
+      Um novo registro foi atualizado no sistema e está relacionado à você:
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Ação:</b> {{action}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Tarefa:</b> {{to_do}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Responsável:</b> {{responsible}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Número do Registro:</b> {{reg_number}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Números dos Serviços:</b> {{os_number}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Natureza:</b> {{kind}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Tipo:</b> {{type}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b>Emitente:</b> {{created_by}}
+  </td>
+</tr>
+
+<tr>
+  <td align="center" class="td-buttton">
+    <table border="0" cellpadding="0" cellspacing="0" class="table-button">
+      <tbody>
+        <tr>
+          <td align="center">
+            <a href="{{url}}" target="_blank" class="a-button">
+              ACESSAR REGISTRO
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+{% endblock %}
