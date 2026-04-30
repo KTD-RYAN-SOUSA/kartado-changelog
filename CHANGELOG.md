@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/KTD-RYAN-SOUSA/kartado-changelog/compare/v0.3.1...v0.4.0) (2026-04-30)
+
+
+### Features
+
+* **infra:** adiciona ajuste A [KTD-2001] ([db1a557](https://github.com/KTD-RYAN-SOUSA/kartado-changelog/commit/db1a557349413f33f5ca97e6c2f0b2401e20b0bb))
+
 ## [0.3.1](https://github.com/KTD-RYAN-SOUSA/kartado-changelog/compare/v0.3.0...v0.3.1) (2026-04-30)
 
 
